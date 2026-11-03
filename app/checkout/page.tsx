@@ -51,7 +51,7 @@ function CheckoutPageContent() {
   const searchParams = useSearchParams();
   const recoverToken = searchParams?.get("recover");
   const [recoveredBanner, setRecoveredBanner] = useState<string | null>(null);
-  const { cartItems, subtotal, clearCart, hasHydrated, mergeCartItems } = useCart();
+  const { cartItems, subtotal, clearCart, hasHydrated, mergeCartItems, removeFromCart } = useCart();
 
   // Step state: 1 = Address & Contact, 2 = Payment, 3 = Confirmation
   const [step, setStep] = useState<1 | 2 | 3>(1);
@@ -73,6 +73,9 @@ function CheckoutPageContent() {
   // UPI payment state
   const [upiSession, setUpiSession] = useState<UpiSessionData | null>(null);
   const [isCreatingUpi, setIsCreatingUpi] = useState(false);
+  const [upiStartError, setUpiStartError] = useState("");
+  const [upiStartItemId, setUpiStartItemId] = useState(""); // the cart line that stopped the payment
+  const [restartAfterRemove, setRestartAfterRemove] = useState(false);
   const [confirmedUtr, setConfirmedUtr] = useState("");
   // paymentConfirmed: the bank credit was matched (the order was created on the server).
   const [paymentConfirmed, setPaymentConfirmed] = useState(false);
@@ -265,10 +268,13 @@ function CheckoutPageContent() {
   // Starts the UPI step: the shop's own gateway first, manual UPI if it is unavailable.
   const initUpiSession = async (currentOrderId: string, amountToPay: number) => {
     setIsCreatingUpi(true);
+    setUpiStartError("");
+    setUpiStartItemId("");
     try {
       const startRes = await fetch("/api/pay/start", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
+        signal: AbortSignal.timeout(45000), // never leave the customer on a spinner
         body: JSON.stringify({
           customerName: formValues.fullName,
           customerPhone: formValues.phone,
@@ -299,9 +305,8 @@ function CheckoutPageContent() {
         return;
       }
       if (started?.fallback !== "manual") {
-        toast.error("UPI unavailable", {
-          description: started?.error || "Please try again or choose Cash on Delivery.",
-        });
+        setUpiStartError(started?.error || "UPI payment could not start. Please try again or choose Cash on Delivery.");
+        setUpiStartItemId(started?.itemId || "");
         return;
       }
 
@@ -323,13 +328,35 @@ function CheckoutPageContent() {
       if (data?.data) {
         setUpiSession(data.data);
         setCountdownSeconds(600);
+      } else {
+        setUpiStartError("UPI payment could not start. Please try again or choose Cash on Delivery.");
       }
     } catch (err) {
       console.error("Failed to start UPI payment:", err);
+      setUpiStartError("Could not reach the payment service. Please check your internet and try again, or choose Cash on Delivery.");
     } finally {
       setIsCreatingUpi(false);
     }
   };
+
+  // Customer removed the item that stopped the payment: carry on with what is left in the cart.
+  const removeUnavailableItem = () => {
+    removeFromCart(upiStartItemId);
+    setUpiStartError("");
+    setUpiStartItemId("");
+    setRestartAfterRemove(true);
+  };
+  useEffect(() => {
+    if (!restartAfterRemove) return;
+    setRestartAfterRemove(false);
+    if (cartItems.length === 0) return; // the page shows the empty cart
+    if (subtotal < MIN_ORDER_AMOUNT) {
+      setStep(1); // the page shows how much more is needed
+      return;
+    }
+    initUpiSession(orderId, finalTotal);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [restartAfterRemove]);
 
   // Step 1 Form Submission (Validated by Zod via React Hook Form)
   const onShippingSubmit = (data: CheckoutShippingFormData) => {
@@ -485,6 +512,18 @@ function CheckoutPageContent() {
     else proceed();
   };
 
+  // A cancelled payment never stays on the payment page: back to the shop, cart kept.
+  const returnToShopAfterCancel = () => {
+    setLeaveAction(null);
+    setUpiSession(null);
+    toast("Payment cancelled", {
+      duration: 8000,
+      description:
+        "Your cart is saved. If money already left your account, please do not pay again: we confirm the order when the bank reports it.",
+    });
+    router.replace("/collections/all");
+  };
+
   // Start over with a fresh payment (and order number).
   const restartUpiSession = () => {
     if (upiSession?.mode === "native" && upiSession.sessionId) cancelTeaPaySession(upiSession.sessionId);
@@ -536,6 +575,7 @@ function CheckoutPageContent() {
     setStep(1);
     setOrderId("");
     setUpiSession(null);
+    setUpiStartError("");
     setConfirmedUtr("");
     setPaymentConfirmed(false);
     setIsProcessing(false);
@@ -573,12 +613,7 @@ function CheckoutPageContent() {
           sessionId={upiSession.sessionId}
           payAmount={upiSession.payAmount || String(finalTotal)}
           onStay={() => setLeaveAction(null)}
-          onLeave={() => {
-            const proceed = leaveAction;
-            setLeaveAction(null);
-            setUpiSession(null);
-            proceed();
-          }}
+          onLeave={returnToShopAfterCancel}
         />
       )}
 
@@ -851,7 +886,7 @@ function CheckoutPageContent() {
                         Delivery &amp; Contact Details
                       </h3>
                       <p className="text-[13px] text-[#5c5a52] mt-0.5">
-                        Enter your pan-India delivery address for fresh shipment dispatch.
+                        Enter your delivery address in Siliguri. We deliver the same day or the next day.
                       </p>
                     </div>
 
@@ -1082,7 +1117,7 @@ function CheckoutPageContent() {
                       <div
                         onClick={() => {
                           setPaymentMethod("upi");
-                          if (!upiSession && orderId) {
+                          if (!upiSession && !upiStartError && orderId) {
                             initUpiSession(orderId, finalTotal);
                           }
                         }}
@@ -1124,12 +1159,48 @@ function CheckoutPageContent() {
                               session={upiSession as TeaPaySessionView}
                               onPaid={handleUpiPaid}
                               onRestart={restartUpiSession}
-                              onBackPressed={() => guardLeave(() => window.history.go(-2))}
+                              onBackPressed={() => guardLeave(() => router.replace("/collections/all"))}
+                              onCancelled={returnToShopAfterCancel}
                             />
                           </div>
                         )}
 
-                        {paymentMethod === "upi" && upiSession?.mode !== "native" && (
+                        {paymentMethod === "upi" && !upiSession && upiStartError && !isCreatingUpi && (
+                          <div
+                            className="mt-4 pt-4 border-t border-[#f0dfc6] space-y-3"
+                            onClick={(e) => e.stopPropagation()}
+                            role="alert"
+                          >
+                            <p className="text-[14px] font-semibold text-[#b3261e]">{upiStartError}</p>
+                            <div className="flex flex-wrap gap-2.5">
+                              {upiStartItemId ? (
+                                <button
+                                  type="button"
+                                  onClick={removeUnavailableItem}
+                                  className="px-4 py-2.5 bg-[#f9a825] hover:bg-[#f29d12] text-[#4a0e14] rounded-lg text-[14px] font-bold"
+                                >
+                                  Remove Item
+                                </button>
+                              ) : (
+                                <button
+                                  type="button"
+                                  onClick={() => initUpiSession(orderId, finalTotal)}
+                                  className="px-4 py-2.5 bg-[#f9a825] hover:bg-[#f29d12] text-[#4a0e14] rounded-lg text-[14px] font-bold"
+                                >
+                                  Try Again
+                                </button>
+                              )}
+                              <Link
+                                href="/cart"
+                                className="px-4 py-2.5 border border-[#4a0e14] text-[#4a0e14] rounded-lg text-[14px] font-bold"
+                              >
+                                Edit Cart
+                              </Link>
+                            </div>
+                          </div>
+                        )}
+
+                        {paymentMethod === "upi" && upiSession?.mode !== "native" && !(upiStartError && !isCreatingUpi && !upiSession) && (
                           <div
                             className="mt-4 pt-4 border-t border-[#f0dfc6]"
                             onClick={(e) => e.stopPropagation()}

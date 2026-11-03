@@ -2,6 +2,7 @@
 
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import {
   MessageCircle,
   RefreshCw,
@@ -171,6 +172,11 @@ export function UpiExpiredNotice({
         <RefreshCw size={15} />
         Generate a new QR code
       </button>
+      <div>
+        <Link href="/collections/all" className="text-[13.5px] font-semibold text-[#4a0e14] underline underline-offset-2">
+          Back to Shop
+        </Link>
+      </div>
       <div className="bg-[#fff6e6] border border-[#f7d9a6] rounded-lg p-3 text-left text-[12.5px] text-[#4a0e14] flex gap-2">
         <ShieldCheck size={16} className="text-[#b3261e] shrink-0 mt-0.5" />
         <span>
@@ -191,12 +197,15 @@ export default function TeaPayPanel({
   onPaid,
   onRestart,
   onBackPressed,
+  onCancelled,
 }: {
   session: TeaPaySessionView;
   onPaid: (view: TeaPaySessionView) => void;
   onRestart: () => void;
   /** Browser Back during an open payment: the parent shows PaymentLeaveDialog. */
   onBackPressed?: () => void;
+  /** The payment was cancelled (by the customer elsewhere, or by the shop): leave this page. */
+  onCancelled?: () => void;
 }) {
   const [view, setView] = useState<TeaPaySessionView>(session);
   const [secondsLeft, setSecondsLeft] = useState(session.secondsLeft);
@@ -208,6 +217,11 @@ export default function TeaPayPanel({
   const [error, setError] = useState("");
 
   const paidFired = useRef(false);
+  const cancelledFired = useRef(false);
+  const onCancelledRef = useRef(onCancelled);
+  useEffect(() => {
+    onCancelledRef.current = onCancelled;
+  }, [onCancelled]);
   const onPaidRef = useRef(onPaid);
   useEffect(() => {
     onPaidRef.current = onPaid;
@@ -219,6 +233,10 @@ export default function TeaPayPanel({
     if (next.status === "PAID" && !paidFired.current) {
       paidFired.current = true;
       onPaidRef.current(next);
+    }
+    if (next.status === "CANCELLED" && !cancelledFired.current) {
+      cancelledFired.current = true;
+      onCancelledRef.current?.();
     }
   }, []);
 
@@ -448,6 +466,15 @@ export default function TeaPayPanel({
 
       <PaymentStatusBar verifying={view.status === "VERIFYING"} />
       {error && <p className="text-[12.5px] text-[#e53935]">{error}</p>}
+      {paymentOpen && onBackPressed && (
+        <button
+          type="button"
+          onClick={onBackPressed}
+          className="w-full py-1.5 text-[13.5px] font-semibold text-[#c62828] hover:underline cursor-pointer"
+        >
+          Cancel payment
+        </button>
+      )}
     </div>
   );
 }

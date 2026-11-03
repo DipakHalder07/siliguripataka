@@ -1,3 +1,5 @@
+import { Suspense } from "react";
+import StoreToaster from "@/components/StoreToaster";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
@@ -56,6 +58,9 @@ export default function RootLayout({
         <JsonLd data={[storeJsonLd(), websiteJsonLd()]} />
         <CartProvider>
           {children}
+          <Suspense fallback={null}>
+            <StoreToaster />
+          </Suspense>
         </CartProvider>
         <Analytics />
       </body>

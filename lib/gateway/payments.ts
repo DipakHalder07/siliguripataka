@@ -12,7 +12,8 @@ import { getUpiConfig, LATE_MATCH_MS, PAYMENT_WINDOW_MS, VERIFYING_EXTENSION_MS 
 export class GatewayError extends Error {
   constructor(
     message: string,
-    public status = 400
+    public status = 400,
+    public itemId?: string
   ) {
     super(message);
   }
@@ -80,7 +81,7 @@ export async function startPayment(input: CheckoutInput) {
   try {
     priced = await priceOrder({ items: input.items, couponCode: input.couponCode, paymentMethod: "upi" });
   } catch (err) {
-    if (err instanceof PricingError) throw new GatewayError(err.message, 400);
+    if (err instanceof PricingError) throw new GatewayError(err.message, 400, err.itemId);
     throw err;
   }
   const orderPaise = priced.totalAmount * 100;

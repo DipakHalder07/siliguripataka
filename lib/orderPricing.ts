@@ -27,6 +27,13 @@ export interface PricedOrder {
 /** A cart line that can't be sold (removed, hidden, sold out or not enough stock). */
 export class PricingError extends Error {
   status = 400;
+  constructor(
+    message: string,
+    /** The cart line at fault, so the checkout can offer to remove it. */
+    public itemId?: string
+  ) {
+    super(message);
+  }
 }
 
 /** Cart ids are "<product id>-<size>", so match the longest product id they start with. */
@@ -51,14 +58,14 @@ export async function priceOrder(input: {
   const items = input.items.map((item) => {
     const product = findProduct(catalog, item.productId);
     if (!product) {
-      throw new PricingError(`"${item.title}" is no longer available. Please remove it from your cart.`);
+      throw new PricingError(`"${item.title}" is no longer available. Please remove it from your cart.`, item.productId ?? undefined);
     }
     const quantity = Math.max(1, Math.floor(item.quantity));
     if (!product.inStock) {
-      throw new PricingError(`"${product.title}" is sold out. Please remove it from your cart.`);
+      throw new PricingError(`"${product.title}" is sold out. Please remove it from your cart.`, item.productId ?? undefined);
     }
     if (product.trackInventory && (product.stockQuantity ?? 0) < quantity) {
-      throw new PricingError(`Only ${product.stockQuantity ?? 0} left of "${product.title}". Please lower the quantity.`);
+      throw new PricingError(`Only ${product.stockQuantity ?? 0} left of "${product.title}". Please lower the quantity.`, item.productId ?? undefined);
     }
     const variant = findVariant(product, item.weight);
     return {

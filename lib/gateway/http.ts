@@ -10,7 +10,10 @@ const PHONE_COOKIE_TTL_MS = 30 * 24 * 60 * 60 * 1000;
 
 export function errorResponse(error: unknown, fallback = "Payment error") {
   if (error instanceof GatewayError) {
-    return NextResponse.json({ error: error.message }, { status: error.status });
+    return NextResponse.json(
+      { error: error.message, ...(error.itemId ? { itemId: error.itemId } : {}) },
+      { status: error.status }
+    );
   }
   console.error("[TeaPay]", error);
   const msg = error instanceof Error ? error.message : fallback;

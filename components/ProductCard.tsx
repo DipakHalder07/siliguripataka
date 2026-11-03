@@ -16,9 +16,12 @@ export default function ProductCard({ product }: { product: Product }) {
   const variant = findVariant(product, product.weight);
   const weight = product.weight ? variant.name : "";
 
+  const soldOut = !product.inStock;
+
   const handleAddToCart = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
+    if (soldOut) return;
     addToCart({
       id: `${product.id}-${weight || "default"}`,
       title: product.title,
@@ -44,9 +47,9 @@ export default function ProductCard({ product }: { product: Product }) {
       {/* 1. Figure with 1:1 Aspect Ratio and Smooth Cross-Fade Hover */}
       <div className="relative w-full aspect-square bg-[#fff9ef] overflow-hidden rounded-t-[12px]">
         {/* Badge: Bottom-right, flush with edge, matching live site */}
-        {product.badge && (
+        {(soldOut || product.badge) && (
           <span className="absolute bottom-0 right-0 z-10 bg-[#3f0c12] text-white text-[10.5px] sm:text-[11px] font-bold tracking-[1px] uppercase px-2 sm:px-2.5 py-1 rounded-tl-[4px] pointer-events-none">
-            {product.badge}
+            {soldOut ? "SOLD OUT" : product.badge}
           </span>
         )}
 
@@ -119,9 +122,10 @@ export default function ProductCard({ product }: { product: Product }) {
           <button
             type="button"
             onClick={handleAddToCart}
-            className="w-full bg-[#f9a825] hover:bg-[#f29d12] text-[#4a0e14] font-bold text-[13px] sm:text-[14px] h-[42px] py-2 px-3 rounded-[6px] tracking-[0.3px] uppercase transition-colors shadow-none cursor-pointer flex items-center justify-center text-center active:brightness-95"
+            disabled={soldOut}
+            className="w-full disabled:bg-[#e5e0d6] disabled:hover:bg-[#e5e0d6] disabled:text-[#6f6a5f] disabled:cursor-not-allowed bg-[#f9a825] hover:bg-[#f29d12] text-[#4a0e14] font-bold text-[13px] sm:text-[14px] h-[42px] py-2 px-3 rounded-[6px] tracking-[0.3px] uppercase transition-colors shadow-none cursor-pointer flex items-center justify-center text-center active:brightness-95"
           >
-            {buttonLabel}
+            {soldOut ? "SOLD OUT" : buttonLabel}
           </button>
 
           {hasMultipleSizes ? (

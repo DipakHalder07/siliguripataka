@@ -213,7 +213,12 @@ export default function ProductDetailPage({ product, related = [] }: { product: 
           },
         ];
 
+  const soldOut = !product.inStock;
+  // Tracked products can't be added beyond what is left in stock.
+  const maxQuantity = product.trackInventory ? Math.max(1, product.stockQuantity ?? 1) : Infinity;
+
   const handleAddToCart = () => {
+    if (soldOut) return;
     addToCart(
       {
         id: `${product.id}-${selectedWeight}`,
@@ -629,7 +634,8 @@ export default function ProductDetailPage({ product, related = [] }: { product: 
                 </span>
                 <button
                   type="button"
-                  onClick={() => setQuantity(quantity + 1)}
+                  onClick={() => setQuantity(Math.min(maxQuantity, quantity + 1))}
+                  disabled={soldOut}
                   className="w-9 h-9 flex items-center justify-center text-[#2b1215] hover:text-[#b3261e] transition-colors cursor-pointer"
                   aria-label="Increase quantity"
                 >
@@ -640,10 +646,11 @@ export default function ProductDetailPage({ product, related = [] }: { product: 
               <button
                 type="button"
                 onClick={handleAddToCart}
-                className="flex-1 bg-[#f9a825] hover:bg-[#f9a825]/90 text-[#4a0e14] font-bold text-[17px] sm:text-[18px] h-14 rounded-[6px] tracking-[0.4px] uppercase transition-all shadow-sm active:scale-98 text-center cursor-pointer flex items-center justify-center gap-2"
+                disabled={soldOut}
+                className="flex-1 disabled:bg-[#e5e0d6] disabled:hover:bg-[#e5e0d6] disabled:text-[#6f6a5f] disabled:cursor-not-allowed bg-[#f9a825] hover:bg-[#f9a825]/90 text-[#4a0e14] font-bold text-[17px] sm:text-[18px] h-14 rounded-[6px] tracking-[0.4px] uppercase transition-all shadow-sm active:scale-98 text-center cursor-pointer flex items-center justify-center gap-2"
               >
-                <span>Add to cart — ₹{(currentPrice * quantity).toLocaleString("en-IN")}</span>
-                {currentOriginalPrice > currentPrice && (
+                <span>{soldOut ? "Sold Out" : `Add to cart — ₹${(currentPrice * quantity).toLocaleString("en-IN")}`}</span>
+                {!soldOut && currentOriginalPrice > currentPrice && (
                   <s className="text-[#4a0e14]/65 text-[15px] font-normal line-through">
                     ₹{(currentOriginalPrice * quantity).toLocaleString("en-IN")}
                   </s>

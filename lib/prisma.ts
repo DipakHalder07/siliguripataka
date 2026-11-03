@@ -11,7 +11,9 @@ const globalForPrisma = globalThis as unknown as {
  * pasted unchanged.
  */
 function runtimeDatabaseUrl() {
-  const raw = process.env.DATABASE_URL;
+  // On your own computer the direct address is several times faster than the pooled one.
+  const raw =
+    (process.env.NODE_ENV === "development" && process.env.DATABASE_URL_UNPOOLED) || process.env.DATABASE_URL;
   if (!raw) return undefined;
   try {
     const url = new URL(raw);

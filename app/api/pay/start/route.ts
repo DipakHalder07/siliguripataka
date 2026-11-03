@@ -4,6 +4,7 @@ import { paymentStartSchema, cleanIndianPhone } from "@/lib/validations/checkout
 import { startPayment } from "@/lib/gateway/payments";
 import { errorResponse, publicBaseUrl, sessionView, verifiedPhoneFromCookie } from "@/lib/gateway/http";
 import { alertNewCheckout, emailNewCheckout } from "@/lib/gateway/alerts";
+import { isOtpRequired } from "@/lib/gateway/whatsapp";
 import { prisma } from "@/lib/prisma";
 import { getCustomerFromRequest } from "@/lib/customerAuth";
 import { limitByIp } from "@/lib/rateLimit";
@@ -33,7 +34,8 @@ export async function POST(req: NextRequest) {
       parsed.data.customerEmail = (await getCustomerFromRequest(req))?.email || null;
     }
 
-    let session = await startPayment(parsed.data);
+    // Read the WhatsApp setting alongside, not after: sessionView below then finds it already cached.
+    let [session] = await Promise.all([startPayment(parsed.data), isOtpRequired()]);
 
     // Same number verified on this browser recently: no new code needed.
     if (verifiedPhoneFromCookie(req) === session.customerPhone) {
@@ -45,11 +47,13 @@ export async function POST(req: NextRequest) {
 
     const view = await sessionView(session);
     // Send real-time WhatsApp alert to shop owner immediately when customer starts checkout
-    alertNewCheckout(session.id, publicBaseUrl(req)).catch((e) =>
-      console.warn("[TeaPay] WhatsApp order alert failed:", e?.message || e)
+    const baseUrl = publicBaseUrl(req);
+    after(() =>
+      alertNewCheckout(session.id, baseUrl).catch((e) =>
+        console.warn("[TeaPay] WhatsApp order alert failed:", e?.message || e)
+      )
     );
     // Email to the shop owner too: start time and when the 10-minute payment window ends
-    const baseUrl = publicBaseUrl(req);
     after(() =>
       emailNewCheckout(session.id, baseUrl).catch((e) =>
         console.warn("[TeaPay] Checkout email alert failed:", e?.message || e)

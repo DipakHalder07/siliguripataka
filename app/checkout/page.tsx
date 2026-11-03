@@ -110,6 +110,11 @@ function CheckoutPageContent() {
 
   const formValues = watch();
 
+  // Wake the server and database while the customer fills in the form, so the QR appears quickly.
+  useEffect(() => {
+    fetch("/api/pay/warm").catch(() => {});
+  }, []);
+
   // Signed-in customer: fill their account email so the order appears under My Orders
   useEffect(() => {
     try {

@@ -87,7 +87,9 @@ export async function startPayment(input: CheckoutInput) {
   const orderPaise = priced.totalAmount * 100;
   if (orderPaise < 200) throw new GatewayError("Order total is too small for UPI", 400);
 
-  await releaseStaleAmounts();
+  // Clean up after the response, so the customer's QR never waits for it. Until then a stale amount
+  // just counts as taken, which is safe.
+  after(() => releaseStaleAmounts().catch((e) => console.warn("[TeaPay] Could not release old amounts:", e)));
   const draft: OrderDraft = {
     customerName: input.customerName,
     customerPhone: input.customerPhone,
@@ -105,7 +107,7 @@ export async function startPayment(input: CheckoutInput) {
   for (let attempt = 0; attempt < 6; attempt++) {
     // Taken: amounts still open, and amounts paid in the last 30 min (a late duplicate alert
     // for that payment must never look like this new checkout's money).
-    const used = await prisma.paymentSession.findMany({
+    const usedQuery = prisma.paymentSession.findMany({
       where: {
         upiId,
         payPaise: { gte: orderPaise - 99, lt: orderPaise },
@@ -113,6 +115,7 @@ export async function startPayment(input: CheckoutInput) {
       },
       select: { payPaise: true },
     });
+    const [used, orderNumber] = await Promise.all([usedQuery, newOrderNumber()]);
     const usedTags = new Set(used.map((u) => orderPaise - u.payPaise));
     const free: number[] = [];
     for (let tag = 1; tag <= 99; tag++) if (!usedTags.has(tag)) free.push(tag);
@@ -125,7 +128,7 @@ export async function startPayment(input: CheckoutInput) {
     try {
       return await prisma.paymentSession.create({
         data: {
-          orderNumber: await newOrderNumber(),
+          orderNumber,
           orderDraft: draft as unknown as Prisma.InputJsonValue,
           upiId,
           payeeName,

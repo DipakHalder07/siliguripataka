@@ -18,6 +18,13 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   applicationName: SITE_NAME,
+  // Paste the codes from Google Search Console and Bing Webmaster Tools into these env vars.
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || undefined,
+    other: process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION
+      ? { "msvalidate.01": process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION }
+      : undefined,
+  },
   title: DEFAULT_TITLE,
   description: DEFAULT_DESCRIPTION,
   keywords: [
@@ -32,6 +39,8 @@ export const metadata: Metadata = {
     "firecracker mela Siliguri",
     "local mithai Siliguri",
     "rangoli colours Siliguri",
+    "Diwali home decor Siliguri",
+    "crackers price list Siliguri",
   ],
   openGraph: {
     title: DEFAULT_TITLE,

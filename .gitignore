@@ -1,1 +1,24 @@
+# Dependencies
 node_modules
+
+# Next.js build output
+.next
+out
+*.tsbuildinfo
+next-env.d.ts
+
+# Secrets: never commit these. Set them in Vercel > Settings > Environment Variables.
+.env
+.env.*
+*.env
+*.env.*
+!.env.example
+
+# Local data and logins
+.pglite
+.vercel
+whatsapp-service/auth
+whatsapp-service/.env
+
+# macOS
+.DS_Store

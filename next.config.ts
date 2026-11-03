@@ -48,6 +48,8 @@ const nextConfig: NextConfig = {
   images: {
     // Product images: these hosts, local files and photos uploaded in the admin (lib/productImages.ts)
     remotePatterns: IMAGE_HOSTS.map((hostname) => ({ protocol: "https" as const, hostname })),
+    minimumCacheTTL: 60 * 60 * 24 * 31,
+    formats: ["image/webp"],
   },
   cacheComponents: true,
   partialPrefetching: true,

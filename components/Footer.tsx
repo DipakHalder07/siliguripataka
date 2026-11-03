@@ -51,7 +51,9 @@ export default function Footer() {
         { label: "Rockets", href: "/collections/rockets" },
         { label: "Sky Shots", href: "/collections/aerial-shots" },
         { label: "Local Mithai", href: "/collections/sweets" },
-        { label: "Rangoli & Decor", href: "/collections/diyas-decor" },
+        { label: "Rangoli & Diyas", href: "/collections/diyas-decor" },
+        { label: "Home Decor", href: "/collections/home-decor" },
+        { label: "Crackers Price List", href: "/pages/cracker-price-list-siliguri" },
       ],
     },
     {

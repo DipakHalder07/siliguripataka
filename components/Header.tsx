@@ -36,7 +36,8 @@ const MEGA_COLUMNS = [
   {
     title: "Diyas & Decor",
     links: [
-      { label: "All Decor", href: "/collections/diyas-decor" },
+      { label: "Home Decor", href: "/collections/home-decor" },
+      { label: "Rangoli & Diyas", href: "/collections/diyas-decor" },
       { label: "Clay Diyas", href: "/products/hand-painted-clay-diyas" },
       { label: "Rangoli Colours", href: "/products/rangoli-colour-set" },
       { label: "Marigold Toran", href: "/products/marigold-door-toran" },
@@ -310,6 +311,15 @@ export default function Header({ onOpenTeaFinder }: { onOpenTeaFinder?: () => vo
                       </li>
                       <li>
                         <Link
+                          href="/collections/home-decor"
+                          onClick={closeMenus}
+                          className="block px-5 py-2.5 hover:bg-[#fff9ef] hover:text-[#b3261e] transition-colors"
+                        >
+                          Home Decor
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
                           href="/pages/corporate-gifting-2026"
                           onClick={closeMenus}
                           className="block px-5 py-2.5 hover:bg-[#fff9ef] hover:text-[#b3261e] transition-colors font-medium border-t border-[#f0dfc6]/60 mt-1"
@@ -544,6 +554,13 @@ export default function Header({ onOpenTeaFinder }: { onOpenTeaFinder?: () => vo
                         className="py-1 hover:text-[#b3261e]"
                       >
                         Flower Pots (Anar)
+                      </Link>
+                      <Link
+                        href="/collections/home-decor"
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="py-1 hover:text-[#b3261e]"
+                      >
+                        Home Decor
                       </Link>
                       <Link
                         href="/collections/all"

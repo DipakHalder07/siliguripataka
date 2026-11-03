@@ -17,5 +17,8 @@
       "path": "/api/pay/cron",
       "schedule": "0 4 * * *"
     }
+  ],
+  "regions": [
+    "sin1"
   ]
 }

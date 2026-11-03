@@ -30,11 +30,44 @@ const DATE = "2026-11-03";
 
 export const POSTS: BlogPost[] = [
   {
+    slug: "diwali-home-decor-ideas-siliguri",
+    title: "Diwali Home Decor Ideas for Siliguri Homes: Lights, Lanterns and Diyas",
+    seoTitle: "Diwali Lights and Diya Decor Ideas for Siliguri Homes",
+    excerpt:
+      "How to light up your home for Diwali and Kali Puja in Siliguri with string lights, lanterns, brass diyas and tea lights, with a simple plan for every budget.",
+    keywords: ["Diwali home decor Siliguri", "Diwali lights Siliguri", "akash kandil", "brass diya Siliguri", "floating diyas", "Diwali decoration ideas home"],
+    category: "Decor",
+    date: DATE,
+    readMinutes: 4,
+    image: "/assets/hd-string-lights.webp",
+    imageAlt: "A home decorated for Diwali with string lights on the wall and lit diyas on the floor",
+    body: [
+      { type: "p", text: "The quickest way to decorate a home for Diwali is to work in two layers: light up the outside first, then add diyas and tea lights inside. You can do both in an evening, and most of it can be used again next year." },
+      { type: "h2", text: "Light up the outside" },
+      { type: "ul", items: ["Run LED string lights along the balcony rail, windows or stairs. This is what people see from the road.", "Hang a paper lantern, or kandil, at the door or balcony with a light inside.", "Add a star lantern to a window that faces the street."] },
+      { type: "tip", text: "Paper lanterns are for hanging, not flying. West Bengal has restricted unauthorised sky lanterns during the festive season, so please check the current rules." },
+      { type: "h2", text: "Add diyas inside" },
+      { type: "ul", items: ["Keep a brass lamp in your puja corner and an aarti diya ready for Lakshmi Puja or Kali Puja.", "Fill a brass bowl with water, flower petals and floating diyas, and place it by the entrance.", "Set coloured glass tea light holders along a shelf or table for a soft glow."] },
+      { type: "h2", text: "Clay diyas or brass diyas?" },
+      { type: "table", head: ["Type", "Good for", "Lasts"], rows: [["Clay diyas", "Rows along steps and balconies", "One or a few festivals"], ["Brass diyas", "Puja corner and aarti", "Many years with cleaning"], ["Glass tea light holders", "Shelves and tables", "Many years"]] },
+      { type: "h2", text: "A simple plan for every budget" },
+      { type: "table", head: ["Budget", "What to buy", "Best for"], rows: [["Around ₹1,000", "String lights, a paper lantern and clay diyas", "A flat or a small balcony"], ["Around ₹2,000", "Add a brass flower bowl and glass tea light holders", "Reaching the minimum order with decor alone"], ["Around ₹3,000", "Add a brass lamp and an aarti diya", "A full puja corner"]] },
+      { type: "h2", text: "Keep it safe" },
+      { type: "p", text: "Keep diyas and candles away from curtains and paper lanterns, and never leave a flame burning when you go out or go to sleep. Use an LED light in a paper lantern, not an open flame." },
+      { type: "links", title: "Shop Diwali decor", items: [{ label: "All Diwali home decor", href: "/collections/home-decor" }, { label: "Warm LED string lights", href: "/products/warm-led-string-lights" }, { label: "Hanging paper lantern", href: "/products/hanging-paper-lantern-kandil" }, { label: "Brass aarti diya", href: "/products/brass-aarti-diya" }, { label: "Clay diyas", href: "/products/hand-painted-clay-diyas" }] },
+    ],
+    faq: [
+      { q: "How can I decorate my home for Diwali on a small budget?", a: "Start with LED string lights, one paper lantern and a pack of clay diyas. These cover the outside and the entrance, and the lights and lantern can be used again next year." },
+      { q: "What is a kandil?", a: "A kandil, or akash kandil, is a traditional hanging paper lantern. It is hung at a door or balcony with a light inside, and it is not meant to fly." },
+      { q: "Can I order Diwali lights and diyas with crackers in Siliguri?", a: "Yes. Siliguri Pataka lets you mix lights, diyas, crackers and mithai in one order, with delivery the same day or the next day within Siliguri." },
+    ],
+  },
+  {
     slug: "siliguri-firecracker-mela-guide",
     title: "Siliguri Firecracker Mela (Baji Bazar) at Kawakhali: A Complete Guide",
     seoTitle: "Siliguri Firecracker Mela at Kawakhali: Complete Guide",
     excerpt:
-      "What the Siliguri Fireworks Mela at Kawakhali ground is, how it has worked in past years, what to check before you go, and how to get crackers delivered if you would rather skip the crowd.",
+      "What the Siliguri Fireworks Mela at Kawakhali ground is, how it has worked in past years, what to check before you go, and how to get crackers delivered instead.",
     keywords: ["Siliguri firecracker mela", "Siliguri fireworks mela", "baji bazar Siliguri", "Kawakhali cracker market", "green crackers Siliguri"],
     category: "Local Guide",
     date: DATE,

@@ -16,7 +16,7 @@ const prisma = new PrismaClient({
 /** Crackers first, then sweets and decor, with sold-out items at the end of the list. */
 function sortOrderFor(category: string, inStock: boolean) {
   if (!inStock) return 50;
-  return category === "sweets" || category === "diyas-decor" || category === "gift-hampers" ? 10 : 0;
+  return ["sweets", "diyas-decor", "home-decor", "gift-hampers"].includes(category) ? 10 : 0;
 }
 
 async function main() {

@@ -1,5 +1,6 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import React, { useState } from "react";
 import TopBar from "@/components/TopBar";
 import ShippingBar from "@/components/ShippingBar";
@@ -10,10 +11,11 @@ import TrialPacks from "@/components/TrialPacks";
 import WhyTeabox from "@/components/WhyTeabox";
 import PromoSplit from "@/components/PromoSplit";
 import JustArrived from "@/components/JustArrived";
+import HomeSeoSection from "@/components/HomeSeoSection";
 import Footer from "@/components/Footer";
 import CartDrawer from "@/components/CartDrawer";
-import SearchDrawer from "@/components/SearchDrawer";
-import TeaFinderModal from "@/components/TeaFinderModal";
+import SearchDrawer from "@/components/LazySearchDrawer";
+const TeaFinderModal = dynamic(() => import("@/components/TeaFinderModal"), { ssr: false });
 
 export default function HomePage() {
   const [teaFinderOpen, setTeaFinderOpen] = useState(false);
@@ -35,6 +37,7 @@ export default function HomePage() {
         <WhyTeabox />
         <PromoSplit onOpenTeaFinder={() => setTeaFinderOpen(true)} />
         <JustArrived />
+        <HomeSeoSection />
       </main>
 
       {/* 4. Footer */}
@@ -43,10 +46,7 @@ export default function HomePage() {
       {/* 5. Modals and Slide-Out Drawers */}
       <CartDrawer />
       <SearchDrawer />
-      <TeaFinderModal
-        isOpen={teaFinderOpen}
-        onClose={() => setTeaFinderOpen(false)}
-      />
+      {teaFinderOpen && <TeaFinderModal isOpen onClose={() => setTeaFinderOpen(false)} />}
     </div>
   );
 }

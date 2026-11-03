@@ -172,6 +172,7 @@ const sections: LegalSection[] = [
 export default function ShippingReturnsPage() {
   return (
     <LegalPage
+      path="/shipping-returns"
       title="Delivery & Returns"
       intro={
         <p>

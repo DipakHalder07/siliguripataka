@@ -5,7 +5,8 @@ import ProductDetailLayoutWrapper from "@/components/ProductDetailLayoutWrapper"
 import { getStoreProduct, getStoreProducts } from "@/lib/catalog";
 import { COLLECTIONS } from "@/data/products";
 import JsonLd from "@/components/JsonLd";
-import { breadcrumbJsonLd, pageMeta, productJsonLd, SITE_NAME } from "@/lib/seo";
+import { breadcrumbJsonLd, faqJsonLd, pageMeta, productJsonLd, SITE_NAME } from "@/lib/seo";
+import { productFaqs, productSeoDescription, productSeoTitle } from "@/lib/seoContent";
 
 interface PageProps {
   params: Promise<{ handle: string }>;
@@ -27,8 +28,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return pageMeta({
-    title: `${product.title} in Siliguri | ${SITE_NAME}`,
-    description: `Buy ${product.title} online in Siliguri. ${product.subtitle}. Home delivery within Siliguri, pay by UPI or cash on delivery. Minimum order ₹2,000.`,
+    title: productSeoTitle(product),
+    description: productSeoDescription(product),
     path: `/products/${product.handle || product.id}`,
     image: product.image,
   });
@@ -50,6 +51,7 @@ async function ProductContent({ params }: PageProps) {
       <JsonLd
         data={[
           productJsonLd(product),
+          faqJsonLd(productFaqs(product)),
           breadcrumbJsonLd([
             { name: "Home", path: "/" },
             ...(col ? [{ name: col.name, path: `/collections/${col.id}` }] : []),

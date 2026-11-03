@@ -34,6 +34,7 @@ const sections: LegalSection[] = [
 export default function ImageCreditsPage() {
   return (
     <LegalPage
+      path="/image-credits"
       title="Image Credits"
       intro={
         <p>

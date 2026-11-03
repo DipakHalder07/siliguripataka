@@ -105,6 +105,7 @@ const sections: LegalSection[] = [
 export default function RefundPolicyPage() {
   return (
     <LegalPage
+      path="/refund-policy"
       title="Cancellation & Refund Policy"
       intro={
         <p>

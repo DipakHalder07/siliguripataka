@@ -1,15 +1,16 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import React, { useState } from "react";
 import TopBar from "@/components/TopBar";
 import ShippingBar from "@/components/ShippingBar";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CartDrawer from "@/components/CartDrawer";
-import SearchDrawer from "@/components/SearchDrawer";
-import TeaFinderModal from "@/components/TeaFinderModal";
+import SearchDrawer from "@/components/LazySearchDrawer";
 import ProductDetailPage from "@/components/ProductDetailPage";
 import { Product } from "@/data/products";
+const TeaFinderModal = dynamic(() => import("@/components/TeaFinderModal"), { ssr: false });
 
 export default function ProductDetailLayoutWrapper({ product, related }: { product: Product; related?: Product[] }) {
   const [teaFinderOpen, setTeaFinderOpen] = useState(false);
@@ -32,10 +33,7 @@ export default function ProductDetailLayoutWrapper({ product, related }: { produ
       {/* 4. Drawers & Modals */}
       <CartDrawer />
       <SearchDrawer />
-      <TeaFinderModal
-        isOpen={teaFinderOpen}
-        onClose={() => setTeaFinderOpen(false)}
-      />
+      {teaFinderOpen && <TeaFinderModal isOpen onClose={() => setTeaFinderOpen(false)} />}
     </div>
   );
 }

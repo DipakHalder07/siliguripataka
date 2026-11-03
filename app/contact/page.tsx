@@ -4,7 +4,8 @@ import { Clock, Mail, MapPin, MessageCircle, Package, RotateCcw, Truck } from "l
 import SiteLayoutWrapper from "@/components/SiteLayoutWrapper";
 import ContactForm from "@/components/ContactForm";
 import { LEGAL } from "@/lib/legal";
-import { pageMeta } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbJsonLd, pageMeta, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
   ...pageMeta({
@@ -31,6 +32,15 @@ export default function ContactPage() {
 
   return (
     <SiteLayoutWrapper>
+      <JsonLd
+        data={[
+          breadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Contact Us", path: "/contact" },
+          ]),
+          { "@context": "https://schema.org", "@type": "ContactPage", url: `${SITE_URL}/contact`, about: { "@id": `${SITE_URL}/#store` } },
+        ]}
+      />
       <div className="bg-[#fff9ef] text-[#2b1215]">
         <section className="bg-[#4a0e14] text-white px-4 sm:px-6 py-12 sm:py-16">
           <div className="max-w-[1100px] mx-auto">

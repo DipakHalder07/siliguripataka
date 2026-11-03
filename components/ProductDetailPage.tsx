@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { isDecorCategory, productFaqs } from "@/lib/seoContent";
 import {
   Star,
   ShieldCheck,
@@ -165,7 +166,7 @@ export default function ProductDetailPage({ product, related = [] }: { product: 
 
   // The copy below depends on what kind of product this is
   const isSweet = product.category === "sweets";
-  const isDecor = product.category === "diyas-decor";
+  const isDecor = isDecorCategory(product.category);
   const megaPack = findMegaPack(product.id);
 
   // Each size has its own price (Admin → Products → Variants); the checkout uses the same prices
@@ -262,64 +263,7 @@ export default function ProductDetailPage({ product, related = [] }: { product: 
     },
   ];
 
-  const commonFaqs = [
-    {
-      q: "Do you deliver outside Siliguri?",
-      a: "No. Siliguri Pataka delivers only within Siliguri, so please order only if your delivery address is in Siliguri.",
-    },
-    {
-      q: "How fast is delivery in Siliguri?",
-      a: "We deliver the same day or the next day, depending on when you order and where you are in Siliguri. In the last days before Diwali and Kali Puja, please order early.",
-    },
-    {
-      q: "Do I get anything free with my order?",
-      a: `Yes. Every order comes with ${FREE_GIFT.toLowerCase()} free. It is packed with your delivery, so there is nothing extra to add to your cart.`,
-    },
-    {
-      q: "What is the minimum order?",
-      a: "The minimum order is ₹2,000 in total. You can mix crackers, sweets and decor in one order, and delivery within Siliguri is free.",
-    },
-    {
-      q: "How can I pay?",
-      a: "You can pay by UPI (Google Pay, PhonePe, Paytm and others) or choose cash on delivery where it is available. A small COD fee is shown at checkout.",
-    },
-  ];
-
-  const faqs = isSweet
-    ? [
-        {
-          q: `How should I store ${product.title}?`,
-          a: "Keep sweets in a cool, dry place and refrigerate milk-based sweets. They taste best when eaten soon after delivery, so please check the date on the pack.",
-        },
-        {
-          q: "Are sweets packed together with crackers?",
-          a: "No. If your order has both, the sweets are packed separately from the crackers.",
-        },
-        ...commonFaqs,
-      ]
-    : isDecor
-    ? [
-        {
-          q: "Can I reuse this next year?",
-          a: "Clay diyas, torans, thalis and LED lights can be stored safely and used again. Keep them dry and packed away after the festival.",
-        },
-        ...commonFaqs,
-      ]
-    : [
-        {
-          q: "How do I use these crackers safely?",
-          a: "Read the instructions on the pack first. Light one item at a time in an open space, at arm's length, and step back. Keep a bucket of water or sand nearby, and keep children with an adult at all times.",
-        },
-        {
-          q: "When can crackers be burst?",
-          a: "Please follow the timings and rules set by the authorities in Siliguri and West Bengal for Diwali and Kali Puja.",
-        },
-        {
-          q: "Can I return crackers?",
-          a: "For safety reasons we can't take back crackers once they are delivered. If an item is damaged or wrong, contact us within 48 hours of delivery and we will sort it out.",
-        },
-        ...commonFaqs,
-      ];
+  const faqs = productFaqs(product);
 
   return (
     <div className="w-full bg-white">

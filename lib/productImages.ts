@@ -1,9 +1,7 @@
 // Where product images may come from. next/image only optimises images from these places,
 // so anything else (e.g. a link from another website) is copied into the shop on import.
 export const IMAGE_HOSTS = [
-  "in.teabox.com",
   "cdn.shopify.com",
-  "assets.replocdn.com",
   "images.unsplash.com",
 ];
 

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { SlidersHorizontal, ChevronDown, X, Check } from "lucide-react";
 import { COLLECTIONS, Product } from "@/data/products";
 import ProductCard from "./ProductCard";
+import { collectionFaqs } from "@/lib/seoContent";
 
 interface PLPProps {
   initialCollectionId?: string;
@@ -413,6 +414,15 @@ export default function ProductListingPage({ initialCollectionId = "all", produc
                 Delivery areas in Siliguri →
               </Link>
             </p>
+            <h3 className="text-[16px] sm:text-[17px] font-bold text-[#2b1215] mt-6 mb-2">Common questions</h3>
+            <div className="space-y-2">
+              {collectionFaqs(currentCollection.id, currentCollection.name, inCollection).map((faq) => (
+                <details key={faq.q} className="border border-[#f0dfc6] rounded-lg px-4 py-3">
+                  <summary className="cursor-pointer font-semibold text-[14.5px] text-[#2b1215]">{faq.q}</summary>
+                  <p className="text-[14px] text-[#5c5a52] leading-relaxed mt-2">{faq.a}</p>
+                </details>
+              ))}
+            </div>
           </section>
         )}
       </div>

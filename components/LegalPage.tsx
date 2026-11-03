@@ -1,6 +1,8 @@
 import Link from "next/link";
 import SiteLayoutWrapper from "@/components/SiteLayoutWrapper";
+import JsonLd from "@/components/JsonLd";
 import { LEGAL } from "@/lib/legal";
+import { breadcrumbJsonLd } from "@/lib/seo";
 
 export interface LegalSection {
   id: string;
@@ -13,13 +15,24 @@ export default function LegalPage({
   title,
   intro,
   sections,
+  path,
 }: {
   title: string;
+  /** The page's address, for the breadcrumb in the search-engine data. */
+  path?: string;
   intro: React.ReactNode;
   sections: LegalSection[];
 }) {
   return (
     <SiteLayoutWrapper>
+      {path && (
+        <JsonLd
+          data={breadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: title, path },
+          ])}
+        />
+      )}
       <div className="bg-[#fff9ef] text-[#2b1215]">
         <section className="bg-[#4a0e14] text-white px-4 sm:px-6 py-12 sm:py-16">
           <div className="max-w-[1100px] mx-auto">

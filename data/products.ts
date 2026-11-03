@@ -2221,12 +2221,353 @@ export const PRODUCTS: Product[] = [
     ],
     "stockQuantity": 0,
     "trackInventory": true
+  },
+  {
+    "id": "warm-led-string-lights",
+    "handle": "warm-led-string-lights",
+    "title": "Warm LED String Lights",
+    "subtitle": "Fairy Lights for Balcony, Windows & Walls",
+    "price": 349,
+    "originalPrice": 349,
+    "discount": 0,
+    "rating": 0,
+    "reviewsCount": 0,
+    "weight": "1 String",
+    "weights": [
+      "1 String",
+      "3 Strings"
+    ],
+    "image": "/assets/hd-string-lights.webp",
+    "secondaryImage": "/assets/hd-lights-house.webp",
+    "galleryImages": [
+      "/assets/hd-string-lights.webp",
+      "/assets/hd-lights-house.webp"
+    ],
+    "category": "home-decor",
+    "format": "Lights",
+    "region": "Festive Lighting",
+    "caffeine": "Warm Glow",
+    "badge": "BEST SELLER",
+    "inStock": true,
+    "description": "Warm white LED string lights for your balcony, windows, stairs and walls. A simple way to make the whole house glow for Diwali and Kali Puja, and they can be stored and used again.",
+    "variants": [
+      {
+        "sku": "SP-LED-1",
+        "name": "1 String",
+        "price": 349,
+        "compareAtPrice": 349
+      },
+      {
+        "sku": "SP-LED-3",
+        "name": "3 Strings",
+        "price": 949,
+        "compareAtPrice": 949
+      }
+    ],
+    "status": "active",
+    "sku": "SP-LED-1",
+    "vendor": "Siliguri Pataka",
+    "tags": [
+      "Lights",
+      "LED",
+      "Home Decor",
+      "Balcony"
+    ],
+    "stockQuantity": 0,
+    "trackInventory": false
+  },
+  {
+    "id": "hanging-paper-lantern-kandil",
+    "handle": "hanging-paper-lantern-kandil",
+    "title": "Hanging Paper Lantern (Kandil)",
+    "subtitle": "Traditional Festive Lantern for Doors & Balconies",
+    "price": 299,
+    "originalPrice": 299,
+    "discount": 0,
+    "rating": 0,
+    "reviewsCount": 0,
+    "weight": "1 Lantern",
+    "weights": [
+      "1 Lantern",
+      "2 Lanterns"
+    ],
+    "image": "/assets/hd-lantern-orange.webp",
+    "secondaryImage": "/assets/hd-lantern-red.webp",
+    "galleryImages": [
+      "/assets/hd-lantern-orange.webp",
+      "/assets/hd-lantern-red.webp"
+    ],
+    "category": "home-decor",
+    "format": "Lanterns",
+    "region": "Festive Lighting",
+    "caffeine": "Warm Glow",
+    "badge": "",
+    "inStock": true,
+    "description": "A traditional hanging paper lantern, also known as an akash kandil. Hang it at your door or balcony with a bulb inside for a warm festive glow. This lantern is for hanging only, not for flying.",
+    "variants": [
+      {
+        "sku": "SP-KANDIL-1",
+        "name": "1 Lantern",
+        "price": 299,
+        "compareAtPrice": 299
+      },
+      {
+        "sku": "SP-KANDIL-2",
+        "name": "2 Lanterns",
+        "price": 549,
+        "compareAtPrice": 549
+      }
+    ],
+    "status": "active",
+    "sku": "SP-KANDIL-1",
+    "vendor": "Siliguri Pataka",
+    "tags": [
+      "Lantern",
+      "Kandil",
+      "Home Decor"
+    ],
+    "stockQuantity": 0,
+    "trackInventory": false
+  },
+  {
+    "id": "colourful-star-lantern",
+    "handle": "colourful-star-lantern",
+    "title": "Colourful Star Lantern",
+    "subtitle": "Multi-Colour Star for Windows & Doors",
+    "price": 449,
+    "originalPrice": 449,
+    "discount": 0,
+    "rating": 0,
+    "reviewsCount": 0,
+    "weight": "1 Lantern",
+    "weights": [
+      "1 Lantern"
+    ],
+    "image": "/assets/hd-lantern-star.webp",
+    "secondaryImage": "/assets/hd-lights-house.webp",
+    "galleryImages": [
+      "/assets/hd-lantern-star.webp",
+      "/assets/hd-lights-house.webp"
+    ],
+    "category": "home-decor",
+    "format": "Lanterns",
+    "region": "Festive Lighting",
+    "caffeine": "Bright Colours",
+    "badge": "",
+    "inStock": true,
+    "description": "A bright, multi-colour star lantern for a window, doorway or balcony. It looks its best after dark with a light inside. For hanging only, not for flying.",
+    "variants": [
+      {
+        "sku": "SP-STAR-1",
+        "name": "1 Lantern",
+        "price": 449,
+        "compareAtPrice": 449
+      }
+    ],
+    "status": "active",
+    "sku": "SP-STAR-1",
+    "vendor": "Siliguri Pataka",
+    "tags": [
+      "Lantern",
+      "Star",
+      "Home Decor"
+    ],
+    "stockQuantity": 0,
+    "trackInventory": false
+  },
+  {
+    "id": "brass-lakshmi-lamp",
+    "handle": "brass-lakshmi-lamp",
+    "title": "Brass Lakshmi Lamp",
+    "subtitle": "Traditional Kamatchi Style Oil Lamp",
+    "price": 899,
+    "originalPrice": 899,
+    "discount": 0,
+    "rating": 0,
+    "reviewsCount": 0,
+    "weight": "1 Lamp",
+    "weights": [
+      "1 Lamp"
+    ],
+    "image": "/assets/hd-brass-lamp.webp",
+    "secondaryImage": "/assets/hd-brass-aarti.webp",
+    "galleryImages": [
+      "/assets/hd-brass-lamp.webp",
+      "/assets/hd-brass-aarti.webp"
+    ],
+    "category": "home-decor",
+    "format": "Diyas",
+    "region": "Diyas & Lamps",
+    "caffeine": "Traditional",
+    "badge": "",
+    "inStock": true,
+    "description": "A traditional brass oil lamp with a Lakshmi design, for your puja corner or entrance. Polish it with a soft cloth and use it year after year.",
+    "variants": [
+      {
+        "sku": "SP-BRASS-LAMP",
+        "name": "1 Lamp",
+        "price": 899,
+        "compareAtPrice": 899
+      }
+    ],
+    "status": "active",
+    "sku": "SP-BRASS-LAMP",
+    "vendor": "Siliguri Pataka",
+    "tags": [
+      "Brass",
+      "Lamp",
+      "Puja",
+      "Home Decor"
+    ],
+    "stockQuantity": 0,
+    "trackInventory": false
+  },
+  {
+    "id": "brass-aarti-diya",
+    "handle": "brass-aarti-diya",
+    "title": "Brass Aarti Diya",
+    "subtitle": "Five-Flame Lamp with Handle for Puja",
+    "price": 649,
+    "originalPrice": 649,
+    "discount": 0,
+    "rating": 0,
+    "reviewsCount": 0,
+    "weight": "1 Piece",
+    "weights": [
+      "1 Piece"
+    ],
+    "image": "/assets/hd-brass-aarti.webp",
+    "secondaryImage": "/assets/hd-brass-lamp.webp",
+    "galleryImages": [
+      "/assets/hd-brass-aarti.webp",
+      "/assets/hd-brass-lamp.webp"
+    ],
+    "category": "home-decor",
+    "format": "Diyas",
+    "region": "Diyas & Lamps",
+    "caffeine": "Traditional",
+    "badge": "",
+    "inStock": true,
+    "description": "A five-flame brass aarti diya with a handle, for Lakshmi Puja, Kali Puja and daily prayers. Long-lasting, and easy to clean with a soft cloth.",
+    "variants": [
+      {
+        "sku": "SP-AARTI-1",
+        "name": "1 Piece",
+        "price": 649,
+        "compareAtPrice": 649
+      }
+    ],
+    "status": "active",
+    "sku": "SP-AARTI-1",
+    "vendor": "Siliguri Pataka",
+    "tags": [
+      "Brass",
+      "Aarti",
+      "Puja",
+      "Home Decor"
+    ],
+    "stockQuantity": 0,
+    "trackInventory": false
+  },
+  {
+    "id": "brass-flower-bowl-urli",
+    "handle": "brass-flower-bowl-urli",
+    "title": "Brass Floating Diya Bowl (Urli)",
+    "subtitle": "For Floating Diyas & Flower Petals",
+    "price": 799,
+    "originalPrice": 799,
+    "discount": 0,
+    "rating": 0,
+    "reviewsCount": 0,
+    "weight": "1 Bowl",
+    "weights": [
+      "1 Bowl"
+    ],
+    "image": "/assets/hd-flower-bowl.webp",
+    "secondaryImage": "/assets/hd-urli-flowers.webp",
+    "galleryImages": [
+      "/assets/hd-flower-bowl.webp",
+      "/assets/hd-urli-flowers.webp"
+    ],
+    "category": "home-decor",
+    "format": "Diyas",
+    "region": "Diyas & Lamps",
+    "caffeine": "Elegant",
+    "badge": "",
+    "inStock": true,
+    "description": "A wide brass-finish bowl for floating flowers and diyas. Fill it with water, add marigold petals and a few floating candles, and place it at your entrance or on a table.",
+    "variants": [
+      {
+        "sku": "SP-URLI-1",
+        "name": "1 Bowl",
+        "price": 799,
+        "compareAtPrice": 799
+      }
+    ],
+    "status": "active",
+    "sku": "SP-URLI-1",
+    "vendor": "Siliguri Pataka",
+    "tags": [
+      "Urli",
+      "Brass",
+      "Flowers",
+      "Home Decor"
+    ],
+    "stockQuantity": 0,
+    "trackInventory": false
+  },
+  {
+    "id": "coloured-glass-tealight-holders",
+    "handle": "coloured-glass-tealight-holders",
+    "title": "Coloured Glass Tea Light Holders",
+    "subtitle": "Crackle Glass Holders for a Soft Glow",
+    "price": 499,
+    "originalPrice": 499,
+    "discount": 0,
+    "rating": 0,
+    "reviewsCount": 0,
+    "weight": "Set of 3",
+    "weights": [
+      "Set of 3"
+    ],
+    "image": "/assets/hd-glass-tealights.webp",
+    "secondaryImage": "/assets/hd-tealight-bar.webp",
+    "galleryImages": [
+      "/assets/hd-glass-tealights.webp",
+      "/assets/hd-tealight-bar.webp"
+    ],
+    "category": "home-decor",
+    "format": "Candles",
+    "region": "Festive Lighting",
+    "caffeine": "Soft Glow",
+    "badge": "",
+    "inStock": true,
+    "description": "Coloured crackle glass holders for tea lights. Set them along a table, shelf or window for a soft, safe glow on Diwali night.",
+    "variants": [
+      {
+        "sku": "SP-GLASS-3",
+        "name": "Set of 3",
+        "price": 499,
+        "compareAtPrice": 499
+      }
+    ],
+    "status": "active",
+    "sku": "SP-GLASS-3",
+    "vendor": "Siliguri Pataka",
+    "tags": [
+      "Candles",
+      "Tea Lights",
+      "Glass",
+      "Home Decor"
+    ],
+    "stockQuantity": 0,
+    "trackInventory": false
   }
 ];
 
 export const COLLECTIONS = [
-  { id: "all", name: "All Collection", seoTitle: "All Diwali Crackers, Sweets & Gifts in Siliguri", description: "Buy Diwali crackers, local mithai, gift hampers, rangoli and diyas online in Siliguri. Same-day or next-day delivery, a free lighter with every order and a ₹2,000 minimum order.", seoText: "Siliguri Pataka brings everything for Diwali and Kali Puja into one shop: crackers, local mithai, gift hampers, rangoli colours and diyas. Order from Sevoke Road, Hill Cart Road, Pradhan Nagar, Champasari or anywhere else in Siliguri, and we deliver the same day or the next day.", guide: "buy-diwali-crackers-online-siliguri" },
-  { id: "mega-packs", name: "Mega Packs", seoTitle: "Mega Cracker Packs Online in Siliguri: ₹2,499 to ₹9,999", description: "Our 3 mega cracker packs for Diwali in Siliguri. Save up to ₹3,601 compared with buying the same items separately. Same-day or next-day delivery, with 1 lighter free.", seoText: "A mega pack is the easiest way to buy crackers for Diwali in Siliguri: you get sparklers, flower pots, chakkars, rockets and sky shots at one price, for less than buying them one by one. Compare all 3 packs, and choose the one that suits your family and your space.", guide: "best-cracker-combos-siliguri-budget" },
+  { id: "all", name: "All Collection", seoTitle: "All Diwali Crackers, Sweets & Gifts in Siliguri", description: "Buy Diwali crackers, local mithai, gift hampers, lights and diyas online in Siliguri. Same-day or next-day delivery, free lighter, ₹2,000 minimum order.", seoText: "Siliguri Pataka brings everything for Diwali and Kali Puja into one shop: crackers, local mithai, gift hampers, rangoli colours and diyas. Order from Sevoke Road, Hill Cart Road, Pradhan Nagar, Champasari or anywhere else in Siliguri, and we deliver the same day or the next day.", guide: "buy-diwali-crackers-online-siliguri" },
+  { id: "mega-packs", name: "Mega Packs", seoTitle: "Mega Cracker Packs Online in Siliguri: ₹2,499 to ₹9,999", description: "Our 3 mega cracker packs for Diwali in Siliguri. Save up to ₹3,601 compared with buying the items separately. Same-day or next-day delivery, 1 lighter free.", seoText: "A mega pack is the easiest way to buy crackers for Diwali in Siliguri: you get sparklers, flower pots, chakkars, rockets and sky shots at one price, for less than buying them one by one. Compare all 3 packs, and choose the one that suits your family and your space.", guide: "best-cracker-combos-siliguri-budget" },
   { id: "sparklers", name: "Sparklers (Phuljhari)", seoTitle: "Sparklers (Phuljhari) Online in Siliguri", description: "Phuljhari and colour sparklers for the whole family. Order online and get them delivered anywhere in Siliguri the same day or the next day.", seoText: "Sparklers, called phuljhari or phuljhadi at home, are the first thing most families in Siliguri light on Diwali evening. Keep a bucket of water nearby for the used sticks, and keep children with an adult.", guide: "diwali-cracker-safety-guide" },
   { id: "flower-pots", name: "Flower Pots (Anar / Tubri)", seoTitle: "Flower Pots (Anar / Tubri) Online in Siliguri", description: "Anar and tubri flower pots that light up your courtyard or terrace with tall fountains of sparks. Same-day or next-day delivery in Siliguri.", seoText: "Flower pots are called anar in Hindi and tubri in Bengali. Light them on flat, open ground, step back straight away and never lean over one.", guide: "which-crackers-to-buy-diwali" },
   { id: "ground-chakkars", name: "Ground Chakkars (Chorki)", seoTitle: "Ground Chakkars (Chorki) Online in Siliguri", description: "Ground chakkars and chorki spinners for Diwali and Kali Puja nights. Order online for home delivery in Siliguri.", seoText: "Ground chakkars, or chorki, spin across the floor in a ring of sparks. They need a flat, clear surface, so a courtyard or an open terrace works best.", guide: "which-crackers-to-buy-diwali" },
@@ -2237,4 +2578,5 @@ export const COLLECTIONS = [
   { id: "sweets", name: "Local Mithai & Sweets", seoTitle: "Local Mithai & Diwali Sweets Online in Siliguri", description: "Rosogolla, sandesh, kaju katli, laddu, barfi and peda for your Diwali table and gifting. Order local mithai online in Siliguri.", seoText: "From Bengali rosogolla and sandesh to kaju katli and motichoor laddu, our mithai is chosen for Diwali and Kali Puja in Siliguri. Sweets are packed separately from crackers.", guide: "local-mithai-siliguri-diwali" },
   { id: "gift-hampers", name: "Gift Hampers", seoTitle: "Diwali Gift Hampers Online in Siliguri", description: "Ready-to-gift Diwali hampers with mithai, diyas and puja essentials for family, friends, staff and clients in Siliguri.", seoText: "A Diwali gift hamper saves you a trip to the market. Choose from sweets and diya hampers, puja hampers, crackers with mithai and office gift boxes, with delivery across Siliguri.", guide: "diwali-gift-hampers-siliguri" },
   { id: "diyas-decor", name: "Rangoli, Diyas & Decor", seoTitle: "Rangoli Colours, Diyas & Diwali Decor in Siliguri", description: "Rangoli colours, clay diyas, candles, marigold torans and puja thalis to get your home ready for Diwali in Siliguri.", seoText: "A little rangoli at the door, a marigold toran and a row of clay diyas are all you need to make your home feel festive. Order them with your crackers and get one delivery.", guide: "rangoli-diwali-decoration-ideas" },
+  { id: "home-decor", name: "Diwali Home Decor", seoTitle: "Diwali Lights, Lanterns & Diyas for Home in Siliguri", description: "Diwali string lights, paper lanterns, brass diyas, floating diyas and tea light holders to light up your home in Siliguri.", seoText: "Lights and diyas are what make a home feel like Diwali. Start with string lights and a lantern for the outside of your home, then add brass diyas and tea lights inside. All of it can go in the same order as your crackers and mithai, with delivery the same day or the next day within Siliguri.", guide: "diwali-home-decor-ideas-siliguri" },
 ];

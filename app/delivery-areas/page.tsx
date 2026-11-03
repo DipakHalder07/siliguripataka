@@ -3,12 +3,12 @@ import Link from "next/link";
 import LegalPage, { LegalSection } from "@/components/LegalPage";
 import JsonLd from "@/components/JsonLd";
 import { DELIVERY_AREAS, LEGAL } from "@/lib/legal";
-import { breadcrumbJsonLd, pageMeta } from "@/lib/seo";
+import { breadcrumbJsonLd, faqJsonLd, pageMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
   ...pageMeta({
     title: "Same-Day Diwali Cracker Delivery Areas in Siliguri | Siliguri Pataka",
-    description: `Same-day or next-day delivery of Diwali crackers, mithai and gift hampers across Siliguri, including ${DELIVERY_AREAS.slice(0, 6).join(", ")} and more.`,
+    description: `Same-day or next-day delivery of Diwali crackers, mithai and gift hampers across Siliguri, including ${DELIVERY_AREAS.slice(0, 3).join(", ")} and more.`,
     path: "/delivery-areas",
   }),
 };
@@ -75,10 +75,27 @@ export default function DeliveryAreasPage() {
   return (
     <>
       <JsonLd
-        data={breadcrumbJsonLd([
-          { name: "Home", path: "/" },
-          { name: "Delivery Areas in Siliguri", path: "/delivery-areas" },
-        ])}
+        data={[
+          breadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Delivery Areas in Siliguri", path: "/delivery-areas" },
+          ]),
+          faqJsonLd([
+            {
+              q: "Which areas of Siliguri do you deliver to?",
+              a: `We deliver across Siliguri, including ${DELIVERY_AREAS.join(", ")}.`,
+            },
+            {
+              q: "How fast is delivery in Siliguri?",
+              a: `We deliver ${LEGAL.deliveryTime}, depending on when you order and how far you are.`,
+            },
+            {
+              q: "What does delivery cost?",
+              a: "Delivery is free on every order. The minimum order is ₹2,000, and 1 lighter comes free with every order.",
+            },
+            { q: "Do you deliver outside Siliguri?", a: "No. We don't deliver outside Siliguri, and crackers are not sent by courier to other cities." },
+          ]),
+        ]}
       />
       <LegalPage
         title="Delivery Areas in Siliguri"

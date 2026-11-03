@@ -1,13 +1,15 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
 import { useCart } from "./context/CartContext";
 import { X, Trash2, Plus, Minus, Check, ShoppingBag, ArrowRight } from "lucide-react";
-import FastrrCheckoutModal from "./FastrrCheckoutModal";
 import { FREE_GIFT } from "@/lib/orderRules";
+
+const FastrrCheckoutModal = dynamic(() => import("./FastrrCheckoutModal"), { ssr: false });
 
 export default function CartDrawer() {
   const {
@@ -263,10 +265,7 @@ export default function CartDrawer() {
       </AnimatePresence>
 
       {/* Checkout modal with direct UPI */}
-      <FastrrCheckoutModal
-        isOpen={isCheckoutOpen}
-        onClose={closeCheckout}
-      />
+      {isCheckoutOpen && <FastrrCheckoutModal isOpen onClose={closeCheckout} />}
     </>
   );
 }

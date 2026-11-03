@@ -275,5 +275,71 @@ export const IMAGE_CREDITS = [
     "author": "Kaique Rocha",
     "license": "cc0 1.0",
     "source": "https://stocksnap.io/photo/sparks-sparkler-HABABZA1UY"
+  },
+  {
+    "title": "Indian Arati diya",
+    "author": "Amitbsws",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Indian_Arati_diya.jpg"
+  },
+  {
+    "title": "Kamatchi Vilakku",
+    "author": "Saral Shots",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kamatchi_Vilakku.jpg"
+  },
+  {
+    "title": "Floating diyas on Water Diwali 2011",
+    "author": "humdingor",
+    "license": "CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Floating_diyas_on_Water_Diwali_2011.jpg"
+  },
+  {
+    "title": "Tealight Diyas",
+    "author": "Tamilmama",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Tealight_Diyas.jpg"
+  },
+  {
+    "title": "Orangish Akash Kandil",
+    "author": "Le Priyavrat",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Orangish_Akash_Kandil.jpg"
+  },
+  {
+    "title": "Lamp 2025",
+    "author": "Radhika Dabholkar",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Lamp_2025.jpg"
+  },
+  {
+    "title": "Knadil",
+    "author": "See source page",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Knadil.JPG"
+  },
+  {
+    "title": "DiwaliLights",
+    "author": "Arne Hückelheim",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:DiwaliLights.JPG"
+  },
+  {
+    "title": "Diwali festival home Decoration",
+    "author": "Kanupriya Rawat",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Diwali_festival_home_Decoration.jpg"
+  },
+  {
+    "title": "Round tealight candles on wooden table",
+    "author": "Jim Vallianos",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Round_tealight_candles_on_wooden_table.JPG"
+  },
+  {
+    "title": "Urli arrangement",
+    "author": "Oleg Yunakov",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Urli_arrangement.jpg"
   }
 ];

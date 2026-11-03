@@ -288,6 +288,7 @@ const sections: LegalSection[] = [
 export default function TermsPage() {
   return (
     <LegalPage
+      path="/terms"
       title="Terms + Conditions"
       intro={
         <p>

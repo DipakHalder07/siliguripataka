@@ -3,7 +3,7 @@
 # database (WHATSAPP_SESSION_DB_URL), and the service pings itself so it does not fall asleep.
 services:
   - type: web
-    name: teabox-whatsapp
+    name: siliguri-pataka-whatsapp
     runtime: docker
     plan: free
     region: singapore

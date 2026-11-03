@@ -8,7 +8,7 @@ import { productVariants } from "@/lib/productVariants";
 // data. Set NEXT_PUBLIC_APP_URL to the live domain so that all of these point to the right place.
 
 export const SITE_NAME = "Siliguri Pataka";
-export const SITE_URL = (process.env.NEXT_PUBLIC_APP_URL || "https://siliguripataka.vercel.app").replace(/\/+$/, "");
+export const SITE_URL = (process.env.NEXT_PUBLIC_APP_URL || "https://siliguripataka.shop").replace(/\/+$/, "");
 export const DEFAULT_TITLE = "Buy Diwali Crackers Online in Siliguri | Siliguri Pataka";
 export const DEFAULT_DESCRIPTION =
   "Order Diwali crackers, mithai, gift hampers, lights and diyas online in Siliguri. Same-day or next-day delivery, 1 lighter free, ₹2,000 minimum order.";

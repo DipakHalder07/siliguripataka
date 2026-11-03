@@ -26,6 +26,13 @@ const nextConfig: NextConfig = {
     return [
       { source: "/collections", destination: "/collections/all", permanent: false },
       { source: "/order", destination: "/track", permanent: false },
+      // One address for search engines: www and the Vercel address both go to the main domain.
+      ...["www.siliguripataka.shop", "siliguripataka.vercel.app"].map((host) => ({
+        source: "/:path*",
+        has: [{ type: "host" as const, value: host }],
+        destination: "https://siliguripataka.shop/:path*",
+        permanent: true,
+      })),
       { source: "/collections/gift-boxes", destination: "/collections/mega-packs", permanent: true },
     ];
   },

@@ -38,7 +38,7 @@ export interface OrderEmailDetails {
   landmark?: string | null;
 }
 
-const STORE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://siliguripataka.vercel.app";
+const STORE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://siliguripataka.shop";
 
 /** Customer-typed text (name, address…) is escaped before it goes into an email. */
 function esc(value: string | number | null | undefined) {
@@ -250,7 +250,7 @@ export async function dispatchEmail({
   const smtpTransporter = getSmtpTransporter();
   if (smtpTransporter) {
     try {
-      const fromAddress = process.env.GMAIL_USER || process.env.SMTP_USER || "orders@siliguripataka.com";
+      const fromAddress = process.env.GMAIL_USER || process.env.SMTP_USER || "orders@siliguripataka.shop";
       const info = await smtpTransporter.sendMail({
         from: `Siliguri Pataka <${fromAddress}>`,
         to,

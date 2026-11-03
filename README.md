@@ -33,7 +33,7 @@ Every deploy creates or updates the tables and adds missing products by itself
 
 | Name | Value |
 | --- | --- |
-| `NEXT_PUBLIC_APP_URL` | your site address, e.g. `https://siliguripataka.vercel.app` |
+| `NEXT_PUBLIC_APP_URL` | your site address, e.g. `https://siliguripataka.shop` |
 | `ADMIN_JWT_SECRET` | long random text (`openssl rand -base64 48`) |
 | `ADMIN_DEFAULT_EMAIL` | admin sign-in email |
 | `ADMIN_DEFAULT_PASSWORD` | strong admin password (12+ random characters) |

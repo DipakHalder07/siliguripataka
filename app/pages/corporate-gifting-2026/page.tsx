@@ -108,8 +108,8 @@ export default function CorporateGiftingPage() {
   const budgetTiers = [
     { budget: "Under INR 1,000", image: "/assets/sweets-gift-box.webp" },
     { budget: "Under INR 3,000", image: "/assets/hamper-festive.webp" },
-    { budget: "Under INR 5,000", image: "/assets/combo-royal-mega.webp" },
-    { budget: "Above INR 10,000", image: "/assets/combo-super-bumper.webp" },
+    { budget: "Under INR 5,000", image: "/assets/mega-family.webp" },
+    { budget: "Above INR 10,000", image: "/assets/mega-grand.webp" },
   ];
 
   // 3. Who we gift for
@@ -162,20 +162,19 @@ export default function CorporateGiftingPage() {
 
   // 5. Products
   const diwaliGifts: ProductItem[] = [
-    { id: "royal-diwali-mega-gift-box", title: "Royal Diwali Mega Gift Box", image: "/assets/combo-royal-mega.webp", badge: "DIWALI 2026", bullets: ["45 assorted crackers", "Sparklers, chakkars, flower pots", "Good for one family"] },
-    { id: "pataka-mithai-diwali-combo", title: "Pataka + Mithai Diwali Combo", image: "/assets/combo-pataka-mithai.webp", badge: "DIWALI 2026", bullets: ["Assorted crackers box", "500G mithai", "12 clay diyas"] },
-    { id: "kids-fun-fiesta-green-pack", title: "Kids Fun Fiesta Box", image: "/assets/siliguri-kids-crackers.jpg", badge: "DIWALI 2026", bullets: ["25 items for children", "Pop pops & magic snakes", "Use with an adult nearby"] },
-    { id: "siliguri-super-bumper-family-hamper", title: "Siliguri Super Bumper Family Hamper", image: "/assets/combo-super-bumper.webp", badge: "DIWALI 2026", bullets: ["65 crackers", "2 sky shot cakes", "100 sparklers"] },
-    { id: "siliguri-maharaja-luxury-hamper", title: "Siliguri Maharaja Luxury Hamper", image: "/assets/photo-sky-town.webp", badge: "DIWALI 2026", bullets: ["150+ items", "200-shot sky cake", "For big celebrations"] },
-    { id: "emperor-sovereign-grand-show-box", title: "Emperor Sovereign Grand Show Box", image: "/assets/photo-sky-red.webp", badge: "DIWALI 2026", bullets: ["300+ items", "500-shot sky cake", "For clubs and societies"] },
+    { id: "mega-starter-pack", title: "Mega Starter Pack", image: "/assets/mega-starter.webp", badge: "DIWALI 2026", bullets: ["₹2,499 per pack", "Sparklers to sky shots", "For a small group"] },
+    { id: "pataka-mithai-diwali-combo", title: "Pataka + Mithai Diwali Hamper", image: "/assets/combo-pataka-mithai.webp", badge: "DIWALI 2026", bullets: ["Assorted crackers box", "500G mithai", "12 clay diyas"] },
+    { id: "kids-fun-fiesta-green-pack", title: "Kids Fun Fiesta Box", image: "/assets/ck-kids-box.webp", badge: "DIWALI 2026", bullets: ["25 items for children", "Pop pops & magic snakes", "Use with an adult nearby"] },
+    { id: "mega-family-pack", title: "Mega Family Pack", image: "/assets/mega-family.webp", badge: "BEST VALUE", bullets: ["₹4,999 per pack", "7 types of crackers", "Save ₹2,324"] },
+    { id: "mega-grand-show-pack", title: "Mega Grand Show Pack", image: "/assets/mega-grand.webp", badge: "DIWALI 2026", bullets: ["₹9,999 per pack", "120-shot grand finale", "For clubs and societies"] },
   ];
 
   const trialPacks: ProductItem[] = [
-    { id: "sky-king-30-aerial-shots", title: "Sky King 30 Aerial Shots", image: "/assets/action-sky.webp", bullets: ["30 shots", "5 vibrant colours", "For open terraces"] },
-    { id: "imperial-120-shots-mega-cake", title: "Imperial 120 Shots Mega Cake", image: "/assets/photo-sky-burst.webp", bullets: ["120 shots", "A grand finale", "For open grounds"] },
-    { id: "royal-electric-sparklers-30cm", title: "Royal Electric Sparklers 30cm", image: "/assets/action-sparkler.webp", bullets: ["Pack of 50 sticks", "Golden sparks", "Easy to share"] },
-    { id: "deluxe-tri-color-flower-pots", title: "Deluxe Tri-Color Flower Pots", image: "/assets/action-anar.webp", bullets: ["Pack of 10", "Gold, crimson & silver", "Tall anar fountain"] },
-    { id: "super-sonic-whistling-sky-rockets", title: "Super Sonic Whistling Rockets", image: "/assets/action-rockets.webp", bullets: ["Pack of 10", "Whistling ascent", "Colour burst"] },
+    { id: "sky-king-30-aerial-shots", title: "Sky King 30 Aerial Shots", image: "/assets/ck-cake-30.webp", bullets: ["30 shots", "5 vibrant colours", "For open terraces"] },
+    { id: "imperial-120-shots-mega-cake", title: "Imperial 120 Shots Mega Cake", image: "/assets/ck-cake-120.webp", bullets: ["120 shots", "A grand finale", "For open grounds"] },
+    { id: "royal-electric-sparklers-30cm", title: "Royal Electric Sparklers 30cm", image: "/assets/ck-sparkler-gold.webp", bullets: ["Pack of 50 sticks", "Golden sparks", "Easy to share"] },
+    { id: "deluxe-tri-color-flower-pots", title: "Deluxe Tri-Color Flower Pots", image: "/assets/ck-anar-tricolor.webp", bullets: ["Pack of 10", "Gold, crimson & silver", "Tall anar fountain"] },
+    { id: "super-sonic-whistling-sky-rockets", title: "Super Sonic Whistling Rockets", image: "/assets/ck-rockets.webp", bullets: ["Pack of 10", "Whistling ascent", "Colour burst"] },
   ];
 
   const teawareItems: ProductItem[] = [

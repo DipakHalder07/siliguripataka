@@ -19,7 +19,7 @@ const MEGA_COLUMNS = [
       { label: "Sky Shots", href: "/collections/aerial-shots" },
       { label: "Sound Crackers", href: "/collections/sound-crackers" },
       { label: "Kids Special", href: "/collections/kids-special" },
-      { label: "Gift Boxes", href: "/collections/gift-boxes" },
+      { label: "Mega Packs", href: "/collections/mega-packs" },
     ],
   },
   {
@@ -46,7 +46,7 @@ const MEGA_COLUMNS = [
   {
     title: "Gifts & Combos",
     links: [
-      { label: "Mega Combos", href: "/collections/gift-boxes" },
+      { label: "Mega Packs", href: "/collections/mega-packs" },
       { label: "Gift Hampers", href: "/collections/gift-hampers" },
       { label: "Pataka + Mithai Combo", href: "/products/pataka-mithai-diwali-combo" },
       { label: "Office Gift Hamper", href: "/products/office-diwali-gift-hamper" },
@@ -175,7 +175,7 @@ export default function Header({ onOpenTeaFinder }: { onOpenTeaFinder?: () => vo
             </Link>
 
             {/* Desktop navigation links */}
-            <nav className="flex items-center gap-3 xl:gap-5 min-[1400px]:gap-7">
+            <nav className="flex items-center gap-2.5 xl:gap-5 min-[1400px]:gap-7">
               {/* Shop with mega menu */}
               <div
                 className="relative"
@@ -187,8 +187,8 @@ export default function Header({ onOpenTeaFinder }: { onOpenTeaFinder?: () => vo
                 <Link
                   href="/collections/all"
                   onClick={closeMenus}
-                  className={`py-5 flex items-center gap-1.5 whitespace-nowrap text-[15px] xl:text-[16px] min-[1400px]:text-[18px] font-semibold tracking-[-0.2px] transition-colors ${
-                    activeMega === "shop" || pathname === "/collections/all" || (pathname?.startsWith("/collections") && pathname !== "/collections/gift-boxes" && pathname !== "/collections/sparklers" && pathname !== "/collections/sweets" && pathname !== "/collections/aerial-shots")
+                  className={`py-5 flex items-center gap-1.5 whitespace-nowrap text-[14px] xl:text-[16px] min-[1400px]:text-[18px] font-semibold tracking-[-0.2px] transition-colors ${
+                    activeMega === "shop" || pathname === "/collections/all" || (pathname?.startsWith("/collections") && pathname !== "/collections/mega-packs" && pathname !== "/collections/sparklers" && pathname !== "/collections/sweets" && pathname !== "/collections/aerial-shots")
                       ? "text-[#b3261e]"
                       : "text-[#2b1215] hover:text-[#b3261e]"
                   }`}
@@ -209,19 +209,19 @@ export default function Header({ onOpenTeaFinder }: { onOpenTeaFinder?: () => vo
                 href="/collections/trial-packs"
                 onMouseEnter={closeMenus}
                 onClick={closeMenus}
-                className={`py-5 text-[15px] xl:text-[16px] min-[1400px]:text-[18px] font-semibold tracking-[-0.2px] transition-colors whitespace-nowrap ${
-                  pathname === "/collections/gift-boxes"
+                className={`py-5 text-[14px] xl:text-[16px] min-[1400px]:text-[18px] font-semibold tracking-[-0.2px] transition-colors whitespace-nowrap ${
+                  pathname === "/collections/mega-packs"
                     ? "text-[#b3261e]"
                     : "text-[#2b1215] hover:text-[#b3261e]"
                 }`}
               >
-                Combos
+                Mega Packs
               </Link>
               <Link
                 href="/collections/sparklers"
                 onMouseEnter={closeMenus}
                 onClick={closeMenus}
-                className={`py-5 text-[15px] xl:text-[16px] min-[1400px]:text-[18px] font-semibold tracking-[-0.2px] transition-colors whitespace-nowrap ${
+                className={`py-5 text-[14px] xl:text-[16px] min-[1400px]:text-[18px] font-semibold tracking-[-0.2px] transition-colors whitespace-nowrap ${
                   pathname === "/collections/sparklers"
                     ? "text-[#b3261e]"
                     : "text-[#2b1215] hover:text-[#b3261e]"
@@ -233,7 +233,7 @@ export default function Header({ onOpenTeaFinder }: { onOpenTeaFinder?: () => vo
                 href="/collections/sweets"
                 onMouseEnter={closeMenus}
                 onClick={closeMenus}
-                className={`py-5 text-[15px] xl:text-[16px] min-[1400px]:text-[18px] font-semibold tracking-[-0.2px] transition-colors whitespace-nowrap ${
+                className={`py-5 text-[14px] xl:text-[16px] min-[1400px]:text-[18px] font-semibold tracking-[-0.2px] transition-colors whitespace-nowrap ${
                   pathname === "/collections/sweets"
                     ? "text-[#b3261e]"
                     : "text-[#2b1215] hover:text-[#b3261e]"
@@ -245,7 +245,7 @@ export default function Header({ onOpenTeaFinder }: { onOpenTeaFinder?: () => vo
                 href="/collections/aerial-shots"
                 onMouseEnter={closeMenus}
                 onClick={closeMenus}
-                className="py-5 text-[15px] xl:text-[16px] min-[1400px]:text-[18px] font-semibold tracking-[-0.2px] text-[#c87a1d] hover:opacity-85 transition-opacity whitespace-nowrap"
+                className="py-5 text-[14px] xl:text-[16px] min-[1400px]:text-[18px] font-semibold tracking-[-0.2px] text-[#c87a1d] hover:opacity-85 transition-opacity whitespace-nowrap"
               >
                 Sky Shots
               </Link>
@@ -261,7 +261,7 @@ export default function Header({ onOpenTeaFinder }: { onOpenTeaFinder?: () => vo
               >
                 <button
                   type="button"
-                  className={`py-5 flex items-center gap-1.5 text-[15px] xl:text-[16px] min-[1400px]:text-[18px] font-semibold tracking-[-0.2px] transition-colors cursor-pointer ${
+                  className={`py-5 flex items-center gap-1.5 text-[14px] xl:text-[16px] min-[1400px]:text-[18px] font-semibold tracking-[-0.2px] transition-colors cursor-pointer ${
                     activeDropdown === "gifts" || activeDropdown === "gifts"
                       ? "text-[#b3261e]"
                       : "text-[#2b1215] hover:text-[#b3261e]"
@@ -283,11 +283,11 @@ export default function Header({ onOpenTeaFinder }: { onOpenTeaFinder?: () => vo
                     <ul className="flex flex-col text-[15px] text-[#4a0e14]">
                       <li>
                         <Link
-                          href="/collections/gift-boxes"
+                          href="/collections/mega-packs"
                           onClick={closeMenus}
                           className="block px-5 py-2.5 hover:bg-[#fff9ef] hover:text-[#b3261e] transition-colors"
                         >
-                          Mega Combos
+                          Mega Packs
                         </Link>
                       </li>
                       <li>
@@ -327,7 +327,7 @@ export default function Header({ onOpenTeaFinder }: { onOpenTeaFinder?: () => vo
                 href="/pages/why-siliguri-pataka"
                 onMouseEnter={closeMenus}
                 onClick={closeMenus}
-                className={`py-5 text-[15px] xl:text-[16px] min-[1400px]:text-[18px] font-semibold tracking-[-0.2px] transition-colors whitespace-nowrap ${
+                className={`py-5 text-[14px] xl:text-[16px] min-[1400px]:text-[18px] font-semibold tracking-[-0.2px] transition-colors whitespace-nowrap ${
                   pathname === "/pages/why-siliguri-pataka"
                     ? "text-[#b3261e]"
                     : "text-[#2b1215] hover:text-[#b3261e]"
@@ -350,7 +350,7 @@ export default function Header({ onOpenTeaFinder }: { onOpenTeaFinder?: () => vo
               className="hidden md:flex items-center gap-2.5 px-3.5 w-[130px] xl:w-[150px] min-[1400px]:w-[190px] h-[44px] text-[15px] xl:text-[16px] text-[#7a7468] bg-white hover:border-[#4a0e14] border-[1.5px] border-[#5c5a52] rounded-[8px] transition-colors text-left group cursor-pointer"
             >
               <Search size={18} strokeWidth={1.8} className="text-[#2b1215] group-hover:text-[#b3261e] transition-colors shrink-0" />
-              <span className="truncate">Search crackers...</span>
+              <span className="truncate">Search...</span>
             </button>
 
             {/* Mobile Search Icon */}
@@ -434,8 +434,8 @@ export default function Header({ onOpenTeaFinder }: { onOpenTeaFinder?: () => vo
                         DIWALI 2026
                       </span>
                       <Image
-                        src="/assets/combo-royal-mega.webp"
-                        alt="Royal Diwali Mega Gift Box"
+                        src="/assets/mega-family.webp"
+                        alt="Mega Family Pack of assorted Diwali crackers"
                         fill
                         sizes="260px"
                         className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -443,17 +443,17 @@ export default function Header({ onOpenTeaFinder }: { onOpenTeaFinder?: () => vo
                     </div>
                     <div className="p-3.5 flex flex-col gap-1.5">
                       <p className="text-[15px] font-bold text-[#2b1215] leading-snug">
-                        Royal Diwali Mega Gift Box
+                        Mega Family Pack
                       </p>
                       <p className="text-[13px] text-[#5c5a52]">
-                        45 assorted crackers for the whole family.
+                        Our best value pack. Save ₹2,324 at ₹4,999.
                       </p>
                       <Link
-                        href="/products/royal-diwali-mega-gift-box"
+                        href="/products/mega-family-pack"
                         onClick={() => setActiveMega(null)}
                         className="text-[14px] font-bold text-[#4a0e14] underline decoration-[#f9a825] underline-offset-4 mt-1 flex items-center gap-1"
                       >
-                        See the Box <ArrowRight size={14} />
+                        See the Pack <ArrowRight size={14} />
                       </Link>
                     </div>
                   </div>
@@ -466,8 +466,8 @@ export default function Header({ onOpenTeaFinder }: { onOpenTeaFinder?: () => vo
                   <Link href="/collections/all" onClick={() => setActiveMega(null)} className="hover:text-[#b3261e]">
                     All Products
                   </Link>
-                  <Link href="/collections/gift-boxes" onClick={() => setActiveMega(null)} className="hover:text-[#b3261e]">
-                    Gift Boxes
+                  <Link href="/collections/mega-packs" onClick={() => setActiveMega(null)} className="hover:text-[#b3261e]">
+                    Mega Packs
                   </Link>
                   <Link href="/collections/sweets" onClick={() => setActiveMega(null)} className="hover:text-[#b3261e]">
                     Diwali Sweets
@@ -525,11 +525,11 @@ export default function Header({ onOpenTeaFinder }: { onOpenTeaFinder?: () => vo
                   {mobileExpandedSection === "shop" && (
                     <div className="pl-3 py-2 flex flex-col gap-2 text-[15px] text-[#5c5a52]">
                       <Link
-                        href="/collections/gift-boxes"
+                        href="/collections/mega-packs"
                         onClick={() => setMobileMenuOpen(false)}
                         className="py-1 hover:text-[#b3261e]"
                       >
-                        Gift Boxes &amp; Combos
+                        Mega Packs
                       </Link>
                       <Link
                         href="/collections/sparklers"
@@ -557,11 +557,11 @@ export default function Header({ onOpenTeaFinder }: { onOpenTeaFinder?: () => vo
                 </div>
 
                 <Link
-                  href="/collections/gift-boxes"
+                  href="/collections/mega-packs"
                   onClick={() => setMobileMenuOpen(false)}
                   className="text-[18px] font-bold text-[#2b1215] py-2 border-b border-[#f0dfc6]"
                 >
-                  Combos
+                  Mega Packs
                 </Link>
 
                 <Link

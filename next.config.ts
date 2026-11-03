@@ -26,6 +26,7 @@ const nextConfig: NextConfig = {
     return [
       { source: "/collections", destination: "/collections/all", permanent: false },
       { source: "/order", destination: "/track", permanent: false },
+      { source: "/collections/gift-boxes", destination: "/collections/mega-packs", permanent: true },
     ];
   },
   async headers() {

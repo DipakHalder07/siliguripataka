@@ -4,75 +4,10 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { useCart } from "./context/CartContext";
 import Link from "next/link";
-import { Check, Star } from "lucide-react";
+import { Check } from "lucide-react";
+import { MEGA_PACKS, MegaPack, packWorth } from "@/lib/megaPacks";
 
-interface TrialPack {
-  id: string;
-  title: string;
-  accent: string;
-  accentColor: string;
-  image: string;
-  rating: number;
-  reviewCount: number;
-  features: string[];
-  price: number;
-  buttonLabel: string;
-  weight: string;
-}
-
-const trialPacksData: TrialPack[] = [
-  {
-    id: "royal-diwali-mega-gift-box",
-    title: "Royal Diwali Mega Gift Box",
-    accent: "Family box · 45 assorted items",
-    accentColor: "#8a5a18",
-    image: "/assets/combo-royal-mega.webp",
-    rating: 0,
-    reviewCount: 0,
-    features: [
-      "Sparklers, flower pots & chakkars",
-      "Rockets & an aerial shot cake",
-      "Enough for a full family evening",
-    ],
-    price: 2499,
-    buttonLabel: "ADD GIFT BOX — ₹2,499",
-    weight: "1 Deluxe Box",
-  },
-  {
-    id: "pataka-mithai-diwali-combo",
-    title: "Pataka + Mithai Diwali Combo",
-    accent: "Crackers · sweets · diyas",
-    accentColor: "#2b1215",
-    image: "/assets/combo-pataka-mithai.webp",
-    rating: 0,
-    reviewCount: 0,
-    features: [
-      "Assorted crackers box",
-      "500G mithai in a gift pack",
-      "12 clay diyas for your home",
-    ],
-    price: 2299,
-    buttonLabel: "ADD COMBO — ₹2,299",
-    weight: "1 Combo",
-  },
-  {
-    id: "siliguri-super-bumper-family-hamper",
-    title: "Siliguri Super Bumper Family Hamper",
-    accent: "Grand family pack · 65 items",
-    accentColor: "#5c4a1b",
-    image: "/assets/combo-super-bumper.webp",
-    rating: 0,
-    reviewCount: 0,
-    features: [
-      "2 sky shot cakes & 20 rockets",
-      "20 jumbo anars & 30 chakkars",
-      "100 sparklers for everyone",
-    ],
-    price: 4999,
-    buttonLabel: "ADD BUMPER BOX — ₹4,999",
-    weight: "1 Jumbo Hamper (65 Pcs)",
-  },
-];
+type TrialPack = MegaPack;
 
 export default function TrialPacks() {
   const { addToCart } = useCart();
@@ -101,36 +36,45 @@ export default function TrialPacks() {
         <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-3 mb-6 sm:mb-8">
           <div>
             <h2 className="font-stencil text-[22px] sm:text-[28px] lg:text-[32px] font-bold text-[#2b1215] tracking-[-0.2px]">
-              OUR 3 MEGA COMBOS
+              OUR 3 MEGA PACKS
             </h2>
           </div>
           <div className="self-start sm:self-auto flex items-center gap-3">
             <span className="inline-block text-[#5c5a52] text-[13px] sm:text-[14px] font-medium border-[1.5px] border-[#f9a825] rounded px-3 py-1 bg-white">
-              1 lighter FREE with every order. Minimum order ₹2,000.
+              Save up to ₹3,601 compared to buying separately. Diwali is on 8 Nov.
             </span>
             <Link
-              href="/collections/gift-boxes"
+              href="/collections/mega-packs"
               className="hidden sm:inline-block text-[14px] font-bold text-[#4a0e14] hover:text-[#b3261e] transition-colors"
             >
-              View all combos →
+              View mega packs →
             </Link>
           </div>
         </div>
 
         {/* 3-Column Pack Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
-          {trialPacksData.map((pack) => {
+          {MEGA_PACKS.map((pack) => {
+            const worth = packWorth(pack);
+            const saving = worth - pack.price;
             const productHref = `/products/${pack.id}`;
             return (
               <div
                 key={pack.id}
-                className="group relative bg-white border border-[#f0dfc6] rounded-[10px] overflow-hidden flex flex-col justify-between"
+                className={`group relative bg-white rounded-[10px] overflow-hidden flex flex-col justify-between ${
+                  pack.badge === "BEST VALUE" ? "border-2 border-[#f9a825] shadow-xl lg:-my-3" : "border border-[#f0dfc6]"
+                }`}
               >
                 {/* Media Image with Link */}
                 <Link
                   href={productHref}
                   className="block relative aspect-square w-full bg-[#f7d9a6]/30 overflow-hidden cursor-pointer"
                 >
+                  {pack.badge && (
+                    <span className="absolute top-3 left-3 z-10 bg-[#4a0e14] text-white text-[11px] font-bold tracking-[1px] uppercase px-2.5 py-1 rounded">
+                      {pack.badge}
+                    </span>
+                  )}
                   <Image
                     src={pack.image}
                     alt={pack.title}
@@ -147,7 +91,7 @@ export default function TrialPacks() {
                     {/* Accent tag */}
                     <div
                       className="text-[13px] font-bold tracking-[0.8px] uppercase"
-                      style={{ color: pack.accentColor }}
+                      style={{ color: "#8a5a18" }}
                     >
                       {pack.accent}
                     </div>
@@ -162,32 +106,27 @@ export default function TrialPacks() {
                       </h3>
                     </Link>
 
-                    {/* Rating Stars: only once there are real ratings */}
-                    {pack.reviewCount > 0 && (
-                    <div className="flex items-center gap-1.5 text-[13px] text-[#2b1215]">
-                      <div className="flex text-[#e8770f]">
-                        {[...Array(5)].map((_, i) => (
-                          <Star
-                            key={i}
-                            size={14}
-                            className="fill-[#e8770f] text-[#e8770f]"
-                          />
-                        ))}
+                    {/* Price and real saving, compared with buying the same items separately */}
+                    <div className="rounded-lg bg-[#fff6e6] border border-[#f7d9a6] px-3 py-2.5 mt-1">
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-[26px] font-bold text-[#2b1215] leading-none">₹{pack.price.toLocaleString("en-IN")}</span>
+                        <s className="text-[14px] text-[#5c5a52]">₹{worth.toLocaleString("en-IN")}</s>
                       </div>
-                      <span className="font-semibold">{pack.rating}</span>
-                      <span className="text-[#5c5a52]">({pack.reviewCount})</span>
+                      <div className="text-[13px] font-bold text-[#b3261e] mt-1">
+                        You save ₹{saving.toLocaleString("en-IN")} ({Math.round((saving / worth) * 100)}%) vs buying separately
+                      </div>
                     </div>
-                    )}
 
                     {/* Bullet features */}
                     <ul className="flex flex-col gap-1 text-[14px] text-[#3d3b36] pt-1">
-                      {pack.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-center gap-1.5">
-                          <Check size={14} className="text-[#e65100] stroke-[2.5]" />
-                          <span>{feature}</span>
+                      {pack.items.map((item) => (
+                        <li key={item.label} className="flex items-center gap-1.5">
+                          <Check size={14} className="text-[#e65100] stroke-[2.5] shrink-0" />
+                          <span>{item.label}</span>
                         </li>
                       ))}
                     </ul>
+                    <p className="text-[13px] text-[#4a0e14] font-semibold pt-1">{pack.nudge}</p>
                   </div>
 
                   {/* Actions */}
@@ -201,7 +140,7 @@ export default function TrialPacks() {
                       {loadingId === pack.id ? (
                         <span className="inline-block w-4 h-4 border-2 border-[#4a0e14] border-t-transparent rounded-full animate-spin" />
                       ) : (
-                        <span>{pack.buttonLabel}</span>
+                        <span>ADD PACK — ₹{pack.price.toLocaleString("en-IN")}</span>
                       )}
                     </button>
 

@@ -21,13 +21,16 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const post = getPost((await params).slug);
   if (!post) return {};
-  return pageMeta({
-    title: `${post.seoTitle} | ${LEGAL.brand}`,
-    description: post.excerpt,
-    path: `/blog/${post.slug}`,
-    image: post.image,
-    type: "article",
-  });
+  return {
+    ...pageMeta({
+      title: `${post.seoTitle} | ${LEGAL.brand}`,
+      description: post.excerpt,
+      path: `/blog/${post.slug}`,
+      image: post.image,
+      type: "article",
+    }),
+    keywords: post.keywords,
+  };
 }
 
 function renderBlock(block: Block, key: number) {

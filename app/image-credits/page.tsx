@@ -37,8 +37,8 @@ export default function ImageCreditsPage() {
       title="Image Credits"
       intro={
         <p>
-          These photographs are used under their Creative Commons licences. Some have been cropped, resized or combined. They
-          show the type of product and may not show the exact item you receive.
+          These photographs are used under their Creative Commons licences. Some have been cropped, resized or combined. Studio-style
+          pictures of crackers and mega packs are computer-generated. All pictures show the type of product and may not show the exact item you receive.
         </p>
       }
       sections={sections}

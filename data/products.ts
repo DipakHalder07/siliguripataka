@@ -41,63 +41,6 @@ export interface Product {
 
 export const PRODUCTS: Product[] = [
   {
-    "id": "royal-diwali-mega-gift-box",
-    "handle": "royal-diwali-mega-gift-box",
-    "title": "Royal Diwali Mega Gift Box (45 Assorted Items)",
-    "subtitle": "Complete Family Celebration · Sparklers, Flower Pots, Chakkars & Aerial Shots",
-    "price": 2499,
-    "originalPrice": 4999,
-    "discount": 50,
-    "rating": 4.9,
-    "reviewsCount": 342,
-    "weight": "1 Deluxe Box",
-    "weights": [
-      "1 Deluxe Box",
-      "Pack of 2 Boxes (Save ₹500)"
-    ],
-    "image": "/assets/combo-royal-mega.webp",
-    "secondaryImage": "/assets/siliguri-gift-box.jpg",
-    "galleryImages": [
-      "/assets/combo-royal-mega.webp",
-      "/assets/siliguri-gift-box.jpg",
-      "/assets/siliguri-sparklers.jpg",
-      "/assets/siliguri-flower-pots.jpg",
-      "/assets/siliguri-chakkars.jpg"
-    ],
-    "category": "gift-boxes",
-    "format": "Deluxe Gift Box",
-    "region": "Sivakasi Quality",
-    "caffeine": "Assorted Mix",
-    "badge": "💥 DIWALI BESTSELLER",
-    "inStock": true,
-    "description": "Our #1 Most Loved Diwali Hamper in Siliguri! Features 45 hand-picked, premium Sivakasi certified green crackers including 10 Electric Sparklers, 5 Deluxe Flower Pots, 10 Ground Chakkars, 5 Whistling Rockets, 1 Multi-Shot Cake, and safe novelty fireworks for children.",
-    "variants": [
-      {
-        "sku": "SP-BOX-01",
-        "name": "1 Deluxe Box",
-        "price": 2499,
-        "compareAtPrice": 4999
-      },
-      {
-        "sku": "SP-BOX-02",
-        "name": "Pack of 2 Boxes (Save ₹500)",
-        "price": 4499,
-        "compareAtPrice": 9998
-      }
-    ],
-    "status": "active",
-    "sku": "SP-BOX-01",
-    "vendor": "Siliguri Pataka",
-    "tags": [
-      "Gift Box",
-      "Family Combo",
-      "Bestseller",
-      "Green Crackers"
-    ],
-    "stockQuantity": 150,
-    "trackInventory": true
-  },
-  {
     "id": "sky-king-30-aerial-shots",
     "handle": "sky-king-30-aerial-shots",
     "title": "Sky King 30 Multi-Color Aerial Starburst Shots",
@@ -112,12 +55,11 @@ export const PRODUCTS: Product[] = [
       "1 Cake (30 Shots)",
       "Pack of 2 Cakes"
     ],
-    "image": "/assets/action-sky.webp",
-    "secondaryImage": "/assets/siliguri-sky-shots.jpg",
+    "image": "/assets/ck-cake-30.webp",
+    "secondaryImage": "/assets/action-sky.webp",
     "galleryImages": [
-      "/assets/action-sky.webp",
-      "/assets/siliguri-sky-shots.jpg",
-      "/assets/siliguri-hero-banner.jpg"
+      "/assets/ck-cake-30.webp",
+      "/assets/action-sky.webp"
     ],
     "category": "aerial-shots",
     "format": "Multi-Shot Cake",
@@ -166,12 +108,11 @@ export const PRODUCTS: Product[] = [
       "Pack of 10",
       "Pack of 20 (Mega Savings)"
     ],
-    "image": "/assets/action-anar.webp",
-    "secondaryImage": "/assets/siliguri-flower-pots.jpg",
+    "image": "/assets/ck-anar-tricolor.webp",
+    "secondaryImage": "/assets/action-anar.webp",
     "galleryImages": [
-      "/assets/action-anar.webp",
-      "/assets/siliguri-flower-pots.jpg",
-      "/assets/siliguri-sparklers.jpg"
+      "/assets/ck-anar-tricolor.webp",
+      "/assets/action-anar.webp"
     ],
     "category": "flower-pots",
     "format": "Anar / Flower Pot",
@@ -221,11 +162,11 @@ export const PRODUCTS: Product[] = [
       "Pack of 50 Sticks",
       "Mega Pack of 100 Sticks"
     ],
-    "image": "/assets/action-sparkler.webp",
-    "secondaryImage": "/assets/siliguri-sparklers.jpg",
+    "image": "/assets/ck-sparkler-gold.webp",
+    "secondaryImage": "/assets/action-sparkler.webp",
     "galleryImages": [
-      "/assets/action-sparkler.webp",
-      "/assets/siliguri-sparklers.jpg"
+      "/assets/ck-sparkler-gold.webp",
+      "/assets/action-sparkler.webp"
     ],
     "category": "sparklers",
     "format": "Electric Sparklers",
@@ -275,11 +216,11 @@ export const PRODUCTS: Product[] = [
       "Pack of 20 Pcs",
       "Pack of 40 Pcs"
     ],
-    "image": "/assets/action-chakkar.webp",
-    "secondaryImage": "/assets/siliguri-chakkars.jpg",
+    "image": "/assets/ck-chakkar.webp",
+    "secondaryImage": "/assets/action-chakkar.webp",
     "galleryImages": [
-      "/assets/action-chakkar.webp",
-      "/assets/siliguri-chakkars.jpg"
+      "/assets/ck-chakkar.webp",
+      "/assets/action-chakkar.webp"
     ],
     "category": "ground-chakkars",
     "format": "Ground Spinner",
@@ -328,12 +269,11 @@ export const PRODUCTS: Product[] = [
       "1 Kids Hamper",
       "Pack of 2 Kids Hampers"
     ],
-    "image": "/assets/siliguri-kids-crackers.jpg",
+    "image": "/assets/ck-kids-box.webp",
     "secondaryImage": "/assets/photo-sparkler-kids.webp",
     "galleryImages": [
-      "/assets/siliguri-kids-crackers.jpg",
-      "/assets/photo-sparkler-kids.webp",
-      "/assets/siliguri-sparklers.jpg"
+      "/assets/ck-kids-box.webp",
+      "/assets/photo-sparkler-kids.webp"
     ],
     "category": "kids-special",
     "format": "Child-Safe Hamper",
@@ -383,10 +323,10 @@ export const PRODUCTS: Product[] = [
       "1 Roll (1000 Wala)",
       "2 Rolls (Save ₹200)"
     ],
-    "image": "/assets/siliguri-sound-crackers.jpg",
+    "image": "/assets/ck-ladi-1000.webp",
     "secondaryImage": "/assets/action-sound.webp",
     "galleryImages": [
-      "/assets/siliguri-sound-crackers.jpg",
+      "/assets/ck-ladi-1000.webp",
       "/assets/action-sound.webp"
     ],
     "category": "sound-crackers",
@@ -436,11 +376,11 @@ export const PRODUCTS: Product[] = [
       "Pack of 10 Rockets",
       "Pack of 20 Rockets"
     ],
-    "image": "/assets/action-rockets.webp",
-    "secondaryImage": "/assets/siliguri-rockets.jpg",
+    "image": "/assets/ck-rockets.webp",
+    "secondaryImage": "/assets/action-rockets.webp",
     "galleryImages": [
-      "/assets/action-rockets.webp",
-      "/assets/siliguri-rockets.jpg"
+      "/assets/ck-rockets.webp",
+      "/assets/action-rockets.webp"
     ],
     "category": "rockets",
     "format": "Whistling Rockets",
@@ -475,57 +415,6 @@ export const PRODUCTS: Product[] = [
     "trackInventory": true
   },
   {
-    "id": "siliguri-super-bumper-family-hamper",
-    "handle": "siliguri-super-bumper-family-hamper",
-    "title": "Siliguri Super Bumper Family Celebration Hamper",
-    "subtitle": "The Ultimate Diwali Package · 65 Sivakasi Premium Crackers for Grand Festivities",
-    "price": 4999,
-    "originalPrice": 8999,
-    "discount": 44,
-    "rating": 5,
-    "reviewsCount": 128,
-    "weight": "1 Jumbo Hamper (65 Pcs)",
-    "weights": [
-      "1 Jumbo Hamper (65 Pcs)"
-    ],
-    "image": "/assets/combo-super-bumper.webp",
-    "secondaryImage": "/assets/siliguri-hero-square.jpg",
-    "galleryImages": [
-      "/assets/combo-super-bumper.webp",
-      "/assets/siliguri-hero-square.jpg",
-      "/assets/siliguri-gift-box.jpg",
-      "/assets/siliguri-sky-shots.jpg",
-      "/assets/siliguri-flower-pots.jpg",
-      "/assets/siliguri-sparklers.jpg"
-    ],
-    "category": "gift-boxes",
-    "format": "Grand Bumper Hamper",
-    "region": "Sivakasi Quality",
-    "caffeine": "Everything Included",
-    "badge": "⭐ BEST VALUE COMBO",
-    "inStock": true,
-    "description": "Designed for grand family celebrations across Siliguri & North Bengal. Packed with 2 Sky Shot cakes, 20 Jumbo Anar, 30 Ground Chakkars, 100 Sparklers, 20 Rockets, and complete kids safety accessories.",
-    "variants": [
-      {
-        "sku": "SP-JUMBO-01",
-        "name": "1 Jumbo Hamper (65 Pcs)",
-        "price": 4999,
-        "compareAtPrice": 8999
-      }
-    ],
-    "status": "active",
-    "sku": "SP-JUMBO-01",
-    "vendor": "Siliguri Pataka",
-    "tags": [
-      "Bumper Box",
-      "Family Pack",
-      "Mega Discount",
-      "Best Seller"
-    ],
-    "stockQuantity": 60,
-    "trackInventory": true
-  },
-  {
     "id": "imperial-120-shots-mega-cake",
     "handle": "imperial-120-shots-mega-cake",
     "title": "Imperial 120 Shots Grand Finale Aerial Night Cake",
@@ -539,13 +428,11 @@ export const PRODUCTS: Product[] = [
     "weights": [
       "1 Cake (120 Shots)"
     ],
-    "image": "/assets/photo-sky-burst.webp",
-    "secondaryImage": "/assets/siliguri-120-shots-mega-cake-studio.jpg",
+    "image": "/assets/ck-cake-120.webp",
+    "secondaryImage": "/assets/photo-sky-burst.webp",
     "galleryImages": [
-      "/assets/photo-sky-burst.webp",
-      "/assets/siliguri-120-shots-mega-cake-studio.jpg",
-      "/assets/siliguri-sky-shots.jpg",
-      "/assets/siliguri-hero-banner.jpg"
+      "/assets/ck-cake-120.webp",
+      "/assets/photo-sky-burst.webp"
     ],
     "category": "aerial-shots",
     "format": "Grand Finale Cake",
@@ -588,10 +475,10 @@ export const PRODUCTS: Product[] = [
       "Pack of 5 Fountains",
       "Pack of 10 Fountains"
     ],
-    "image": "/assets/siliguri-kids-crackers.jpg",
+    "image": "/assets/ck-smoke-tubes.webp",
     "secondaryImage": "/assets/photo-sparkler-kids.webp",
     "galleryImages": [
-      "/assets/siliguri-kids-crackers.jpg",
+      "/assets/ck-smoke-tubes.webp",
       "/assets/photo-sparkler-kids.webp"
     ],
     "category": "kids-special",
@@ -641,11 +528,11 @@ export const PRODUCTS: Product[] = [
       "Pack of 5 Jumbo Anars",
       "Pack of 10 Jumbo Anars"
     ],
-    "image": "/assets/photo-anar-gold.webp",
-    "secondaryImage": "/assets/siliguri-flower-pots.jpg",
+    "image": "/assets/ck-anar-jumbo.webp",
+    "secondaryImage": "/assets/photo-anar-gold.webp",
     "galleryImages": [
-      "/assets/photo-anar-gold.webp",
-      "/assets/siliguri-flower-pots.jpg"
+      "/assets/ck-anar-jumbo.webp",
+      "/assets/photo-anar-gold.webp"
     ],
     "category": "flower-pots",
     "format": "Jumbo Anar",
@@ -680,119 +567,155 @@ export const PRODUCTS: Product[] = [
     "trackInventory": true
   },
   {
-    "id": "siliguri-maharaja-luxury-hamper",
-    "handle": "siliguri-maharaja-luxury-hamper",
-    "title": "Siliguri Maharaja Luxury Fireworks Hamper (150+ Items with 200 Shots Cake)",
-    "subtitle": "Royal Celebration Chest · 200 Shots Sky Cake, 30 Jumbo Pots, 50 Sparklers & Aerial Repeater",
-    "price": 11999,
-    "originalPrice": 19999,
-    "discount": 40,
-    "rating": 5,
-    "reviewsCount": 84,
-    "weight": "1 Maharaja Deluxe Chest (150 Pcs)",
+    "id": "mega-starter-pack",
+    "handle": "mega-starter-pack",
+    "title": "Mega Starter Pack",
+    "subtitle": "50 Sparklers, 10 Flower Pots, 20 Chakkars, 10 Rockets & 1 Sky Cake",
+    "price": 2499,
+    "originalPrice": 3145,
+    "discount": 21,
+    "rating": 0,
+    "reviewsCount": 0,
+    "weight": "1 Pack",
     "weights": [
-      "1 Maharaja Deluxe Chest (150 Pcs)",
-      "Pack of 2 Chests (Save ₹2,000)"
+      "1 Pack"
     ],
-    "image": "/assets/photo-sky-town.webp",
-    "secondaryImage": "/assets/siliguri-gift-box.jpg",
+    "image": "/assets/mega-starter.webp",
+    "secondaryImage": "/assets/mega-starter-contents.webp",
     "galleryImages": [
-      "/assets/photo-sky-town.webp",
-      "/assets/siliguri-gift-box.jpg",
-      "/assets/siliguri-sky-shots.jpg",
-      "/assets/siliguri-flower-pots.jpg",
-      "/assets/siliguri-sparklers.jpg"
+      "/assets/mega-starter.webp",
+      "/assets/mega-starter-contents.webp",
+      "/assets/mega-starter-night.webp",
+      "/assets/action-sky.webp"
     ],
-    "category": "gift-boxes",
-    "format": "Maharaja Luxury Box",
-    "region": "Sivakasi Quality",
-    "caffeine": "Royal 200 Shots & Towering Sparks",
-    "badge": "👑 MAHARAJA 12K",
+    "category": "mega-packs",
+    "format": "Mega Pack",
+    "region": "Siliguri Special",
+    "caffeine": "For a Small Family",
+    "badge": "🎆 MEGA PACK",
     "inStock": true,
-    "description": "Crafted for lavish Diwali festivities and Siliguri estates! Features over 150 Sivakasi handpicked green fireworks anchored by a showstopping 200-shots multi-color aerial cake, 30 jumbo flower pots, 50 crackling electric sparklers, 20 whirling ground chakkars, and safety lighters.",
+    "description": "A good mix for one family evening: 50 sparklers, 10 flower pots, 20 ground chakkars, 10 whistling rockets and a 30-shot sky cake for the finish. Costs ₹646 less than buying the same items separately. Delivered the same day or the next day within Siliguri, with 1 lighter free.",
     "variants": [
       {
-        "sku": "SP-MAH-01",
-        "name": "1 Maharaja Deluxe Chest (150 Pcs)",
-        "price": 11999,
-        "compareAtPrice": 19999
-      },
-      {
-        "sku": "SP-MAH-02",
-        "name": "Pack of 2 Chests (Save ₹2,000)",
-        "price": 21999,
-        "compareAtPrice": 39998
+        "sku": "SP-MEGA-2499",
+        "name": "1 Pack",
+        "price": 2499,
+        "compareAtPrice": 3145
       }
     ],
     "status": "active",
-    "sku": "SP-MAH-01",
+    "sku": "SP-MEGA-2499",
     "vendor": "Siliguri Pataka",
     "tags": [
-      "Mega Hamper",
-      "Maharaja",
-      "Luxury Gift Box",
-      "Diwali Special",
-      "Bestseller"
+      "Mega Pack",
+      "Crackers",
+      "Family Pack"
     ],
-    "stockQuantity": 25,
-    "trackInventory": true
+    "stockQuantity": 0,
+    "trackInventory": false
   },
   {
-    "id": "emperor-sovereign-grand-show-box",
-    "handle": "emperor-sovereign-grand-show-box",
-    "title": "Emperor Sovereign Grand Community Show Box (300+ Items with 500 Shots Cake)",
-    "subtitle": "Siliguri's Biggest Fireworks Hamper · 500 Shots Sky Orchestra, 10 Cakes, Giant Shells & Grand Finale",
-    "price": 19999,
-    "originalPrice": 34999,
-    "discount": 43,
-    "rating": 5,
-    "reviewsCount": 62,
-    "weight": "1 Sovereign Grand Chest (300+ Pcs)",
+    "id": "mega-family-pack",
+    "handle": "mega-family-pack",
+    "title": "Mega Family Pack",
+    "subtitle": "100 Sparklers, 25 Anars, 40 Chakkars, 20 Rockets, 2 Sky Cakes & Kids Box",
+    "price": 4999,
+    "originalPrice": 7323,
+    "discount": 32,
+    "rating": 0,
+    "reviewsCount": 0,
+    "weight": "1 Pack",
     "weights": [
-      "1 Sovereign Grand Chest (300+ Pcs)"
+      "1 Pack"
     ],
-    "image": "/assets/photo-sky-red.webp",
-    "secondaryImage": "/assets/siliguri-120-shots-mega-cake-studio.jpg",
+    "image": "/assets/mega-family.webp",
+    "secondaryImage": "/assets/mega-family-contents.webp",
     "galleryImages": [
-      "/assets/photo-sky-red.webp",
-      "/assets/siliguri-120-shots-mega-cake-studio.jpg",
-      "/assets/siliguri-gift-box.jpg",
-      "/assets/siliguri-sky-shots.jpg",
-      "/assets/siliguri-hero-banner.jpg",
-      "/assets/siliguri-flower-pots.jpg"
+      "/assets/mega-family.webp",
+      "/assets/mega-family-contents.webp",
+      "/assets/mega-family-night.webp",
+      "/assets/action-anar.webp"
     ],
-    "category": "gift-boxes",
-    "format": "Grand Sovereign Chest",
-    "region": "Sivakasi Quality",
-    "caffeine": "500 Shots Mega Orchestra",
-    "badge": "💎 ULTRA LUXURY 20K",
+    "category": "mega-packs",
+    "format": "Mega Pack",
+    "region": "Siliguri Special",
+    "caffeine": "For the Whole Family",
+    "badge": "⭐ BEST VALUE",
     "inStock": true,
-    "description": "Siliguri's supreme fireworks package for bungalows, clubhouses, hotels, and grand family celebrations! Packed with a magnificent 500-shots synchronized aerial cake, 10 intermediate cakes, 50 towering jumbo anars, 100 electric sparklers, giant sky rockets, and high-intensity sound crackers.",
+    "description": "Our best value pack for the whole family: 100 sparklers, 20 flower pots, 5 jumbo anars, 40 ground chakkars, 20 whistling rockets, two 30-shot sky cakes and a kids box. Costs ₹2,324 less than buying the same items separately. Delivered the same day or the next day within Siliguri, with 1 lighter free.",
     "variants": [
       {
-        "sku": "SP-SOV-01",
-        "name": "1 Sovereign Grand Chest (300+ Pcs)",
-        "price": 19999,
-        "compareAtPrice": 34999
+        "sku": "SP-MEGA-4999",
+        "name": "1 Pack",
+        "price": 4999,
+        "compareAtPrice": 7323
       }
     ],
     "status": "active",
-    "sku": "SP-SOV-01",
+    "sku": "SP-MEGA-4999",
     "vendor": "Siliguri Pataka",
     "tags": [
-      "Grand Show",
-      "20K Hamper",
-      "Sovereign Box",
-      "Community Celebration",
-      "Bestseller"
+      "Mega Pack",
+      "Crackers",
+      "Family Pack",
+      "Best Value"
     ],
-    "stockQuantity": 15,
-    "trackInventory": true
+    "stockQuantity": 0,
+    "trackInventory": false
+  },
+  {
+    "id": "mega-grand-show-pack",
+    "handle": "mega-grand-show-pack",
+    "title": "Mega Grand Show Pack",
+    "subtitle": "200 Sparklers, 30 Anars, 40 Rockets, 2 Sky Cakes & a 120-Shot Finale",
+    "price": 9999,
+    "originalPrice": 13600,
+    "discount": 26,
+    "rating": 0,
+    "reviewsCount": 0,
+    "weight": "1 Pack",
+    "weights": [
+      "1 Pack"
+    ],
+    "image": "/assets/mega-grand.webp",
+    "secondaryImage": "/assets/mega-grand-contents.webp",
+    "galleryImages": [
+      "/assets/mega-grand.webp",
+      "/assets/mega-grand-contents.webp",
+      "/assets/mega-grand-night.webp",
+      "/assets/photo-sky-burst.webp"
+    ],
+    "category": "mega-packs",
+    "format": "Mega Pack",
+    "region": "Siliguri Special",
+    "caffeine": "For a Grand Show",
+    "badge": "👑 BIGGEST SHOW",
+    "inStock": true,
+    "description": "A proper terrace or ground show: 200 sparklers, 20 flower pots, 10 jumbo anars, 40 ground chakkars, 40 whistling rockets, two 30-shot sky cakes, a kids box and a 120-shot grand finale cake. Costs ₹3,601 less than buying the same items separately. Delivered the same day or the next day within Siliguri, with 1 lighter free.",
+    "variants": [
+      {
+        "sku": "SP-MEGA-9999",
+        "name": "1 Pack",
+        "price": 9999,
+        "compareAtPrice": 13600
+      }
+    ],
+    "status": "active",
+    "sku": "SP-MEGA-9999",
+    "vendor": "Siliguri Pataka",
+    "tags": [
+      "Mega Pack",
+      "Crackers",
+      "Grand Show",
+      "Sky Shots"
+    ],
+    "stockQuantity": 0,
+    "trackInventory": false
   },
   {
     "id": "pataka-mithai-diwali-combo",
     "handle": "pataka-mithai-diwali-combo",
-    "title": "Pataka + Mithai Diwali Combo",
+    "title": "Pataka + Mithai Diwali Hamper",
     "subtitle": "Crackers Box, 500G Mithai & 12 Clay Diyas",
     "price": 2299,
     "originalPrice": 2799,
@@ -810,11 +733,11 @@ export const PRODUCTS: Product[] = [
       "/assets/sweets-assorted-box.webp",
       "/assets/decor-clay-diyas.webp"
     ],
-    "category": "gift-boxes",
-    "format": "Festive Combo",
+    "category": "gift-hampers",
+    "format": "Gift Hamper",
     "region": "Siliguri Special",
     "caffeine": "Crackers + Sweets + Diyas",
-    "badge": "🎆 MEGA COMBO",
+    "badge": "",
     "inStock": true,
     "description": "Everything for one Diwali evening in one order: an assorted crackers box, 500G of mithai and 12 clay diyas. Delivered together within Siliguri, with a free lighter.",
     "variants": [
@@ -829,8 +752,8 @@ export const PRODUCTS: Product[] = [
     "sku": "SP-COMBO-1",
     "vendor": "Siliguri Pataka",
     "tags": [
-      "Combo",
-      "Gift Box",
+      "Hamper",
+      "Gift",
       "Crackers",
       "Sweets",
       "Diyas"
@@ -1989,11 +1912,11 @@ export const PRODUCTS: Product[] = [
     "weights": [
       "Pack of 10 Shells"
     ],
-    "image": "/assets/action-sound.webp",
-    "secondaryImage": "/assets/siliguri-sound-crackers.jpg",
+    "image": "/assets/ck-shells.webp",
+    "secondaryImage": "/assets/photo-sky-red.webp",
     "galleryImages": [
-      "/assets/action-sound.webp",
-      "/assets/siliguri-sound-crackers.jpg"
+      "/assets/ck-shells.webp",
+      "/assets/photo-sky-red.webp"
     ],
     "category": "sound-crackers",
     "format": "Aerial Sound Shell",
@@ -2035,12 +1958,11 @@ export const PRODUCTS: Product[] = [
     "weights": [
       "1 Cake (60 Shots)"
     ],
-    "image": "/assets/photo-sky-gold.webp",
-    "secondaryImage": "/assets/siliguri-sky-shots.jpg",
+    "image": "/assets/ck-cake-60.webp",
+    "secondaryImage": "/assets/photo-sky-gold.webp",
     "galleryImages": [
-      "/assets/photo-sky-gold.webp",
-      "/assets/siliguri-sky-shots.jpg",
-      "/assets/siliguri-hero-banner.jpg"
+      "/assets/ck-cake-60.webp",
+      "/assets/photo-sky-gold.webp"
     ],
     "category": "aerial-shots",
     "format": "Multi-Shot Cake",
@@ -2082,11 +2004,11 @@ export const PRODUCTS: Product[] = [
     "weights": [
       "Pack of 5 Pcs"
     ],
-    "image": "/assets/photo-anar-tall.webp",
-    "secondaryImage": "/assets/siliguri-flower-pots.jpg",
+    "image": "/assets/ck-anar-peacock.webp",
+    "secondaryImage": "/assets/photo-anar-tall.webp",
     "galleryImages": [
-      "/assets/photo-anar-tall.webp",
-      "/assets/siliguri-flower-pots.jpg"
+      "/assets/ck-anar-peacock.webp",
+      "/assets/photo-anar-tall.webp"
     ],
     "category": "flower-pots",
     "format": "Jumbo Fountain",
@@ -2128,11 +2050,11 @@ export const PRODUCTS: Product[] = [
     "weights": [
       "Pack of 30 Giant Sticks"
     ],
-    "image": "/assets/photo-sparkler-hand.webp",
-    "secondaryImage": "/assets/siliguri-sparklers.jpg",
+    "image": "/assets/ck-sparkler-silver.webp",
+    "secondaryImage": "/assets/photo-sparkler-hand.webp",
     "galleryImages": [
-      "/assets/photo-sparkler-hand.webp",
-      "/assets/siliguri-sparklers.jpg"
+      "/assets/ck-sparkler-silver.webp",
+      "/assets/photo-sparkler-hand.webp"
     ],
     "category": "sparklers",
     "format": "Electric Sparklers",
@@ -2174,11 +2096,11 @@ export const PRODUCTS: Product[] = [
     "weights": [
       "Pack of 10 Saucers"
     ],
-    "image": "/assets/photo-chakkar-spark.webp",
-    "secondaryImage": "/assets/siliguri-chakkars.jpg",
+    "image": "/assets/ck-saucer.webp",
+    "secondaryImage": "/assets/photo-chakkar-spark.webp",
     "galleryImages": [
-      "/assets/photo-chakkar-spark.webp",
-      "/assets/siliguri-chakkars.jpg"
+      "/assets/ck-saucer.webp",
+      "/assets/photo-chakkar-spark.webp"
     ],
     "category": "ground-chakkars",
     "format": "Aerial Spinner",
@@ -2220,10 +2142,10 @@ export const PRODUCTS: Product[] = [
     "weights": [
       "Pack of 6 Grenades"
     ],
-    "image": "/assets/siliguri-kids-crackers.jpg",
+    "image": "/assets/ck-smoke-cans.webp",
     "secondaryImage": "/assets/photo-sparkler-kids.webp",
     "galleryImages": [
-      "/assets/siliguri-kids-crackers.jpg",
+      "/assets/ck-smoke-cans.webp",
       "/assets/photo-sparkler-kids.webp"
     ],
     "category": "kids-special",
@@ -2267,10 +2189,10 @@ export const PRODUCTS: Product[] = [
     "weights": [
       "1 Giant Roll (5000 Wala)"
     ],
-    "image": "/assets/siliguri-sound-crackers.jpg",
+    "image": "/assets/ck-ladi-5000.webp",
     "secondaryImage": "/assets/action-sound.webp",
     "galleryImages": [
-      "/assets/siliguri-sound-crackers.jpg",
+      "/assets/ck-ladi-5000.webp",
       "/assets/action-sound.webp"
     ],
     "category": "sound-crackers",
@@ -2304,7 +2226,7 @@ export const PRODUCTS: Product[] = [
 
 export const COLLECTIONS = [
   { id: "all", name: "All Collection", seoTitle: "All Diwali Crackers, Sweets & Gifts in Siliguri", description: "Buy Diwali crackers, local mithai, gift hampers, rangoli and diyas online in Siliguri. Same-day or next-day delivery, a free lighter with every order and a ₹2,000 minimum order.", seoText: "Siliguri Pataka brings everything for Diwali and Kali Puja into one shop: crackers, local mithai, gift hampers, rangoli colours and diyas. Order from Sevoke Road, Hill Cart Road, Pradhan Nagar, Champasari or anywhere else in Siliguri, and we deliver the same day or the next day.", guide: "buy-diwali-crackers-online-siliguri" },
-  { id: "gift-boxes", name: "Mega Combos & Gift Boxes", seoTitle: "Diwali Cracker Mega Combos & Gift Boxes in Siliguri", description: "Family cracker boxes and mega combos for homes, clubs and offices in Siliguri, from a small family box to a grand show box. Same-day or next-day delivery.", seoText: "A combo box is the easiest way to buy crackers for a family in Siliguri: you get sparklers, flower pots, chakkars and sky shots without choosing each one. Compare our combos by budget, and every order comes with a free lighter.", guide: "best-cracker-combos-siliguri-budget" },
+  { id: "mega-packs", name: "Mega Packs", seoTitle: "Mega Cracker Packs Online in Siliguri: ₹2,499 to ₹9,999", description: "Our 3 mega cracker packs for Diwali in Siliguri. Save up to ₹3,601 compared with buying the same items separately. Same-day or next-day delivery, with 1 lighter free.", seoText: "A mega pack is the easiest way to buy crackers for Diwali in Siliguri: you get sparklers, flower pots, chakkars, rockets and sky shots at one price, for less than buying them one by one. Compare all 3 packs, and choose the one that suits your family and your space.", guide: "best-cracker-combos-siliguri-budget" },
   { id: "sparklers", name: "Sparklers (Phuljhari)", seoTitle: "Sparklers (Phuljhari) Online in Siliguri", description: "Phuljhari and colour sparklers for the whole family. Order online and get them delivered anywhere in Siliguri the same day or the next day.", seoText: "Sparklers, called phuljhari or phuljhadi at home, are the first thing most families in Siliguri light on Diwali evening. Keep a bucket of water nearby for the used sticks, and keep children with an adult.", guide: "diwali-cracker-safety-guide" },
   { id: "flower-pots", name: "Flower Pots (Anar / Tubri)", seoTitle: "Flower Pots (Anar / Tubri) Online in Siliguri", description: "Anar and tubri flower pots that light up your courtyard or terrace with tall fountains of sparks. Same-day or next-day delivery in Siliguri.", seoText: "Flower pots are called anar in Hindi and tubri in Bengali. Light them on flat, open ground, step back straight away and never lean over one.", guide: "which-crackers-to-buy-diwali" },
   { id: "ground-chakkars", name: "Ground Chakkars (Chorki)", seoTitle: "Ground Chakkars (Chorki) Online in Siliguri", description: "Ground chakkars and chorki spinners for Diwali and Kali Puja nights. Order online for home delivery in Siliguri.", seoText: "Ground chakkars, or chorki, spin across the floor in a ring of sparks. They need a flat, clear surface, so a courtyard or an open terrace works best.", guide: "which-crackers-to-buy-diwali" },
@@ -2313,6 +2235,6 @@ export const COLLECTIONS = [
   { id: "sound-crackers", name: "Sound Crackers", seoTitle: "Sound Crackers Online in Siliguri", description: "Traditional sound crackers for Diwali and Kali Puja in Siliguri. Please follow the timings and rules set by local authorities.", seoText: "Please check the rules before you buy or burst sound crackers. West Bengal has allowed only green crackers in recent years, within fixed hours on Diwali and Kali Puja night.", guide: "green-crackers-west-bengal-rules" },
   { id: "kids-special", name: "Kids Special", seoTitle: "Kids Crackers for Diwali in Siliguri", description: "Pop pops, magic snakes and colour smoke for children, always to be used with an adult nearby. Delivered within Siliguri.", seoText: "Even small crackers need an adult nearby. Choose an open space, keep water ready, and make sure children wear cotton clothes and closed footwear.", guide: "diwali-cracker-safety-guide" },
   { id: "sweets", name: "Local Mithai & Sweets", seoTitle: "Local Mithai & Diwali Sweets Online in Siliguri", description: "Rosogolla, sandesh, kaju katli, laddu, barfi and peda for your Diwali table and gifting. Order local mithai online in Siliguri.", seoText: "From Bengali rosogolla and sandesh to kaju katli and motichoor laddu, our mithai is chosen for Diwali and Kali Puja in Siliguri. Sweets are packed separately from crackers.", guide: "local-mithai-siliguri-diwali" },
-  { id: "gift-hampers", name: "Gift Hampers", seoTitle: "Diwali Gift Hampers Online in Siliguri", description: "Ready-to-gift Diwali hampers with mithai, diyas and puja essentials for family, friends, staff and clients in Siliguri.", seoText: "A Diwali gift hamper saves you a trip to the market. Choose from sweets and diya hampers, puja hampers and office gift boxes, with delivery across Siliguri.", guide: "diwali-gift-hampers-siliguri" },
+  { id: "gift-hampers", name: "Gift Hampers", seoTitle: "Diwali Gift Hampers Online in Siliguri", description: "Ready-to-gift Diwali hampers with mithai, diyas and puja essentials for family, friends, staff and clients in Siliguri.", seoText: "A Diwali gift hamper saves you a trip to the market. Choose from sweets and diya hampers, puja hampers, crackers with mithai and office gift boxes, with delivery across Siliguri.", guide: "diwali-gift-hampers-siliguri" },
   { id: "diyas-decor", name: "Rangoli, Diyas & Decor", seoTitle: "Rangoli Colours, Diyas & Diwali Decor in Siliguri", description: "Rangoli colours, clay diyas, candles, marigold torans and puja thalis to get your home ready for Diwali in Siliguri.", seoText: "A little rangoli at the door, a marigold toran and a row of clay diyas are all you need to make your home feel festive. Order them with your crackers and get one delivery.", guide: "rangoli-diwali-decoration-ideas" },
 ];

@@ -26,33 +26,43 @@ export default function TeaFinderModal({ isOpen, onClose }: TeaFinderModalProps)
   };
 
   const getRecommendation = () => {
-    if (answers.style === "big" || answers.flavor === "sky") {
+    if (answers.style === "big" || answers.time === "ground") {
       return {
-        id: "siliguri-super-bumper-family-hamper",
-        title: "Siliguri Super Bumper Family Hamper",
-        reason: "A grand pack with sky shot cakes, rockets, anars and sparklers for a big celebration.",
-        price: 4999,
-        weight: "1 Jumbo Hamper (65 Pcs)",
-        image: "/assets/combo-super-bumper.webp",
+        id: "mega-grand-show-pack",
+        title: "Mega Grand Show Pack",
+        reason: "Our biggest pack, with the 120-shot grand finale, for a terrace or ground show. You save ₹3,601.",
+        price: 9999,
+        weight: "1 Pack",
+        image: "/assets/mega-grand.webp",
       };
     }
     if (answers.style === "gift" || answers.flavor === "sweet") {
       return {
         id: "pataka-mithai-diwali-combo",
-        title: "Pataka + Mithai Diwali Combo",
+        title: "Pataka + Mithai Diwali Hamper",
         reason: "Crackers, mithai and clay diyas in one order. An easy, complete Diwali gift.",
         price: 2299,
         weight: "1 Combo",
         image: "/assets/combo-pataka-mithai.webp",
       };
     }
+    if (answers.flavor === "sky" || answers.style === "family") {
+      return {
+        id: "mega-family-pack",
+        title: "Mega Family Pack",
+        reason: "Our best value: sparklers, anars, chakkars, rockets, 2 sky cakes and a kids box. You save ₹2,324.",
+        price: 4999,
+        weight: "1 Pack",
+        image: "/assets/mega-family.webp",
+      };
+    }
     return {
-      id: "royal-diwali-mega-gift-box",
-      title: "Royal Diwali Mega Gift Box",
-      reason: "45 assorted items with sparklers, flower pots, chakkars and more for the whole family.",
+      id: "mega-starter-pack",
+      title: "Mega Starter Pack",
+      reason: "A good mix for one family evening, with a sky shot cake for the finish. You save ₹646.",
       price: 2499,
-      weight: "1 Deluxe Box",
-      image: "/assets/combo-royal-mega.webp",
+      weight: "1 Pack",
+      image: "/assets/mega-starter.webp",
     };
   };
 

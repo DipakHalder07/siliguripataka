@@ -12,7 +12,7 @@ export default function Hero() {
         <div className="order-1 lg:order-2 relative w-full h-[240px] sm:h-[360px] lg:h-full min-h-[380px] lg:min-h-[520px] bg-[#f2ece2]">
           <Image
             src="/assets/hero-diwali.webp"
-            alt="Diwali crackers including sparklers, flower pots and sky shots laid out on a table"
+            alt="Assorted Diwali crackers laid out on a table with diyas and marigolds at dusk"
             fill
             priority
             className="object-cover object-center"
@@ -44,7 +44,7 @@ export default function Hero() {
               href="#combo-boxes"
               className="av-btn av-btn-fill px-7 py-3.5 sm:py-4 text-[15px] sm:text-[16px] text-center"
             >
-              SHOP MEGA COMBOS
+              SHOP MEGA PACKS
             </Link>
             <Link
               href="#best-sellers"

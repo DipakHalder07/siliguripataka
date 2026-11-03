@@ -242,7 +242,7 @@ export default function WhySiliguriPatakaPage() {
               Ready For Diwali?
             </h3>
             <p className="text-[14px] text-[#5c5a52]">
-              Start with a gift box, or build your own order from 40+ crackers, sweets, hampers and decor items.
+              Start with a mega pack, or build your own order from 40+ crackers, sweets, hampers and decor items.
             </p>
             <div className="pt-2">
               <Link

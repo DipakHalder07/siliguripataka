@@ -49,6 +49,8 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 * This store sells Diwali crackers, sweets and decor, and delivers **only within Siliguri**. Write all copy for Siliguri.
 * The minimum order (₹2,000) lives in `lib/orderRules.ts` and is enforced on the server in `lib/orderPricing.ts`.
 * Never invent reviews, ratings, press mentions, customer counts or licences. The database (Admin → Products) owns the catalog.
+* Every order includes a free gift (`FREE_GIFT` in `lib/orderRules.ts`). Delivery is same day or next day (`lib/legal.ts`).
+* Photos must have a licence that allows commercial use, and need a line in `data/imageCredits.ts`. Never copy images from Pinterest, Facebook or other shops.
 * SEO lives in `lib/seo.ts`. Every indexable page sets its title, description and canonical address through `pageMeta()`.
 
 ---

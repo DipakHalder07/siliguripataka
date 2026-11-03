@@ -43,7 +43,7 @@ export default function Footer() {
     {
       title: "SHOP",
       links: [
-        { label: "Mega Combos", href: "/collections/gift-boxes" },
+        { label: "Mega Packs", href: "/collections/mega-packs" },
         { label: "Gift Hampers", href: "/collections/gift-hampers" },
         { label: "Sparklers", href: "/collections/sparklers" },
         { label: "Flower Pots", href: "/collections/flower-pots" },

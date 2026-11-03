@@ -1,6 +1,7 @@
 // One-time catalog update for the Siliguri Pataka database. Run with: npm run db:add-diwali
 //  - adds the new sweets, decor and combo products that are in data/products.ts but not in the database
 //  - on products already in the database, updates ONLY their pictures and sort order
+//  - hides the 4 old gift boxes (replaced by the 3 mega packs) by setting them to "archived"
 // It never changes titles, prices, stock or orders, and it is safe to run more than once.
 import { PrismaClient } from "@prisma/client";
 import { PRODUCTS } from "../data/products";
@@ -41,12 +42,26 @@ async function main() {
     }
   }
 
+  const archived = await prisma.product.updateMany({
+    where: {
+      id: {
+        in: [
+          "royal-diwali-mega-gift-box",
+          "siliguri-super-bumper-family-hamper",
+          "siliguri-maharaja-luxury-hamper",
+          "emperor-sovereign-grand-show-box",
+        ],
+      },
+    },
+    data: { status: "archived" },
+  });
+
   const names = await prisma.admin.updateMany({
     where: { name: "Teabox Admin" },
     data: { name: "Siliguri Pataka Admin" },
   });
 
-  console.log(`Added ${added} new products. Updated pictures on ${updated}. Renamed ${names.count} admin display names.`);
+  console.log(`Added ${added} new products. Updated pictures on ${updated}. Hid ${archived.count} old gift boxes. Renamed ${names.count} admin display names.`);
 }
 
 main()

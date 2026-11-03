@@ -22,6 +22,7 @@ import { Product } from "@/data/products";
 import { findVariant, productVariants } from "@/lib/productVariants";
 import { useCart } from "./context/CartContext";
 import { FREE_GIFT } from "@/lib/orderRules";
+import { findMegaPack, packWorth } from "@/lib/megaPacks";
 import ProductCard from "./ProductCard";
 import ProductReviews from "./ProductReviews";
 
@@ -165,6 +166,7 @@ export default function ProductDetailPage({ product, related = [] }: { product: 
   // The copy below depends on what kind of product this is
   const isSweet = product.category === "sweets";
   const isDecor = product.category === "diyas-decor";
+  const megaPack = findMegaPack(product.id);
 
   // Each size has its own price (Admin → Products → Variants); the checkout uses the same prices
   const getCalculatedPrice = (weight: string) => findVariant(product, weight).price;
@@ -709,6 +711,31 @@ export default function ProductDetailPage({ product, related = [] }: { product: 
           <p className="text-[15px] text-[#5c5a52] leading-relaxed mb-4">
             {product.subtitle}. {isSweet ? "Weights shown are approximate." : "Exact contents can vary a little from batch to batch."}
           </p>
+          {megaPack && (
+            <div className="mb-4 text-[14px]">
+              <div className="divide-y divide-[#f0dfc6] border-y border-[#f0dfc6]">
+                {megaPack.items.map((item) => (
+                  <div key={item.label} className="flex justify-between gap-3 py-1.5 text-[#3d3b36]">
+                    <span>{item.label}</span>
+                    <span>₹{item.value.toLocaleString("en-IN")}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="flex justify-between gap-3 pt-2 text-[#5c5a52]">
+                <span>If bought separately</span>
+                <s>₹{packWorth(megaPack).toLocaleString("en-IN")}</s>
+              </div>
+              <div className="flex justify-between gap-3 pt-1 font-bold text-[#2b1215]">
+                <span>This pack</span>
+                <span>₹{product.price.toLocaleString("en-IN")}</span>
+              </div>
+              <div className="flex justify-between gap-3 pt-1 font-bold text-[#b3261e]">
+                <span>You save</span>
+                <span>₹{(packWorth(megaPack) - product.price).toLocaleString("en-IN")}</span>
+              </div>
+              <p className="pt-2 text-[#4a0e14] font-medium">{megaPack.nudge}</p>
+            </div>
+          )}
           <div className="flex items-center gap-2 text-[14px] font-semibold text-[#b3261e]">
             <Check size={18} />
             <span>Diwali 2026 · Delivered in Siliguri</span>

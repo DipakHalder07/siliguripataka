@@ -8,14 +8,16 @@ import { useCart } from "./context/CartContext";
 import { Search, X, ArrowRight } from "lucide-react";
 
 const searchableItems = [
-  { id: "royal-diwali-mega-gift-box", title: "Royal Diwali Mega Gift Box", category: "Gift Boxes", price: 2499, weight: "1 Deluxe Box", image: "/assets/combo-royal-mega.webp", description: "45 assorted items for the family" },
-  { id: "pataka-mithai-diwali-combo", title: "Pataka + Mithai Diwali Combo", category: "Gift Boxes", price: 2299, weight: "1 Combo", image: "/assets/combo-pataka-mithai.webp", description: "Crackers, mithai & clay diyas" },
-  { id: "royal-electric-sparklers-30cm", title: "Royal Electric Sparklers 30cm", category: "Sparklers Phuljhari", price: 349, weight: "Pack of 50 Sticks", image: "/assets/action-sparkler.webp", description: "Golden sparks · Long burn" },
-  { id: "deluxe-tri-color-flower-pots", title: "Deluxe Tri-Color Flower Pots", category: "Flower Pots Anar Tubri", price: 499, weight: "Pack of 10", image: "/assets/action-anar.webp", description: "Gold, crimson & silver sparks" },
-  { id: "deluxe-special-spinning-chakkar", title: "Deluxe Ground Chakkar", category: "Ground Chakkars Chorki", price: 399, weight: "Pack of 20 Pcs", image: "/assets/action-chakkar.webp", description: "High-speed spinning rings" },
-  { id: "super-sonic-whistling-sky-rockets", title: "Super Sonic Whistling Sky Rockets", category: "Rockets Hawai", price: 599, weight: "Pack of 10 Rockets", image: "/assets/action-rockets.webp", description: "Whistling ascent · Colour burst" },
-  { id: "sky-king-30-aerial-shots", title: "Sky King 30 Aerial Shots", category: "Aerial Shots Sky Cakes", price: 1299, weight: "1 Cake (30 Shots)", image: "/assets/action-sky.webp", description: "30 shots · 5 vibrant colours" },
-  { id: "kids-fun-fiesta-green-pack", title: "Kids Fun Fiesta Box", category: "Kids Special", price: 899, weight: "1 Kids Hamper", image: "/assets/siliguri-kids-crackers.jpg", description: "Pop pops, snakes & colour smoke" },
+  { id: "mega-family-pack", title: "Mega Family Pack", category: "Mega Packs Combo", price: 4999, weight: "1 Pack", image: "/assets/mega-family.webp", description: "Best value · Save ₹2,324" },
+  { id: "mega-starter-pack", title: "Mega Starter Pack", category: "Mega Packs Combo", price: 2499, weight: "1 Pack", image: "/assets/mega-starter.webp", description: "A mix for one family evening" },
+  { id: "mega-grand-show-pack", title: "Mega Grand Show Pack", category: "Mega Packs Combo", price: 9999, weight: "1 Pack", image: "/assets/mega-grand.webp", description: "With the 120-shot grand finale" },
+  { id: "pataka-mithai-diwali-combo", title: "Pataka + Mithai Diwali Hamper", category: "Gift Hampers Combo", price: 2299, weight: "1 Combo", image: "/assets/combo-pataka-mithai.webp", description: "Crackers, mithai & clay diyas" },
+  { id: "royal-electric-sparklers-30cm", title: "Royal Electric Sparklers 30cm", category: "Sparklers Phuljhari", price: 349, weight: "Pack of 50 Sticks", image: "/assets/ck-sparkler-gold.webp", description: "Golden sparks · Long burn" },
+  { id: "deluxe-tri-color-flower-pots", title: "Deluxe Tri-Color Flower Pots", category: "Flower Pots Anar Tubri", price: 499, weight: "Pack of 10", image: "/assets/ck-anar-tricolor.webp", description: "Gold, crimson & silver sparks" },
+  { id: "deluxe-special-spinning-chakkar", title: "Deluxe Ground Chakkar", category: "Ground Chakkars Chorki", price: 399, weight: "Pack of 20 Pcs", image: "/assets/ck-chakkar.webp", description: "High-speed spinning rings" },
+  { id: "super-sonic-whistling-sky-rockets", title: "Super Sonic Whistling Sky Rockets", category: "Rockets Hawai", price: 599, weight: "Pack of 10 Rockets", image: "/assets/ck-rockets.webp", description: "Whistling ascent · Colour burst" },
+  { id: "sky-king-30-aerial-shots", title: "Sky King 30 Aerial Shots", category: "Aerial Shots Sky Cakes", price: 1299, weight: "1 Cake (30 Shots)", image: "/assets/ck-cake-30.webp", description: "30 shots · 5 vibrant colours" },
+  { id: "kids-fun-fiesta-green-pack", title: "Kids Fun Fiesta Box", category: "Kids Special", price: 899, weight: "1 Kids Hamper", image: "/assets/ck-kids-box.webp", description: "Pop pops, snakes & colour smoke" },
   { id: "kaju-katli-box", title: "Kaju Katli Box", category: "Sweets Mithai", price: 649, weight: "500G", image: "/assets/sweets-kaju-katli.webp", description: "Classic diamond-cut cashew sweet" },
   { id: "motichoor-laddu-box", title: "Motichoor Laddu Box", category: "Sweets Mithai", price: 299, weight: "500G", image: "/assets/sweets-motichoor-laddu.webp", description: "Soft boondi laddus" },
   { id: "bengali-rosogolla-box", title: "Bengali Rosogolla", category: "Sweets Mithai", price: 229, weight: "500G", image: "/assets/sweets-rosogolla.webp", description: "Soft chhena balls in light syrup" },
@@ -35,7 +37,7 @@ export default function SearchDrawer() {
   const popularKeywords = [
     "Sparklers",
     "Flower Pots",
-    "Gift Box",
+    "Mega Pack",
     "Hamper",
     "Sweets",
     "Diyas",

@@ -22,8 +22,8 @@ const productsData: Product[] = [
   {
     id: "royal-electric-sparklers-30cm",
     title: "Royal Electric Sparklers 30cm",
-    primaryImage: "/assets/action-sparkler.webp",
-    secondaryImage: "/assets/siliguri-sparklers.jpg",
+    primaryImage: "/assets/ck-sparkler-gold.webp",
+    secondaryImage: "/assets/action-sparkler.webp",
     pointers: "Pack of 50 · Golden sparks",
     weight: "Pack of 50 Sticks",
     price: 349,
@@ -31,8 +31,8 @@ const productsData: Product[] = [
   {
     id: "deluxe-tri-color-flower-pots",
     title: "Deluxe Tri-Color Flower Pots",
-    primaryImage: "/assets/action-anar.webp",
-    secondaryImage: "/assets/siliguri-flower-pots.jpg",
+    primaryImage: "/assets/ck-anar-tricolor.webp",
+    secondaryImage: "/assets/action-anar.webp",
     pointers: "Pack of 10 · Tall anar fountain",
     weight: "Pack of 10",
     price: 499,
@@ -40,8 +40,8 @@ const productsData: Product[] = [
   {
     id: "deluxe-special-spinning-chakkar",
     title: "Deluxe Ground Chakkar",
-    primaryImage: "/assets/action-chakkar.webp",
-    secondaryImage: "/assets/siliguri-chakkars.jpg",
+    primaryImage: "/assets/ck-chakkar.webp",
+    secondaryImage: "/assets/action-chakkar.webp",
     pointers: "Pack of 20 · Spinning rings",
     weight: "Pack of 20 Pcs",
     price: 399,
@@ -49,8 +49,8 @@ const productsData: Product[] = [
   {
     id: "sky-king-30-aerial-shots",
     title: "Sky King 30 Aerial Shots",
-    primaryImage: "/assets/action-sky.webp",
-    secondaryImage: "/assets/siliguri-sky-shots.jpg",
+    primaryImage: "/assets/ck-cake-30.webp",
+    secondaryImage: "/assets/action-sky.webp",
     pointers: "30 shots · 5 vibrant colours",
     weight: "1 Cake (30 Shots)",
     price: 1299,

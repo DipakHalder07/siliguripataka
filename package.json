@@ -1,0 +1,69 @@
+{
+  "name": "siliguri-pataka",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/dev-all.mjs",
+    "dev:web": "next dev",
+    "build": "next build",
+    "vercel-build": "node scripts/vercel-build.mjs",
+    "start": "next start",
+    "lint": "eslint",
+    "postinstall": "prisma generate",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:seed": "tsx prisma/seed.ts",
+    "db:add-diwali": "tsx prisma/add-diwali-products.ts",
+    "db:studio": "prisma studio",
+    "db:local": "pglite-server --db=.pglite --port=5435 --max-connections=10",
+    "whatsapp": "npm --prefix whatsapp-service start",
+    "whatsapp:install": "npm --prefix whatsapp-service install",
+    "dev:all": "node scripts/dev-all.mjs"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^6.0.0",
+    "@prisma/client": "^6.4.1",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/qrcode": "^1.5.6",
+    "@vercel/analytics": "^2.0.1",
+    "bcryptjs": "^3.0.3",
+    "exceljs": "^4.4.0",
+    "jose": "^6.2.13",
+    "lucide-react": "^1.61.0",
+    "motion": "^14.6.0",
+    "next": "16.4.2",
+    "nodemailer": "^10.2.1",
+    "papaparse": "^5.5.3",
+    "prisma": "^6.4.1",
+    "qrcode": "^1.5.4",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-easy-crop": "^5.4.1",
+    "react-hook-form": "^7.90.0",
+    "sharp": "^0.35.5",
+    "sonner": "^2.0.8",
+    "zod": "^4.6.7",
+    "zustand": "^5.0.16"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.11",
+    "@electric-sql/pglite-socket": "^0.2.14",
+    "@tailwindcss/turbopack": "^4",
+    "@types/node": "^20",
+    "@types/nodemailer": "^8.0.2",
+    "@types/papaparse": "^5.5.2",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.2",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.15",
+    "typescript": "^5"
+  },
+  "overrides": {
+    "uuid": "^11.1.1"
+  }
+}

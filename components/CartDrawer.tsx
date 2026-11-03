@@ -1,0 +1,272 @@
+"use client";
+
+import React, { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { motion, AnimatePresence } from "motion/react";
+import { useCart } from "./context/CartContext";
+import { X, Trash2, Plus, Minus, Check, ShoppingBag, ArrowRight } from "lucide-react";
+import FastrrCheckoutModal from "./FastrrCheckoutModal";
+import { FREE_GIFT } from "@/lib/orderRules";
+
+export default function CartDrawer() {
+  const {
+    isCartOpen,
+    closeCart,
+    cartItems,
+    removeFromCart,
+    updateQuantity,
+    totalCount,
+    subtotal,
+    freeShippingThreshold,
+    isCheckoutOpen,
+    openCheckout,
+    closeCheckout,
+  } = useCart();
+
+  const [orderNote, setOrderNote] = useState("");
+  const [showNoteInput, setShowNoteInput] = useState(false);
+
+  const diffToFreeShipping = Math.max(0, freeShippingThreshold - subtotal);
+  const progressPercent = Math.min(
+    100,
+    Math.round((subtotal / freeShippingThreshold) * 100)
+  );
+
+  return (
+    <>
+      <AnimatePresence>
+        {isCartOpen && (
+          <div className="fixed inset-0 z-50 overflow-hidden">
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              className="absolute inset-0 bg-black/60 backdrop-blur-[2px]"
+              onClick={closeCart}
+            />
+
+            {/* Slide-in Drawer */}
+            <div className="fixed inset-y-0 right-0 max-w-full flex pl-10">
+              <motion.div
+                initial={{ x: "100%" }}
+                animate={{ x: 0 }}
+                exit={{ x: "100%" }}
+                transition={{ type: "spring", damping: 28, stiffness: 280 }}
+                className="w-screen max-w-[420px] bg-white shadow-2xl flex flex-col justify-between overflow-hidden border-l border-[#f0dfc6]"
+              >
+                {/* Header */}
+                <div className="px-5 py-4 border-b border-[#f0dfc6] flex items-center justify-between bg-white">
+                  <div className="flex items-center gap-2">
+                    <ShoppingBag size={20} className="text-[#4a0e14]" />
+                    <h2 className="text-[18px] font-bold text-[#2b1215]">
+                      Cart ({totalCount})
+                    </h2>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={closeCart}
+                    className="p-1.5 text-[#5c5a52] hover:text-[#2b1215] rounded-full hover:bg-[#f0f0f0] transition-colors cursor-pointer"
+                    aria-label="Close cart"
+                  >
+                    <X size={20} />
+                  </button>
+                </div>
+
+                {/* Minimum order progress bar */}
+                <div className="bg-[#fff9ef] border-b border-[#f0dfc6] px-5 py-3">
+                  <div className="text-[13px] text-[#2b1215] font-medium mb-1.5 flex items-center gap-1.5">
+                    {diffToFreeShipping === 0 ? (
+                      <>
+                        <Check size={16} className="text-[#e65100] stroke-[3]" />
+                        <span className="font-semibold text-[#b3261e]">
+                          Minimum order reached. FREE delivery in Siliguri!
+                        </span>
+                      </>
+                    ) : (
+                      <span>
+                        Add <strong className="text-[#b3261e]">₹{diffToFreeShipping.toLocaleString("en-IN")}</strong> more to reach the ₹{freeShippingThreshold.toLocaleString("en-IN")} minimum order
+                      </span>
+                    )}
+                  </div>
+                  <div className="w-full h-1.5 bg-[#f0dfc6] rounded-full overflow-hidden">
+                    <motion.div
+                      className="h-full bg-[#f9a825] rounded-full"
+                      initial={{ width: 0 }}
+                      animate={{ width: `${progressPercent}%` }}
+                      transition={{ duration: 0.4 }}
+                    />
+                  </div>
+                </div>
+
+                {/* Items List */}
+                <div className="flex-1 overflow-y-auto px-5 py-4 divide-y divide-[#f0dfc6]">
+                  {cartItems.length === 0 ? (
+                    <div className="py-16 flex flex-col items-center justify-center text-center gap-3">
+                      <ShoppingBag size={48} className="text-[#c0c0c0]" />
+                      <p className="text-[16px] font-semibold text-[#2b1215]">
+                        Your cart is currently empty
+                      </p>
+                      <p className="text-[14px] text-[#5c5a52] max-w-[240px]">
+                        Explore our Diwali crackers, sweets and gift boxes.
+                      </p>
+                      <button
+                        type="button"
+                        onClick={closeCart}
+                        className="mt-2 bg-[#f9a825] text-[#4a0e14] font-bold text-[14px] px-6 py-2.5 rounded-md hover:bg-[#f29d12] cursor-pointer transition-colors"
+                      >
+                        START SHOPPING
+                      </button>
+                    </div>
+                  ) : (
+                    cartItems.map((item) => (
+                      <motion.div
+                        layout
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, scale: 0.95 }}
+                        transition={{ duration: 0.2 }}
+                        key={item.id}
+                        className="py-4 flex gap-4 items-start"
+                      >
+                        {/* Thumbnail */}
+                        <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden bg-[#fff9ef] border border-[#f0dfc6] flex-shrink-0">
+                          <Image
+                            src={item.image}
+                            alt={item.title}
+                            fill
+                            sizes="80px"
+                            className="object-cover"
+                          />
+                        </div>
+
+                        {/* Details */}
+                        <div className="flex-1 min-w-0 flex flex-col justify-between">
+                          <div>
+                            <h4 className="text-[15px] font-bold text-[#2b1215] truncate">
+                              {item.title}
+                            </h4>
+                            <p className="text-[13px] text-[#5c5a52]">{item.weight}</p>
+                            <div className="text-[14px] font-bold text-[#4a0e14] mt-0.5">
+                              ₹{item.price * item.quantity}
+                            </div>
+                          </div>
+
+                          {/* Stepper & Remove */}
+                          <div className="flex items-center justify-between mt-3">
+                            <div className="flex items-center border border-[#f0dfc6] rounded-md overflow-hidden bg-white">
+                              <button
+                                type="button"
+                                onClick={() => updateQuantity(item.id, -1)}
+                                className="px-2 py-1 text-[#5c5a52] hover:bg-[#fff9ef] cursor-pointer"
+                                aria-label="Decrease quantity"
+                              >
+                                <Minus size={13} />
+                              </button>
+                              <span className="px-3 text-[13px] font-bold text-[#2b1215]">
+                                {item.quantity}
+                              </span>
+                              <button
+                                type="button"
+                                onClick={() => updateQuantity(item.id, 1)}
+                                className="px-2 py-1 text-[#5c5a52] hover:bg-[#fff9ef] cursor-pointer"
+                                aria-label="Increase quantity"
+                              >
+                                <Plus size={13} />
+                              </button>
+                            </div>
+
+                            <button
+                              type="button"
+                              onClick={() => removeFromCart(item.id)}
+                              className="text-[12px] text-[#5c5a52] hover:text-[#d93838] underline transition-colors cursor-pointer"
+                            >
+                              Remove
+                            </button>
+                          </div>
+                        </div>
+                      </motion.div>
+                    ))
+                  )}
+                </div>
+
+                {/* Footer & Checkout Area */}
+                {cartItems.length > 0 && (
+                  <div className="p-5 border-t border-[#f0dfc6] bg-white flex flex-col gap-3">
+                    {/* Order note accordion */}
+                    <div className="text-[13px]">
+                      <button
+                        type="button"
+                        onClick={() => setShowNoteInput(!showNoteInput)}
+                        className="text-[#5c5a52] hover:text-[#2b1215] underline font-medium cursor-pointer"
+                      >
+                        {showNoteInput ? "Hide order note" : "+ Add order note"}
+                      </button>
+                      {showNoteInput && (
+                        <textarea
+                          value={orderNote}
+                          onChange={(e) => setOrderNote(e.target.value)}
+                          placeholder="Special instructions for delivery (landmark, best time)..."
+                          rows={2}
+                          className="w-full mt-2 p-2.5 text-[13px] border border-[#f0dfc6] rounded-md outline-none focus:border-[#f9a825]"
+                        />
+                      )}
+                    </div>
+
+                    {/* Subtotal */}
+                    <div className="flex items-baseline justify-between pt-1">
+                      <span className="text-[16px] font-bold text-[#2b1215]">Total</span>
+                      <span className="text-[20px] font-bold text-[#4a0e14]">
+                        ₹{subtotal}
+                      </span>
+                    </div>
+                    <p className="text-[12px] text-[#5c5a52]">
+                      🎁 {FREE_GIFT} FREE with this order. Free delivery in Siliguri, the same day or the next day.
+                    </p>
+
+                    {/* Checkout button: locked until the minimum order is reached */}
+                    {diffToFreeShipping > 0 ? (
+                      <button
+                        type="button"
+                        disabled
+                        className="w-full bg-[#f9a825]/50 text-[#4a0e14]/70 py-3.5 px-4 rounded-lg font-bold text-[15px] tracking-wider uppercase flex items-center justify-center gap-2 cursor-not-allowed text-center"
+                      >
+                        <span>ADD ₹{diffToFreeShipping.toLocaleString("en-IN")} MORE TO CHECKOUT</span>
+                      </button>
+                    ) : (
+                    <Link
+                      href="/checkout"
+                      onClick={() => closeCart()}
+                      className="w-full bg-[#f9a825] hover:bg-[#f29d12] text-[#4a0e14] py-3.5 px-4 rounded-lg font-bold text-[16px] tracking-wider uppercase flex items-center justify-center gap-2 shadow-sm transition-all cursor-pointer active:scale-99 text-center"
+                    >
+                      <span>PROCEED TO CHECKOUT — ₹{subtotal}</span>
+                      <ArrowRight size={18} />
+                    </Link>
+                    )}
+
+                    {/* Payment Trust Badges */}
+                    <div className="flex flex-col items-center gap-1 text-[11px] text-[#747576] font-medium pt-1">
+                      <span className="text-[#b3261e] font-semibold flex items-center gap-1">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#f9a825]" />
+                        Instant UPI &amp; Cash on Delivery Available
+                      </span>
+                      <span>Google Pay · PhonePe · Paytm · CRED · Cash on Delivery (COD)</span>
+                    </div>
+                  </div>
+                )}
+              </motion.div>
+            </div>
+          </div>
+        )}
+      </AnimatePresence>
+
+      {/* Checkout modal with direct UPI */}
+      <FastrrCheckoutModal
+        isOpen={isCheckoutOpen}
+        onClose={closeCheckout}
+      />
+    </>
+  );
+}

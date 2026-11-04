@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { pageMeta } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbJsonLd, pageMeta } from "@/lib/seo";
 
 export const metadata: Metadata = pageMeta({
   title: "Why Shop With Siliguri Pataka | Your Diwali Shop in Siliguri",
@@ -10,5 +11,15 @@ export const metadata: Metadata = pageMeta({
 });
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return children;
+  return (
+    <>
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Why Siliguri Pataka", path: "/pages/why-siliguri-pataka" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

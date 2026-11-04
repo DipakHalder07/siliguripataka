@@ -95,6 +95,29 @@ async function loadActiveRows(): Promise<ProductRow[] | null> {
   }
 }
 
+/**
+ * Sweets are no longer sold. Until `npm run db:remove-sweets` has run, this keeps the shop correct:
+ * it hides those rows, uses the new wording for the reworded hampers and adds the new hamper.
+ * It does nothing once the database is updated, and can then be deleted.
+ */
+function withoutSweets(products: Product[]): Product[] {
+  const reworded = ["festive-sweets-diya-gift-hamper", "lakshmi-puja-gift-hamper", "family-diwali-gift-hamper"];
+  const retired = ["premium-mithai-gift-box", "pataka-mithai-diwali-combo"];
+  const kept = products
+    .filter((p) => p.category !== "sweets" && !retired.includes(p.id))
+    .map((p) => {
+      const current = reworded.includes(p.id) ? PRODUCTS.find((c) => c.id === p.id) : null;
+      return current
+        ? { ...p, handle: current.handle, title: current.title, subtitle: current.subtitle, description: current.description, tags: current.tags }
+        : p;
+    });
+  const hamper = PRODUCTS.find((c) => c.id === "pataka-diya-diwali-hamper");
+  if (hamper && !kept.some((p) => p.id === hamper.id)) {
+    kept.push({ ...hamper, variants: productVariants(hamper), status: "active" });
+  }
+  return kept;
+}
+
 /** Products shown in the shop (active only). Cached; admin changes refresh it straight away. */
 export async function getStoreProducts(): Promise<Product[]> {
   "use cache";
@@ -105,7 +128,7 @@ export async function getStoreProducts(): Promise<Product[]> {
     return PRODUCTS.map((p) => ({ ...p, variants: productVariants(p) }));
   }
   cacheLife("hours");
-  return rows.map(rowToProduct);
+  return withoutSweets(rows.map(rowToProduct));
 }
 
 export async function getStoreProduct(handle: string) {

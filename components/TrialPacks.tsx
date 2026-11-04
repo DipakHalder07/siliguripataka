@@ -41,7 +41,7 @@ export default function TrialPacks() {
           </div>
           <div className="self-start sm:self-auto flex items-center gap-3">
             <span className="inline-block text-[#5c5a52] text-[13px] sm:text-[14px] font-medium border-[1.5px] border-[#f9a825] rounded px-3 py-1 bg-white">
-              Save up to ₹3,601 compared to buying separately. Diwali is on 8 Nov.
+              Complete Diwali cracker packs · Delivered in Siliguri
             </span>
             <Link
               href="/collections/mega-packs"
@@ -61,20 +61,13 @@ export default function TrialPacks() {
             return (
               <div
                 key={pack.id}
-                className={`group relative bg-white rounded-[10px] overflow-hidden flex flex-col justify-between ${
-                  pack.badge === "BEST VALUE" ? "border-2 border-[#f9a825] shadow-xl lg:-my-3" : "border border-[#f0dfc6]"
-                }`}
+                className="group relative bg-white rounded-[10px] overflow-hidden flex flex-col justify-between border border-[#f0dfc6]"
               >
                 {/* Media Image with Link */}
                 <Link
                   href={productHref}
                   className="block relative aspect-square w-full bg-[#f7d9a6]/30 overflow-hidden cursor-pointer"
                 >
-                  {pack.badge && (
-                    <span className="absolute top-3 left-3 z-10 bg-[#4a0e14] text-white text-[11px] font-bold tracking-[1px] uppercase px-2.5 py-1 rounded">
-                      {pack.badge}
-                    </span>
-                  )}
                   <Image
                     src={pack.image}
                     alt={pack.title}
@@ -105,17 +98,6 @@ export default function TrialPacks() {
                         {pack.title}
                       </h3>
                     </Link>
-
-                    {/* Price and real saving, compared with buying the same items separately */}
-                    <div className="rounded-lg bg-[#fff6e6] border border-[#f7d9a6] px-3 py-2.5 mt-1">
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-[26px] font-bold text-[#2b1215] leading-none">₹{pack.price.toLocaleString("en-IN")}</span>
-                        <s className="text-[14px] text-[#5c5a52]">₹{worth.toLocaleString("en-IN")}</s>
-                      </div>
-                      <div className="text-[13px] font-bold text-[#b3261e] mt-1">
-                        You save ₹{saving.toLocaleString("en-IN")} ({Math.round((saving / worth) * 100)}%) vs buying separately
-                      </div>
-                    </div>
 
                     {/* Bullet features */}
                     <ul className="flex flex-col gap-1 text-[14px] text-[#3d3b36] pt-1">

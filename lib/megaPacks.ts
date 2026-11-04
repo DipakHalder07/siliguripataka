@@ -37,7 +37,6 @@ export const MEGA_PACKS: MegaPack[] = [
     price: 4999,
     weight: "1 Pack",
     image: "/assets/mega-family.webp",
-    badge: "BEST VALUE",
     nudge: "The highest discount of all 3 packs: 32% off.",
     items: [
       { label: "100 Sparklers (30 cm)", value: 629 },
@@ -56,7 +55,6 @@ export const MEGA_PACKS: MegaPack[] = [
     price: 9999,
     weight: "1 Pack",
     image: "/assets/mega-grand.webp",
-    badge: "BIGGEST SHOW",
     nudge: "The only pack with the 120-shot grand finale.",
     items: [
       { label: "200 Sparklers (30 cm)", value: 1258 },

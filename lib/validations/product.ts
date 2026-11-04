@@ -8,7 +8,7 @@ const imageUrl = z
   .trim()
   .min(1)
   .max(2000)
-  .refine(isAllowedImage, "Use an uploaded photo (camera or gallery) or an image from cdn.shopify.com");
+  .refine(isAllowedImage, "Use an uploaded photo (camera or gallery) or a local shop asset (/assets/...)");
 
 const money = z.coerce.number().int("Prices are whole rupees").min(1, "Price must be at least ₹1").max(10_000_000);
 

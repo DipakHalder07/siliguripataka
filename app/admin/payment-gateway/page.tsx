@@ -306,22 +306,22 @@ function WhatsAppCard({ data, busy, act }: { data: Overview; busy: string; act: 
           <div className="flex items-center justify-between mb-3">
             <Pill ok={connected}>{statusLabel}</Pill>
             <span className="text-[11.5px] text-[#747576]">
-              Checkout OTP: <strong>Required</strong>
+              Checkout OTP: <strong>{wa.otpRequired ? "On" : "Off"}</strong>
             </span>
           </div>
 
           {!wa.provider && (
             <p className="text-[12.5px] text-[#5c5a52]">
-              Run the WhatsApp service (<code>npm run whatsapp</code>) and verify <code>WHATSAPP_SERVICE_URL</code> and{" "}
-              <code>WHATSAPP_SERVICE_TOKEN</code> in <code>.env</code>.
+              Add both <code>WHATSAPP_SERVICE_URL</code> and{" "}
+              <code>WHATSAPP_SERVICE_TOKEN</code> in Vercel, under Settings, Environment Variables, then redeploy.
             </p>
           )}
 
           {wa.provider === "qr" && svc?.status === "offline" && (
             <div className="text-[12.5px] text-[#5c5a52] space-y-1.5">
               <p>
-                The WhatsApp service on port 7071 is offline. Start it in terminal with <code>npm run whatsapp</code> or{" "}
-                <code>npm run dev</code>.
+                The WhatsApp service is offline. Check that it is running on Render and that the URL and token in
+                Vercel match it. On your own computer, start it with <code>npm run dev</code>.
               </p>
               {svc.error && <p className="text-[11.5px] text-[#9a5b00]">{svc.error}</p>}
             </div>

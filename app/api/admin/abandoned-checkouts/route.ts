@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { unstable_rethrow } from "next/navigation";
 import { verifyAdminRequest } from "@/lib/auth";
 import {
   getAllAbandonedCheckouts,
@@ -28,6 +29,7 @@ export async function GET(req: NextRequest) {
       stats,
     });
   } catch (error: any) {
+    unstable_rethrow(error); // Next.js's own build-time signal, not a real error
     console.error("Error fetching admin abandoned checkouts:", error);
     return NextResponse.json(
       { error: error?.message || "Failed to fetch abandoned checkouts" },

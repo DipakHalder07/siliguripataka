@@ -27,6 +27,8 @@ const nextConfig: NextConfig = {
     return [
       { source: "/collections", destination: "/collections/all", permanent: false },
       { source: "/order", destination: "/track", permanent: false },
+      { source: "/products/papershort", destination: "/products/papershort-10rs", permanent: false },
+      { source: "/products/magic-paper-shot", destination: "/products/papershort-10rs", permanent: false },
       // Sweets are no longer sold: old links go to the closest page instead of a dead end.
       { source: "/collections/sweets", destination: "/collections/gift-hampers", permanent: true },
       { source: "/blog/local-mithai-siliguri-diwali", destination: "/blog/diwali-gift-hampers-siliguri", permanent: true },

@@ -2598,6 +2598,69 @@ export const PRODUCTS: Product[] = [
     "trackInventory": true
   },
   {
+    "id": "papershort-10rs",
+    "handle": "papershort-10rs",
+    "title": "Paper Short (Magic Paper Shot 10 Rs)",
+    "subtitle": "Magic Wrinkle Sound Snappers · Bang, Drop & Snap · 100% Pollution Free (25 Pcs)",
+    "price": 10,
+    "originalPrice": 20,
+    "discount": 50,
+    "rating": 4.9,
+    "reviewsCount": 96,
+    "weight": "1 Box (25 Pcs)",
+    "weights": [
+      "1 Box (25 Pcs)",
+      "Pack of 5 Boxes",
+      "Pack of 10 Boxes"
+    ],
+    "image": "/assets/product-papershot.webp",
+    "secondaryImage": "/assets/product-papershot.webp",
+    "galleryImages": [
+      "/assets/product-papershot.webp"
+    ],
+    "category": "kids-special",
+    "format": "Novelty Snappers",
+    "region": "Sivakasi Quality",
+    "caffeine": "Child-Friendly",
+    "inStock": true,
+    "description": "Magic Paper Shot (Paper Short 10 Rs) novelty trick snappers with Magic Wrinkle Sound. Bang, drop, throw, step on, or snap them to produce an instant exciting crackle! 100% pollution-free, child-friendly, no fireworks, no crackers, and no matches required.",
+    "variants": [
+      {
+        "sku": "SP-PS-1",
+        "name": "1 Box (25 Pcs)",
+        "price": 10,
+        "compareAtPrice": 20
+      },
+      {
+        "sku": "SP-PS-5",
+        "name": "Pack of 5 Boxes",
+        "price": 45,
+        "compareAtPrice": 100
+      },
+      {
+        "sku": "SP-PS-10",
+        "name": "Pack of 10 Boxes",
+        "price": 80,
+        "compareAtPrice": 200
+      }
+    ],
+    "status": "active",
+    "sku": "SP-PS-1",
+    "vendor": "stall-47",
+    "tags": [
+      "Kids Special",
+      "Paper Short",
+      "Paper Shot",
+      "Magic Paper Shot",
+      "Snappers",
+      "Pop Pop",
+      "Safe Fireworks",
+      "Diwali"
+    ],
+    "stockQuantity": 500,
+    "trackInventory": true
+  },
+  {
     "id": "sky-burst-12-shot-aerial-cake",
     "handle": "sky-burst-12-shot-aerial-cake",
     "title": "Sky Burst 12-Shot Multi-Color Aerial Cake",

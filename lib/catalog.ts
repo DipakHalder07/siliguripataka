@@ -133,7 +133,12 @@ export async function getStoreProducts(): Promise<Product[]> {
 
 export async function getStoreProduct(handle: string) {
   const products = await getStoreProducts();
-  return products.find((p) => p.handle === handle || p.id === handle) || null;
+  const direct = products.find((p) => p.handle === handle || p.id === handle);
+  if (direct) return direct;
+  if (["papershort", "paper-short", "magic-paper-shot", "magic-paper-shot-10rs"].includes(handle)) {
+    return products.find((p) => p.id === "papershort-10rs") || null;
+  }
+  return null;
 }
 
 /** Call after any product change so the shop shows it on the next request. */

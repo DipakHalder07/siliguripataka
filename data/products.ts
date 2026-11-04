@@ -60,7 +60,10 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/action-sky.webp",
     "galleryImages": [
       "/assets/ck-cake-30.webp",
-      "/assets/action-sky.webp"
+      "/assets/action-sky.webp",
+      "/assets/photo-sky-burst.webp",
+      "/assets/photo-sky-gold.webp",
+      "/assets/photo-sky-town.webp"
     ],
     "category": "aerial-shots",
     "format": "Multi-Shot Cake",
@@ -113,7 +116,10 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/action-anar.webp",
     "galleryImages": [
       "/assets/ck-anar-tricolor.webp",
-      "/assets/action-anar.webp"
+      "/assets/action-anar.webp",
+      "/assets/photo-anar-gold.webp",
+      "/assets/photo-anar-tall.webp",
+      "/assets/ck-anar-jumbo.webp"
     ],
     "category": "flower-pots",
     "format": "Anar / Flower Pot",
@@ -167,7 +173,10 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/action-sparkler.webp",
     "galleryImages": [
       "/assets/ck-sparkler-gold.webp",
-      "/assets/action-sparkler.webp"
+      "/assets/action-sparkler.webp",
+      "/assets/photo-sparkler-hand.webp",
+      "/assets/photo-sparkler-kids.webp",
+      "/assets/ck-sparkler-silver.webp"
     ],
     "category": "sparklers",
     "format": "Electric Sparklers",
@@ -221,7 +230,9 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/action-chakkar.webp",
     "galleryImages": [
       "/assets/ck-chakkar.webp",
-      "/assets/action-chakkar.webp"
+      "/assets/action-chakkar.webp",
+      "/assets/photo-chakkar-spark.webp",
+      "/assets/ck-saucer.webp"
     ],
     "category": "ground-chakkars",
     "format": "Ground Spinner",
@@ -274,7 +285,10 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/photo-sparkler-kids.webp",
     "galleryImages": [
       "/assets/ck-kids-box.webp",
-      "/assets/photo-sparkler-kids.webp"
+      "/assets/photo-sparkler-kids.webp",
+      "/assets/ck-sparkler-silver.webp",
+      "/assets/ck-smoke-cans.webp",
+      "/assets/ck-shop-shelves.webp"
     ],
     "category": "kids-special",
     "format": "Child-Safe Hamper",
@@ -328,7 +342,9 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/action-sound.webp",
     "galleryImages": [
       "/assets/ck-ladi-1000.webp",
-      "/assets/action-sound.webp"
+      "/assets/action-sound.webp",
+      "/assets/ck-ladi-5000.webp",
+      "/assets/ck-shop-shelves.webp"
     ],
     "category": "sound-crackers",
     "format": "Garland Ladi",
@@ -381,7 +397,9 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/action-rockets.webp",
     "galleryImages": [
       "/assets/ck-rockets.webp",
-      "/assets/action-rockets.webp"
+      "/assets/action-rockets.webp",
+      "/assets/photo-sky-burst.webp",
+      "/assets/action-sky.webp"
     ],
     "category": "rockets",
     "format": "Whistling Rockets",
@@ -433,7 +451,10 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/photo-sky-burst.webp",
     "galleryImages": [
       "/assets/ck-cake-120.webp",
-      "/assets/photo-sky-burst.webp"
+      "/assets/photo-sky-burst.webp",
+      "/assets/photo-sky-gold.webp",
+      "/assets/photo-sky-red.webp",
+      "/assets/action-sky.webp"
     ],
     "category": "aerial-shots",
     "format": "Grand Finale Cake",
@@ -480,7 +501,9 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/photo-sparkler-kids.webp",
     "galleryImages": [
       "/assets/ck-smoke-tubes.webp",
-      "/assets/photo-sparkler-kids.webp"
+      "/assets/photo-sparkler-kids.webp",
+      "/assets/ck-smoke-cans.webp",
+      "/assets/ck-kids-box.webp"
     ],
     "category": "kids-special",
     "format": "Day Fountains",
@@ -533,7 +556,9 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/photo-anar-gold.webp",
     "galleryImages": [
       "/assets/ck-anar-jumbo.webp",
-      "/assets/photo-anar-gold.webp"
+      "/assets/photo-anar-gold.webp",
+      "/assets/photo-anar-tall.webp",
+      "/assets/action-anar.webp"
     ],
     "category": "flower-pots",
     "format": "Jumbo Anar",
@@ -587,7 +612,8 @@ export const PRODUCTS: Product[] = [
       "/assets/mega-starter.webp",
       "/assets/mega-starter-contents.webp",
       "/assets/mega-starter-night.webp",
-      "/assets/action-sky.webp"
+      "/assets/mega-all-three.webp",
+      "/assets/ck-shop-shelves.webp"
     ],
     "category": "mega-packs",
     "format": "Mega Pack",
@@ -635,7 +661,8 @@ export const PRODUCTS: Product[] = [
       "/assets/mega-family.webp",
       "/assets/mega-family-contents.webp",
       "/assets/mega-family-night.webp",
-      "/assets/action-anar.webp"
+      "/assets/mega-all-three.webp",
+      "/assets/ck-shop-shelves.webp"
     ],
     "category": "mega-packs",
     "format": "Mega Pack",
@@ -684,7 +711,8 @@ export const PRODUCTS: Product[] = [
       "/assets/mega-grand.webp",
       "/assets/mega-grand-contents.webp",
       "/assets/mega-grand-night.webp",
-      "/assets/photo-sky-burst.webp"
+      "/assets/mega-all-three.webp",
+      "/assets/ck-cake-120.webp"
     ],
     "category": "mega-packs",
     "format": "Mega Pack",
@@ -732,7 +760,9 @@ export const PRODUCTS: Product[] = [
     "galleryImages": [
       "/assets/combo-pataka-diyas.webp",
       "/assets/decor-clay-diyas.webp",
-      "/assets/decor-clay-diyas.webp"
+      "/assets/hamper-puja.webp",
+      "/assets/combo-pataka-mithai.webp",
+      "/assets/decor-diya-steps.webp"
     ],
     "category": "gift-hampers",
     "format": "Gift Hamper",
@@ -778,7 +808,10 @@ export const PRODUCTS: Product[] = [
     "image": "/assets/hamper-festive.webp",
     "secondaryImage": "/assets/hamper-family.webp",
     "galleryImages": [
+      "/assets/combo-pataka-mithai.webp",
       "/assets/hamper-festive.webp",
+      "/assets/sweets-kaju-katli.webp",
+      "/assets/sweets-assorted-box.webp",
       "/assets/hamper-family.webp"
     ],
     "category": "gift-hampers",
@@ -825,7 +858,10 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/decor-puja-set.webp",
     "galleryImages": [
       "/assets/hamper-puja.webp",
-      "/assets/decor-puja-set.webp"
+      "/assets/decor-puja-set.webp",
+      "/assets/decor-puja-thali.webp",
+      "/assets/decor-clay-diyas.webp",
+      "/assets/hd-akhand-diya.webp"
     ],
     "category": "gift-hampers",
     "format": "Gift Hamper",
@@ -871,7 +907,10 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/hamper-festive.webp",
     "galleryImages": [
       "/assets/hamper-family.webp",
-      "/assets/hamper-festive.webp"
+      "/assets/hamper-festive.webp",
+      "/assets/combo-pataka-mithai.webp",
+      "/assets/mega-starter-contents.webp",
+      "/assets/sweets-assorted-box.webp"
     ],
     "category": "gift-hampers",
     "format": "Gift Hamper",
@@ -918,7 +957,10 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/hamper-family.webp",
     "galleryImages": [
       "/assets/hamper-office.webp",
-      "/assets/hamper-family.webp"
+      "/assets/hamper-festive.webp",
+      "/assets/sweets-gift-box.webp",
+      "/assets/sweets-kaju-katli.webp",
+      "/assets/hd-tealight-bar.webp"
     ],
     "category": "gift-hampers",
     "format": "Gift Hamper",
@@ -972,7 +1014,9 @@ export const PRODUCTS: Product[] = [
     "galleryImages": [
       "/assets/decor-clay-diyas.webp",
       "/assets/decor-diya-steps.webp",
-      "/assets/decor-diya-ring.webp"
+      "/assets/decor-diya-ring.webp",
+      "/assets/hd-floating-diyas.webp",
+      "/assets/blog-diyas.webp"
     ],
     "category": "diyas-decor",
     "format": "Clay Diyas",
@@ -1025,7 +1069,9 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/decor-diya-ring.webp",
     "galleryImages": [
       "/assets/decor-candles.webp",
-      "/assets/decor-diya-ring.webp"
+      "/assets/decor-diya-ring.webp",
+      "/assets/hd-glass-tealights.webp",
+      "/assets/hd-tealight-bar.webp"
     ],
     "category": "diyas-decor",
     "format": "Candles",
@@ -1079,7 +1125,8 @@ export const PRODUCTS: Product[] = [
     "galleryImages": [
       "/assets/decor-rangoli-set.webp",
       "/assets/decor-rangoli-design.webp",
-      "/assets/decor-rangoli-pattern.webp"
+      "/assets/decor-rangoli-pattern.webp",
+      "/assets/blog-rangoli.webp"
     ],
     "category": "diyas-decor",
     "format": "Rangoli",
@@ -1132,7 +1179,8 @@ export const PRODUCTS: Product[] = [
     "galleryImages": [
       "/assets/decor-rangoli-pattern.webp",
       "/assets/decor-rangoli-design.webp",
-      "/assets/decor-rangoli-set.webp"
+      "/assets/decor-rangoli-set.webp",
+      "/assets/blog-rangoli.webp"
     ],
     "category": "diyas-decor",
     "format": "Rangoli",
@@ -1179,7 +1227,9 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/decor-marigold-garland.webp",
     "galleryImages": [
       "/assets/decor-marigold-toran.webp",
-      "/assets/decor-marigold-garland.webp"
+      "/assets/decor-marigold-garland.webp",
+      "/assets/hd-lights-house.webp",
+      "/assets/hd-urli-flowers.webp"
     ],
     "category": "diyas-decor",
     "format": "Door Decor",
@@ -1231,7 +1281,9 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/decor-marigold-toran.webp",
     "galleryImages": [
       "/assets/decor-marigold-garland.webp",
-      "/assets/decor-marigold-toran.webp"
+      "/assets/decor-marigold-toran.webp",
+      "/assets/hd-urli-flowers.webp",
+      "/assets/hd-flower-bowl.webp"
     ],
     "category": "diyas-decor",
     "format": "Door Decor",
@@ -1277,7 +1329,10 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/decor-puja-set.webp",
     "galleryImages": [
       "/assets/decor-puja-thali.webp",
-      "/assets/decor-puja-set.webp"
+      "/assets/decor-puja-set.webp",
+      "/assets/hd-brass-aarti.webp",
+      "/assets/hd-akhand-diya.webp",
+      "/assets/blog-puja.webp"
     ],
     "category": "diyas-decor",
     "format": "Puja Set",
@@ -1323,7 +1378,9 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/photo-sky-red.webp",
     "galleryImages": [
       "/assets/ck-shells.webp",
-      "/assets/photo-sky-red.webp"
+      "/assets/photo-sky-red.webp",
+      "/assets/action-sound.webp",
+      "/assets/ck-shop-shelves.webp"
     ],
     "category": "sound-crackers",
     "format": "Aerial Sound Shell",
@@ -1369,7 +1426,9 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/photo-sky-gold.webp",
     "galleryImages": [
       "/assets/ck-cake-60.webp",
-      "/assets/photo-sky-gold.webp"
+      "/assets/photo-sky-gold.webp",
+      "/assets/photo-sky-burst.webp",
+      "/assets/action-sky.webp"
     ],
     "category": "aerial-shots",
     "format": "Multi-Shot Cake",
@@ -1415,7 +1474,9 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/photo-anar-tall.webp",
     "galleryImages": [
       "/assets/ck-anar-peacock.webp",
-      "/assets/photo-anar-tall.webp"
+      "/assets/photo-anar-tall.webp",
+      "/assets/photo-anar-gold.webp",
+      "/assets/action-anar.webp"
     ],
     "category": "flower-pots",
     "format": "Jumbo Fountain",
@@ -1461,7 +1522,10 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/photo-sparkler-hand.webp",
     "galleryImages": [
       "/assets/ck-sparkler-silver.webp",
-      "/assets/photo-sparkler-hand.webp"
+      "/assets/photo-sparkler-hand.webp",
+      "/assets/photo-sparkler-kids.webp",
+      "/assets/action-sparkler.webp",
+      "/assets/ck-sparkler-gold.webp"
     ],
     "category": "sparklers",
     "format": "Electric Sparklers",
@@ -1507,7 +1571,9 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/photo-chakkar-spark.webp",
     "galleryImages": [
       "/assets/ck-saucer.webp",
-      "/assets/photo-chakkar-spark.webp"
+      "/assets/photo-chakkar-spark.webp",
+      "/assets/action-chakkar.webp",
+      "/assets/ck-chakkar.webp"
     ],
     "category": "ground-chakkars",
     "format": "Aerial Spinner",
@@ -1553,7 +1619,9 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/photo-sparkler-kids.webp",
     "galleryImages": [
       "/assets/ck-smoke-cans.webp",
-      "/assets/photo-sparkler-kids.webp"
+      "/assets/photo-sparkler-kids.webp",
+      "/assets/ck-smoke-tubes.webp",
+      "/assets/ck-kids-box.webp"
     ],
     "category": "kids-special",
     "format": "Day Novelty",
@@ -1600,7 +1668,9 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/action-sound.webp",
     "galleryImages": [
       "/assets/ck-ladi-5000.webp",
-      "/assets/action-sound.webp"
+      "/assets/action-sound.webp",
+      "/assets/ck-ladi-1000.webp",
+      "/assets/ck-shop-shelves.webp"
     ],
     "category": "sound-crackers",
     "format": "Garland Ladi",
@@ -1648,7 +1718,9 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/hd-lights-house.webp",
     "galleryImages": [
       "/assets/hd-string-lights.webp",
-      "/assets/hd-lights-house.webp"
+      "/assets/hd-lights-house.webp",
+      "/assets/hd-fairy-lights.webp",
+      "/assets/hd-tealight-bar.webp"
     ],
     "category": "home-decor",
     "format": "Lights",
@@ -1702,7 +1774,9 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/hd-lantern-red.webp",
     "galleryImages": [
       "/assets/hd-lantern-orange.webp",
-      "/assets/hd-lantern-red.webp"
+      "/assets/hd-lantern-red.webp",
+      "/assets/hd-lantern-star.webp",
+      "/assets/hd-lights-house.webp"
     ],
     "category": "home-decor",
     "format": "Lanterns",
@@ -1754,6 +1828,8 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/hd-lights-house.webp",
     "galleryImages": [
       "/assets/hd-lantern-star.webp",
+      "/assets/hd-lantern-orange.webp",
+      "/assets/hd-lantern-red.webp",
       "/assets/hd-lights-house.webp"
     ],
     "category": "home-decor",
@@ -1800,7 +1876,9 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/hd-brass-aarti.webp",
     "galleryImages": [
       "/assets/hd-brass-lamp.webp",
-      "/assets/hd-brass-aarti.webp"
+      "/assets/hd-brass-aarti.webp",
+      "/assets/hd-akhand-diya.webp",
+      "/assets/decor-puja-thali.webp"
     ],
     "category": "home-decor",
     "format": "Diyas",
@@ -1847,7 +1925,9 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/hd-brass-lamp.webp",
     "galleryImages": [
       "/assets/hd-brass-aarti.webp",
-      "/assets/hd-brass-lamp.webp"
+      "/assets/hd-brass-lamp.webp",
+      "/assets/hd-akhand-diya.webp",
+      "/assets/decor-puja-set.webp"
     ],
     "category": "home-decor",
     "format": "Diyas",
@@ -1894,7 +1974,9 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/hd-urli-flowers.webp",
     "galleryImages": [
       "/assets/hd-flower-bowl.webp",
-      "/assets/hd-urli-flowers.webp"
+      "/assets/hd-urli-flowers.webp",
+      "/assets/hd-floating-diyas.webp",
+      "/assets/decor-marigold-garland.webp"
     ],
     "category": "home-decor",
     "format": "Diyas",
@@ -1941,7 +2023,9 @@ export const PRODUCTS: Product[] = [
     "secondaryImage": "/assets/hd-tealight-bar.webp",
     "galleryImages": [
       "/assets/hd-glass-tealights.webp",
-      "/assets/hd-tealight-bar.webp"
+      "/assets/hd-tealight-bar.webp",
+      "/assets/decor-candles.webp",
+      "/assets/hd-fairy-lights.webp"
     ],
     "category": "home-decor",
     "format": "Candles",
@@ -1968,6 +2052,177 @@ export const PRODUCTS: Product[] = [
       "Home Decor"
     ],
     "stockQuantity": 0,
+    "trackInventory": false
+  },
+  {
+    "id": "micro-copper-fairy-rice-lights",
+    "handle": "micro-copper-fairy-rice-lights",
+    "title": "Diwali Micro LED Copper Wire Fairy Rice Lights (20m)",
+    "subtitle": "Warm Amber Golden Rice Lights · Bendable Copper Wire for Mandir, Windows & Balconies",
+    "price": 299,
+    "originalPrice": 599,
+    "discount": 50,
+    "rating": 4.9,
+    "reviewsCount": 84,
+    "weight": "1 Spool (20 Metres)",
+    "weights": [
+      "1 Spool (20 Metres)",
+      "Pack of 2 Spools (40m)"
+    ],
+    "image": "/assets/hd-fairy-lights.webp",
+    "secondaryImage": "/assets/hd-string-lights.webp",
+    "galleryImages": [
+      "/assets/hd-fairy-lights.webp",
+      "/assets/hd-string-lights.webp",
+      "/assets/hd-lights-house.webp",
+      "/assets/hd-tealight-bar.webp"
+    ],
+    "category": "home-decor",
+    "format": "Lights",
+    "region": "Festive Lighting",
+    "caffeine": "Warm Amber Glow",
+    "badge": "BESTSELLER",
+    "inStock": true,
+    "description": "Premium 20-metre micro LED copper wire fairy rice lights for Diwali. The bendable copper wire weaves easily around mandirs, curtain rods, plants, glass jars, and balconies with safe, low-voltage glowing warm amber illumination.",
+    "variants": [
+      {
+        "sku": "SP-FAIRY-20M",
+        "name": "1 Spool (20 Metres)",
+        "price": 299,
+        "compareAtPrice": 599
+      },
+      {
+        "sku": "SP-FAIRY-40M",
+        "name": "Pack of 2 Spools (40m)",
+        "price": 549,
+        "compareAtPrice": 1199
+      }
+    ],
+    "status": "active",
+    "sku": "SP-FAIRY-20M",
+    "vendor": "stall-47",
+    "tags": [
+      "Fairy Lights",
+      "Rice Lights",
+      "LED",
+      "Home Decor",
+      "Diwali Lights"
+    ],
+    "stockQuantity": 150,
+    "trackInventory": false
+  },
+  {
+    "id": "brass-akhand-diya-glass-chimney",
+    "handle": "brass-akhand-diya-glass-chimney",
+    "title": "Traditional Brass Akhand Diya with Glass Chimney",
+    "subtitle": "Solid Engraved Brass Base with Heat-Resistant Glass Chimney & Filigree Crown Lid",
+    "price": 699,
+    "originalPrice": 1199,
+    "discount": 42,
+    "rating": 4.9,
+    "reviewsCount": 67,
+    "weight": "Medium (14cm Height)",
+    "weights": [
+      "Medium (14cm Height)",
+      "Large (18cm Height)"
+    ],
+    "image": "/assets/hd-akhand-diya.webp",
+    "secondaryImage": "/assets/hd-brass-lamp.webp",
+    "galleryImages": [
+      "/assets/hd-akhand-diya.webp",
+      "/assets/hd-brass-lamp.webp",
+      "/assets/hd-brass-aarti.webp",
+      "/assets/decor-puja-thali.webp"
+    ],
+    "category": "home-decor",
+    "format": "Diyas",
+    "region": "Puja Decor",
+    "caffeine": "Everlasting Flame",
+    "badge": "BEST VALUE",
+    "inStock": true,
+    "description": "Authentic handcrafted solid brass Akhand Diya fitted with a protective borosilicate glass chimney and an ornate brass crown lid. Keeps your sacred Diwali and Kali Puja oil flame burning continuously for 24+ hours protected from winds and breezes.",
+    "variants": [
+      {
+        "sku": "SP-AKHAND-MED",
+        "name": "Medium (14cm Height)",
+        "price": 699,
+        "compareAtPrice": 1199
+      },
+      {
+        "sku": "SP-AKHAND-LRG",
+        "name": "Large (18cm Height)",
+        "price": 999,
+        "compareAtPrice": 1699
+      }
+    ],
+    "status": "active",
+    "sku": "SP-AKHAND-MED",
+    "vendor": "store-47",
+    "tags": [
+      "Akhand Diya",
+      "Brass Diya",
+      "Puja Essentials",
+      "Home Decor",
+      "Diyas"
+    ],
+    "stockQuantity": 80,
+    "trackInventory": false
+  },
+  {
+    "id": "handcrafted-floating-terracotta-urli-diyas",
+    "handle": "handcrafted-floating-terracotta-urli-diyas",
+    "title": "Floating Terracotta Floral Clay Diyas (Set of 8)",
+    "subtitle": "Water-Floating Hand-Painted Clay Diyas for Entrance & Living Room Urli Decor",
+    "price": 349,
+    "originalPrice": 599,
+    "discount": 42,
+    "rating": 4.8,
+    "reviewsCount": 52,
+    "weight": "Set of 8 Diyas",
+    "weights": [
+      "Set of 8 Diyas",
+      "Set of 16 Diyas"
+    ],
+    "image": "/assets/hd-floating-diyas.webp",
+    "secondaryImage": "/assets/hd-flower-bowl.webp",
+    "galleryImages": [
+      "/assets/hd-floating-diyas.webp",
+      "/assets/hd-flower-bowl.webp",
+      "/assets/hd-urli-flowers.webp",
+      "/assets/decor-clay-diyas.webp"
+    ],
+    "category": "home-decor",
+    "format": "Diyas",
+    "region": "Living Decor",
+    "caffeine": "Floating Petals",
+    "badge": "TRENDING",
+    "inStock": true,
+    "description": "Set of 8 hand-painted floral terracotta clay floating diyas designed to float gracefully in brass urlis, glass bowls, or water fountains with fresh marigold petals. Creates a serene, traditional Diwali reception glow.",
+    "variants": [
+      {
+        "sku": "SP-FLOAT-8",
+        "name": "Set of 8 Diyas",
+        "price": 349,
+        "compareAtPrice": 599
+      },
+      {
+        "sku": "SP-FLOAT-16",
+        "name": "Set of 16 Diyas",
+        "price": 599,
+        "compareAtPrice": 1099
+      }
+    ],
+    "status": "active",
+    "sku": "SP-FLOAT-8",
+    "vendor": "stall-47",
+    "tags": [
+      "Floating Diyas",
+      "Clay Diyas",
+      "Urli Decor",
+      "Home Decor",
+      "Diwali Diyas"
+    ],
+    "stockQuantity": 120,
     "trackInventory": false
   }
 ];

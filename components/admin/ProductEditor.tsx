@@ -380,8 +380,45 @@ export default function ProductEditor({ id }: { id?: string }) {
               <input className={input} value={form.badge} onChange={(e) => set("badge", e.target.value)} placeholder="e.g. BESTSELLER" />
             </label>
             <label className="block">
-              <span className={label}>Vendor</span>
-              <input className={input} value={form.vendor} onChange={(e) => set("vendor", e.target.value)} />
+              <div className="flex items-center justify-between mb-1">
+                <span className={label}>Vendor / Stall (Internal)</span>
+                <span className="text-[11px] text-[#747576] font-normal">Hidden from frontend</span>
+              </div>
+              <input
+                list="vendor-suggestions"
+                className={input}
+                value={form.vendor}
+                onChange={(e) => set("vendor", e.target.value)}
+                placeholder="e.g. stall-47, store-47, Sivakasi Hub"
+              />
+              <datalist id="vendor-suggestions">
+                <option value="stall-47" />
+                <option value="store-47" />
+                <option value="stall-12" />
+                <option value="stall-1" />
+                <option value="Siliguri Pataka" />
+                <option value="Sivakasi Direct" />
+              </datalist>
+              <div className="flex flex-wrap gap-1.5 mt-2">
+                <span className="text-[11px] text-[#747576] self-center">Quick pick:</span>
+                {["stall-47", "store-47", "Siliguri Pataka"].map((v) => (
+                  <button
+                    key={v}
+                    type="button"
+                    onClick={() => set("vendor", v)}
+                    className={`text-[11px] px-2 py-0.5 rounded-md border transition-colors cursor-pointer ${
+                      form.vendor === v
+                        ? "bg-[#4a0e14] text-white border-[#4a0e14]"
+                        : "bg-[#fff9ef] text-[#5c5a52] border-[#f0dfc6] hover:border-[#4a0e14]"
+                    }`}
+                  >
+                    {v}
+                  </button>
+                ))}
+              </div>
+              <span className="block text-[11px] text-[#747576] mt-1">
+                Assign to any stall or store ID. Never shown to customers on the storefront.
+              </span>
             </label>
             <label className="block">
               <span className={label}>Tags</span>

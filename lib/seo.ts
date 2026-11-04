@@ -167,7 +167,7 @@ export function productJsonLd(product: Product) {
     description: product.description || product.subtitle,
     image: Array.from(new Set([product.image, ...(product.galleryImages || [])])).map(absoluteUrl),
     ...(product.sku ? { sku: product.sku } : {}),
-    brand: { "@type": "Brand", name: product.vendor || SITE_NAME },
+    brand: { "@type": "Brand", name: SITE_NAME },
     ...(product.category ? { category: product.category } : {}),
     offers: variants.map((variant) => ({
       "@type": "Offer",

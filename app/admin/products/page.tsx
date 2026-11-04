@@ -36,6 +36,7 @@ export default function AdminProductsPage() {
   const [tab, setTab] = useState<Tab>("all");
   const [search, setSearch] = useState("");
   const [collection, setCollection] = useState("");
+  const [vendorFilter, setVendorFilter] = useState("");
   const [selected, setSelected] = useState<Set<string>>(new Set());
   const [busy, setBusy] = useState<string | null>(null);
   const [importOpen, setImportOpen] = useState(false);
@@ -70,19 +71,29 @@ export default function AdminProductsPage() {
     return c;
   }, [products]);
 
+  const uniqueVendors = useMemo(() => {
+    const set = new Set<string>();
+    products.forEach((p) => {
+      if (p.vendor && p.vendor.trim()) set.add(p.vendor.trim());
+    });
+    return Array.from(set).sort();
+  }, [products]);
+
   const visible = useMemo(() => {
     const q = search.trim().toLowerCase();
     return products.filter(
       (p) =>
         (tab === "all" || (p.status || "active") === tab) &&
         (!collection || p.category === collection) &&
+        (!vendorFilter || p.vendor === vendorFilter) &&
         (!q ||
           p.title.toLowerCase().includes(q) ||
           p.handle.toLowerCase().includes(q) ||
           (p.sku || "").toLowerCase().includes(q) ||
+          (p.vendor || "").toLowerCase().includes(q) ||
           (p.tags || []).some((t) => t.toLowerCase().includes(q)))
     );
-  }, [products, tab, collection, search]);
+  }, [products, tab, collection, vendorFilter, search]);
 
   const allVisibleSelected = visible.length > 0 && visible.every((p) => selected.has(p.id));
   const toggleAll = () =>
@@ -252,6 +263,17 @@ export default function AdminProductsPage() {
                   <option key={c.id} value={c.id}>{c.name}</option>
                 ))}
               </select>
+              <select
+                value={vendorFilter}
+                onChange={(e) => setVendorFilter(e.target.value)}
+                className="bg-[#fff9ef] border border-[#f0dfc6] rounded-xl px-3 py-2 text-[13.5px] outline-none"
+                aria-label="Filter by vendor / stall"
+              >
+                <option value="">All stalls / vendors</option>
+                {uniqueVendors.map((v) => (
+                  <option key={v} value={v}>{v}</option>
+                ))}
+              </select>
             </div>
           )}
         </div>
@@ -303,9 +325,14 @@ export default function AdminProductsPage() {
                         <img src={p.image} alt="" className="w-11 h-11 object-contain bg-[#fff9ef] rounded-lg border border-[#f0dfc6] shrink-0" />
                         <div className="min-w-0">
                           <div className="font-semibold text-[#2b1215] truncate max-w-[320px]">{p.title}</div>
-                          <div className="text-[11.5px] text-[#747576] truncate max-w-[320px]">
-                            {(p.variants || []).length} size{(p.variants || []).length === 1 ? "" : "s"}
-                            {p.sku ? ` · ${p.sku}` : ""}
+                          <div className="text-[11.5px] text-[#747576] truncate max-w-[320px] flex items-center gap-1.5 flex-wrap mt-0.5">
+                            <span>{(p.variants || []).length} size{(p.variants || []).length === 1 ? "" : "s"}</span>
+                            {p.sku ? <span>· {p.sku}</span> : null}
+                            {p.vendor ? (
+                              <span className="inline-block text-[10.5px] font-medium px-1.5 py-0.2 rounded bg-[#f3f1ec] text-[#4a0e14] border border-[#e5e0d8]">
+                                {p.vendor}
+                              </span>
+                            ) : null}
                           </div>
                         </div>
                       </div>

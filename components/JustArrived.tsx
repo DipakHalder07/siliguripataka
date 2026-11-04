@@ -146,8 +146,9 @@ export default function JustArrived() {
                           {product.title}
                         </Link>
                       </span>
-                      <p className="product-card__pointers text-[13.5px] sm:text-[14px] text-[#5c5a52] hover:text-[#2b1215] line-clamp-1 leading-normal m-0 block font-normal">
-                        {product.pointers}
+                      <p className="product-card__pointers text-[12px] sm:text-[14px] text-[#5c5a52] hover:text-[#2b1215] line-clamp-1 leading-normal m-0 block font-normal">
+                        <span className="sm:hidden">{product.pointers.split("·")[0].trim()}</span>
+                        <span className="hidden sm:inline">{product.pointers}</span>
                       </p>
                     </div>
 

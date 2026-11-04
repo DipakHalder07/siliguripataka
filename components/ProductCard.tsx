@@ -16,6 +16,17 @@ export default function ProductCard({ product }: { product: Product }) {
   const variant = findVariant(product, product.weight);
   const weight = product.weight ? variant.name : "";
 
+  // On mobile screens, show a shorter, punchy description (before separators like ·, •, or capped at 32 chars)
+  const shortDescription = React.useMemo(() => {
+    const raw = product.subtitle || product.description || "";
+    if (!raw) return "";
+    const firstClause = raw.split(/\s*[·•|]\s*/)[0].trim();
+    if (firstClause.length > 34) {
+      return firstClause.slice(0, 32).trim() + "…";
+    }
+    return firstClause;
+  }, [product.subtitle, product.description]);
+
   const soldOut = !product.inStock;
 
   const handleAddToCart = (e: React.MouseEvent) => {
@@ -93,8 +104,9 @@ export default function ProductCard({ product }: { product: Product }) {
                 {product.title}
               </Link>
             </span>
-            <p className="product-card__pointers text-[13.5px] sm:text-[14px] text-[#5c5a52] hover:text-[#2b1215] line-clamp-1 leading-normal m-0 block font-normal">
-              {product.subtitle}
+            <p className="product-card__pointers text-[12px] sm:text-[14px] text-[#5c5a52] hover:text-[#2b1215] line-clamp-1 leading-normal m-0 block font-normal">
+              <span className="sm:hidden">{shortDescription}</span>
+              <span className="hidden sm:inline">{product.subtitle}</span>
             </p>
           </div>
 

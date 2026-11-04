@@ -2224,6 +2224,738 @@ export const PRODUCTS: Product[] = [
     ],
     "stockQuantity": 120,
     "trackInventory": false
+  },
+  {
+    "id": "anil-5-ka-dum-sound-crackers",
+    "handle": "anil-5-ka-dum-sound-crackers",
+    "title": "Anil 5 Ka Dum Celebratory Sound Crackers",
+    "subtitle": "5 Rhythmic Celebratory Sound Bursts \u00b7 Sivakasi Green Quality",
+    "price": 294,
+    "originalPrice": 450,
+    "discount": 35,
+    "rating": 4.8,
+    "reviewsCount": 42,
+    "weight": "1 Pack (5 Crackers)",
+    "weights": [
+      "1 Pack (5 Crackers)",
+      "Pack of 3"
+    ],
+    "image": "/assets/product-5-ka-dum.webp",
+    "secondaryImage": "/assets/action-sound.webp",
+    "galleryImages": [
+      "/assets/product-5-ka-dum.webp",
+      "/assets/action-sound.webp"
+    ],
+    "category": "sound-crackers",
+    "format": "Sound Crackers",
+    "region": "Sivakasi Quality",
+    "caffeine": "Celebratory Sound",
+    "badge": "\ud83d\udca5 5-IN-1 SOUND",
+    "inStock": true,
+    "description": "Experience 5 consecutive high-energy sound bursts in a single cracker string. Manufactured by Anil Fireworks Factory Sivakasi for joyous Diwali and Kali Puja celebrations with authorized green certification.",
+    "variants": [
+      {
+        "sku": "SP-5DUM-1",
+        "name": "1 Pack (5 Crackers)",
+        "price": 294,
+        "compareAtPrice": 450
+      },
+      {
+        "sku": "SP-5DUM-3",
+        "name": "Pack of 3",
+        "price": 820,
+        "compareAtPrice": 1350
+      }
+    ],
+    "status": "active",
+    "sku": "SP-5DUM-1",
+    "vendor": "stall-47",
+    "tags": [
+      "Sound Crackers",
+      "5 Ka Dum",
+      "Anil Fireworks",
+      "Diwali"
+    ],
+    "stockQuantity": 80,
+    "trackInventory": true
+  },
+  {
+    "id": "classic-royal-anar-box-of-5",
+    "handle": "classic-royal-anar-box-of-5",
+    "title": "Classic Royal Anar Flower Pots (Full Pack of 5)",
+    "subtitle": "10-12 Feet Golden & Silver Sparkle Fountain \u00b7 Full Box",
+    "price": 94,
+    "originalPrice": 160,
+    "discount": 41,
+    "rating": 4.9,
+    "reviewsCount": 89,
+    "weight": "1 Box (5 Pcs)",
+    "weights": [
+      "1 Box (5 Pcs)",
+      "Pack of 2 Boxes"
+    ],
+    "image": "/assets/product-anar-box.webp",
+    "secondaryImage": "/assets/action-anar.webp",
+    "galleryImages": [
+      "/assets/product-anar-box.webp",
+      "/assets/action-anar.webp"
+    ],
+    "category": "flower-pots",
+    "format": "Flower Pot / Anar",
+    "region": "Sivakasi Quality",
+    "caffeine": "Golden Sparks",
+    "badge": "\ud83c\udf1f POPULAR ANAR",
+    "inStock": true,
+    "description": "Traditional Sivakasi flower pots that erupt into a sparkling 10 to 12-foot fountain of golden and silver sparks. Safe ground fountain perfect for family courtyards and terraces.",
+    "variants": [
+      {
+        "sku": "SP-ANAR-BOX1",
+        "name": "1 Box (5 Pcs)",
+        "price": 94,
+        "compareAtPrice": 160
+      },
+      {
+        "sku": "SP-ANAR-BOX2",
+        "name": "Pack of 2 Boxes",
+        "price": 179,
+        "compareAtPrice": 320
+      }
+    ],
+    "status": "active",
+    "sku": "SP-ANAR-BOX1",
+    "vendor": "stall-47",
+    "tags": [
+      "Flower Pots",
+      "Anar",
+      "Family Special",
+      "Ground Fireworks"
+    ],
+    "stockQuantity": 150,
+    "trackInventory": true
+  },
+  {
+    "id": "special-ground-chakkar-single",
+    "handle": "special-ground-chakkar-single",
+    "title": "Special Ground Chakkar (Single Piece)",
+    "subtitle": "High-Speed Spinning Ground Wheel \u00b7 Golden Sparks",
+    "price": 15,
+    "originalPrice": 25,
+    "discount": 40,
+    "rating": 4.7,
+    "reviewsCount": 65,
+    "weight": "1 Piece",
+    "weights": [
+      "1 Piece",
+      "Pack of 10 Pcs"
+    ],
+    "image": "/assets/product-chakkar-single.webp",
+    "secondaryImage": "/assets/action-chakkar.webp",
+    "galleryImages": [
+      "/assets/product-chakkar-single.webp",
+      "/assets/action-chakkar.webp"
+    ],
+    "category": "ground-chakkars",
+    "format": "Ground Spinner",
+    "region": "Sivakasi Quality",
+    "caffeine": "Spinning Rings",
+    "badge": "\ud83c\udf00 TOP VALUE",
+    "inStock": true,
+    "description": "Rapid ground-spinning chakkar emitting vivid circular halos of golden sparks on any smooth surface. Offered individually so you can pick your exact count.",
+    "variants": [
+      {
+        "sku": "SP-CHAK-1",
+        "name": "1 Piece",
+        "price": 15,
+        "compareAtPrice": 25
+      },
+      {
+        "sku": "SP-CHAK-10",
+        "name": "Pack of 10 Pcs",
+        "price": 139,
+        "compareAtPrice": 250
+      }
+    ],
+    "status": "active",
+    "sku": "SP-CHAK-1",
+    "vendor": "stall-47",
+    "tags": [
+      "Chakkar",
+      "Chorki",
+      "Ground Spinner",
+      "Diwali"
+    ],
+    "stockQuantity": 300,
+    "trackInventory": true
+  },
+  {
+    "id": "prakash-chutput-magic-pop",
+    "handle": "prakash-chutput-magic-pop",
+    "title": "Prakash Chutput Magic Pop Crackers",
+    "subtitle": "Fun Crackling Sound \u00b7 100% Child-Safe Novelty Snapper",
+    "price": 55,
+    "originalPrice": 90,
+    "discount": 39,
+    "rating": 4.8,
+    "reviewsCount": 51,
+    "weight": "1 Pack",
+    "weights": [
+      "1 Pack",
+      "Pack of 3"
+    ],
+    "image": "/assets/product-chutput-55.webp",
+    "secondaryImage": "/assets/action-kids.webp",
+    "galleryImages": [
+      "/assets/product-chutput-55.webp"
+    ],
+    "category": "kids-special",
+    "format": "Novelty Snappers",
+    "region": "Sivakasi Quality",
+    "caffeine": "Child-Friendly",
+    "badge": "\ud83d\udc76 KIDS FAVORITE",
+    "inStock": true,
+    "description": "Delightful friction-strike pop crackers by Prakash Fireworks Sivakasi. Produces crisp crackling snaps without dangerous flames, making them great fun for kids under adult supervision.",
+    "variants": [
+      {
+        "sku": "SP-CP-55",
+        "name": "1 Pack",
+        "price": 55,
+        "compareAtPrice": 90
+      },
+      {
+        "sku": "SP-CP-55-3",
+        "name": "Pack of 3",
+        "price": 149,
+        "compareAtPrice": 270
+      }
+    ],
+    "status": "active",
+    "sku": "SP-CP-55",
+    "vendor": "stall-47",
+    "tags": [
+      "Kids Special",
+      "Chutput",
+      "Pop Crackers",
+      "Child Safe"
+    ],
+    "stockQuantity": 120,
+    "trackInventory": true
+  },
+  {
+    "id": "chutput-deluxe-mega-pack",
+    "handle": "chutput-deluxe-mega-pack",
+    "title": "Chutput Deluxe Mega Crackers (Special Pack)",
+    "subtitle": "Extended Crackling Snaps \u00b7 Low Smoke & Safe Fun",
+    "price": 66,
+    "originalPrice": 110,
+    "discount": 40,
+    "rating": 4.9,
+    "reviewsCount": 38,
+    "weight": "1 Mega Pack",
+    "weights": [
+      "1 Mega Pack",
+      "Pack of 2"
+    ],
+    "image": "/assets/product-chutput-66.webp",
+    "secondaryImage": "/assets/action-kids.webp",
+    "galleryImages": [
+      "/assets/product-chutput-66.webp"
+    ],
+    "category": "kids-special",
+    "format": "Novelty Snappers",
+    "region": "Sivakasi Quality",
+    "caffeine": "Child-Friendly",
+    "badge": "\u2728 DELUXE POP",
+    "inStock": true,
+    "description": "Deluxe sized pack of traditional Indian chutput crackers that pop with crisp, energetic crackling sounds. Green-certified, low smoke, and family friendly.",
+    "variants": [
+      {
+        "sku": "SP-CP-66",
+        "name": "1 Mega Pack",
+        "price": 66,
+        "compareAtPrice": 110
+      },
+      {
+        "sku": "SP-CP-66-2",
+        "name": "Pack of 2",
+        "price": 125,
+        "compareAtPrice": 220
+      }
+    ],
+    "status": "active",
+    "sku": "SP-CP-66",
+    "vendor": "stall-47",
+    "tags": [
+      "Kids Special",
+      "Chutput",
+      "Novelty Crackers",
+      "Diwali"
+    ],
+    "stockQuantity": 100,
+    "trackInventory": true
+  },
+  {
+    "id": "penta-5-shot-aerial-cake",
+    "handle": "penta-5-shot-aerial-cake",
+    "title": "Prakash Penta 5-Shot Multi-Color Aerial Cake",
+    "subtitle": "5 Sky Burst Aerial Shots \u00b7 Multi-Color Starburst Effects",
+    "price": 280,
+    "originalPrice": 450,
+    "discount": 38,
+    "rating": 4.8,
+    "reviewsCount": 74,
+    "weight": "1 Cake (5 Shots)",
+    "weights": [
+      "1 Cake (5 Shots)",
+      "Pack of 2 Cakes"
+    ],
+    "image": "/assets/product-penta-5-shot.webp",
+    "secondaryImage": "/assets/action-sky.webp",
+    "galleryImages": [
+      "/assets/product-penta-5-shot.webp",
+      "/assets/action-sky.webp"
+    ],
+    "category": "aerial-shots",
+    "format": "Multi-Shot Cake",
+    "region": "Sivakasi Quality",
+    "caffeine": "High Altitude",
+    "badge": "\ud83d\ude80 5 SHOT SKY",
+    "inStock": true,
+    "description": "5 consecutive vertical aerial shells that launch into the evening sky and burst into radiant red, green, and golden starry brocades. Compact and budget-friendly aerial display.",
+    "variants": [
+      {
+        "sku": "SP-PENTA-5",
+        "name": "1 Cake (5 Shots)",
+        "price": 280,
+        "compareAtPrice": 450
+      },
+      {
+        "sku": "SP-PENTA-5-2",
+        "name": "Pack of 2 Cakes",
+        "price": 530,
+        "compareAtPrice": 900
+      }
+    ],
+    "status": "active",
+    "sku": "SP-PENTA-5",
+    "vendor": "stall-47",
+    "tags": [
+      "Aerial Shots",
+      "Sky Shots",
+      "Penta",
+      "Fireworks Cake"
+    ],
+    "stockQuantity": 90,
+    "trackInventory": true
+  },
+  {
+    "id": "royal-peacock-mayur-fountain",
+    "handle": "royal-peacock-mayur-fountain",
+    "title": "Royal Peacock Mayur Fountain (Grand Display)",
+    "subtitle": "Spectacular Peacock Feather Spray \u00b7 Multicolor Sparkle Wings",
+    "price": 889,
+    "originalPrice": 1450,
+    "discount": 39,
+    "rating": 5.0,
+    "reviewsCount": 112,
+    "weight": "1 Grand Display Unit",
+    "weights": [
+      "1 Grand Display Unit"
+    ],
+    "image": "/assets/product-peacock-fountain.webp",
+    "secondaryImage": "/assets/action-anar.webp",
+    "galleryImages": [
+      "/assets/product-peacock-fountain.webp",
+      "/assets/action-anar.webp"
+    ],
+    "category": "flower-pots",
+    "format": "Speciality Fountain",
+    "region": "Sivakasi Quality",
+    "caffeine": "Multicolor Display",
+    "badge": "\ud83e\udd9a SHOWSTOPPER",
+    "inStock": true,
+    "description": "A show-stopping visual centerpiece that opens into radiant peacock feather plumes of emerald, sapphire, and glittering gold sparks. One of the most sought-after visual fireworks in Siliguri.",
+    "variants": [
+      {
+        "sku": "SP-PEACOCK-1",
+        "name": "1 Grand Display Unit",
+        "price": 889,
+        "compareAtPrice": 1450
+      }
+    ],
+    "status": "active",
+    "sku": "SP-PEACOCK-1",
+    "vendor": "stall-47",
+    "tags": [
+      "Flower Pots",
+      "Peacock Fountain",
+      "Mayur Anar",
+      "Diwali Centerpiece"
+    ],
+    "stockQuantity": 50,
+    "trackInventory": true
+  },
+  {
+    "id": "aks-pop-pop-snappers-box",
+    "handle": "aks-pop-pop-snappers-box",
+    "title": "AKS Pop-Pop Snappers (Child-Safe Box)",
+    "subtitle": "No Match Needed \u00b7 Throw & Pop \u00b7 100% Smoke-Free",
+    "price": 14,
+    "originalPrice": 25,
+    "discount": 44,
+    "rating": 4.9,
+    "reviewsCount": 128,
+    "weight": "1 Box (50 Pcs)",
+    "weights": [
+      "1 Box (50 Pcs)",
+      "Pack of 5 Boxes"
+    ],
+    "image": "/assets/product-pop-pop.webp",
+    "secondaryImage": "/assets/action-kids.webp",
+    "galleryImages": [
+      "/assets/product-pop-pop.webp"
+    ],
+    "category": "kids-special",
+    "format": "Novelty Snappers",
+    "region": "Sivakasi Quality",
+    "caffeine": "Child-Friendly",
+    "badge": "\ud83d\udc76 100% SAFE",
+    "inStock": true,
+    "description": "Throw on the ground to hear a fun little pop! Requires no lighter or matches, produces zero smoke, and is completely child-friendly for kids and toddlers under adult supervision.",
+    "variants": [
+      {
+        "sku": "SP-POP-1",
+        "name": "1 Box (50 Pcs)",
+        "price": 14,
+        "compareAtPrice": 25
+      },
+      {
+        "sku": "SP-POP-5",
+        "name": "Pack of 5 Boxes",
+        "price": 60,
+        "compareAtPrice": 125
+      }
+    ],
+    "status": "active",
+    "sku": "SP-POP-1",
+    "vendor": "stall-47",
+    "tags": [
+      "Kids Special",
+      "Pop-Pop",
+      "Snappers",
+      "Safe Fireworks"
+    ],
+    "stockQuantity": 200,
+    "trackInventory": true
+  },
+  {
+    "id": "sky-burst-12-shot-aerial-cake",
+    "handle": "sky-burst-12-shot-aerial-cake",
+    "title": "Sky Burst 12-Shot Multi-Color Aerial Cake",
+    "subtitle": "12 High-Altitude Repeater Shots \u00b7 Golden Palm & Crackling Willow",
+    "price": 588,
+    "originalPrice": 950,
+    "discount": 38,
+    "rating": 4.9,
+    "reviewsCount": 85,
+    "weight": "1 Cake (12 Shots)",
+    "weights": [
+      "1 Cake (12 Shots)",
+      "Pack of 2 Cakes"
+    ],
+    "image": "/assets/product-sky-shot-588.webp",
+    "secondaryImage": "/assets/action-sky.webp",
+    "galleryImages": [
+      "/assets/product-sky-shot-588.webp",
+      "/assets/action-sky.webp"
+    ],
+    "category": "aerial-shots",
+    "format": "Multi-Shot Cake",
+    "region": "Sivakasi Quality",
+    "caffeine": "High Altitude",
+    "badge": "\u2728 12 SHOT REPEATER",
+    "inStock": true,
+    "description": "Sequential aerial repeater cake launching 12 spectacular bursts of golden glitter palms, ruby red stars, and crackling willow tails high into the Siliguri night sky.",
+    "variants": [
+      {
+        "sku": "SP-SKY-12",
+        "name": "1 Cake (12 Shots)",
+        "price": 588,
+        "compareAtPrice": 950
+      },
+      {
+        "sku": "SP-SKY-12-2",
+        "name": "Pack of 2 Cakes",
+        "price": 1120,
+        "compareAtPrice": 1900
+      }
+    ],
+    "status": "active",
+    "sku": "SP-SKY-12",
+    "vendor": "stall-47",
+    "tags": [
+      "Aerial Shots",
+      "Sky Shots",
+      "12 Shots",
+      "Fireworks Cake"
+    ],
+    "stockQuantity": 75,
+    "trackInventory": true
+  },
+  {
+    "id": "sky-thunder-25-shot-aerial-cake",
+    "handle": "sky-thunder-25-shot-aerial-cake",
+    "title": "Sky Thunder 25-Shot Multi-Color Aerial Cake",
+    "subtitle": "25 High Altitude Shots \u00b7 Whistling Tail with Chrysanthemum Finale",
+    "price": 1188,
+    "originalPrice": 1950,
+    "discount": 39,
+    "rating": 5.0,
+    "reviewsCount": 97,
+    "weight": "1 Cake (25 Shots)",
+    "weights": [
+      "1 Cake (25 Shots)",
+      "Pack of 2 Cakes"
+    ],
+    "image": "/assets/product-sky-shot-1188.webp",
+    "secondaryImage": "/assets/action-sky.webp",
+    "galleryImages": [
+      "/assets/product-sky-shot-1188.webp",
+      "/assets/action-sky.webp"
+    ],
+    "category": "aerial-shots",
+    "format": "Multi-Shot Cake",
+    "region": "Sivakasi Quality",
+    "caffeine": "High Altitude",
+    "badge": "\ud83c\udf86 25 SHOT THUNDER",
+    "inStock": true,
+    "description": "Deluxe 25-shot aerial cake repeater delivering whistling tail ascents that open into massive multicolored chrysanthemums and a crackling golden brocade finale.",
+    "variants": [
+      {
+        "sku": "SP-SKY-25",
+        "name": "1 Cake (25 Shots)",
+        "price": 1188,
+        "compareAtPrice": 1950
+      },
+      {
+        "sku": "SP-SKY-25-2",
+        "name": "Pack of 2 Cakes",
+        "price": 2250,
+        "compareAtPrice": 3900
+      }
+    ],
+    "status": "active",
+    "sku": "SP-SKY-25",
+    "vendor": "stall-47",
+    "tags": [
+      "Aerial Shots",
+      "Sky Shots",
+      "25 Shots",
+      "Grand Finale"
+    ],
+    "stockQuantity": 60,
+    "trackInventory": true
+  },
+  {
+    "id": "classic-7-shot-aerial-repeater",
+    "handle": "classic-7-shot-aerial-repeater",
+    "title": "Classic 7-Shot Aerial Sky Repeater Cake",
+    "subtitle": "7 High-Flying Aerial Bursts \u00b7 Emerald & Crimson Colors",
+    "price": 420,
+    "originalPrice": 700,
+    "discount": 40,
+    "rating": 4.8,
+    "reviewsCount": 63,
+    "weight": "1 Cake (7 Shots)",
+    "weights": [
+      "1 Cake (7 Shots)",
+      "Pack of 2 Cakes"
+    ],
+    "image": "/assets/product-sky-shot-420.webp",
+    "secondaryImage": "/assets/action-sky.webp",
+    "galleryImages": [
+      "/assets/product-sky-shot-420.webp",
+      "/assets/action-sky.webp"
+    ],
+    "category": "aerial-shots",
+    "format": "Multi-Shot Cake",
+    "region": "Sivakasi Quality",
+    "caffeine": "High Altitude",
+    "badge": "\u2b50 7 SHOT CLASSIC",
+    "inStock": true,
+    "description": "7 sequential high-altitude aerial shots that fill the sky with bright emerald green and crimson red peony bursts. Easy single-fuse lighting for safe backyard shows.",
+    "variants": [
+      {
+        "sku": "SP-SKY-7",
+        "name": "1 Cake (7 Shots)",
+        "price": 420,
+        "compareAtPrice": 700
+      },
+      {
+        "sku": "SP-SKY-7-2",
+        "name": "Pack of 2 Cakes",
+        "price": 799,
+        "compareAtPrice": 1400
+      }
+    ],
+    "status": "active",
+    "sku": "SP-SKY-7",
+    "vendor": "stall-47",
+    "tags": [
+      "Aerial Shots",
+      "Sky Shots",
+      "7 Shots",
+      "Fireworks Cake"
+    ],
+    "stockQuantity": 85,
+    "trackInventory": true
+  },
+  {
+    "id": "grand-6-inch-mega-aerial-shell",
+    "handle": "grand-6-inch-mega-aerial-shell",
+    "title": "Grand 6-Inch Mega High-Altitude Aerial Shell",
+    "subtitle": "Massive 200-Foot Sky Bloom \u00b7 Professional Brocade Crown Finale",
+    "price": 2499,
+    "originalPrice": 3999,
+    "discount": 38,
+    "rating": 5.0,
+    "reviewsCount": 44,
+    "weight": "1 Mega Shell (6-Inch)",
+    "weights": [
+      "1 Mega Shell (6-Inch)"
+    ],
+    "image": "/assets/product-sky-shot-6inch.webp",
+    "secondaryImage": "/assets/action-sky.webp",
+    "galleryImages": [
+      "/assets/product-sky-shot-6inch.webp",
+      "/assets/action-sky.webp"
+    ],
+    "category": "aerial-shots",
+    "format": "Giant Aerial Shell",
+    "region": "Sivakasi Quality",
+    "caffeine": "High Altitude",
+    "badge": "\ud83d\udc51 6-INCH SHELL",
+    "inStock": true,
+    "description": "Our largest single aerial shell featuring an immense 6-inch diameter tube that launches high above Siliguri to produce an enormous 200-foot diameter golden brocade crown.",
+    "variants": [
+      {
+        "sku": "SP-SHELL-6IN",
+        "name": "1 Mega Shell (6-Inch)",
+        "price": 2499,
+        "compareAtPrice": 3999
+      }
+    ],
+    "status": "active",
+    "sku": "SP-SHELL-6IN",
+    "vendor": "stall-47",
+    "tags": [
+      "Aerial Shots",
+      "Mega Shell",
+      "6 Inch",
+      "Grand Finale"
+    ],
+    "stockQuantity": 35,
+    "trackInventory": true
+  },
+  {
+    "id": "grand-50-shot-sky-spectacular-cake",
+    "handle": "grand-50-shot-sky-spectacular-cake",
+    "title": "Grand 50-Shot Fireworks Spectacular Cake",
+    "subtitle": "50 Non-Stop Aerial Bursts \u00b7 Continuous 90-Second Sky Show",
+    "price": 1700,
+    "originalPrice": 2800,
+    "discount": 39,
+    "rating": 5.0,
+    "reviewsCount": 78,
+    "weight": "1 Big Cake (50 Shots)",
+    "weights": [
+      "1 Big Cake (50 Shots)"
+    ],
+    "image": "/assets/product-sky-shot-big-1700.webp",
+    "secondaryImage": "/assets/action-sky.webp",
+    "galleryImages": [
+      "/assets/product-sky-shot-big-1700.webp",
+      "/assets/action-sky.webp"
+    ],
+    "category": "aerial-shots",
+    "format": "Multi-Shot Cake",
+    "region": "Sivakasi Quality",
+    "caffeine": "High Altitude",
+    "badge": "\ud83c\udf86 50 SHOT FINALE",
+    "inStock": true,
+    "description": "Full 90-second fireworks spectacle with 50 non-stop aerial launches that transition across multi-color strobes, silver flying fish, and a thunderous crackling brocade finale.",
+    "variants": [
+      {
+        "sku": "SP-SKY-50",
+        "name": "1 Big Cake (50 Shots)",
+        "price": 1700,
+        "compareAtPrice": 2800
+      }
+    ],
+    "status": "active",
+    "sku": "SP-SKY-50",
+    "vendor": "stall-47",
+    "tags": [
+      "Aerial Shots",
+      "50 Shots",
+      "Sky Cake",
+      "Diwali Grand Show"
+    ],
+    "stockQuantity": 40,
+    "trackInventory": true
+  },
+  {
+    "id": "pawan-electric-golden-sparklers-10s",
+    "handle": "pawan-electric-golden-sparklers-10s",
+    "title": "Pawan Electric Golden Sparklers (10 Sticks)",
+    "subtitle": "Smokeless Golden Sparks \u00b7 60-Second Long Burn \u00b7 Hand-Held Safe",
+    "price": 70,
+    "originalPrice": 120,
+    "discount": 42,
+    "rating": 4.8,
+    "reviewsCount": 86,
+    "weight": "1 Box (10 Sticks)",
+    "weights": [
+      "1 Box (10 Sticks)",
+      "Pack of 3 Boxes"
+    ],
+    "image": "/assets/product-pawan-sparklers.webp",
+    "secondaryImage": "/assets/action-sparkler.webp",
+    "galleryImages": [
+      "/assets/product-pawan-sparklers.webp",
+      "/assets/action-sparkler.webp"
+    ],
+    "category": "sparklers",
+    "format": "Sparkler Sticks",
+    "region": "Sivakasi Quality",
+    "caffeine": "Golden Sparks",
+    "badge": "\u2728 BESTSELLER",
+    "inStock": true,
+    "description": "High-grade electric golden sparklers by Pawan Fireworks. Made with low-smoke green formulation, safe wire handles, and bright glittering sparks for family celebrations.",
+    "variants": [
+      {
+        "sku": "SP-PAW-10",
+        "name": "1 Box (10 Sticks)",
+        "price": 70,
+        "compareAtPrice": 120
+      },
+      {
+        "sku": "SP-PAW-30",
+        "name": "Pack of 3 Boxes",
+        "price": 199,
+        "compareAtPrice": 360
+      }
+    ],
+    "status": "active",
+    "sku": "SP-PAW-10",
+    "vendor": "stall-47",
+    "tags": [
+      "Sparklers",
+      "Phuljhadi",
+      "Golden Sparklers",
+      "Family Safe"
+    ],
+    "stockQuantity": 150,
+    "trackInventory": true
   }
 ];
 

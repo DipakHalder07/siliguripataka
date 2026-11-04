@@ -57,10 +57,10 @@ export default function ProductCard({ product }: { product: Product }) {
     >
       {/* 1. Figure with 1:1 Aspect Ratio and Smooth Cross-Fade Hover */}
       <div className="relative w-full aspect-square bg-[#fff9ef] overflow-hidden rounded-t-[12px]">
-        {/* Badge: Bottom-right, flush with edge, matching live site */}
-        {(soldOut || product.badge) && (
+        {/* Badge: only when sold out, all marketing badges removed */}
+        {soldOut && (
           <span className="absolute bottom-0 right-0 z-10 bg-[#3f0c12] text-white text-[10.5px] sm:text-[11px] font-bold tracking-[1px] uppercase px-2 sm:px-2.5 py-1 rounded-tl-[4px] pointer-events-none">
-            {soldOut ? "SOLD OUT" : product.badge}
+            SOLD OUT
           </span>
         )}
 

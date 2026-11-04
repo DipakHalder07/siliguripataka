@@ -858,12 +858,7 @@ export default function CorporateGiftingPage() {
                         className="object-cover group-hover:scale-105 transition-transform duration-500"
                       />
 
-                      {/* Authentic Coral DIWALI EDITION Ribbon */}
-                      {p.badge ? (
-                        <div className="absolute top-2.5 left-0 z-10 bg-[#E96951] text-white text-[11px] font-bold tracking-[1px] uppercase px-2.5 py-1 shadow-sm">
-                          {p.badge}
-                        </div>
-                      ) : null}
+
                     </div>
 
                     {/* Content */}

@@ -69,7 +69,6 @@ export const PRODUCTS: Product[] = [
     "format": "Multi-Shot Cake",
     "region": "Sivakasi Quality",
     "caffeine": "High Altitude Colors",
-    "badge": "✨ DAZZLING SKY SHOT",
     "inStock": true,
     "description": "Light up the Siliguri skyline with 30 consecutive high-altitude aerial shots that burst into mesmerizing red, emerald green, royal purple, and sparkling golden brocade crowns.",
     "variants": [
@@ -125,7 +124,6 @@ export const PRODUCTS: Product[] = [
     "format": "Anar / Flower Pot",
     "region": "Sivakasi Quality",
     "caffeine": "Low Smoke & High Sparks",
-    "badge": "🌟 FESTIVE FAVORITE",
     "inStock": true,
     "description": "Traditional terracotta conical flower pots that produce an enchanting tri-color sparkling fountain up to 15 feet in height. Minimal smoke, certified green cracker formulation.",
     "variants": [
@@ -182,7 +180,6 @@ export const PRODUCTS: Product[] = [
     "format": "Electric Sparklers",
     "region": "Sivakasi Quality",
     "caffeine": "Zero Residue Sparks",
-    "badge": "🌿 100% GREEN CRACKER",
     "inStock": true,
     "description": "Pure festive joy in your hands! Extra-long 30cm premium electric sparklers with crackling golden stars that burn smoothly for over 90 seconds without hot ash dropout.",
     "variants": [
@@ -238,7 +235,6 @@ export const PRODUCTS: Product[] = [
     "format": "Ground Spinner",
     "region": "Sivakasi Quality",
     "caffeine": "Continuous Rotation",
-    "badge": "🌀 SUPER SPIN",
     "inStock": true,
     "description": "Watch in wonder as these perfectly balanced ground spinners whiz across the floor, creating continuous luminous halos of emerald green fire and golden sparkle rings.",
     "variants": [
@@ -294,7 +290,6 @@ export const PRODUCTS: Product[] = [
     "format": "Child-Safe Hamper",
     "region": "Certified Green",
     "caffeine": "No Gunpowder / Child Safe",
-    "badge": "👶 100% CHILD SAFE",
     "inStock": true,
     "description": "Specially curated for children with safety first! Includes harmless snapping pop-pops, musical whistling sparklers, non-toxic rainbow color smoke cartridges, and magic snake tablets.",
     "variants": [
@@ -350,7 +345,6 @@ export const PRODUCTS: Product[] = [
     "format": "Garland Ladi",
     "region": "Sivakasi Quality",
     "caffeine": "Crisp Festive Sound",
-    "badge": "🔥 CLASSIC DHAMAKA",
     "inStock": true,
     "description": "The heartbeat of Diwali night! Genuine Sivakasi rolled red paper garland cracker with unbroken, rhythmic bursts and a grand celebratory finale report.",
     "variants": [
@@ -405,7 +399,6 @@ export const PRODUCTS: Product[] = [
     "format": "Whistling Rockets",
     "region": "Sivakasi Quality",
     "caffeine": "High Velocity Flight",
-    "badge": "🚀 HIGH FLYER",
     "inStock": true,
     "description": "Ignite and watch them zoom hundreds of feet into the night sky with an exhilarating whistle before concluding in a dazzling glitter explosion.",
     "variants": [
@@ -460,7 +453,6 @@ export const PRODUCTS: Product[] = [
     "format": "Grand Finale Cake",
     "region": "Sivakasi Quality",
     "caffeine": "Non-Stop Sky Display",
-    "badge": "👑 GRAND FINALE",
     "inStock": true,
     "description": "Turn your rooftop or terrace into a world-class fireworks spectacle. 120 rapid-fire synchronized shots lighting up the night sky with cascading brocade crowns and glittering crackle effects.",
     "variants": [
@@ -509,7 +501,6 @@ export const PRODUCTS: Product[] = [
     "format": "Day Fountains",
     "region": "Eco Friendly",
     "caffeine": "Zero Sound / Pure Color",
-    "badge": "🌈 RAINBOW COLORS",
     "inStock": true,
     "description": "Ideal for daytime festivities, Rangoli backgrounds, and social media reels! Produces dense, vivid clouds of non-toxic colored smoke for up to 60 seconds each.",
     "variants": [
@@ -564,7 +555,6 @@ export const PRODUCTS: Product[] = [
     "format": "Jumbo Anar",
     "region": "Sivakasi Quality",
     "caffeine": "Giant Shower",
-    "badge": "✨ JUMBO FOUNTAIN",
     "inStock": true,
     "description": "Extra large heavyweight flower pots engineered to shoot a massive, dense vertical shower of golden sparks soaring up to 20 feet high with zero crackle danger.",
     "variants": [
@@ -619,7 +609,6 @@ export const PRODUCTS: Product[] = [
     "format": "Mega Pack",
     "region": "Siliguri Special",
     "caffeine": "For a Small Family",
-    "badge": "🎆 MEGA PACK",
     "inStock": true,
     "description": "A good mix for one family evening: 50 sparklers, 10 flower pots, 20 ground chakkars, 10 whistling rockets and a 30-shot sky cake for the finish. Costs ₹646 less than buying the same items separately. Delivered the same day or the next day within Siliguri, with 1 lighter free.",
     "variants": [
@@ -668,7 +657,6 @@ export const PRODUCTS: Product[] = [
     "format": "Mega Pack",
     "region": "Siliguri Special",
     "caffeine": "For the Whole Family",
-    "badge": "⭐ BEST VALUE",
     "inStock": true,
     "description": "Our best value pack for the whole family: 100 sparklers, 20 flower pots, 5 jumbo anars, 40 ground chakkars, 20 whistling rockets, two 30-shot sky cakes and a kids box. Costs ₹2,324 less than buying the same items separately. Delivered the same day or the next day within Siliguri, with 1 lighter free.",
     "variants": [
@@ -718,7 +706,6 @@ export const PRODUCTS: Product[] = [
     "format": "Mega Pack",
     "region": "Siliguri Special",
     "caffeine": "For a Grand Show",
-    "badge": "👑 BIGGEST SHOW",
     "inStock": true,
     "description": "A proper terrace or ground show: 200 sparklers, 20 flower pots, 10 jumbo anars, 40 ground chakkars, 40 whistling rockets, two 30-shot sky cakes, a kids box and a 120-shot grand finale cake. Costs ₹3,601 less than buying the same items separately. Delivered the same day or the next day within Siliguri, with 1 lighter free.",
     "variants": [
@@ -768,7 +755,6 @@ export const PRODUCTS: Product[] = [
     "format": "Gift Hamper",
     "region": "Siliguri Special",
     "caffeine": "Crackers + Diyas",
-    "badge": "",
     "inStock": true,
     "description": "Everything for one Diwali evening in one order: an assorted crackers box and 12 clay diyas. Delivered together within Siliguri, with a free lighter.",
     "variants": [
@@ -818,7 +804,6 @@ export const PRODUCTS: Product[] = [
     "format": "Gift Hamper",
     "region": "Festive Gifting",
     "caffeine": "Ready to Gift",
-    "badge": "🎁 BESTSELLER HAMPER",
     "inStock": true,
     "description": "A ready-to-gift hamper with diyas and festive touches in a box, finished with flowers. A warm gift for family and friends in Siliguri.",
     "variants": [
@@ -867,7 +852,6 @@ export const PRODUCTS: Product[] = [
     "format": "Gift Hamper",
     "region": "Festive Gifting",
     "caffeine": "For Puja",
-    "badge": "",
     "inStock": true,
     "description": "A thoughtful hamper with puja essentials, for elders and for families preparing for Lakshmi Puja or Kali Puja.",
     "variants": [
@@ -916,7 +900,6 @@ export const PRODUCTS: Product[] = [
     "format": "Gift Hamper",
     "region": "Festive Gifting",
     "caffeine": "For the Whole Family",
-    "badge": "",
     "inStock": true,
     "description": "A generous hamper for visiting family or sending to someone special this Diwali, with enough for the whole house to share.",
     "variants": [
@@ -966,7 +949,6 @@ export const PRODUCTS: Product[] = [
     "format": "Gift Hamper",
     "region": "Festive Gifting",
     "caffeine": "Staff & Clients",
-    "badge": "",
     "inStock": true,
     "description": "Simple, neat Diwali gift boxes for staff and clients in Siliguri. Choose a pack, or ask us about bigger bulk orders.",
     "variants": [
@@ -1022,7 +1004,6 @@ export const PRODUCTS: Product[] = [
     "format": "Clay Diyas",
     "region": "Festive Decor",
     "caffeine": "Traditional",
-    "badge": "",
     "inStock": true,
     "description": "Traditional terracotta diyas for your balcony, doorway and puja room. Add ghee or oil and a cotton wick.",
     "variants": [
@@ -1077,7 +1058,6 @@ export const PRODUCTS: Product[] = [
     "format": "Candles",
     "region": "Festive Decor",
     "caffeine": "Warm Glow",
-    "badge": "",
     "inStock": true,
     "description": "Candles and tea lights to place among flowers and rangoli, for a warm glow on Diwali night.",
     "variants": [
@@ -1132,7 +1112,6 @@ export const PRODUCTS: Product[] = [
     "format": "Rangoli",
     "region": "Festive Decor",
     "caffeine": "Bright Colours",
-    "badge": "",
     "inStock": true,
     "description": "Bright rangoli colours to decorate your doorstep for Diwali and Kali Puja.",
     "variants": [
@@ -1186,7 +1165,6 @@ export const PRODUCTS: Product[] = [
     "format": "Rangoli",
     "region": "Festive Decor",
     "caffeine": "Easy for Beginners",
-    "badge": "",
     "inStock": true,
     "description": "Colours and simple stencils so that even first-timers can make a neat rangoli at the door.",
     "variants": [
@@ -1235,7 +1213,6 @@ export const PRODUCTS: Product[] = [
     "format": "Door Decor",
     "region": "Festive Decor",
     "caffeine": "Ready to Hang",
-    "badge": "",
     "inStock": true,
     "description": "A marigold toran to hang over your main door, the classic festive welcome for Diwali and Kali Puja.",
     "variants": [
@@ -1289,7 +1266,6 @@ export const PRODUCTS: Product[] = [
     "format": "Door Decor",
     "region": "Festive Decor",
     "caffeine": "Bright & Festive",
-    "badge": "",
     "inStock": true,
     "description": "Bright marigold garlands for your puja corner, balcony and doorway.",
     "variants": [
@@ -1338,7 +1314,6 @@ export const PRODUCTS: Product[] = [
     "format": "Puja Set",
     "region": "Festive Decor",
     "caffeine": "Ready for Puja",
-    "badge": "",
     "inStock": true,
     "description": "A complete puja thali for Lakshmi Puja and Kali Puja, ready to use with the essentials laid out.",
     "variants": [
@@ -1386,7 +1361,6 @@ export const PRODUCTS: Product[] = [
     "format": "Aerial Sound Shell",
     "region": "Sivakasi Quality",
     "caffeine": "Maximum Decibel Report",
-    "badge": "❌ SOLD OUT",
     "inStock": false,
     "description": "Super-charged titanium thunder shell that rockets into the sky before detonating with a concussive shockwave sound report. 2026 batches fully sold out for this festive cycle.",
     "variants": [
@@ -1434,7 +1408,6 @@ export const PRODUCTS: Product[] = [
     "format": "Multi-Shot Cake",
     "region": "Sivakasi Quality",
     "caffeine": "Golden Waterfall Canopy",
-    "badge": "❌ SOLD OUT",
     "inStock": false,
     "description": "Spectacular continuous golden willow effect that drips shimmering metallic sparks across the night sky. Current inventory reserved; restock after Diwali.",
     "variants": [
@@ -1482,7 +1455,6 @@ export const PRODUCTS: Product[] = [
     "format": "Jumbo Fountain",
     "region": "Sivakasi Quality",
     "caffeine": "7-Color Feather Fountain",
-    "badge": "❌ SOLD OUT",
     "inStock": false,
     "description": "Famous Mayil-style jumbo flower pot that flares into a majestic peacock plumage of emerald, sapphire, gold and violet sparkles. Sold out for the season.",
     "variants": [
@@ -1531,7 +1503,6 @@ export const PRODUCTS: Product[] = [
     "format": "Electric Sparklers",
     "region": "Sivakasi Quality",
     "caffeine": "120s Silver Twinkle",
-    "badge": "❌ SOLD OUT",
     "inStock": false,
     "description": "Our longest jumbo 50cm sparklers with bright diamond silver crackles. Burn time exceeds 2 minutes per stick. All allocated batches claimed.",
     "variants": [
@@ -1579,7 +1550,6 @@ export const PRODUCTS: Product[] = [
     "format": "Aerial Spinner",
     "region": "Sivakasi Quality",
     "caffeine": "Whistling Vertical Flight",
-    "badge": "❌ SOLD OUT",
     "inStock": false,
     "description": "Begins spinning furiously on the pavement with a shrill whistle before shooting 30 feet straight up into the air with glittering rings.",
     "variants": [
@@ -1627,7 +1597,6 @@ export const PRODUCTS: Product[] = [
     "format": "Day Novelty",
     "region": "Eco Friendly",
     "caffeine": "Pure Visual Smoke",
-    "badge": "❌ SOLD OUT",
     "inStock": false,
     "description": "Ring-pull dense smoke cartridges generating 60 seconds of bright cinematic color clouds. Ideal for daytime celebrations and reels. Sold out.",
     "variants": [
@@ -1676,7 +1645,6 @@ export const PRODUCTS: Product[] = [
     "format": "Garland Ladi",
     "region": "Sivakasi Quality",
     "caffeine": "Unbroken Festive Rhythm",
-    "badge": "❌ SOLD OUT",
     "inStock": false,
     "description": "The grandest traditional celebration ladi roll manufactured in Sivakasi. Unfolds over 40 feet with relentless rhythmic crackle. Completely sold out.",
     "variants": [
@@ -1726,7 +1694,6 @@ export const PRODUCTS: Product[] = [
     "format": "Lights",
     "region": "Festive Lighting",
     "caffeine": "Warm Glow",
-    "badge": "BEST SELLER",
     "inStock": true,
     "description": "Warm white LED string lights for your balcony, windows, stairs and walls. A simple way to make the whole house glow for Diwali and Kali Puja, and they can be stored and used again.",
     "variants": [
@@ -1782,7 +1749,6 @@ export const PRODUCTS: Product[] = [
     "format": "Lanterns",
     "region": "Festive Lighting",
     "caffeine": "Warm Glow",
-    "badge": "",
     "inStock": true,
     "description": "A traditional hanging paper lantern, also known as an akash kandil. Hang it at your door or balcony with a bulb inside for a warm festive glow. This lantern is for hanging only, not for flying.",
     "variants": [
@@ -1836,7 +1802,6 @@ export const PRODUCTS: Product[] = [
     "format": "Lanterns",
     "region": "Festive Lighting",
     "caffeine": "Bright Colours",
-    "badge": "",
     "inStock": true,
     "description": "A bright, multi-colour star lantern for a window, doorway or balcony. It looks its best after dark with a light inside. For hanging only, not for flying.",
     "variants": [
@@ -1884,7 +1849,6 @@ export const PRODUCTS: Product[] = [
     "format": "Diyas",
     "region": "Diyas & Lamps",
     "caffeine": "Traditional",
-    "badge": "",
     "inStock": true,
     "description": "A traditional brass oil lamp with a Lakshmi design, for your puja corner or entrance. Polish it with a soft cloth and use it year after year.",
     "variants": [
@@ -1933,7 +1897,6 @@ export const PRODUCTS: Product[] = [
     "format": "Diyas",
     "region": "Diyas & Lamps",
     "caffeine": "Traditional",
-    "badge": "",
     "inStock": true,
     "description": "A five-flame brass aarti diya with a handle, for Lakshmi Puja, Kali Puja and daily prayers. Long-lasting, and easy to clean with a soft cloth.",
     "variants": [
@@ -1982,7 +1945,6 @@ export const PRODUCTS: Product[] = [
     "format": "Diyas",
     "region": "Diyas & Lamps",
     "caffeine": "Elegant",
-    "badge": "",
     "inStock": true,
     "description": "A wide brass-finish bowl for floating flowers and diyas. Fill it with water, add marigold petals and a few floating candles, and place it at your entrance or on a table.",
     "variants": [
@@ -2031,7 +1993,6 @@ export const PRODUCTS: Product[] = [
     "format": "Candles",
     "region": "Festive Lighting",
     "caffeine": "Soft Glow",
-    "badge": "",
     "inStock": true,
     "description": "Coloured crackle glass holders for tea lights. Set them along a table, shelf or window for a soft, safe glow on Diwali night.",
     "variants": [
@@ -2081,7 +2042,6 @@ export const PRODUCTS: Product[] = [
     "format": "Lights",
     "region": "Festive Lighting",
     "caffeine": "Warm Amber Glow",
-    "badge": "BESTSELLER",
     "inStock": true,
     "description": "Premium 20-metre micro LED copper wire fairy rice lights for Diwali. The bendable copper wire weaves easily around mandirs, curtain rods, plants, glass jars, and balconies with safe, low-voltage glowing warm amber illumination.",
     "variants": [
@@ -2138,7 +2098,6 @@ export const PRODUCTS: Product[] = [
     "format": "Diyas",
     "region": "Puja Decor",
     "caffeine": "Everlasting Flame",
-    "badge": "BEST VALUE",
     "inStock": true,
     "description": "Authentic handcrafted solid brass Akhand Diya fitted with a protective borosilicate glass chimney and an ornate brass crown lid. Keeps your sacred Diwali and Kali Puja oil flame burning continuously for 24+ hours protected from winds and breezes.",
     "variants": [
@@ -2195,7 +2154,6 @@ export const PRODUCTS: Product[] = [
     "format": "Diyas",
     "region": "Living Decor",
     "caffeine": "Floating Petals",
-    "badge": "TRENDING",
     "inStock": true,
     "description": "Set of 8 hand-painted floral terracotta clay floating diyas designed to float gracefully in brass urlis, glass bowls, or water fountains with fresh marigold petals. Creates a serene, traditional Diwali reception glow.",
     "variants": [
@@ -2241,7 +2199,7 @@ export const PRODUCTS: Product[] = [
       "Pack of 3"
     ],
     "image": "/assets/product-5-ka-dum.webp",
-    "secondaryImage": "/assets/action-sound.webp",
+    "secondaryImage": "/assets/product-5-ka-dum.webp",
     "galleryImages": [
       "/assets/product-5-ka-dum.webp",
       "/assets/action-sound.webp"
@@ -2250,7 +2208,6 @@ export const PRODUCTS: Product[] = [
     "format": "Sound Crackers",
     "region": "Sivakasi Quality",
     "caffeine": "Celebratory Sound",
-    "badge": "\ud83d\udca5 5-IN-1 SOUND",
     "inStock": true,
     "description": "Experience 5 consecutive high-energy sound bursts in a single cracker string. Manufactured by Anil Fireworks Factory Sivakasi for joyous Diwali and Kali Puja celebrations with authorized green certification.",
     "variants": [
@@ -2295,7 +2252,7 @@ export const PRODUCTS: Product[] = [
       "Pack of 2 Boxes"
     ],
     "image": "/assets/product-anar-box.webp",
-    "secondaryImage": "/assets/action-anar.webp",
+    "secondaryImage": "/assets/product-anar-box.webp",
     "galleryImages": [
       "/assets/product-anar-box.webp",
       "/assets/action-anar.webp"
@@ -2304,7 +2261,6 @@ export const PRODUCTS: Product[] = [
     "format": "Flower Pot / Anar",
     "region": "Sivakasi Quality",
     "caffeine": "Golden Sparks",
-    "badge": "\ud83c\udf1f POPULAR ANAR",
     "inStock": true,
     "description": "Traditional Sivakasi flower pots that erupt into a sparkling 10 to 12-foot fountain of golden and silver sparks. Safe ground fountain perfect for family courtyards and terraces.",
     "variants": [
@@ -2349,7 +2305,7 @@ export const PRODUCTS: Product[] = [
       "Pack of 10 Pcs"
     ],
     "image": "/assets/product-chakkar-single.webp",
-    "secondaryImage": "/assets/action-chakkar.webp",
+    "secondaryImage": "/assets/product-chakkar-single.webp",
     "galleryImages": [
       "/assets/product-chakkar-single.webp",
       "/assets/action-chakkar.webp"
@@ -2358,7 +2314,6 @@ export const PRODUCTS: Product[] = [
     "format": "Ground Spinner",
     "region": "Sivakasi Quality",
     "caffeine": "Spinning Rings",
-    "badge": "\ud83c\udf00 TOP VALUE",
     "inStock": true,
     "description": "Rapid ground-spinning chakkar emitting vivid circular halos of golden sparks on any smooth surface. Offered individually so you can pick your exact count.",
     "variants": [
@@ -2403,7 +2358,7 @@ export const PRODUCTS: Product[] = [
       "Pack of 3"
     ],
     "image": "/assets/product-chutput-55.webp",
-    "secondaryImage": "/assets/action-kids.webp",
+    "secondaryImage": "/assets/product-chutput-55.webp",
     "galleryImages": [
       "/assets/product-chutput-55.webp"
     ],
@@ -2411,7 +2366,6 @@ export const PRODUCTS: Product[] = [
     "format": "Novelty Snappers",
     "region": "Sivakasi Quality",
     "caffeine": "Child-Friendly",
-    "badge": "\ud83d\udc76 KIDS FAVORITE",
     "inStock": true,
     "description": "Delightful friction-strike pop crackers by Prakash Fireworks Sivakasi. Produces crisp crackling snaps without dangerous flames, making them great fun for kids under adult supervision.",
     "variants": [
@@ -2456,7 +2410,7 @@ export const PRODUCTS: Product[] = [
       "Pack of 2"
     ],
     "image": "/assets/product-chutput-66.webp",
-    "secondaryImage": "/assets/action-kids.webp",
+    "secondaryImage": "/assets/product-chutput-66.webp",
     "galleryImages": [
       "/assets/product-chutput-66.webp"
     ],
@@ -2464,7 +2418,6 @@ export const PRODUCTS: Product[] = [
     "format": "Novelty Snappers",
     "region": "Sivakasi Quality",
     "caffeine": "Child-Friendly",
-    "badge": "\u2728 DELUXE POP",
     "inStock": true,
     "description": "Deluxe sized pack of traditional Indian chutput crackers that pop with crisp, energetic crackling sounds. Green-certified, low smoke, and family friendly.",
     "variants": [
@@ -2509,7 +2462,7 @@ export const PRODUCTS: Product[] = [
       "Pack of 2 Cakes"
     ],
     "image": "/assets/product-penta-5-shot.webp",
-    "secondaryImage": "/assets/action-sky.webp",
+    "secondaryImage": "/assets/product-penta-5-shot.webp",
     "galleryImages": [
       "/assets/product-penta-5-shot.webp",
       "/assets/action-sky.webp"
@@ -2518,7 +2471,6 @@ export const PRODUCTS: Product[] = [
     "format": "Multi-Shot Cake",
     "region": "Sivakasi Quality",
     "caffeine": "High Altitude",
-    "badge": "\ud83d\ude80 5 SHOT SKY",
     "inStock": true,
     "description": "5 consecutive vertical aerial shells that launch into the evening sky and burst into radiant red, green, and golden starry brocades. Compact and budget-friendly aerial display.",
     "variants": [
@@ -2562,7 +2514,7 @@ export const PRODUCTS: Product[] = [
       "1 Grand Display Unit"
     ],
     "image": "/assets/product-peacock-fountain.webp",
-    "secondaryImage": "/assets/action-anar.webp",
+    "secondaryImage": "/assets/product-peacock-fountain.webp",
     "galleryImages": [
       "/assets/product-peacock-fountain.webp",
       "/assets/action-anar.webp"
@@ -2571,7 +2523,6 @@ export const PRODUCTS: Product[] = [
     "format": "Speciality Fountain",
     "region": "Sivakasi Quality",
     "caffeine": "Multicolor Display",
-    "badge": "\ud83e\udd9a SHOWSTOPPER",
     "inStock": true,
     "description": "A show-stopping visual centerpiece that opens into radiant peacock feather plumes of emerald, sapphire, and glittering gold sparks. One of the most sought-after visual fireworks in Siliguri.",
     "variants": [
@@ -2610,7 +2561,7 @@ export const PRODUCTS: Product[] = [
       "Pack of 5 Boxes"
     ],
     "image": "/assets/product-pop-pop.webp",
-    "secondaryImage": "/assets/action-kids.webp",
+    "secondaryImage": "/assets/product-pop-pop.webp",
     "galleryImages": [
       "/assets/product-pop-pop.webp"
     ],
@@ -2618,7 +2569,6 @@ export const PRODUCTS: Product[] = [
     "format": "Novelty Snappers",
     "region": "Sivakasi Quality",
     "caffeine": "Child-Friendly",
-    "badge": "\ud83d\udc76 100% SAFE",
     "inStock": true,
     "description": "Throw on the ground to hear a fun little pop! Requires no lighter or matches, produces zero smoke, and is completely child-friendly for kids and toddlers under adult supervision.",
     "variants": [
@@ -2663,7 +2613,7 @@ export const PRODUCTS: Product[] = [
       "Pack of 2 Cakes"
     ],
     "image": "/assets/product-sky-shot-588.webp",
-    "secondaryImage": "/assets/action-sky.webp",
+    "secondaryImage": "/assets/product-sky-shot-588.webp",
     "galleryImages": [
       "/assets/product-sky-shot-588.webp",
       "/assets/action-sky.webp"
@@ -2672,7 +2622,6 @@ export const PRODUCTS: Product[] = [
     "format": "Multi-Shot Cake",
     "region": "Sivakasi Quality",
     "caffeine": "High Altitude",
-    "badge": "\u2728 12 SHOT REPEATER",
     "inStock": true,
     "description": "Sequential aerial repeater cake launching 12 spectacular bursts of golden glitter palms, ruby red stars, and crackling willow tails high into the Siliguri night sky.",
     "variants": [
@@ -2717,7 +2666,7 @@ export const PRODUCTS: Product[] = [
       "Pack of 2 Cakes"
     ],
     "image": "/assets/product-sky-shot-1188.webp",
-    "secondaryImage": "/assets/action-sky.webp",
+    "secondaryImage": "/assets/product-sky-shot-1188.webp",
     "galleryImages": [
       "/assets/product-sky-shot-1188.webp",
       "/assets/action-sky.webp"
@@ -2726,7 +2675,6 @@ export const PRODUCTS: Product[] = [
     "format": "Multi-Shot Cake",
     "region": "Sivakasi Quality",
     "caffeine": "High Altitude",
-    "badge": "\ud83c\udf86 25 SHOT THUNDER",
     "inStock": true,
     "description": "Deluxe 25-shot aerial cake repeater delivering whistling tail ascents that open into massive multicolored chrysanthemums and a crackling golden brocade finale.",
     "variants": [
@@ -2771,7 +2719,7 @@ export const PRODUCTS: Product[] = [
       "Pack of 2 Cakes"
     ],
     "image": "/assets/product-sky-shot-420.webp",
-    "secondaryImage": "/assets/action-sky.webp",
+    "secondaryImage": "/assets/product-sky-shot-420.webp",
     "galleryImages": [
       "/assets/product-sky-shot-420.webp",
       "/assets/action-sky.webp"
@@ -2780,7 +2728,6 @@ export const PRODUCTS: Product[] = [
     "format": "Multi-Shot Cake",
     "region": "Sivakasi Quality",
     "caffeine": "High Altitude",
-    "badge": "\u2b50 7 SHOT CLASSIC",
     "inStock": true,
     "description": "7 sequential high-altitude aerial shots that fill the sky with bright emerald green and crimson red peony bursts. Easy single-fuse lighting for safe backyard shows.",
     "variants": [
@@ -2824,7 +2771,7 @@ export const PRODUCTS: Product[] = [
       "1 Mega Shell (6-Inch)"
     ],
     "image": "/assets/product-sky-shot-6inch.webp",
-    "secondaryImage": "/assets/action-sky.webp",
+    "secondaryImage": "/assets/product-sky-shot-6inch.webp",
     "galleryImages": [
       "/assets/product-sky-shot-6inch.webp",
       "/assets/action-sky.webp"
@@ -2833,7 +2780,6 @@ export const PRODUCTS: Product[] = [
     "format": "Giant Aerial Shell",
     "region": "Sivakasi Quality",
     "caffeine": "High Altitude",
-    "badge": "\ud83d\udc51 6-INCH SHELL",
     "inStock": true,
     "description": "Our largest single aerial shell featuring an immense 6-inch diameter tube that launches high above Siliguri to produce an enormous 200-foot diameter golden brocade crown.",
     "variants": [
@@ -2871,7 +2817,7 @@ export const PRODUCTS: Product[] = [
       "1 Big Cake (50 Shots)"
     ],
     "image": "/assets/product-sky-shot-big-1700.webp",
-    "secondaryImage": "/assets/action-sky.webp",
+    "secondaryImage": "/assets/product-sky-shot-big-1700.webp",
     "galleryImages": [
       "/assets/product-sky-shot-big-1700.webp",
       "/assets/action-sky.webp"
@@ -2880,7 +2826,6 @@ export const PRODUCTS: Product[] = [
     "format": "Multi-Shot Cake",
     "region": "Sivakasi Quality",
     "caffeine": "High Altitude",
-    "badge": "\ud83c\udf86 50 SHOT FINALE",
     "inStock": true,
     "description": "Full 90-second fireworks spectacle with 50 non-stop aerial launches that transition across multi-color strobes, silver flying fish, and a thunderous crackling brocade finale.",
     "variants": [
@@ -2919,7 +2864,7 @@ export const PRODUCTS: Product[] = [
       "Pack of 3 Boxes"
     ],
     "image": "/assets/product-pawan-sparklers.webp",
-    "secondaryImage": "/assets/action-sparkler.webp",
+    "secondaryImage": "/assets/product-pawan-sparklers.webp",
     "galleryImages": [
       "/assets/product-pawan-sparklers.webp",
       "/assets/action-sparkler.webp"
@@ -2928,7 +2873,6 @@ export const PRODUCTS: Product[] = [
     "format": "Sparkler Sticks",
     "region": "Sivakasi Quality",
     "caffeine": "Golden Sparks",
-    "badge": "\u2728 BESTSELLER",
     "inStock": true,
     "description": "High-grade electric golden sparklers by Pawan Fireworks. Made with low-smoke green formulation, safe wire handles, and bright glittering sparks for family celebrations.",
     "variants": [

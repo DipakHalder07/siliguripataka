@@ -281,9 +281,9 @@ export default function ProductDetailPage({ product, related = [] }: { product: 
               onClick={handleContainerClick}
               className="group relative aspect-square w-full bg-[#fcfbf9] border border-[#f0dfc6] rounded-[16px] sm:rounded-[20px] overflow-hidden select-none lg:cursor-none"
             >
-              {product.badge && (
+              {soldOut && (
                 <span className="absolute bottom-0 right-0 z-10 bg-[#3f0c12] text-white text-[11px] font-bold tracking-[1px] uppercase px-3 py-1.5 rounded-tl-[4px]">
-                  {product.badge}
+                  SOLD OUT
                 </span>
               )}
 

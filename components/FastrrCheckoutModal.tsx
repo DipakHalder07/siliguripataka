@@ -13,6 +13,8 @@ import {
   ArrowRight,
   ChevronRight,
   Sparkles,
+  Navigation,
+  Loader2,
 } from "lucide-react";
 import { useCart } from "./context/CartContext";
 import { cleanIndianPhone } from "@/lib/validations/checkout";
@@ -21,6 +23,7 @@ import { deliveryFee, FREE_GIFT } from "@/lib/orderRules";
 import UpiPayPanel, { cancelUpiSession, PaymentLeaveDialog, UpiSessionView } from "./UpiPayPanel";
 import { newOrderNumber } from "@/lib/orderNumber";
 import { useCodAvailable } from "@/lib/useCodAvailable";
+import { detectCurrentLocation } from "@/lib/siliguriAreas";
 
 interface FastrrCheckoutModalProps {
   isOpen: boolean;
@@ -52,6 +55,7 @@ export default function FastrrCheckoutModal({ isOpen, onClose }: FastrrCheckoutM
   const [state, setState] = useState("");
   const [address, setAddress] = useState("");
   const [landmark, setLandmark] = useState("");
+  const [isLocating, setIsLocating] = useState(false);
 
   // Coupon state
   const [couponCode, setCouponCode] = useState("");
@@ -119,6 +123,24 @@ export default function FastrrCheckoutModal({ isOpen, onClose }: FastrrCheckoutM
         setCity("Siliguri");
         setState("West Bengal");
       }
+    }
+  };
+
+  // Auto-detect & fill location via GPS
+  const handleDetectLocation = async () => {
+    setIsLocating(true);
+    try {
+      const loc = await detectCurrentLocation();
+      setCity(loc.city);
+      setState(loc.state);
+      setPincode(loc.pincode);
+      if (!landmark && (loc.locality || loc.road)) {
+        setLandmark([loc.road, loc.locality].filter(Boolean).join(", "));
+      }
+    } catch {
+      // User can fill manually if permission is denied
+    } finally {
+      setIsLocating(false);
     }
   };
 
@@ -605,9 +627,25 @@ export default function FastrrCheckoutModal({ isOpen, onClose }: FastrrCheckoutM
 
               {/* Delivery Address Fields */}
               <div className="space-y-4 pt-1">
-                <h4 className="text-[14px] font-bold text-[#2b1215] uppercase tracking-wider border-b border-[#f0dfc6] pb-1.5">
-                  Shipping Address
-                </h4>
+                <div className="flex items-center justify-between border-b border-[#f0dfc6] pb-1.5">
+                  <h4 className="text-[14px] font-bold text-[#2b1215] uppercase tracking-wider">
+                    Shipping Address
+                  </h4>
+                  <button
+                    type="button"
+                    onClick={handleDetectLocation}
+                    disabled={isLocating}
+                    title="Share current location"
+                    aria-label="Share current location"
+                    className="w-7 h-7 rounded-full border border-[#f0dfc6] bg-white hover:bg-[#fff9ef] hover:border-[#f9a825] text-[#4a0e14] flex items-center justify-center transition shadow-sm cursor-pointer disabled:opacity-50"
+                  >
+                    {isLocating ? (
+                      <Loader2 size={13} className="animate-spin text-[#f9a825]" />
+                    ) : (
+                      <Navigation size={13} className="text-[#f9a825]" />
+                    )}
+                  </button>
+                </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                   <div>

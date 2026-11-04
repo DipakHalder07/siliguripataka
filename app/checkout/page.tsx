@@ -20,6 +20,8 @@ import {
   ShoppingBag,
   MapPin,
   AlertCircle,
+  Navigation,
+  Loader2,
 } from "lucide-react";
 import { useCart } from "@/components/context/CartContext";
 import {
@@ -32,6 +34,7 @@ import { amountToMinimum, deliveryFee, FREE_GIFT, MIN_ORDER_AMOUNT } from "@/lib
 import UpiPayPanel, { cancelUpiSession, PaymentLeaveDialog, UpiSessionView } from "@/components/UpiPayPanel";
 import { newOrderNumber } from "@/lib/orderNumber";
 import { useCodAvailable } from "@/lib/useCodAvailable";
+import { detectCurrentLocation } from "@/lib/siliguriAreas";
 
 // "native": the shop's own UPI gateway. "manual": shop QR, confirmed by the shop against the bank (used without a database).
 interface UpiSessionData extends Partial<Omit<UpiSessionView, "status">> {
@@ -83,6 +86,9 @@ function CheckoutPageContent() {
   // Leaving while the UPI payment is open asks first (PaymentLeaveDialog).
   const [leaveAction, setLeaveAction] = useState<null | (() => void)>(null);
   const [countdownSeconds, setCountdownSeconds] = useState(600); // 10 minutes
+
+  // Location auto-detection state
+  const [isLocating, setIsLocating] = useState(false);
 
   const pageTopRef = useRef<HTMLDivElement>(null);
 
@@ -225,6 +231,32 @@ function CheckoutPageContent() {
         setValue("city", "Siliguri", { shouldValidate: true });
         setValue("state", "West Bengal", { shouldValidate: true });
       }
+    }
+  };
+
+  // Auto-detect & fill location via GPS
+  const handleDetectLocation = async () => {
+    setIsLocating(true);
+    try {
+      const loc = await detectCurrentLocation();
+      setValue("city", loc.city, { shouldValidate: true });
+      setValue("state", loc.state, { shouldValidate: true });
+      setValue("pincode", loc.pincode, { shouldValidate: true });
+
+      const currentLandmark = formValues.landmark;
+      if (!currentLandmark && (loc.locality || loc.road)) {
+        setValue("landmark", [loc.road, loc.locality].filter(Boolean).join(", "), { shouldValidate: true });
+      }
+
+      toast.success("Location Detected", {
+        description: loc.displaySummary,
+      });
+    } catch (err: any) {
+      toast.error("Location Detection Failed", {
+        description: err?.message || "Please enter your delivery address manually.",
+      });
+    } finally {
+      setIsLocating(false);
     }
   };
 
@@ -942,9 +974,25 @@ function CheckoutPageContent() {
 
                     {/* Delivery Address Fields */}
                     <div className="space-y-4 pt-1">
-                      <h4 className="text-[14px] font-bold text-[#2b1215] uppercase tracking-wider border-b border-[#f0dfc6] pb-1.5">
-                        Shipping Address
-                      </h4>
+                      <div className="flex items-center justify-between border-b border-[#f0dfc6] pb-1.5">
+                        <h4 className="text-[14px] font-bold text-[#2b1215] uppercase tracking-wider">
+                          Shipping Address
+                        </h4>
+                        <button
+                          type="button"
+                          onClick={handleDetectLocation}
+                          disabled={isLocating}
+                          title="Share current location"
+                          aria-label="Share current location"
+                          className="w-7 h-7 rounded-full border border-[#f0dfc6] bg-white hover:bg-[#fff9ef] hover:border-[#f9a825] text-[#4a0e14] flex items-center justify-center transition shadow-sm cursor-pointer disabled:opacity-50"
+                        >
+                          {isLocating ? (
+                            <Loader2 size={13} className="animate-spin text-[#f9a825]" />
+                          ) : (
+                            <Navigation size={13} className="text-[#f9a825]" />
+                          )}
+                        </button>
+                      </div>
 
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                         <div>

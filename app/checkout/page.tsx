@@ -271,9 +271,9 @@ function CheckoutPageContent() {
         description: "₹150 discount applied with code FIRSTPATAKA",
       });
     } else {
-      setCouponError("Invalid coupon code. Try WELCOME10 or FIRSTPATAKA");
+      setCouponError("Invalid coupon code. Please check it and try again.");
       toast.error("Invalid coupon code", {
-        description: "Please check your code or try WELCOME10",
+        description: "Please check your code and try again.",
       });
     }
   };
@@ -431,9 +431,6 @@ function CheckoutPageContent() {
     }).catch((err) => console.warn("Abandoned checkout tracking warning:", err));
 
     initUpiSession(generatedId, finalTotal);
-    toast.success("Address Saved", {
-      description: "Proceed to payment selection",
-    });
   };
 
   // Manual UPI: poll payment status
@@ -1405,7 +1402,7 @@ function CheckoutPageContent() {
                         type="text"
                         value={couponCode}
                         onChange={(e) => setCouponCode(e.target.value)}
-                        placeholder="Enter WELCOME10"
+                        placeholder="Enter discount code"
                         className="flex-1 px-3 py-2 border border-[#f0dfc6] rounded-lg text-[13px] uppercase outline-none focus:border-[#f9a825]"
                       />
                       <button

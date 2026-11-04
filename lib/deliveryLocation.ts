@@ -146,14 +146,14 @@ export async function searchPlaces(query: string): Promise<PlaceResult[] | null>
 export type AddressFields = Pick<PinAddress, "city" | "state" | "pincode"> & { address: string };
 
 /**
- * What a new pin should fill in. Only empty boxes, or boxes still holding what the last pin filled:
- * anything the customer typed stays, because they know their own address better than the map does.
+ * What a new pin should fill in. PIN, city and state always follow the pin. The street box is filled
+ * only if it is empty or still holds what the last pin filled, so a typed house number is never lost.
  */
 export function pinFieldUpdates(current: AddressFields, lastFilled: Partial<AddressFields>, next: PinAddress) {
-  const values: AddressFields = { address: next.street, city: next.city, state: next.state, pincode: next.pincode };
   const updates: Partial<AddressFields> = {};
-  for (const key of Object.keys(values) as Array<keyof AddressFields>) {
-    if (values[key] && (!current[key].trim() || current[key] === lastFilled[key])) updates[key] = values[key];
-  }
+  if (next.pincode) updates.pincode = next.pincode;
+  if (next.city) updates.city = next.city;
+  if (next.state) updates.state = next.state;
+  if (next.street && (!current.address.trim() || current.address === lastFilled.address)) updates.address = next.street;
   return updates;
 }

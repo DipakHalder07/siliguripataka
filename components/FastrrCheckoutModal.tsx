@@ -151,7 +151,7 @@ export default function FastrrCheckoutModal({ isOpen, onClose }: FastrrCheckoutM
     } else if (code === "FIRSTPATAKA") {
       setAppliedCoupon({ code, discount: 150 });
     } else {
-      setCouponError("Invalid coupon code. Try WELCOME10");
+      setCouponError("Invalid coupon code. Please check it and try again.");
     }
   };
 
@@ -753,7 +753,7 @@ export default function FastrrCheckoutModal({ isOpen, onClose }: FastrrCheckoutM
                       type="text"
                       value={couponCode}
                       onChange={(e) => setCouponCode(e.target.value)}
-                      placeholder="Enter WELCOME10"
+                      placeholder="Enter discount code"
                       className="flex-1 px-3 py-2 border border-[#f0dfc6] rounded-lg text-[13px] uppercase outline-none focus:border-[#f9a825]"
                     />
                     <button

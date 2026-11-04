@@ -19,9 +19,37 @@ interface ProductItem {
   id: string;
   title: string;
   image: string;
+  imageAlt: string;
   bullets: string[];
   badge?: string;
   discount?: string;
+}
+
+interface BudgetTier {
+  budget: string;
+  image: string;
+  alt: string;
+  title: string;
+}
+
+interface ClientLogo {
+  src: string;
+  name: string;
+  alt: string;
+}
+
+interface WhyItem {
+  icon: string;
+  title: string;
+  desc: string;
+  alt: string;
+}
+
+interface CustomizationCard {
+  image: string;
+  title: string;
+  desc: string;
+  alt: string;
 }
 
 export default function CorporateGiftingPage() {
@@ -99,21 +127,107 @@ export default function CorporateGiftingPage() {
 
   // 1. Stats
   const stats = [
-    { icon: "/assets/icons/box.svg", num: "35+", label: "Diwali Products" },
-    { icon: "/assets/icons/rupee.svg", num: "₹2,000", label: "Minimum Order Value" },
-    { icon: "/assets/icons/pin.svg", num: "1 City", label: "Delivery Only in Siliguri" },
+    {
+      icon: "/assets/icons/box.svg",
+      num: "35+",
+      label: "Diwali Products",
+      alt: "35 plus Sivakasi green crackers and Diwali gifting products in Siliguri",
+    },
+    {
+      icon: "/assets/icons/rupee.svg",
+      num: "₹2,000",
+      label: "Minimum Order Value",
+      alt: "Affordable minimum bulk gifting order value ₹2000 in Siliguri",
+    },
+    {
+      icon: "/assets/icons/pin.svg",
+      num: "1 City",
+      label: "Delivery Only in Siliguri",
+      alt: "Local doorstep delivery across all Siliguri neighborhoods and commercial hubs",
+    },
   ];
 
   // 2. Budget tiers
-  const budgetTiers = [
-    { budget: "Under INR 1,000", image: "/assets/hamper-puja.webp" },
-    { budget: "Under INR 3,000", image: "/assets/hamper-festive.webp" },
-    { budget: "Under INR 5,000", image: "/assets/mega-family.webp" },
-    { budget: "Above INR 10,000", image: "/assets/mega-grand.webp" },
+  const budgetTiers: BudgetTier[] = [
+    {
+      budget: "Under INR 1,000",
+      image: "/assets/hamper-puja.webp",
+      alt: "Under 1000 Diwali puja diya and green cracker festive hamper Siliguri",
+      title: "Diwali Puja Diya & Cracker Hamper under ₹1,000",
+    },
+    {
+      budget: "Under INR 3,000",
+      image: "/assets/hamper-festive.webp",
+      alt: "Under 3000 Executive corporate Diwali festive gift hamper Siliguri",
+      title: "Executive Corporate Diwali Gift Hamper under ₹3,000",
+    },
+    {
+      budget: "Under INR 5,000",
+      image: "/assets/hamper-family.webp",
+      alt: "Under 5000 Premium family corporate celebration green firecracker pack Siliguri",
+      title: "Mega Family Green Cracker Celebration Pack under ₹5,000",
+    },
+    {
+      budget: "Above INR 10,000",
+      image: "/assets/mega-grand.webp",
+      alt: "Above 10000 Luxury VIP grand show fireworks and corporate gift pack Siliguri",
+      title: "VIP Grand Show Aerial Fireworks Corporate Pack above ₹10,000",
+    },
   ];
 
   // 3. Who we gift for
-  const clientLogos = Array.from({ length: 10 }, (_, i) => `/assets/gift-group-${i + 1}.svg`);
+  const clientLogos: ClientLogo[] = [
+    {
+      src: "/assets/gift-group-1.svg",
+      name: "Offices & IT Parks",
+      alt: "Corporate offices and IT company Diwali gifting partner in Siliguri",
+    },
+    {
+      src: "/assets/gift-group-2.svg",
+      name: "Housing Societies",
+      alt: "Siliguri residential apartment societies Diwali crackers bulk order",
+    },
+    {
+      src: "/assets/gift-group-3.svg",
+      name: "Puja Committees",
+      alt: "Diwali and Kali Puja committees festive celebrations Siliguri",
+    },
+    {
+      src: "/assets/gift-group-4.svg",
+      name: "Clubs & Gymkhanas",
+      alt: "Community clubs and NGO festive gifting Siliguri",
+    },
+    {
+      src: "/assets/gift-group-5.svg",
+      name: "Schools & Academies",
+      alt: "Schools and educational institutes Diwali gift packs Siliguri",
+    },
+    {
+      src: "/assets/gift-group-6.svg",
+      name: "Retail Shops & Merchants",
+      alt: "Wholesale crackers and festive hampers for merchant partners Siliguri",
+    },
+    {
+      src: "/assets/gift-group-7.svg",
+      name: "Hotels & Banquets",
+      alt: "Siliguri hospitality and hotel Diwali celebration partner",
+    },
+    {
+      src: "/assets/gift-group-8.svg",
+      name: "Hospitals & Clinics",
+      alt: "Healthcare and medical staff festive appreciation hampers Siliguri",
+    },
+    {
+      src: "/assets/gift-group-9.svg",
+      name: "Banks & Branches",
+      alt: "Banking and corporate staff festive gift boxes Siliguri",
+    },
+    {
+      src: "/assets/gift-group-10.svg",
+      name: "Large Families",
+      alt: "Joint families and private celebrations Diwali fireworks boxes Siliguri",
+    },
+  ];
 
   // Auto-advance client logos slider every 3.5 seconds
   useEffect(() => {
@@ -132,64 +246,207 @@ export default function CorporateGiftingPage() {
   };
 
   // 4. Why Siliguri Pataka
-  const whySiliguriPataka = [
+  const whySiliguriPataka: WhyItem[] = [
     {
       icon: "/assets/icons/calendar.svg",
       title: "FOR ALL OCCASIONS",
       desc: "Diwali, Kali Puja, staff gifts, club events and client thank-yous.",
+      alt: "Diwali and Kali Puja festive occasions calendar icon Siliguri",
     },
     {
       icon: "/assets/icons/wallet.svg",
       title: "FOR EVERY BUDGET",
       desc: "From small kids' packs to grand show boxes. Tell us your budget per gift.",
+      alt: "Affordable wholesale cracker pricing wallet icon Siliguri",
     },
     {
       icon: "/assets/icons/pen.svg",
       title: "CUSTOMIZE & PERSONALIZE",
       desc: "Greeting cards and your company name on request. Ask us what is possible.",
+      alt: "Personalized corporate company card branding pen icon Siliguri",
     },
     {
       icon: "/assets/icons/sparkle.svg",
       title: "35+ DIWALI PRODUCTS",
       desc: "Crackers, hampers, diyas and decor, all from one shop in Siliguri.",
+      alt: "Sivakasi green fireworks and Diwali sparkles icon Siliguri",
     },
     {
       icon: "/assets/icons/chat.svg",
       title: "CUSTOMER SUPPORT",
       desc: "Talk to us on WhatsApp to plan your order and delivery across Siliguri.",
+      alt: "Direct WhatsApp corporate gifting customer support icon Siliguri",
     },
   ];
 
   // 5. Products
   const diwaliGifts: ProductItem[] = [
-    { id: "mega-starter-pack", title: "Mega Starter Pack", image: "/assets/mega-starter.webp", badge: "DIWALI 2026", bullets: ["₹2,499 per pack", "Sparklers to sky shots", "For a small group"] },
-    { id: "pataka-diya-diwali-hamper", title: "Pataka + Diya Diwali Hamper", image: "/assets/combo-pataka-diyas.webp", badge: "DIWALI 2026", bullets: ["Assorted crackers box", "12 clay diyas", "Ready to gift"] },
-    { id: "kids-fun-fiesta-green-pack", title: "Kids Fun Fiesta Box", image: "/assets/ck-kids-box.webp", badge: "DIWALI 2026", bullets: ["25 items for children", "Pop pops & magic snakes", "Use with an adult nearby"] },
-    { id: "mega-family-pack", title: "Mega Family Pack", image: "/assets/mega-family.webp", badge: "BEST VALUE", bullets: ["₹4,999 per pack", "7 types of crackers", "Save ₹2,324"] },
-    { id: "mega-grand-show-pack", title: "Mega Grand Show Pack", image: "/assets/mega-grand.webp", badge: "DIWALI 2026", bullets: ["₹9,999 per pack", "120-shot grand finale", "For clubs and societies"] },
+    {
+      id: "mega-starter-pack",
+      title: "Mega Starter Corporate Pack",
+      image: "/assets/mega-starter.webp",
+      imageAlt: "Mega Starter green firecrackers corporate gift pack with sparklers and flower pots in Siliguri",
+      badge: "DIWALI 2026",
+      bullets: ["₹2,499 per pack", "Sparklers to sky shots", "For small teams and staff"],
+    },
+    {
+      id: "pataka-diya-diwali-hamper",
+      title: "Pataka + Diya Festive Hamper",
+      image: "/assets/combo-pataka-diyas.webp",
+      imageAlt: "Diwali corporate gift hamper with Sivakasi green crackers and hand-crafted clay diyas Siliguri",
+      badge: "BESTSELLER",
+      bullets: ["Assorted crackers box", "12 hand-crafted clay diyas", "Ready to gift packaging"],
+    },
+    {
+      id: "combo-pataka-mithai-pack",
+      title: "Pataka + Mithai Gift Combo",
+      image: "/assets/combo-pataka-mithai.webp",
+      imageAlt: "Premium corporate Diwali gift hamper combining green crackers and traditional sweets box Siliguri",
+      badge: "POPULAR",
+      bullets: ["Green crackers assortment", "Festive sweet treat box", "Perfect client thank-you"],
+    },
+    {
+      id: "kids-fun-fiesta-green-pack",
+      title: "Kids Fun Fiesta Box",
+      image: "/assets/ck-kids-box.webp",
+      imageAlt: "Safe child-friendly green crackers festive hamper box for employee families Siliguri",
+      badge: "DIWALI 2026",
+      bullets: ["25 items for children", "Pop pops & magic snakes", "Use with an adult nearby"],
+    },
+    {
+      id: "mega-family-pack",
+      title: "Mega Family Pack",
+      image: "/assets/mega-family.webp",
+      imageAlt: "Wholesale mega family Diwali green firecrackers corporate gift carton Siliguri",
+      badge: "BEST VALUE",
+      bullets: ["₹4,999 per pack", "7 types of crackers", "Save ₹2,324"],
+    },
+    {
+      id: "mega-grand-show-pack",
+      title: "Mega Grand Show VIP Pack",
+      image: "/assets/mega-grand.webp",
+      imageAlt: "Mega Grand Show luxury VIP corporate fireworks collection with 120 aerial shots Siliguri",
+      badge: "VIP SHOW",
+      bullets: ["₹9,999 per pack", "120-shot grand finale", "For clubs and societies"],
+    },
   ];
 
   const trialPacks: ProductItem[] = [
-    { id: "sky-king-30-aerial-shots", title: "Sky King 30 Aerial Shots", image: "/assets/ck-cake-30.webp", bullets: ["30 shots", "5 vibrant colours", "For open terraces"] },
-    { id: "imperial-120-shots-mega-cake", title: "Imperial 120 Shots Mega Cake", image: "/assets/ck-cake-120.webp", bullets: ["120 shots", "A grand finale", "For open grounds"] },
-    { id: "royal-electric-sparklers-30cm", title: "Royal Electric Sparklers 30cm", image: "/assets/ck-sparkler-gold.webp", bullets: ["Pack of 50 sticks", "Golden sparks", "Easy to share"] },
-    { id: "deluxe-tri-color-flower-pots", title: "Deluxe Tri-Color Flower Pots", image: "/assets/ck-anar-tricolor.webp", bullets: ["Pack of 10", "Gold, crimson & silver", "Tall anar fountain"] },
-    { id: "super-sonic-whistling-sky-rockets", title: "Super Sonic Whistling Rockets", image: "/assets/ck-rockets.webp", bullets: ["Pack of 10", "Whistling ascent", "Colour burst"] },
+    {
+      id: "sky-king-30-aerial-shots",
+      title: "Sky King 30 Aerial Shots",
+      image: "/assets/ck-cake-30.webp",
+      imageAlt: "Sky King 30 multi-color aerial sky shots cake for Diwali corporate celebrations in Siliguri",
+      bullets: ["30 shots", "5 vibrant colours", "For open terraces"],
+    },
+    {
+      id: "imperial-120-shots-mega-cake",
+      title: "Imperial 120 Shots Mega Cake",
+      image: "/assets/ck-cake-120.webp",
+      imageAlt: "Imperial 120 shots mega cake aerial fireworks display for corporate festive events Siliguri",
+      bullets: ["120 shots", "A grand finale", "For open grounds"],
+    },
+    {
+      id: "royal-electric-sparklers-30cm",
+      title: "Royal Electric Sparklers 30cm",
+      image: "/assets/ck-sparkler-gold.webp",
+      imageAlt: "Royal electric golden sparklers 30cm pack for corporate Diwali distribution Siliguri",
+      bullets: ["Pack of 50 sticks", "Golden sparks", "Easy to share"],
+    },
+    {
+      id: "deluxe-tri-color-flower-pots",
+      title: "Deluxe Tri-Color Flower Pots",
+      image: "/assets/ck-anar-tricolor.webp",
+      imageAlt: "Deluxe tri-color fountain flower pots anar for Diwali festive gifting Siliguri",
+      bullets: ["Pack of 10", "Gold, crimson & silver", "Tall anar fountain"],
+    },
+    {
+      id: "super-sonic-whistling-sky-rockets",
+      title: "Super Sonic Whistling Rockets",
+      image: "/assets/ck-rockets.webp",
+      imageAlt: "Super Sonic whistling aerial sky rockets wholesale crackers shop in Siliguri",
+      bullets: ["Pack of 10", "Whistling ascent", "Colour burst"],
+    },
+    {
+      id: "deluxe-ground-chakkars",
+      title: "Deluxe Ground Chakkars",
+      image: "/assets/ck-chakkar.webp",
+      imageAlt: "Deluxe spinning ground chakkars wheel fireworks for corporate festive packs Siliguri",
+      bullets: ["Pack of 25 wheels", "Smooth spinning glow", "Traditional family favorite"],
+    },
   ];
 
   const decorItems: ProductItem[] = [
-    { id: "hand-painted-clay-diyas", title: "Hand-Painted Clay Diyas", image: "/assets/decor-clay-diyas.webp", bullets: ["Pack of 12 or 24", "Traditional terracotta", "Reusable"] },
-    { id: "office-diwali-gift-hamper", title: "Office Diwali Gift Hamper", image: "/assets/hamper-office.webp", bullets: ["Pack of 5 or 10", "Neat gift boxes", "For staff and clients"] },
-    { id: "festive-sweets-diya-gift-hamper", title: "Festive Diya Hamper", image: "/assets/hamper-festive.webp", bullets: ["Diyas in a gift box", "Ready to gift", "Finished with flowers"] },
-    { id: "diwali-puja-thali-set", title: "Diwali Puja Thali Set", image: "/assets/decor-puja-thali.webp", bullets: ["Thali and diya", "Kumkum, haldi and rice", "Ready for puja"] },
+    {
+      id: "hand-painted-clay-diyas",
+      title: "Hand-Painted Clay Diyas",
+      image: "/assets/decor-clay-diyas.webp",
+      imageAlt: "Handcrafted traditional earthen clay terracotta diyas for Diwali corporate hampers Siliguri",
+      bullets: ["Pack of 12 or 24", "Traditional terracotta", "Reusable"],
+    },
+    {
+      id: "office-diwali-gift-hamper",
+      title: "Office Diwali Gift Hamper",
+      image: "/assets/hamper-office.webp",
+      imageAlt: "Corporate office Diwali employee and client gift hamper box Siliguri",
+      bullets: ["Pack of 5 or 10", "Neat gift boxes", "For staff and clients"],
+    },
+    {
+      id: "festive-sweets-diya-gift-hamper",
+      title: "Festive Diya Hamper",
+      image: "/assets/hamper-festive.webp",
+      imageAlt: "Festive Diwali celebration gift hamper with decorated diyas and gourmet dry fruits Siliguri",
+      bullets: ["Diyas in a gift box", "Ready to gift", "Finished with flowers"],
+    },
+    {
+      id: "diwali-puja-thali-set",
+      title: "Diwali Puja Thali Set",
+      image: "/assets/decor-puja-thali.webp",
+      imageAlt: "Traditional artisan brass Diwali puja thali set for auspicious corporate gifting Siliguri",
+      bullets: ["Thali and diya", "Kumkum, haldi and rice", "Ready for puja"],
+    },
+    {
+      id: "royal-brass-lamp",
+      title: "Royal Brass Peacock Diya",
+      image: "/assets/hd-brass-lamp.webp",
+      imageAlt: "Traditional carved brass peacock diya lamp for executive corporate Diwali gifting Siliguri",
+      bullets: ["Solid engraved brass", "Long-burning traditional diya", "Auspicious keepsake gift"],
+    },
+    {
+      id: "floating-urli-set",
+      title: "Festive Floral Urli Decor Set",
+      image: "/assets/hd-urli-flowers.webp",
+      imageAlt: "Hand-hammered floral brass urli festive bowl for corporate office Diwali reception decor Siliguri",
+      bullets: ["Decorative brass urli bowl", "Floating tealights & petals", "Elevates office entrances"],
+    },
   ];
 
   // 6. Customization
-  const customizationCards = [
-    { image: "/assets/icons/tag.svg", title: "YOUR COMPANY NAME", desc: "Your company or group name on a sticker or card on each box, on request." },
-    { image: "/assets/icons/card.svg", title: "GREETING CARDS", desc: "Add a short Diwali message for your team, clients or members." },
-    { image: "/assets/icons/mix.svg", title: "MIX YOUR BOX", desc: "Combine crackers, decor and diyas to build a box that fits your budget." },
-    { image: "/assets/icons/ribbon.svg", title: "GIFT WRAPPING", desc: "Simple festive wrapping so that each box is ready to hand over." },
+  const customizationCards: CustomizationCard[] = [
+    {
+      image: "/assets/icons/tag.svg",
+      title: "YOUR COMPANY NAME",
+      desc: "Your company or group name on a sticker or card on each box, on request.",
+      alt: "Company brand name tag and sticker customization on Diwali gift boxes Siliguri",
+    },
+    {
+      image: "/assets/icons/card.svg",
+      title: "GREETING CARDS",
+      desc: "Add a short Diwali message for your team, clients or members.",
+      alt: "Personalized festive greeting card insertion for corporate clients Siliguri",
+    },
+    {
+      image: "/assets/icons/mix.svg",
+      title: "MIX YOUR BOX",
+      desc: "Combine crackers, decor and diyas to build a box that fits your budget.",
+      alt: "Custom mixed cracker and diya corporate gift box curation Siliguri",
+    },
+    {
+      image: "/assets/icons/ribbon.svg",
+      title: "GIFT WRAPPING",
+      desc: "Simple festive wrapping so that each box is ready to hand over.",
+      alt: "Festive Diwali ribbon gift packaging and presentation Siliguri",
+    },
   ];
 
   // 7. How bulk orders work
@@ -270,7 +527,10 @@ export default function CorporateGiftingPage() {
               />
               <img
                 src="/assets/bulk-gifting-banner.webp"
-                alt="Diwali gift hampers for corporate and bulk gifting in Siliguri"
+                alt="Diwali corporate gifting hampers and wholesale green firecrackers in Siliguri 2026"
+                title="Diwali Corporate Gifting Hampers & Wholesale Fireworks Siliguri 2026"
+                width={1024}
+                height={420}
                 className="w-full h-auto object-cover block"
                 loading="eager"
               />
@@ -292,7 +552,10 @@ export default function CorporateGiftingPage() {
                 />
                 <img
                   src="/assets/siliguri-emblem.png"
-                  alt="Siliguri Pataka emblem"
+                  alt="Siliguri Pataka certified authentic corporate gifting & wholesale fireworks emblem"
+                  title="Siliguri Pataka Certified Authentic Corporate Gifting"
+                  width={120}
+                  height={120}
                   className="w-full h-full object-cover block rounded-full"
                   loading="eager"
                 />
@@ -336,7 +599,8 @@ export default function CorporateGiftingPage() {
                 <div key={idx} className="flex items-center gap-3.5 flex-shrink-0">
                   <Image
                     src={s.icon}
-                    alt={s.label}
+                    alt={s.alt}
+                    title={s.label}
                     width={28}
                     height={28}
                     unoptimized
@@ -383,8 +647,10 @@ export default function CorporateGiftingPage() {
                   <div className="relative w-full h-full rounded-full overflow-hidden shadow-sm group-hover:shadow-md transition-all duration-300 bg-white z-[2]">
                     <Image
                       src={tier.image}
-                      alt={tier.budget}
+                      alt={tier.alt}
+                      title={tier.title}
                       fill
+                      sizes="(max-width: 640px) 130px, (max-width: 1024px) 160px, 185px"
                       unoptimized
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
@@ -432,15 +698,16 @@ export default function CorporateGiftingPage() {
                   transform: `translateX(-${(clientIndex * 100) / (typeof window !== "undefined" && window.innerWidth >= 1024 ? 5 : typeof window !== "undefined" && window.innerWidth >= 640 ? 3 : 2)}%)`,
                 }}
               >
-                {clientLogos.concat(clientLogos).map((logoUrl, i) => (
+                {clientLogos.concat(clientLogos).map((logo, i) => (
                   <div
                     key={i}
                     className="w-1/2 sm:w-1/3 lg:w-1/5 flex-shrink-0 flex items-center justify-center p-3 sm:p-4"
                   >
                     <div className="w-[120px] sm:w-[140px] h-[50px] sm:h-[60px] flex items-center justify-center">
                       <Image
-                        src={logoUrl}
-                        alt={`Gifting group ${(i % clientLogos.length) + 1}`}
+                        src={logo.src}
+                        alt={logo.alt}
+                        title={logo.name}
                         width={140}
                         height={60}
                         unoptimized
@@ -485,7 +752,8 @@ export default function CorporateGiftingPage() {
                 <div className="w-14 h-14 rounded-full bg-[#FAF6EE] flex items-center justify-center mb-3 group-hover:scale-105 transition-transform">
                   <Image
                     src={item.icon}
-                    alt={item.title}
+                    alt={item.alt}
+                    title={item.title}
                     width={34}
                     height={34}
                     unoptimized
@@ -582,8 +850,10 @@ export default function CorporateGiftingPage() {
                     <div className="relative w-full aspect-square bg-[#FAF7F2] overflow-hidden">
                       <Image
                         src={p.image}
-                        alt={p.title}
+                        alt={p.imageAlt}
+                        title={p.title}
                         fill
+                        sizes="(max-width: 640px) 280px, (max-width: 1024px) 300px, 285px"
                         unoptimized
                         className="object-cover group-hover:scale-105 transition-transform duration-500"
                       />
@@ -661,7 +931,8 @@ export default function CorporateGiftingPage() {
                 <div className="w-16 h-16 rounded-full bg-[#FAF6EE] flex items-center justify-center mb-4 group-hover:scale-105 transition-transform">
                   <Image
                     src={card.image}
-                    alt={card.title}
+                    alt={card.alt}
+                    title={card.title}
                     width={44}
                     height={44}
                     unoptimized
@@ -772,7 +1043,8 @@ export default function CorporateGiftingPage() {
                   >
                     <Image
                       src="/assets/icons/whatsapp.svg"
-                      alt="WhatsApp"
+                      alt="Chat on WhatsApp with Siliguri Pataka corporate gifting specialists"
+                      title="Enquire on WhatsApp for Corporate Gifting"
                       width={18}
                       height={18}
                       unoptimized
@@ -984,7 +1256,8 @@ export default function CorporateGiftingPage() {
             >
               <Image
                 src="/assets/icons/whatsapp.svg"
-                alt="WhatsApp"
+                alt="Enquire on WhatsApp with Siliguri Pataka bulk corporate Diwali team"
+                title="Enquire on WhatsApp for Bulk Corporate Orders"
                 width={18}
                 height={18}
                 unoptimized

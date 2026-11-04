@@ -71,7 +71,7 @@ export default function Header({ onOpenPackFinder }: { onOpenPackFinder?: () => 
   const [activeMega, setActiveMega] = useState<string | null>(null);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [mobileExpandedSection, setMobileExpandedSection] = useState<string | null>(null);
+  const [mobileExpandedSection, setMobileExpandedSection] = useState<string | null>("shop");
   const navRef = useRef<HTMLDivElement>(null);
 
   const [headerBottom, setHeaderBottom] = useState(68);
@@ -534,39 +534,59 @@ export default function Header({ onOpenPackFinder }: { onOpenPackFinder?: () => 
                   {mobileExpandedSection === "shop" && (
                     <div className="pl-3 py-2 flex flex-col gap-2 text-[15px] text-[#5c5a52]">
                       <Link
+                        href="/collections/all"
+                        onClick={() => setMobileMenuOpen(false)}
+                        className={`py-1 font-semibold ${
+                          pathname === "/collections/all"
+                            ? "text-[#b3261e]"
+                            : "text-[#2b1215] hover:text-[#b3261e]"
+                        }`}
+                      >
+                        All Products
+                      </Link>
+                      <Link
                         href="/collections/mega-packs"
                         onClick={() => setMobileMenuOpen(false)}
-                        className="py-1 hover:text-[#b3261e]"
+                        className={`py-1 ${
+                          pathname === "/collections/mega-packs"
+                            ? "text-[#b3261e] font-semibold"
+                            : "hover:text-[#b3261e]"
+                        }`}
                       >
                         Mega Packs
                       </Link>
                       <Link
                         href="/collections/sparklers"
                         onClick={() => setMobileMenuOpen(false)}
-                        className="py-1 hover:text-[#b3261e]"
+                        className={`py-1 ${
+                          pathname === "/collections/sparklers"
+                            ? "text-[#b3261e] font-semibold"
+                            : "hover:text-[#b3261e]"
+                        }`}
                       >
                         Sparklers (Phuljhari)
                       </Link>
                       <Link
                         href="/collections/flower-pots"
                         onClick={() => setMobileMenuOpen(false)}
-                        className="py-1 hover:text-[#b3261e]"
+                        className={`py-1 ${
+                          pathname === "/collections/flower-pots"
+                            ? "text-[#b3261e] font-semibold"
+                            : "hover:text-[#b3261e]"
+                        }`}
                       >
                         Flower Pots (Anar)
                       </Link>
                       <Link
                         href="/collections/home-decor"
                         onClick={() => setMobileMenuOpen(false)}
-                        className="py-1 hover:text-[#b3261e]"
+                        className={`py-1 ${
+                          pathname === "/collections/home-decor"
+                            ? "text-[#b3261e] font-semibold"
+                            : "hover:text-[#b3261e]"
+                        }`}
                       >
                         Home Decor
-                      </Link>
-                      <Link
-                        href="/collections/all"
-                        onClick={() => setMobileMenuOpen(false)}
-                        className="py-1 hover:text-[#b3261e]"
-                      >
-                        All Products
                       </Link>
                     </div>
                   )}

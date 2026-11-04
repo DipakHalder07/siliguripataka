@@ -8,8 +8,8 @@ import { POSTS, formatPostDate } from "@/lib/blog";
 
 export const metadata: Metadata = {
   ...pageMeta({
-    title: `Diwali Guides for Siliguri: Crackers, Sweets & Safety | ${LEGAL.brand}`,
-    description: "Guides for Diwali and Kali Puja in Siliguri: how to choose crackers, stay safe, pick sweets and decorate your home.",
+    title: `Diwali Guides for Siliguri: Crackers, Gifts & Safety | ${LEGAL.brand}`,
+    description: "Guides for Diwali and Kali Puja in Siliguri: how to choose crackers, stay safe, pick gifts and decorate your home.",
     path: "/blog",
   }),
 };
@@ -30,7 +30,7 @@ export default function BlogIndexPage() {
             </nav>
             <h1 className="font-stencil text-[32px] sm:text-[44px] font-bold leading-tight">Diwali Guides for Siliguri</h1>
             <p className="text-[15px] text-[#f1dccb] mt-2 max-w-[560px]">
-              Local guides on the firecracker mela, cracker combos, green cracker rules, safety, mithai, gift hampers and rangoli for Diwali and Kali Puja in Siliguri.
+              Local guides on the firecracker mela, cracker combos, green cracker rules, safety, gift hampers and rangoli for Diwali and Kali Puja in Siliguri.
             </p>
           </div>
         </section>

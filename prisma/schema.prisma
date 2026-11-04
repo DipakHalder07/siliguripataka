@@ -244,7 +244,7 @@ model PaymentLog {
 }
 
 // ----------------------------------------------------
-// 6. TEAPAY: NATIVE UPI GATEWAY
+// 6. NATIVE UPI GATEWAY
 // Each checkout gets a unique payable amount (order total minus 1-99 paise), so an
 // incoming bank credit identifies exactly one checkout. The order is created only
 // once the money is seen (or the admin confirms it).

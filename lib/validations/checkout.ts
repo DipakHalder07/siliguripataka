@@ -116,7 +116,7 @@ export const orderCreationSchema = z.object({
 
 export type OrderCreationData = z.infer<typeof orderCreationSchema>;
 
-// UPI checkout (TeaPay): the server prices the order, so totals are not accepted from the browser.
+// UPI checkout: the server prices the order, so totals are not accepted from the browser.
 export const paymentStartSchema = orderCreationSchema.pick({
   customerName: true,
   customerPhone: true,

@@ -226,7 +226,6 @@ function guessCollection(text: string) {
   const rules: Array<[RegExp, string]> = [
     [/mega pack/, "mega-packs"],
     [/gift|hamper|combo/, "gift-hampers"],
-    [/kaju|laddu|barfi|peda|jamun|rosogolla|rasgulla|sandesh|soan|mithai|sweet/, "sweets"],
     [/diya|rangoli|toran|led|string light|candle|thali|puja|decor/, "diyas-decor"],
     [/sparkler|phuljhari|phuljhadi/, "sparklers"],
     [/flower pot|anar|tubri/, "flower-pots"],

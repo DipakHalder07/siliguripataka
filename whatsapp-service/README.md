@@ -1,4 +1,4 @@
-# TeaPay WhatsApp service
+# Siliguri Pataka WhatsApp service
 
 Keeps the shop's WhatsApp logged in (like WhatsApp Web) and sends the checkout verification
 codes. It must run all the time, so it cannot run on Vercel.
@@ -9,7 +9,7 @@ codes. It must run all the time, so it cannot run on Vercel.
 
 ## On your computer
 
-From the `teabox` folder:
+From the project folder:
 
 ```bash
 npm run dev   # database + this service + the shop (installs this service on first run)
@@ -25,11 +25,11 @@ service handles both: it keeps the WhatsApp login in the shop's database and cal
 `/health` every 10 minutes so it stays awake.
 
 1. Push the shop to GitHub, then on https://render.com choose **New → Blueprint** and pick the
-   repo. Render reads `render.yaml` and creates `teabox-whatsapp` (free, Singapore).
+   repo. Render reads `render.yaml` and creates `siliguri-pataka-whatsapp` (free, Singapore).
 2. When asked for `WHATSAPP_SESSION_DB_URL`, paste the Neon **direct** connection string: in
    Vercel → Settings → Environment Variables, copy the value of `DATABASE_URL_UNPOOLED`
    (no `-pooler` in it, and no `&pgbouncer=true`).
-3. After it deploys, copy from Render: the service address (`https://teabox-whatsapp.onrender.com`)
+3. After it deploys, copy from Render: the service address (`https://siliguri-pataka-whatsapp.onrender.com`)
    and the generated `WHATSAPP_SERVICE_TOKEN` (Environment tab).
 4. In Vercel, set `WHATSAPP_SERVICE_URL` to that address and `WHATSAPP_SERVICE_TOKEN` to the same
    token, then redeploy the shop.

@@ -11,24 +11,19 @@ const searchableItems = [
   { id: "mega-family-pack", title: "Mega Family Pack", category: "Mega Packs Combo", price: 4999, weight: "1 Pack", image: "/assets/mega-family.webp", description: "Best value · Save ₹2,324" },
   { id: "mega-starter-pack", title: "Mega Starter Pack", category: "Mega Packs Combo", price: 2499, weight: "1 Pack", image: "/assets/mega-starter.webp", description: "A mix for one family evening" },
   { id: "mega-grand-show-pack", title: "Mega Grand Show Pack", category: "Mega Packs Combo", price: 9999, weight: "1 Pack", image: "/assets/mega-grand.webp", description: "With the 120-shot grand finale" },
-  { id: "pataka-mithai-diwali-combo", title: "Pataka + Mithai Diwali Hamper", category: "Gift Hampers Combo", price: 2299, weight: "1 Combo", image: "/assets/combo-pataka-mithai.webp", description: "Crackers, mithai & clay diyas" },
+  { id: "pataka-diya-diwali-hamper", title: "Pataka + Diya Diwali Hamper", category: "Gift Hampers Combo", price: 1849, weight: "1 Combo", image: "/assets/combo-pataka-diyas.webp", description: "Crackers & clay diyas" },
   { id: "royal-electric-sparklers-30cm", title: "Royal Electric Sparklers 30cm", category: "Sparklers Phuljhari", price: 349, weight: "Pack of 50 Sticks", image: "/assets/ck-sparkler-gold.webp", description: "Golden sparks · Long burn" },
   { id: "deluxe-tri-color-flower-pots", title: "Deluxe Tri-Color Flower Pots", category: "Flower Pots Anar Tubri", price: 499, weight: "Pack of 10", image: "/assets/ck-anar-tricolor.webp", description: "Gold, crimson & silver sparks" },
   { id: "deluxe-special-spinning-chakkar", title: "Deluxe Ground Chakkar", category: "Ground Chakkars Chorki", price: 399, weight: "Pack of 20 Pcs", image: "/assets/ck-chakkar.webp", description: "High-speed spinning rings" },
   { id: "super-sonic-whistling-sky-rockets", title: "Super Sonic Whistling Sky Rockets", category: "Rockets Hawai", price: 599, weight: "Pack of 10 Rockets", image: "/assets/ck-rockets.webp", description: "Whistling ascent · Colour burst" },
   { id: "sky-king-30-aerial-shots", title: "Sky King 30 Aerial Shots", category: "Aerial Shots Sky Cakes", price: 1299, weight: "1 Cake (30 Shots)", image: "/assets/ck-cake-30.webp", description: "30 shots · 5 vibrant colours" },
   { id: "kids-fun-fiesta-green-pack", title: "Kids Fun Fiesta Box", category: "Kids Special", price: 899, weight: "1 Kids Hamper", image: "/assets/ck-kids-box.webp", description: "Pop pops, snakes & colour smoke" },
-  { id: "kaju-katli-box", title: "Kaju Katli Box", category: "Sweets Mithai", price: 649, weight: "500G", image: "/assets/sweets-kaju-katli.webp", description: "Classic diamond-cut cashew sweet" },
-  { id: "motichoor-laddu-box", title: "Motichoor Laddu Box", category: "Sweets Mithai", price: 299, weight: "500G", image: "/assets/sweets-motichoor-laddu.webp", description: "Soft boondi laddus" },
-  { id: "bengali-rosogolla-box", title: "Bengali Rosogolla", category: "Sweets Mithai", price: 229, weight: "500G", image: "/assets/sweets-rosogolla.webp", description: "Soft chhena balls in light syrup" },
-  { id: "assorted-diwali-mithai-box", title: "Assorted Diwali Mithai Box", category: "Sweets Mithai Gift", price: 449, weight: "500G", image: "/assets/sweets-assorted-box.webp", description: "Kaju katli, laddu, barfi & peda" },
   { id: "hand-painted-clay-diyas", title: "Clay Diyas", category: "Diyas Decor", price: 149, weight: "Pack of 12", image: "/assets/decor-clay-diyas.webp", description: "Traditional terracotta diyas" },
   { id: "warm-led-string-lights", title: "Warm LED String Lights", category: "Home Decor Lights", price: 349, weight: "1 String", image: "/assets/hd-string-lights.webp", description: "Fairy lights for balcony and windows" },
   { id: "hanging-paper-lantern-kandil", title: "Hanging Paper Lantern (Kandil)", category: "Home Decor Lantern", price: 299, weight: "1 Lantern", image: "/assets/hd-lantern-orange.webp", description: "Traditional festive lantern" },
   { id: "brass-flower-bowl-urli", title: "Brass Floating Diya Bowl (Urli)", category: "Home Decor Diya", price: 799, weight: "1 Bowl", image: "/assets/hd-flower-bowl.webp", description: "For floating flowers and diyas" },
-  { id: "festive-sweets-diya-gift-hamper", title: "Festive Sweets & Diya Gift Hamper", category: "Gift Hampers", price: 1499, weight: "1 Hamper", image: "/assets/hamper-festive.webp", description: "Mithai and diyas in a gift box" },
+  { id: "festive-sweets-diya-gift-hamper", title: "Festive Diya Gift Hamper", category: "Gift Hampers", price: 1499, weight: "1 Hamper", image: "/assets/hamper-festive.webp", description: "Diyas and festive touches in a gift box" },
   { id: "family-diwali-gift-hamper", title: "Family Diwali Gift Hamper", category: "Gift Hampers", price: 2499, weight: "1 Hamper", image: "/assets/hamper-family.webp", description: "Treats for the whole family" },
-  { id: "bengali-sandesh-box", title: "Bengali Sandesh Box", category: "Sweets Mithai Local", price: 399, weight: "500G", image: "/assets/sweets-sandesh.webp", description: "Soft chhena sweets" },
   { id: "rangoli-colour-set", title: "Rangoli Colour Set", category: "Decor Rangoli", price: 199, weight: "1 Set", image: "/assets/decor-rangoli-set.webp", description: "Bright rangoli colours" },
   { id: "diwali-puja-thali-set", title: "Diwali Puja Thali Set", category: "Puja Decor", price: 399, weight: "1 Set", image: "/assets/decor-puja-thali.webp", description: "Thali, diya, kumkum, haldi & more" },
 ];
@@ -42,7 +37,7 @@ export default function SearchDrawer() {
     "Flower Pots",
     "Mega Pack",
     "Hamper",
-    "Sweets",
+    "Rockets",
     "Diyas",
   ];
 
@@ -85,7 +80,7 @@ export default function SearchDrawer() {
               autoFocus
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search crackers, sweets, diyas..."
+              placeholder="Search crackers, hampers, diyas..."
               className="flex-1 text-[16px] text-[#2b1215] placeholder-[#747576] outline-none"
             />
             {query && (
@@ -181,7 +176,7 @@ export default function SearchDrawer() {
                   No matching products found
                 </p>
                 <p className="text-[14px]">
-                  Try searching for &quot;Sparklers&quot;, &quot;Gift Box&quot;, or &quot;Sweets&quot;
+                  Try searching for &quot;Sparklers&quot;, &quot;Gift Box&quot;, or &quot;Diyas&quot;
                 </p>
               </div>
             ) : (

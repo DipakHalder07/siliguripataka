@@ -59,7 +59,7 @@ interface Draft {
 export async function alertNewCheckout(sessionId: string, baseUrl: string) {
   const to = await alertTarget();
   if (!to) {
-    console.log("[TeaPay] Order alert skipped: WhatsApp alerts off or WhatsApp not connected");
+    console.log("[Payments] Order alert skipped: WhatsApp alerts off or WhatsApp not connected");
     return;
   }
 
@@ -104,7 +104,7 @@ export async function alertNewCheckout(sessionId: string, baseUrl: string) {
   ].join("\n");
 
   await sendWhatsAppText(to, text);
-  console.log(`[TeaPay] Order alert for ${session.orderNumber} sent to +${to}`);
+  console.log(`[Payments] Order alert for ${session.orderNumber} sent to +${to}`);
 }
 
 /** Email to the shop owner when a customer reaches the payment QR (start time + payment deadline). */
@@ -185,8 +185,8 @@ export async function alertCodOrder(
     `${baseUrl}/order/${order.orderNumber}`,
   ].join("\n");
 
-  await sendWhatsAppText(to, text).catch((e) => console.warn("[TeaPay] COD alert error:", e?.message || e));
-  console.log(`[TeaPay] COD order alert for ${order.orderNumber} sent to +${to}`);
+  await sendWhatsAppText(to, text).catch((e) => console.warn("[Payments] COD alert error:", e?.message || e));
+  console.log(`[Payments] COD order alert for ${order.orderNumber} sent to +${to}`);
 }
 
 /** Sent when a payment confirms automatically (not when the admin confirmed it). */
@@ -202,5 +202,5 @@ export async function alertPaid(session: PaymentSession) {
   const text = `✅ *Paid* ${session.orderNumber}: ${rupees(session.payPaise)} received (${via[session.paidVia] || session.paidVia}${
     session.utr ? `, UTR ${session.utr}` : ""
   }). Order confirmed.`;
-  await sendWhatsAppText(to, text).catch((e) => console.warn("[TeaPay] WhatsApp paid alert failed:", e?.message));
+  await sendWhatsAppText(to, text).catch((e) => console.warn("[Payments] WhatsApp paid alert failed:", e?.message));
 }

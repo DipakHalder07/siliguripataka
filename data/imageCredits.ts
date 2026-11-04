@@ -7,12 +7,6 @@ export const IMAGE_CREDITS = [
     "source": "https://www.flickr.com/photos/51942038@N04/9141508975"
   },
   {
-    "title": "A box full of burfis, Mithai Indian Sweets London November 2009",
-    "author": "secretlondon123",
-    "license": "CC BY-SA 2.0",
-    "source": "https://commons.wikimedia.org/wiki/File:A_box_full_of_burfis,_Mithai_Indian_Sweets_London_November_2009.jpg"
-  },
-  {
     "title": "A night of Fireworks",
     "author": "Ashwin Kumar",
     "license": "CC BY-SA 2.0",
@@ -23,12 +17,6 @@ export const IMAGE_CREDITS = [
     "author": "Buddha with a Camera",
     "license": "CC BY 2.0",
     "source": "https://www.flickr.com/photos/11747230@N05/5231276178"
-  },
-  {
-    "title": "Barfi - Indian Sweets",
-    "author": "elsie.hui",
-    "license": "CC BY 2.0",
-    "source": "https://www.flickr.com/photos/91188380@N05/9162328431"
   },
   {
     "title": "Besan Laddoo",
@@ -151,12 +139,6 @@ export const IMAGE_CREDITS = [
     "source": "https://www.flickr.com/photos/57985295@N07/5531309075"
   },
   {
-    "title": "Gulab Jamun",
-    "author": "Hari Prasad Nadig",
-    "license": "CC BY-SA 2.0",
-    "source": "https://www.flickr.com/photos/66722888@N00/5918909896"
-  },
-  {
     "title": "Hindu pooja thali",
     "author": "suketdedhia",
     "license": "CC0",
@@ -173,36 +155,6 @@ export const IMAGE_CREDITS = [
     "author": "mckaysavage",
     "license": "CC BY 2.0",
     "source": "https://www.flickr.com/photos/56796376@N00/1980340953"
-  },
-  {
-    "title": "Indian Sweet Dessert Peda in a white bone china plate",
-    "author": "Prashant Sahu",
-    "license": "CC BY-SA 4.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Indian_Sweet_Dessert_Peda_in_a_white_bone_china_plate.jpg"
-  },
-  {
-    "title": "Kaju katli dessert - side view",
-    "author": "Unknomics",
-    "license": "CC BY-SA 3.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Kaju_katli_dessert_-_side_view.jpg"
-  },
-  {
-    "title": "Kaju katli sweet",
-    "author": "najeeb shaik",
-    "license": "CC BY-SA 4.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Kaju_katli_sweet.jpg"
-  },
-  {
-    "title": "Keasr Peda Recipe From North Indian Cuisine By Sameer Goyal",
-    "author": "Sameer Goyal Jaipur",
-    "license": "CC BY-SA 2.0",
-    "source": "https://www.flickr.com/photos/104309165@N05/25984609754"
-  },
-  {
-    "title": "laddoo mithai",
-    "author": "Devika smile",
-    "license": "CC BY-SA 2.0",
-    "source": "https://www.flickr.com/photos/75531279@N05/10098279793"
   },
   {
     "title": "Launching bottle rockets",
@@ -235,12 +187,6 @@ export const IMAGE_CREDITS = [
     "source": "https://commons.wikimedia.org/wiki/File:Motichoor_Ki_Laadu_Khajrana_Indore.jpg"
   },
   {
-    "title": "Motichur laddu",
-    "author": "Priyam1307",
-    "license": "CC BY-SA 4.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Motichur_laddu.jpg"
-  },
-  {
     "title": "Rangoli colours",
     "author": "Nagarjun",
     "license": "CC BY 2.0",
@@ -263,12 +209,6 @@ export const IMAGE_CREDITS = [
     "author": "John Pavelka",
     "license": "CC BY 2.0",
     "source": "https://www.flickr.com/photos/28705377@N04/3972943331"
-  },
-  {
-    "title": "Rasgulla Sweet",
-    "author": "Mdsmds0",
-    "license": "CC BY-SA 4.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Rasgulla_Sweet.JPG"
   },
   {
     "title": "Sparks Sparkler",

@@ -25,7 +25,7 @@ interface ProductItem {
 }
 
 export default function CorporateGiftingPage() {
-  const [activeTab, setActiveTab] = useState<"gifts" | "trial" | "teaware">("gifts");
+  const [activeTab, setActiveTab] = useState<"gifts" | "trial" | "decor">("gifts");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [clientIndex, setClientIndex] = useState(0);
 
@@ -99,14 +99,14 @@ export default function CorporateGiftingPage() {
 
   // 1. Stats
   const stats = [
-    { icon: "/assets/icons/box.svg", num: "40+", label: "Diwali Products" },
+    { icon: "/assets/icons/box.svg", num: "35+", label: "Diwali Products" },
     { icon: "/assets/icons/rupee.svg", num: "₹2,000", label: "Minimum Order Value" },
     { icon: "/assets/icons/pin.svg", num: "1 City", label: "Delivery Only in Siliguri" },
   ];
 
   // 2. Budget tiers
   const budgetTiers = [
-    { budget: "Under INR 1,000", image: "/assets/sweets-gift-box.webp" },
+    { budget: "Under INR 1,000", image: "/assets/hamper-puja.webp" },
     { budget: "Under INR 3,000", image: "/assets/hamper-festive.webp" },
     { budget: "Under INR 5,000", image: "/assets/mega-family.webp" },
     { budget: "Above INR 10,000", image: "/assets/mega-grand.webp" },
@@ -132,7 +132,7 @@ export default function CorporateGiftingPage() {
   };
 
   // 4. Why Siliguri Pataka
-  const whyTeabox = [
+  const whySiliguriPataka = [
     {
       icon: "/assets/icons/calendar.svg",
       title: "FOR ALL OCCASIONS",
@@ -150,8 +150,8 @@ export default function CorporateGiftingPage() {
     },
     {
       icon: "/assets/icons/sparkle.svg",
-      title: "40+ DIWALI PRODUCTS",
-      desc: "Crackers, sweets, diyas and decor, all from one shop in Siliguri.",
+      title: "35+ DIWALI PRODUCTS",
+      desc: "Crackers, hampers, diyas and decor, all from one shop in Siliguri.",
     },
     {
       icon: "/assets/icons/chat.svg",
@@ -163,7 +163,7 @@ export default function CorporateGiftingPage() {
   // 5. Products
   const diwaliGifts: ProductItem[] = [
     { id: "mega-starter-pack", title: "Mega Starter Pack", image: "/assets/mega-starter.webp", badge: "DIWALI 2026", bullets: ["₹2,499 per pack", "Sparklers to sky shots", "For a small group"] },
-    { id: "pataka-mithai-diwali-combo", title: "Pataka + Mithai Diwali Hamper", image: "/assets/combo-pataka-mithai.webp", badge: "DIWALI 2026", bullets: ["Assorted crackers box", "500G mithai", "12 clay diyas"] },
+    { id: "pataka-diya-diwali-hamper", title: "Pataka + Diya Diwali Hamper", image: "/assets/combo-pataka-diyas.webp", badge: "DIWALI 2026", bullets: ["Assorted crackers box", "12 clay diyas", "Ready to gift"] },
     { id: "kids-fun-fiesta-green-pack", title: "Kids Fun Fiesta Box", image: "/assets/ck-kids-box.webp", badge: "DIWALI 2026", bullets: ["25 items for children", "Pop pops & magic snakes", "Use with an adult nearby"] },
     { id: "mega-family-pack", title: "Mega Family Pack", image: "/assets/mega-family.webp", badge: "BEST VALUE", bullets: ["₹4,999 per pack", "7 types of crackers", "Save ₹2,324"] },
     { id: "mega-grand-show-pack", title: "Mega Grand Show Pack", image: "/assets/mega-grand.webp", badge: "DIWALI 2026", bullets: ["₹9,999 per pack", "120-shot grand finale", "For clubs and societies"] },
@@ -177,12 +177,10 @@ export default function CorporateGiftingPage() {
     { id: "super-sonic-whistling-sky-rockets", title: "Super Sonic Whistling Rockets", image: "/assets/ck-rockets.webp", bullets: ["Pack of 10", "Whistling ascent", "Colour burst"] },
   ];
 
-  const teawareItems: ProductItem[] = [
-    { id: "assorted-diwali-mithai-box", title: "Assorted Diwali Mithai Box", image: "/assets/sweets-assorted-box.webp", bullets: ["Barfi, kaju katli & peda", "500G or 1 KG", "Ready to gift"] },
-    { id: "kaju-katli-box", title: "Kaju Katli Box", image: "/assets/sweets-kaju-katli.webp", bullets: ["Classic cashew sweet", "250G to 1 KG", "A Diwali favourite"] },
+  const decorItems: ProductItem[] = [
     { id: "hand-painted-clay-diyas", title: "Hand-Painted Clay Diyas", image: "/assets/decor-clay-diyas.webp", bullets: ["Pack of 12 or 24", "Traditional terracotta", "Reusable"] },
     { id: "office-diwali-gift-hamper", title: "Office Diwali Gift Hamper", image: "/assets/hamper-office.webp", bullets: ["Pack of 5 or 10", "Neat gift boxes", "For staff and clients"] },
-    { id: "festive-sweets-diya-gift-hamper", title: "Festive Sweets & Diya Hamper", image: "/assets/hamper-festive.webp", bullets: ["Mithai and diyas", "Ready to gift", "Finished with flowers"] },
+    { id: "festive-sweets-diya-gift-hamper", title: "Festive Diya Hamper", image: "/assets/hamper-festive.webp", bullets: ["Diyas in a gift box", "Ready to gift", "Finished with flowers"] },
     { id: "diwali-puja-thali-set", title: "Diwali Puja Thali Set", image: "/assets/decor-puja-thali.webp", bullets: ["Thali and diya", "Kumkum, haldi and rice", "Ready for puja"] },
   ];
 
@@ -190,14 +188,14 @@ export default function CorporateGiftingPage() {
   const customizationCards = [
     { image: "/assets/icons/tag.svg", title: "YOUR COMPANY NAME", desc: "Your company or group name on a sticker or card on each box, on request." },
     { image: "/assets/icons/card.svg", title: "GREETING CARDS", desc: "Add a short Diwali message for your team, clients or members." },
-    { image: "/assets/icons/mix.svg", title: "MIX YOUR BOX", desc: "Combine crackers, mithai and diyas to build a box that fits your budget." },
+    { image: "/assets/icons/mix.svg", title: "MIX YOUR BOX", desc: "Combine crackers, decor and diyas to build a box that fits your budget." },
     { image: "/assets/icons/ribbon.svg", title: "GIFT WRAPPING", desc: "Simple festive wrapping so that each box is ready to hand over." },
   ];
 
   // 7. How bulk orders work
   const testimonials = [
     { name: "Share What You Need", badge: "Takes a minute", quote: "Tell us the number of gifts, your budget per gift and your delivery date, using the form or on WhatsApp." },
-    { name: "Pick Your Boxes", badge: "We suggest options", quote: "We suggest boxes that fit your budget. Mix crackers, sweets and diyas the way you like." },
+    { name: "Pick Your Boxes", badge: "We suggest options", quote: "We suggest boxes that fit your budget. Mix crackers, decor and diyas the way you like." },
     { name: "Confirm The Price", badge: "Before you pay", quote: "You get a clear price for the full order before anything is finalised." },
     { name: "We Deliver In Siliguri", badge: "To your door", quote: "We deliver to your office, club or society within Siliguri. Different addresses in the city can be arranged." },
   ];
@@ -239,7 +237,7 @@ export default function CorporateGiftingPage() {
   ];
 
   const currentProducts =
-    activeTab === "gifts" ? diwaliGifts : activeTab === "trial" ? trialPacks : teawareItems;
+    activeTab === "gifts" ? diwaliGifts : activeTab === "trial" ? trialPacks : decorItems;
 
   return (
     <SiteLayoutWrapper>
@@ -310,7 +308,7 @@ export default function CorporateGiftingPage() {
 
               {/* Subtitle: Poppins 300, 20px desktop, 14px mobile */}
               <p className="text-[#5F5F5F] font-light text-[20px] max-sm:text-[14px] leading-[26px] max-sm:leading-[130%] text-center">
-                Crackers, sweets and diyas in one box. For offices, clubs, housing societies and families across Siliguri, this Diwali.
+                Crackers, decor and diyas in one box. For offices, clubs, housing societies and families across Siliguri, this Diwali.
               </p>
 
               {/* CTA Button with Live Sheen Animation */}
@@ -479,7 +477,7 @@ export default function CorporateGiftingPage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 sm:gap-6">
-            {whyTeabox.map((item, idx) => (
+            {whySiliguriPataka.map((item, idx) => (
               <div
                 key={idx}
                 className="bg-white rounded-xl p-5 border border-[#EBE3D7] hover:border-[#2b1215]/30 hover:shadow-sm transition-all duration-200 flex flex-col items-center text-center group"
@@ -546,16 +544,16 @@ export default function CorporateGiftingPage() {
               </button>
               <button
                 onClick={() => {
-                  setActiveTab("teaware");
+                  setActiveTab("decor");
                   if (productScrollRef.current) productScrollRef.current.scrollLeft = 0;
                 }}
                 className={`text-[14px] uppercase tracking-wide pb-2 transition-all duration-200 cursor-pointer ${
-                  activeTab === "teaware"
+                  activeTab === "decor"
                     ? "text-[#2b1215] font-medium border-b-2 border-[#2b1215]"
                     : "text-[#5F5F5F] font-light border-b-2 border-transparent hover:text-[#2b1215]"
                 }`}
               >
-                SWEETS &amp; DECOR
+                GIFTS &amp; DECOR
               </button>
             </div>
 
@@ -650,7 +648,7 @@ export default function CorporateGiftingPage() {
               OUR BOXES, YOUR WAY
             </h2>
             <p className="text-[18px] sm:text-[20px] font-light leading-[24px] sm:leading-[26px] text-[#5F5F5F] text-center mt-2">
-              From a card with your message to the mix of crackers and sweets, tell us what you would like.
+              From a card with your message to the mix of crackers and decor, tell us what you would like.
             </p>
           </div>
 

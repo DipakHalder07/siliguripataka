@@ -2,7 +2,7 @@ import crypto from "crypto";
 import { getUpiConfig } from "./gateway/config";
 import { buildUpiDeepLinks, buildUpiQrDataUrl, UpiDeepLinks } from "./gateway/upi";
 
-// Manual UPI: used only when the TeaPay gateway is unavailable (no database). The shop shows
+// Manual UPI: used only when the UPI gateway is unavailable (no database). The shop shows
 // its own QR; the customer types their UTR and the admin confirms the payment against the bank.
 
 export interface ManualUpiSession {

@@ -37,6 +37,7 @@ export interface Product {
   tags?: string[];
   stockQuantity?: number;
   trackInventory?: boolean;
+  updatedAt?: string; // when the product last changed, for the sitemap
 }
 
 export const PRODUCTS: Product[] = [
@@ -713,598 +714,58 @@ export const PRODUCTS: Product[] = [
     "trackInventory": false
   },
   {
-    "id": "pataka-mithai-diwali-combo",
-    "handle": "pataka-mithai-diwali-combo",
-    "title": "Pataka + Mithai Diwali Hamper",
-    "subtitle": "Crackers Box, 500G Mithai & 12 Clay Diyas",
-    "price": 2299,
-    "originalPrice": 2799,
-    "discount": 18,
+    "id": "pataka-diya-diwali-hamper",
+    "handle": "pataka-diya-diwali-hamper",
+    "title": "Pataka + Diya Diwali Hamper",
+    "subtitle": "Assorted Crackers Box & 12 Clay Diyas",
+    "price": 1849,
+    "originalPrice": 1849,
+    "discount": 0,
     "rating": 0,
     "reviewsCount": 0,
     "weight": "1 Combo",
     "weights": [
       "1 Combo"
     ],
-    "image": "/assets/combo-pataka-mithai.webp",
-    "secondaryImage": "/assets/sweets-assorted-box.webp",
+    "image": "/assets/combo-pataka-diyas.webp",
+    "secondaryImage": "/assets/decor-clay-diyas.webp",
     "galleryImages": [
-      "/assets/combo-pataka-mithai.webp",
-      "/assets/sweets-assorted-box.webp",
+      "/assets/combo-pataka-diyas.webp",
+      "/assets/decor-clay-diyas.webp",
       "/assets/decor-clay-diyas.webp"
     ],
     "category": "gift-hampers",
     "format": "Gift Hamper",
     "region": "Siliguri Special",
-    "caffeine": "Crackers + Sweets + Diyas",
+    "caffeine": "Crackers + Diyas",
     "badge": "",
     "inStock": true,
-    "description": "Everything for one Diwali evening in one order: an assorted crackers box, 500G of mithai and 12 clay diyas. Delivered together within Siliguri, with a free lighter.",
+    "description": "Everything for one Diwali evening in one order: an assorted crackers box and 12 clay diyas. Delivered together within Siliguri, with a free lighter.",
     "variants": [
       {
-        "sku": "SP-COMBO-1",
+        "sku": "SP-COMBO-DIYA",
         "name": "1 Combo",
-        "price": 2299,
-        "compareAtPrice": 2799
+        "price": 1849,
+        "compareAtPrice": 1849
       }
     ],
     "status": "active",
-    "sku": "SP-COMBO-1",
+    "sku": "SP-COMBO-DIYA",
     "vendor": "Siliguri Pataka",
     "tags": [
       "Hamper",
       "Gift",
       "Crackers",
-      "Sweets",
       "Diyas"
     ],
     "stockQuantity": 0,
     "trackInventory": false
   },
   {
-    "id": "kaju-katli-box",
-    "handle": "kaju-katli-box",
-    "title": "Kaju Katli Box",
-    "subtitle": "Classic Diamond-Cut Cashew Sweet · A Diwali Must-Have",
-    "price": 349,
-    "originalPrice": 399,
-    "discount": 13,
-    "rating": 0,
-    "reviewsCount": 0,
-    "weight": "250G",
-    "weights": [
-      "250G",
-      "500G",
-      "1 KG"
-    ],
-    "image": "/assets/sweets-kaju-katli.webp",
-    "secondaryImage": "/assets/sweets-kaju-basket.webp",
-    "galleryImages": [
-      "/assets/sweets-kaju-katli.webp",
-      "/assets/sweets-kaju-basket.webp"
-    ],
-    "category": "sweets",
-    "format": "Mithai Box",
-    "region": "Local Mithai",
-    "caffeine": "Rich & Nutty",
-    "badge": "🪔 DIWALI FAVOURITE",
-    "inStock": true,
-    "description": "Soft, melt-in-the-mouth cashew sweet cut into classic diamonds. A favourite on every Diwali plate in Siliguri and an easy gift for family and neighbours.",
-    "variants": [
-      {
-        "sku": "SP-KAJU-250",
-        "name": "250G",
-        "price": 349,
-        "compareAtPrice": 399
-      },
-      {
-        "sku": "SP-KAJU-500",
-        "name": "500G",
-        "price": 649,
-        "compareAtPrice": 749
-      },
-      {
-        "sku": "SP-KAJU-1000",
-        "name": "1 KG",
-        "price": 1249,
-        "compareAtPrice": 1449
-      }
-    ],
-    "status": "active",
-    "sku": "SP-KAJU-250",
-    "vendor": "Siliguri Pataka",
-    "tags": [
-      "Kaju Katli",
-      "Sweets",
-      "Mithai",
-      "Diwali Gift"
-    ],
-    "stockQuantity": 0,
-    "trackInventory": false
-  },
-  {
-    "id": "motichoor-laddu-box",
-    "handle": "motichoor-laddu-box",
-    "title": "Motichoor Laddu Box",
-    "subtitle": "Soft Boondi Laddus · Perfect for Puja & Gifting",
-    "price": 299,
-    "originalPrice": 349,
-    "discount": 14,
-    "rating": 0,
-    "reviewsCount": 0,
-    "weight": "500G",
-    "weights": [
-      "500G",
-      "1 KG"
-    ],
-    "image": "/assets/sweets-motichoor-laddu.webp",
-    "secondaryImage": "/assets/sweets-motichoor-plate.webp",
-    "galleryImages": [
-      "/assets/sweets-motichoor-laddu.webp",
-      "/assets/sweets-motichoor-plate.webp"
-    ],
-    "category": "sweets",
-    "format": "Mithai Box",
-    "region": "Local Mithai",
-    "caffeine": "Soft & Sweet",
-    "badge": "",
-    "inStock": true,
-    "description": "Soft, fragrant boondi laddus for your Lakshmi Puja and Kali Puja offerings, and for sharing with guests through the festive days.",
-    "variants": [
-      {
-        "sku": "SP-LADDU-500",
-        "name": "500G",
-        "price": 299,
-        "compareAtPrice": 349
-      },
-      {
-        "sku": "SP-LADDU-1000",
-        "name": "1 KG",
-        "price": 569,
-        "compareAtPrice": 649
-      }
-    ],
-    "status": "active",
-    "sku": "SP-LADDU-500",
-    "vendor": "Siliguri Pataka",
-    "tags": [
-      "Laddu",
-      "Sweets",
-      "Mithai",
-      "Puja"
-    ],
-    "stockQuantity": 0,
-    "trackInventory": false
-  },
-  {
-    "id": "besan-laddu-box",
-    "handle": "besan-laddu-box",
-    "title": "Besan Laddu Box",
-    "subtitle": "Roasted Gram Flour Laddus · Homestyle Taste",
-    "price": 279,
-    "originalPrice": 329,
-    "discount": 15,
-    "rating": 0,
-    "reviewsCount": 0,
-    "weight": "500G",
-    "weights": [
-      "500G",
-      "1 KG"
-    ],
-    "image": "/assets/sweets-besan-laddu.webp",
-    "secondaryImage": "/assets/sweets-besan-laddu.webp",
-    "galleryImages": [
-      "/assets/sweets-besan-laddu.webp"
-    ],
-    "category": "sweets",
-    "format": "Mithai Box",
-    "region": "Local Mithai",
-    "caffeine": "Nutty & Homestyle",
-    "badge": "",
-    "inStock": true,
-    "description": "Nutty, homestyle besan laddus that keep well through the festive week. A simple sweet that everyone at home enjoys.",
-    "variants": [
-      {
-        "sku": "SP-BESAN-500",
-        "name": "500G",
-        "price": 279,
-        "compareAtPrice": 329
-      },
-      {
-        "sku": "SP-BESAN-1000",
-        "name": "1 KG",
-        "price": 529,
-        "compareAtPrice": 619
-      }
-    ],
-    "status": "active",
-    "sku": "SP-BESAN-500",
-    "vendor": "Siliguri Pataka",
-    "tags": [
-      "Besan Laddu",
-      "Sweets",
-      "Mithai"
-    ],
-    "stockQuantity": 0,
-    "trackInventory": false
-  },
-  {
-    "id": "bengali-sandesh-box",
-    "handle": "bengali-sandesh-box",
-    "title": "Bengali Sandesh Box",
-    "subtitle": "Soft Chhena Sweets · A Bengal Classic",
-    "price": 399,
-    "originalPrice": 459,
-    "discount": 13,
-    "rating": 0,
-    "reviewsCount": 0,
-    "weight": "500G",
-    "weights": [
-      "500G",
-      "1 KG"
-    ],
-    "image": "/assets/sweets-sandesh.webp",
-    "secondaryImage": "/assets/sweets-sandesh.webp",
-    "galleryImages": [
-      "/assets/sweets-sandesh.webp"
-    ],
-    "category": "sweets",
-    "format": "Mithai Box",
-    "region": "Local Mithai",
-    "caffeine": "Light & Milky",
-    "badge": "🏠 LOCAL FAVOURITE",
-    "inStock": true,
-    "description": "Delicate chhena sandesh, the Bengali favourite for puja and for guests during Kali Puja and Diwali.",
-    "variants": [
-      {
-        "sku": "SP-SANDESH-500",
-        "name": "500G",
-        "price": 399,
-        "compareAtPrice": 459
-      },
-      {
-        "sku": "SP-SANDESH-1000",
-        "name": "1 KG",
-        "price": 769,
-        "compareAtPrice": 879
-      }
-    ],
-    "status": "active",
-    "sku": "SP-SANDESH-500",
-    "vendor": "Siliguri Pataka",
-    "tags": [
-      "Sandesh",
-      "Bengali Sweets",
-      "Mithai",
-      "Kali Puja"
-    ],
-    "stockQuantity": 0,
-    "trackInventory": false
-  },
-  {
-    "id": "bengali-rosogolla-box",
-    "handle": "bengali-rosogolla-box",
-    "title": "Bengali Rosogolla",
-    "subtitle": "Soft Chhena Balls in Light Syrup",
-    "price": 229,
-    "originalPrice": 269,
-    "discount": 15,
-    "rating": 0,
-    "reviewsCount": 0,
-    "weight": "500G",
-    "weights": [
-      "500G",
-      "1 KG"
-    ],
-    "image": "/assets/sweets-rosogolla.webp",
-    "secondaryImage": "/assets/sweets-rosogolla.webp",
-    "galleryImages": [
-      "/assets/sweets-rosogolla.webp"
-    ],
-    "category": "sweets",
-    "format": "Sweet Tin",
-    "region": "Local Mithai",
-    "caffeine": "Light & Spongy",
-    "badge": "",
-    "inStock": true,
-    "description": "The Bengali favourite: soft, spongy chhena balls in a light syrup. Serve chilled for family and guests.",
-    "variants": [
-      {
-        "sku": "SP-ROSO-500",
-        "name": "500G",
-        "price": 229,
-        "compareAtPrice": 269
-      },
-      {
-        "sku": "SP-ROSO-1000",
-        "name": "1 KG",
-        "price": 429,
-        "compareAtPrice": 499
-      }
-    ],
-    "status": "active",
-    "sku": "SP-ROSO-500",
-    "vendor": "Siliguri Pataka",
-    "tags": [
-      "Rosogolla",
-      "Bengali Sweets",
-      "Sweets",
-      "Mithai"
-    ],
-    "stockQuantity": 0,
-    "trackInventory": false
-  },
-  {
-    "id": "kesar-pista-barfi-box",
-    "handle": "kesar-pista-barfi-box",
-    "title": "Assorted Barfi Box",
-    "subtitle": "Milk, Kesar & Pista Barfi",
-    "price": 429,
-    "originalPrice": 499,
-    "discount": 14,
-    "rating": 0,
-    "reviewsCount": 0,
-    "weight": "500G",
-    "weights": [
-      "500G",
-      "1 KG"
-    ],
-    "image": "/assets/sweets-barfi.webp",
-    "secondaryImage": "/assets/sweets-assorted-box.webp",
-    "galleryImages": [
-      "/assets/sweets-barfi.webp",
-      "/assets/sweets-assorted-box.webp"
-    ],
-    "category": "sweets",
-    "format": "Mithai Box",
-    "region": "Local Mithai",
-    "caffeine": "Creamy & Rich",
-    "badge": "",
-    "inStock": true,
-    "description": "Creamy barfi cut into neat squares, including kesar and pista varieties that look lovely on a festive thali.",
-    "variants": [
-      {
-        "sku": "SP-BARFI-500",
-        "name": "500G",
-        "price": 429,
-        "compareAtPrice": 499
-      },
-      {
-        "sku": "SP-BARFI-1000",
-        "name": "1 KG",
-        "price": 829,
-        "compareAtPrice": 949
-      }
-    ],
-    "status": "active",
-    "sku": "SP-BARFI-500",
-    "vendor": "Siliguri Pataka",
-    "tags": [
-      "Barfi",
-      "Sweets",
-      "Mithai"
-    ],
-    "stockQuantity": 0,
-    "trackInventory": false
-  },
-  {
-    "id": "kesar-peda-box",
-    "handle": "kesar-peda-box",
-    "title": "Kesar Peda Box",
-    "subtitle": "Soft Milk Peda with a Saffron Finish",
-    "price": 399,
-    "originalPrice": 449,
-    "discount": 11,
-    "rating": 0,
-    "reviewsCount": 0,
-    "weight": "500G",
-    "weights": [
-      "500G",
-      "1 KG"
-    ],
-    "image": "/assets/sweets-kesar-peda.webp",
-    "secondaryImage": "/assets/sweets-peda-plate.webp",
-    "galleryImages": [
-      "/assets/sweets-kesar-peda.webp",
-      "/assets/sweets-peda-plate.webp"
-    ],
-    "category": "sweets",
-    "format": "Mithai Box",
-    "region": "Local Mithai",
-    "caffeine": "Soft & Fragrant",
-    "badge": "",
-    "inStock": true,
-    "description": "Soft milk peda with a gentle saffron flavour. A simple classic for puja and for guests who drop by during Diwali.",
-    "variants": [
-      {
-        "sku": "SP-PEDA-500",
-        "name": "500G",
-        "price": 399,
-        "compareAtPrice": 449
-      },
-      {
-        "sku": "SP-PEDA-1000",
-        "name": "1 KG",
-        "price": 769,
-        "compareAtPrice": 869
-      }
-    ],
-    "status": "active",
-    "sku": "SP-PEDA-500",
-    "vendor": "Siliguri Pataka",
-    "tags": [
-      "Peda",
-      "Sweets",
-      "Mithai",
-      "Puja"
-    ],
-    "stockQuantity": 0,
-    "trackInventory": false
-  },
-  {
-    "id": "gulab-jamun-box",
-    "handle": "gulab-jamun-box",
-    "title": "Gulab Jamun Box",
-    "subtitle": "Soft & Syrupy · Ready to Serve",
-    "price": 249,
-    "originalPrice": 299,
-    "discount": 17,
-    "rating": 0,
-    "reviewsCount": 0,
-    "weight": "500G",
-    "weights": [
-      "500G",
-      "1 KG"
-    ],
-    "image": "/assets/sweets-gulab-jamun.webp",
-    "secondaryImage": "/assets/sweets-gulab-jamun.webp",
-    "galleryImages": [
-      "/assets/sweets-gulab-jamun.webp"
-    ],
-    "category": "sweets",
-    "format": "Sweet Tin",
-    "region": "Local Mithai",
-    "caffeine": "Warm & Syrupy",
-    "badge": "",
-    "inStock": true,
-    "description": "Soft gulab jamun soaked in sugar syrup. Warm them for a few seconds and serve after your Diwali dinner.",
-    "variants": [
-      {
-        "sku": "SP-JAMUN-500",
-        "name": "500G",
-        "price": 249,
-        "compareAtPrice": 299
-      },
-      {
-        "sku": "SP-JAMUN-1000",
-        "name": "1 KG",
-        "price": 469,
-        "compareAtPrice": 549
-      }
-    ],
-    "status": "active",
-    "sku": "SP-JAMUN-500",
-    "vendor": "Siliguri Pataka",
-    "tags": [
-      "Gulab Jamun",
-      "Sweets",
-      "Mithai"
-    ],
-    "stockQuantity": 0,
-    "trackInventory": false
-  },
-  {
-    "id": "soan-papdi-festive-box",
-    "handle": "soan-papdi-festive-box",
-    "title": "Soan Papdi Festive Box",
-    "subtitle": "Flaky, Light & Easy to Share",
-    "price": 149,
-    "originalPrice": 179,
-    "discount": 17,
-    "rating": 0,
-    "reviewsCount": 0,
-    "weight": "250G",
-    "weights": [
-      "250G",
-      "500G"
-    ],
-    "image": "/assets/sweets-soan-papdi.webp",
-    "secondaryImage": "/assets/sweets-soan-papdi.webp",
-    "galleryImages": [
-      "/assets/sweets-soan-papdi.webp"
-    ],
-    "category": "sweets",
-    "format": "Mithai Box",
-    "region": "Local Mithai",
-    "caffeine": "Flaky & Light",
-    "badge": "",
-    "inStock": true,
-    "description": "Light, flaky soan papdi that keeps well, which makes it a handy sweet for gifting to neighbours and office friends.",
-    "variants": [
-      {
-        "sku": "SP-SOAN-250",
-        "name": "250G",
-        "price": 149,
-        "compareAtPrice": 179
-      },
-      {
-        "sku": "SP-SOAN-500",
-        "name": "500G",
-        "price": 279,
-        "compareAtPrice": 329
-      }
-    ],
-    "status": "active",
-    "sku": "SP-SOAN-250",
-    "vendor": "Siliguri Pataka",
-    "tags": [
-      "Soan Papdi",
-      "Sweets",
-      "Mithai",
-      "Diwali Gift"
-    ],
-    "stockQuantity": 0,
-    "trackInventory": false
-  },
-  {
-    "id": "assorted-diwali-mithai-box",
-    "handle": "assorted-diwali-mithai-box",
-    "title": "Assorted Diwali Mithai Box",
-    "subtitle": "Barfi, Kaju Katli, Peda & More in One Box",
-    "price": 449,
-    "originalPrice": 549,
-    "discount": 18,
-    "rating": 0,
-    "reviewsCount": 0,
-    "weight": "500G",
-    "weights": [
-      "500G",
-      "1 KG"
-    ],
-    "image": "/assets/sweets-assorted-box.webp",
-    "secondaryImage": "/assets/sweets-barfi.webp",
-    "galleryImages": [
-      "/assets/sweets-assorted-box.webp",
-      "/assets/sweets-barfi.webp"
-    ],
-    "category": "sweets",
-    "format": "Gift Pack",
-    "region": "Local Mithai",
-    "caffeine": "Assorted Mix",
-    "badge": "🎁 GIFT READY",
-    "inStock": true,
-    "description": "A mix of Diwali favourites in one neat box. A good choice when you are visiting family or want one box for the whole house.",
-    "variants": [
-      {
-        "sku": "SP-MIX-500",
-        "name": "500G",
-        "price": 449,
-        "compareAtPrice": 549
-      },
-      {
-        "sku": "SP-MIX-1000",
-        "name": "1 KG",
-        "price": 849,
-        "compareAtPrice": 999
-      }
-    ],
-    "status": "active",
-    "sku": "SP-MIX-500",
-    "vendor": "Siliguri Pataka",
-    "tags": [
-      "Assorted Mithai",
-      "Sweets",
-      "Gift Box",
-      "Diwali Gift"
-    ],
-    "stockQuantity": 0,
-    "trackInventory": false
-  },
-  {
     "id": "festive-sweets-diya-gift-hamper",
-    "handle": "festive-sweets-diya-gift-hamper",
-    "title": "Festive Sweets & Diya Gift Hamper",
-    "subtitle": "Mithai, Diyas & Festive Touches in a Gift Box",
+    "handle": "festive-diya-gift-hamper",
+    "title": "Festive Diya Gift Hamper",
+    "subtitle": "Diyas, Flowers & Festive Touches in a Gift Box",
     "price": 1499,
     "originalPrice": 1799,
     "discount": 17,
@@ -1326,7 +787,7 @@ export const PRODUCTS: Product[] = [
     "caffeine": "Ready to Gift",
     "badge": "🎁 BESTSELLER HAMPER",
     "inStock": true,
-    "description": "A ready-to-gift hamper with mithai and diyas in a festive box, finished with flowers. A warm gift for family and friends in Siliguri.",
+    "description": "A ready-to-gift hamper with diyas and festive touches in a box, finished with flowers. A warm gift for family and friends in Siliguri.",
     "variants": [
       {
         "sku": "SP-HAMP-FEST",
@@ -1341,7 +802,6 @@ export const PRODUCTS: Product[] = [
     "tags": [
       "Gift Hamper",
       "Diwali Gift",
-      "Mithai",
       "Diyas"
     ],
     "stockQuantity": 0,
@@ -1351,7 +811,7 @@ export const PRODUCTS: Product[] = [
     "id": "lakshmi-puja-gift-hamper",
     "handle": "lakshmi-puja-gift-hamper",
     "title": "Lakshmi Puja Gift Hamper",
-    "subtitle": "Puja Essentials & Sweets in One Box",
+    "subtitle": "Puja Essentials in One Box",
     "price": 1199,
     "originalPrice": 1399,
     "discount": 14,
@@ -1373,7 +833,7 @@ export const PRODUCTS: Product[] = [
     "caffeine": "For Puja",
     "badge": "",
     "inStock": true,
-    "description": "A thoughtful hamper with puja essentials and sweets, for elders and for families preparing for Lakshmi Puja or Kali Puja.",
+    "description": "A thoughtful hamper with puja essentials, for elders and for families preparing for Lakshmi Puja or Kali Puja.",
     "variants": [
       {
         "sku": "SP-HAMP-PUJA",
@@ -1397,7 +857,7 @@ export const PRODUCTS: Product[] = [
     "id": "family-diwali-gift-hamper",
     "handle": "family-diwali-gift-hamper",
     "title": "Family Diwali Gift Hamper",
-    "subtitle": "Sweets, Diyas & Festive Treats for the Whole Family",
+    "subtitle": "Diyas, Decor & Festive Gifts for the Whole Family",
     "price": 2499,
     "originalPrice": 2999,
     "discount": 17,
@@ -1488,59 +948,6 @@ export const PRODUCTS: Product[] = [
       "Gift Hamper",
       "Corporate Gift",
       "Bulk Gifting"
-    ],
-    "stockQuantity": 0,
-    "trackInventory": false
-  },
-  {
-    "id": "premium-mithai-gift-box",
-    "handle": "premium-mithai-gift-box",
-    "title": "Premium Mithai Gift Box",
-    "subtitle": "Assorted Barfi in a Festive Window Box",
-    "price": 999,
-    "originalPrice": 1199,
-    "discount": 17,
-    "rating": 0,
-    "reviewsCount": 0,
-    "weight": "500G Box",
-    "weights": [
-      "500G Box",
-      "1 KG Box"
-    ],
-    "image": "/assets/sweets-gift-box.webp",
-    "secondaryImage": "/assets/sweets-barfi.webp",
-    "galleryImages": [
-      "/assets/sweets-gift-box.webp",
-      "/assets/sweets-barfi.webp"
-    ],
-    "category": "gift-hampers",
-    "format": "Gift Hamper",
-    "region": "Festive Gifting",
-    "caffeine": "Assorted Barfi",
-    "badge": "",
-    "inStock": true,
-    "description": "An assorted barfi selection in a festive box, an easy gift when you are visiting someone during Diwali.",
-    "variants": [
-      {
-        "sku": "SP-HAMP-MITH",
-        "name": "500G Box",
-        "price": 999,
-        "compareAtPrice": 1199
-      },
-      {
-        "sku": "SP-HAMP-MITH1",
-        "name": "1 KG Box",
-        "price": 1899,
-        "compareAtPrice": 2299
-      }
-    ],
-    "status": "active",
-    "sku": "SP-HAMP-MITH",
-    "vendor": "Siliguri Pataka",
-    "tags": [
-      "Mithai Gift Box",
-      "Gift Hamper",
-      "Diwali Gift"
     ],
     "stockQuantity": 0,
     "trackInventory": false
@@ -2566,7 +1973,7 @@ export const PRODUCTS: Product[] = [
 ];
 
 export const COLLECTIONS = [
-  { id: "all", name: "All Collection", seoTitle: "All Diwali Crackers, Sweets & Gifts in Siliguri", description: "Buy Diwali crackers, local mithai, gift hampers, lights and diyas online in Siliguri. Same-day or next-day delivery, free lighter, ₹2,000 minimum order.", seoText: "Siliguri Pataka brings everything for Diwali and Kali Puja into one shop: crackers, local mithai, gift hampers, rangoli colours and diyas. Order from Sevoke Road, Hill Cart Road, Pradhan Nagar, Champasari or anywhere else in Siliguri, and we deliver the same day or the next day.", guide: "buy-diwali-crackers-online-siliguri" },
+  { id: "all", name: "All Collection", seoTitle: "All Diwali Crackers & Gift Hampers in Siliguri", description: "Buy Diwali crackers, gift hampers, lights and diyas online in Siliguri. Same-day or next-day delivery, free lighter, ₹2,000 minimum order.", seoText: "Siliguri Pataka brings everything for Diwali and Kali Puja into one shop: crackers, gift hampers, rangoli colours, lights and diyas. Order from Sevoke Road, Hill Cart Road, Pradhan Nagar, Champasari or anywhere else in Siliguri, and we deliver the same day or the next day.", guide: "buy-diwali-crackers-online-siliguri" },
   { id: "mega-packs", name: "Mega Packs", seoTitle: "Mega Cracker Packs Online in Siliguri: ₹2,499 to ₹9,999", description: "Our 3 mega cracker packs for Diwali in Siliguri. Save up to ₹3,601 compared with buying the items separately. Same-day or next-day delivery, 1 lighter free.", seoText: "A mega pack is the easiest way to buy crackers for Diwali in Siliguri: you get sparklers, flower pots, chakkars, rockets and sky shots at one price, for less than buying them one by one. Compare all 3 packs, and choose the one that suits your family and your space.", guide: "best-cracker-combos-siliguri-budget" },
   { id: "sparklers", name: "Sparklers (Phuljhari)", seoTitle: "Sparklers (Phuljhari) Online in Siliguri", description: "Phuljhari and colour sparklers for the whole family. Order online and get them delivered anywhere in Siliguri the same day or the next day.", seoText: "Sparklers, called phuljhari or phuljhadi at home, are the first thing most families in Siliguri light on Diwali evening. Keep a bucket of water nearby for the used sticks, and keep children with an adult.", guide: "diwali-cracker-safety-guide" },
   { id: "flower-pots", name: "Flower Pots (Anar / Tubri)", seoTitle: "Flower Pots (Anar / Tubri) Online in Siliguri", description: "Anar and tubri flower pots that light up your courtyard or terrace with tall fountains of sparks. Same-day or next-day delivery in Siliguri.", seoText: "Flower pots are called anar in Hindi and tubri in Bengali. Light them on flat, open ground, step back straight away and never lean over one.", guide: "which-crackers-to-buy-diwali" },
@@ -2575,8 +1982,7 @@ export const COLLECTIONS = [
   { id: "aerial-shots", name: "Aerial Shots & Sky Cakes", seoTitle: "Aerial Shots & Sky Cakes Online in Siliguri", description: "Multi-shot sky cakes that turn your terrace into a fireworks show, from 30-shot cakes to grand finales. Delivered within Siliguri.", seoText: "Sky shots make a big finish for your Diwali night. Place the cake on flat, firm ground in an open space, light it once and move well back.", guide: "best-cracker-combos-siliguri-budget" },
   { id: "sound-crackers", name: "Sound Crackers", seoTitle: "Sound Crackers Online in Siliguri", description: "Traditional sound crackers for Diwali and Kali Puja in Siliguri. Please follow the timings and rules set by local authorities.", seoText: "Please check the rules before you buy or burst sound crackers. West Bengal has allowed only green crackers in recent years, within fixed hours on Diwali and Kali Puja night.", guide: "green-crackers-west-bengal-rules" },
   { id: "kids-special", name: "Kids Special", seoTitle: "Kids Crackers for Diwali in Siliguri", description: "Pop pops, magic snakes and colour smoke for children, always to be used with an adult nearby. Delivered within Siliguri.", seoText: "Even small crackers need an adult nearby. Choose an open space, keep water ready, and make sure children wear cotton clothes and closed footwear.", guide: "diwali-cracker-safety-guide" },
-  { id: "sweets", name: "Local Mithai & Sweets", seoTitle: "Local Mithai & Diwali Sweets Online in Siliguri", description: "Rosogolla, sandesh, kaju katli, laddu, barfi and peda for your Diwali table and gifting. Order local mithai online in Siliguri.", seoText: "From Bengali rosogolla and sandesh to kaju katli and motichoor laddu, our mithai is chosen for Diwali and Kali Puja in Siliguri. Sweets are packed separately from crackers.", guide: "local-mithai-siliguri-diwali" },
-  { id: "gift-hampers", name: "Gift Hampers", seoTitle: "Diwali Gift Hampers Online in Siliguri", description: "Ready-to-gift Diwali hampers with mithai, diyas and puja essentials for family, friends, staff and clients in Siliguri.", seoText: "A Diwali gift hamper saves you a trip to the market. Choose from sweets and diya hampers, puja hampers, crackers with mithai and office gift boxes, with delivery across Siliguri.", guide: "diwali-gift-hampers-siliguri" },
+    { id: "gift-hampers", name: "Gift Hampers", seoTitle: "Diwali Gift Hampers Online in Siliguri", description: "Ready-to-gift Diwali hampers with diyas, decor and puja essentials for family, friends, staff and clients in Siliguri.", seoText: "A Diwali gift hamper saves you a trip to the market. Choose from diya hampers, puja hampers, crackers with diyas and office gift boxes, with delivery across Siliguri.", guide: "diwali-gift-hampers-siliguri" },
   { id: "diyas-decor", name: "Rangoli, Diyas & Decor", seoTitle: "Rangoli Colours, Diyas & Diwali Decor in Siliguri", description: "Rangoli colours, clay diyas, candles, marigold torans and puja thalis to get your home ready for Diwali in Siliguri.", seoText: "A little rangoli at the door, a marigold toran and a row of clay diyas are all you need to make your home feel festive. Order them with your crackers and get one delivery.", guide: "rangoli-diwali-decoration-ideas" },
-  { id: "home-decor", name: "Diwali Home Decor", seoTitle: "Diwali Lights, Lanterns & Diyas for Home in Siliguri", description: "Diwali string lights, paper lanterns, brass diyas, floating diyas and tea light holders to light up your home in Siliguri.", seoText: "Lights and diyas are what make a home feel like Diwali. Start with string lights and a lantern for the outside of your home, then add brass diyas and tea lights inside. All of it can go in the same order as your crackers and mithai, with delivery the same day or the next day within Siliguri.", guide: "diwali-home-decor-ideas-siliguri" },
+  { id: "home-decor", name: "Diwali Home Decor", seoTitle: "Diwali Lights, Lanterns & Diyas for Home in Siliguri", description: "Diwali string lights, paper lanterns, brass diyas, floating diyas and tea light holders to light up your home in Siliguri.", seoText: "Lights and diyas are what make a home feel like Diwali. Start with string lights and a lantern for the outside of your home, then add brass diyas and tea lights inside. All of it can go in the same order as your crackers and gift hampers, with delivery the same day or the next day within Siliguri.", guide: "diwali-home-decor-ideas-siliguri" },
 ];

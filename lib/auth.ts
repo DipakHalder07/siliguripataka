@@ -59,7 +59,7 @@ function toPayload(admin: { id: string; email: string; name: string; role: strin
 }
 
 // A fixed hash so unknown emails cost the same bcrypt time as real ones.
-const DUMMY_HASH = bcrypt.hashSync("teabox-timing-equaliser", 10);
+const DUMMY_HASH = bcrypt.hashSync("timing-equaliser", 10);
 
 /**
  * Checks an email and password. For the main admin the environment password is the only valid

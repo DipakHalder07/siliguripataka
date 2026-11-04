@@ -10,7 +10,6 @@ export const LEGAL = {
   address: "Siliguri, West Bengal, India",
   gstin: "",
   fireworksLicence: "",
-  fssai: "",
   supportEmail: "dipakh810@gmail.com",
   supportPhone: "+91 86175 13004",
   grievanceOfficer: "Customer Care, Siliguri Pataka",

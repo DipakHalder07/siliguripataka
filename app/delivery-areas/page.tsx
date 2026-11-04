@@ -8,7 +8,7 @@ import { breadcrumbJsonLd, faqJsonLd, pageMeta } from "@/lib/seo";
 export const metadata: Metadata = {
   ...pageMeta({
     title: "Same-Day Diwali Cracker Delivery Areas in Siliguri | Siliguri Pataka",
-    description: `Same-day or next-day delivery of Diwali crackers, mithai and gift hampers across Siliguri, including ${DELIVERY_AREAS.slice(0, 3).join(", ")} and more.`,
+    description: `Same-day or next-day delivery of Diwali crackers and gift hampers across Siliguri, including ${DELIVERY_AREAS.slice(0, 3).join(", ")} and more.`,
     path: "/delivery-areas",
   }),
 };
@@ -19,7 +19,7 @@ const sections: LegalSection[] = [
     title: "Areas we deliver to",
     body: (
       <>
-        <p>We deliver crackers, local mithai, gift hampers, rangoli and diyas across Siliguri, including:</p>
+        <p>We deliver crackers, gift hampers, rangoli and diyas across Siliguri, including:</p>
         <ul className="grid sm:grid-cols-2 gap-x-6">
           {DELIVERY_AREAS.map((area) => (
             <li key={area}>{area}, Siliguri</li>
@@ -60,7 +60,6 @@ const sections: LegalSection[] = [
       <ul>
         <li>An adult must receive the delivery, because it can contain crackers and a lighter.</li>
         <li>Please share a landmark and a phone number we can reach.</li>
-        <li>Sweets are packed separately from crackers.</li>
       </ul>
     ),
   },

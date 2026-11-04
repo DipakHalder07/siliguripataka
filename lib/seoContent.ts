@@ -63,7 +63,7 @@ const COMMON_PRODUCT_FAQS: Faq[] = [
   },
   {
     q: "What is the minimum order?",
-    a: `The minimum order is ${MINIMUM} in total. You can mix crackers, sweets and decor in one order, and delivery within Siliguri is free.`,
+    a: `The minimum order is ${MINIMUM} in total. You can mix crackers, hampers and decor in one order, and delivery within Siliguri is free.`,
   },
   {
     q: "How can I pay?",
@@ -73,19 +73,6 @@ const COMMON_PRODUCT_FAQS: Faq[] = [
 
 /** The questions shown on a product page. */
 export function productFaqs(product: Product): Faq[] {
-  if (product.category === "sweets") {
-    return [
-      {
-        q: `How should I store ${product.title}?`,
-        a: "Keep sweets in a cool, dry place and refrigerate milk-based sweets. They taste best when eaten soon after delivery, so please check the pack for the best-before date.",
-      },
-      {
-        q: "Are sweets packed together with crackers?",
-        a: "No. If your order has both, the sweets are packed separately from the crackers.",
-      },
-      ...COMMON_PRODUCT_FAQS,
-    ];
-  }
   if (isDecorCategory(product.category)) {
     return [
       {
@@ -152,10 +139,6 @@ const COLLECTION_QUESTIONS: Record<string, Faq[]> = {
   "kids-special": [
     { q: "Which crackers are suitable for children?", a: "Pick low-noise items such as small fountains and colour smoke, and let an adult light them. No cracker is completely risk-free, so children should always be supervised." },
   ],
-  sweets: [
-    { q: "Are the sweets packed separately from crackers?", a: "Yes. If your order has both, sweets are packed separately from crackers." },
-    { q: "How long do mithai stay fresh?", a: "Milk-based sweets such as sandesh and rosogolla are best eaten soon and kept in the fridge. Dry sweets last longer. Please check the pack for the best-before date." },
-  ],
   "gift-hampers": [
     { q: "Can I order hampers for my office?", a: "Yes. See our corporate gifting page for bulk orders, and contact us with the quantity you need." },
     { q: "Can I send a hamper to someone else in Siliguri?", a: "Yes. Enter their address and phone number at checkout. We deliver only within Siliguri." },
@@ -189,7 +172,7 @@ export function collectionFaqs(collectionId: string, collectionName: string, pro
     },
     {
       q: "Is there a minimum order?",
-      a: `Yes, the minimum order is ${MINIMUM}. You can mix crackers, mithai, gift hampers and decor to reach it.`,
+      a: `Yes, the minimum order is ${MINIMUM}. You can mix crackers, gift hampers and decor to reach it.`,
     },
   ];
 }
@@ -201,7 +184,7 @@ export const HOME_FAQS: Faq[] = [
   },
   {
     q: "What can I order from Siliguri Pataka?",
-    a: "Diwali crackers and mega cracker packs, local mithai, gift hampers, rangoli colours, diyas, puja items and home decor, all in one order.",
+    a: "Diwali crackers and mega cracker packs, gift hampers, rangoli colours, diyas, puja items and home decor, all in one order.",
   },
   {
     q: "How much does delivery cost in Siliguri?",

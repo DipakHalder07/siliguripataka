@@ -124,14 +124,13 @@ const sections: LegalSection[] = [
     body: (
       <>
         <p>
-          For safety and hygiene reasons we can&apos;t take back crackers or sweets once they are delivered, and we can&apos;t
+          For safety and hygiene reasons we can&apos;t take back crackers once they are delivered, and we can&apos;t
           accept change-of-mind returns. But if something is wrong with your order, we&apos;ll make it right. We replace the item or refund you if
           it arrives:
         </p>
         <ul>
           <li>damaged, leaking or tampered with;</li>
-          <li>with a wrong or missing item;</li>
-          <li>expired or not fit to eat (sweets).</li>
+          <li>with a wrong or missing item.</li>
         </ul>
       </>
     ),

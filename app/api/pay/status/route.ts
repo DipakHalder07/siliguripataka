@@ -18,7 +18,7 @@ export async function GET(req: NextRequest) {
     if (!session) return NextResponse.json({ error: "Payment not found" }, { status: 404 });
 
     if (session.status === "PENDING" || session.status === "VERIFYING") {
-      after(() => pollGmail().catch((e) => console.warn("[TeaPay] Gmail check failed:", e)));
+      after(() => pollGmail().catch((e) => console.warn("[Payments] Gmail check failed:", e)));
     }
     return NextResponse.json(await sessionView(session));
   } catch (error) {

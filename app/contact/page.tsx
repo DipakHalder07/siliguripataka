@@ -10,7 +10,7 @@ import { breadcrumbJsonLd, pageMeta, SITE_URL } from "@/lib/seo";
 export const metadata: Metadata = {
   ...pageMeta({
     title: `Contact Us | ${LEGAL.brand}, Siliguri`,
-    description: `Questions about an order, delivery in Siliguri, returns or our crackers and sweets? Get in touch with ${LEGAL.brand}.`,
+    description: `Questions about an order, delivery in Siliguri, returns or our crackers and gifts? Get in touch with ${LEGAL.brand}.`,
     path: "/contact",
   }),
 };

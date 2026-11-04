@@ -20,7 +20,7 @@ export default function WhySiliguriPatakaPage() {
               YOUR DIWALI SHOP, ONLY FOR SILIGURI
             </h1>
             <p className="text-[16px] sm:text-[18px] text-[#f1dccb] leading-relaxed">
-              Crackers, local mithai, gift hampers, rangoli and diyas in one place. Order online and we deliver the same day or the next day, anywhere in Siliguri.
+              Crackers, gift hampers, rangoli and diyas in one place. Order online and we deliver the same day or the next day, anywhere in Siliguri.
             </p>
           </div>
         </section>
@@ -58,7 +58,7 @@ export default function WhySiliguriPatakaPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-[#d93838] font-bold text-[16px]">✕</span>
-                  <span>Buying crackers, sweets and decor from different shops.</span>
+                  <span>Buying crackers, gifts and decor from different shops.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-[#d93838] font-bold text-[16px]">✕</span>
@@ -83,7 +83,7 @@ export default function WhySiliguriPatakaPage() {
               <ul className="space-y-4 text-[14px] text-[#4a0e14]">
                 <li className="flex items-start gap-3">
                   <Check size={18} className="text-[#e65100] shrink-0 mt-0.5" />
-                  <span>Browse crackers, sweets and decor in one place, from your phone.</span>
+                  <span>Browse crackers, gifts and decor in one place, from your phone.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check size={18} className="text-[#e65100] shrink-0 mt-0.5" />
@@ -169,7 +169,7 @@ export default function WhySiliguriPatakaPage() {
                   &ldquo;Order from home, pay the way you like, and spend the festival with the people you love.&rdquo;
                 </blockquote>
                 <p className="text-[14px] text-[#5c5a52] leading-relaxed">
-                  Siliguri Pataka is made only for Siliguri. We focus on one city so that we can get your crackers, sweets and decor to you quickly, and answer your questions when you need us. If something in your order is wrong or damaged, tell us within 48 hours and we will sort it out.
+                  Siliguri Pataka is made only for Siliguri. We focus on one city so that we can get your crackers, gifts and decor to you quickly, and answer your questions when you need us. If something in your order is wrong or damaged, tell us within 48 hours and we will sort it out.
                 </p>
               </div>
             </div>
@@ -195,7 +195,7 @@ export default function WhySiliguriPatakaPage() {
               {[
                 {
                   outlet: "Choose",
-                  quote: "Pick crackers, sweets, diyas and gift boxes. Your cart needs to reach at least ₹2,000.",
+                  quote: "Pick crackers, diyas and gift boxes. Your cart needs to reach at least ₹2,000.",
                   tag: "Step 1",
                 },
                 {
@@ -242,7 +242,7 @@ export default function WhySiliguriPatakaPage() {
               Ready For Diwali?
             </h3>
             <p className="text-[14px] text-[#5c5a52]">
-              Start with a mega pack, or build your own order from 40+ crackers, sweets, hampers and decor items.
+              Start with a mega pack, or build your own order from 35+ crackers, hampers and decor items.
             </p>
             <div className="pt-2">
               <Link

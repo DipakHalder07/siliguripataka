@@ -6,12 +6,12 @@ import { motion, AnimatePresence } from "motion/react";
 import { useCart } from "./context/CartContext";
 import { X, CheckCircle, Sparkles, ArrowRight } from "lucide-react";
 
-interface TeaFinderModalProps {
+interface PackFinderModalProps {
   isOpen: boolean;
   onClose: () => void;
 }
 
-export default function TeaFinderModal({ isOpen, onClose }: TeaFinderModalProps) {
+export default function PackFinderModal({ isOpen, onClose }: PackFinderModalProps) {
   const { addToCart } = useCart();
   const [step, setStep] = useState(1);
   const [answers, setAnswers] = useState({
@@ -36,14 +36,14 @@ export default function TeaFinderModal({ isOpen, onClose }: TeaFinderModalProps)
         image: "/assets/mega-grand.webp",
       };
     }
-    if (answers.style === "gift" || answers.flavor === "sweet") {
+    if (answers.style === "gift" || answers.flavor === "diyas") {
       return {
-        id: "pataka-mithai-diwali-combo",
-        title: "Pataka + Mithai Diwali Hamper",
-        reason: "Crackers, mithai and clay diyas in one order. An easy, complete Diwali gift.",
-        price: 2299,
+        id: "pataka-diya-diwali-hamper",
+        title: "Pataka + Diya Diwali Hamper",
+        reason: "Crackers and clay diyas in one order. An easy, complete Diwali gift.",
+        price: 1849,
         weight: "1 Combo",
-        image: "/assets/combo-pataka-mithai.webp",
+        image: "/assets/combo-pataka-diyas.webp",
       };
     }
     if (answers.flavor === "sky" || answers.style === "family") {
@@ -179,7 +179,7 @@ export default function TeaFinderModal({ isOpen, onClose }: TeaFinderModalProps)
                 {[
                   { id: "sparks", label: "Sparklers and flower pots" },
                   { id: "sky", label: "Big sky shots and rockets" },
-                  { id: "sweet", label: "Crackers with sweets and diyas" },
+                  { id: "diyas", label: "Crackers with diyas" },
                   { id: "mix", label: "A bit of everything" },
                 ].map((opt) => (
                   <button

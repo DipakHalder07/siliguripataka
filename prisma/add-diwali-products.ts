@@ -1,5 +1,5 @@
 // One-time catalog update for the Siliguri Pataka database. Run with: npm run db:add-diwali
-//  - adds the new sweets, decor and combo products that are in data/products.ts but not in the database
+//  - adds the new decor and hamper products that are in data/products.ts but not in the database
 //  - on products already in the database, updates ONLY their pictures and sort order
 //  - hides the 4 old gift boxes (replaced by the 3 mega packs) by setting them to "archived"
 // It never changes titles, prices, stock or orders, and it is safe to run more than once.
@@ -13,10 +13,10 @@ const prisma = new PrismaClient({
   datasourceUrl: process.env.DATABASE_URL_UNPOOLED || process.env.DATABASE_URL,
 });
 
-/** Crackers first, then sweets and decor, with sold-out items at the end of the list. */
+/** Crackers first, then hampers and decor, with sold-out items at the end of the list. */
 function sortOrderFor(category: string, inStock: boolean) {
   if (!inStock) return 50;
-  return ["sweets", "diyas-decor", "home-decor", "gift-hampers"].includes(category) ? 10 : 0;
+  return ["diyas-decor", "home-decor", "gift-hampers"].includes(category) ? 10 : 0;
 }
 
 async function main() {
@@ -56,12 +56,8 @@ async function main() {
     data: { status: "archived" },
   });
 
-  const names = await prisma.admin.updateMany({
-    where: { name: "Teabox Admin" },
-    data: { name: "Siliguri Pataka Admin" },
-  });
 
-  console.log(`Added ${added} new products. Updated pictures on ${updated}. Hid ${archived.count} old gift boxes. Renamed ${names.count} admin display names.`);
+  console.log(`Added ${added} new products. Updated pictures on ${updated}. Hid ${archived.count} old gift boxes.`);
 }
 
 main()

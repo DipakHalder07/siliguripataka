@@ -18,6 +18,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...products.map((p) => ({
       ...page(`/products/${p.handle || p.id}`, 0.8, "daily"),
       images: Array.from(new Set([p.image, ...(p.galleryImages || [])])).map(absoluteUrl),
+      ...(p.updatedAt ? { lastModified: p.updatedAt } : {}),
     })),
     page("/pages/cracker-price-list-siliguri", 0.9, "daily"),
     page("/delivery-areas", 0.7, "weekly"),

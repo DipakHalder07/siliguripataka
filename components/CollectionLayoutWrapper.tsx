@@ -10,17 +10,17 @@ import CartDrawer from "@/components/CartDrawer";
 import SearchDrawer from "@/components/LazySearchDrawer";
 import ProductListingPage from "@/components/ProductListingPage";
 import type { Product } from "@/data/products";
-const TeaFinderModal = dynamic(() => import("@/components/TeaFinderModal"), { ssr: false });
+const PackFinderModal = dynamic(() => import("@/components/PackFinderModal"), { ssr: false });
 
 export default function CollectionLayoutWrapper({ collection, products }: { collection: string; products: Product[] }) {
-  const [teaFinderOpen, setTeaFinderOpen] = useState(false);
+  const [packFinderOpen, setPackFinderOpen] = useState(false);
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
       {/* 1. Header & Announcement Bars */}
       <TopBar />
       <ShippingBar />
-      <Header onOpenTeaFinder={() => setTeaFinderOpen(true)} />
+      <Header onOpenPackFinder={() => setPackFinderOpen(true)} />
 
       {/* 2. Main Product Listing Content */}
       <main className="flex-1">
@@ -33,7 +33,7 @@ export default function CollectionLayoutWrapper({ collection, products }: { coll
       {/* 4. Drawers & Modals */}
       <CartDrawer />
       <SearchDrawer />
-      {teaFinderOpen && <TeaFinderModal isOpen onClose={() => setTeaFinderOpen(false)} />}
+      {packFinderOpen && <PackFinderModal isOpen onClose={() => setPackFinderOpen(false)} />}
     </div>
   );
 }

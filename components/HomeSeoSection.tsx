@@ -15,7 +15,7 @@ const FACTS = [
 const LINKS = [
   { label: "Mega cracker packs", href: "/collections/mega-packs" },
   { label: "Crackers price list", href: "/pages/cracker-price-list-siliguri" },
-  { label: "Local mithai", href: "/collections/sweets" },
+  { label: "Sky shots", href: "/collections/aerial-shots" },
   { label: "Gift hampers", href: "/collections/gift-hampers" },
   { label: "Diwali lights and diyas", href: "/collections/home-decor" },
   { label: "Rangoli and diyas", href: "/collections/diyas-decor" },
@@ -29,11 +29,11 @@ export default function HomeSeoSection() {
     <section className="bg-[#fff9ef] border-t border-[#f0dfc6] px-4 sm:px-6 lg:px-12 py-12 sm:py-16">
       <div className="max-w-[1100px] mx-auto">
         <h2 className="font-stencil text-[26px] sm:text-[34px] font-bold text-[#2b1215] leading-tight">
-          Diwali Crackers, Mithai and Decor in Siliguri
+          Diwali Crackers, Gift Hampers and Decor in Siliguri
         </h2>
         <p className="text-[15px] sm:text-[16px] text-[#5c5a52] leading-relaxed mt-3 max-w-[820px]">
           Siliguri Pataka is an online Diwali store that delivers only within Siliguri, West Bengal. You can order crackers,
-          local mithai, gift hampers, rangoli, diyas and home decor in one cart for Diwali and Kali Puja.
+          gift hampers, rangoli, diyas and home decor in one cart for Diwali and Kali Puja.
         </p>
 
         <dl className="grid grid-cols-2 lg:grid-cols-3 gap-3 mt-6">

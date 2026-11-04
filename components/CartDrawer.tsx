@@ -112,7 +112,7 @@ export default function CartDrawer() {
                         Your cart is currently empty
                       </p>
                       <p className="text-[14px] text-[#5c5a52] max-w-[240px]">
-                        Explore our Diwali crackers, sweets and gift boxes.
+                        Explore our Diwali crackers, gift hampers and diyas.
                       </p>
                       <button
                         type="button"

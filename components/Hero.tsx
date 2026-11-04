@@ -30,12 +30,12 @@ export default function Hero() {
 
           {/* Heading in the stencil font */}
           <h1 className="font-stencil text-[32px] sm:text-[42px] lg:text-[46px] xl:text-[50px] font-bold text-[#2b1215] leading-[1.1] tracking-[-0.5px]">
-            BUY DIWALI CRACKERS, MITHAI &amp; GIFT HAMPERS ONLINE IN SILIGURI
+            BUY DIWALI CRACKERS &amp; GIFT HAMPERS ONLINE IN SILIGURI
           </h1>
 
           {/* Subheading */}
           <p className="text-[15px] sm:text-[17px] text-[#3d3b36] leading-[1.55] max-w-[500px]">
-            Crackers, local mithai, gift hampers, rangoli, diyas and puja essentials for Diwali and Kali Puja. Order online and get it the same day or the next day, only within Siliguri.
+            Crackers, mega packs, gift hampers, lights, diyas and puja essentials for Diwali and Kali Puja. Order online and get it the same day or the next day, only within Siliguri.
           </p>
 
           {/* CTA Actions */}

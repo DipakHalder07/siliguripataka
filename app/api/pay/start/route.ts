@@ -50,13 +50,13 @@ export async function POST(req: NextRequest) {
     const baseUrl = publicBaseUrl(req);
     after(() =>
       alertNewCheckout(session.id, baseUrl).catch((e) =>
-        console.warn("[TeaPay] WhatsApp order alert failed:", e?.message || e)
+        console.warn("[Payments] WhatsApp order alert failed:", e?.message || e)
       )
     );
     // Email to the shop owner too: start time and when the 10-minute payment window ends
     after(() =>
       emailNewCheckout(session.id, baseUrl).catch((e) =>
-        console.warn("[TeaPay] Checkout email alert failed:", e?.message || e)
+        console.warn("[Payments] Checkout email alert failed:", e?.message || e)
       )
     );
     return NextResponse.json(view);

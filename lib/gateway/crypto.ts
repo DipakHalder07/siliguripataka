@@ -12,7 +12,7 @@ function masterSecret(): string {
 }
 
 function deriveKey(purpose: string): Buffer {
-  return Buffer.from(crypto.hkdfSync("sha256", masterSecret(), "teapay", purpose, 32));
+  return Buffer.from(crypto.hkdfSync("sha256", masterSecret(), "siliguri-pay", purpose, 32));
 }
 
 export function randomToken(bytes = 32) {

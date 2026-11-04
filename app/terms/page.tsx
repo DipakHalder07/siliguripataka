@@ -28,7 +28,6 @@ const sections: LegalSection[] = [
           <li>Address: {LEGAL.address}</li>
           {LEGAL.gstin && <li>GSTIN: {LEGAL.gstin}</li>}
           {LEGAL.fireworksLicence && <li>Fireworks licence: {LEGAL.fireworksLicence}</li>}
-          {LEGAL.fssai && <li>FSSAI licence: {LEGAL.fssai}</li>}
           <li>Email: {mail(LEGAL.supportEmail)}</li>
           <li>Phone / WhatsApp: {LEGAL.supportPhone}</li>
         </ul>
@@ -59,8 +58,8 @@ const sections: LegalSection[] = [
       <>
         <ul>
           <li>
-            Product photos and pictures are for illustration. The look of crackers and packaging, and the look and taste
-            of sweets, can vary slightly between batches.
+            Product photos and pictures are for illustration. The look of crackers and packaging can vary slightly
+            between batches.
           </li>
           <li>All prices are in Indian Rupees (₹) and include applicable taxes unless stated otherwise.</li>
           <li>
@@ -159,14 +158,13 @@ const sections: LegalSection[] = [
     body: (
       <>
         <p>
-          For safety and hygiene reasons we cannot take back crackers or sweets once delivered, and we cannot accept
+          For safety and hygiene reasons we cannot take back crackers once delivered, and we cannot accept
           change-of-mind returns.
         </p>
         <p>We will replace the item or refund you if your order arrives:</p>
         <ul>
-          <li>damaged, leaking or tampered with;</li>
-          <li>with a wrong or missing item; or</li>
-          <li>expired or otherwise not fit to eat (sweets).</li>
+          <li>damaged, leaking or tampered with; or</li>
+          <li>with a wrong or missing item.</li>
         </ul>
         <p>
           Contact us within <strong>48 hours of delivery</strong> with your order number and clear photos of the parcel
@@ -188,7 +186,6 @@ const sections: LegalSection[] = [
         Crackers can cause injury and fire if misused. Read the instructions on every pack, use crackers only in open
         spaces, keep them away from children unless an adult is supervising, and follow the timings and rules set by the
         authorities in Siliguri and West Bengal. You are responsible for how crackers are stored and used after delivery.
-        Sweets may contain milk, nuts, sugar and other allergens, so please check before eating if you have allergies.
       </p>
     ),
   },

@@ -1,6 +1,6 @@
 # Siliguri Pataka shop
 
-Diwali crackers, sweets and decor store for Siliguri only (minimum order ₹2,000).
+Diwali crackers, gift hampers and decor store for Siliguri only (minimum order ₹2,000).
 Next.js 16 store with its own UPI payment gateway, admin panel at `/admin`, and a
 PostgreSQL database (Prisma).
 

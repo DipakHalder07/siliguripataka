@@ -548,7 +548,7 @@ function buildOtpNotificationHtml(code: string, email: string): string {
         <div class="wrapper">
           <div class="header">
             <h1>SILIGURI PATAKA</h1>
-            <p>Diwali Crackers, Sweets &amp; Diyas · Siliguri</p>
+            <p>Diwali Crackers, Gifts &amp; Diyas · Siliguri</p>
           </div>
           <div class="content">
             <h2 class="title">Customer Sign-In Verification</h2>
@@ -662,7 +662,7 @@ export async function sendAbandonedCheckoutRecoveryEmail(
           <div style="max-width: 580px; margin: 0 auto; background: #ffffff; border: 1px solid #f0dfc6; border-radius: 14px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.04);">
             <div style="background: #4a0e14; color: #ffffff; padding: 28px 24px; text-align: center;">
               <div style="font-size: 20px; font-weight: 900; letter-spacing: 2px;">SILIGURI PATAKA</div>
-              <div style="font-size: 11px; letter-spacing: 1.5px; color: #e8bfa0; text-transform: uppercase; margin-top: 4px;">Diwali Crackers, Sweets &amp; Diyas</div>
+              <div style="font-size: 11px; letter-spacing: 1.5px; color: #e8bfa0; text-transform: uppercase; margin-top: 4px;">Diwali Crackers, Gifts &amp; Diyas</div>
             </div>
             <div style="padding: 28px 24px;">
               <h2 style="margin: 0 0 10px; font-size: 22px; color: #4a0e14; font-weight: 800;">
@@ -725,7 +725,7 @@ export async function sendAbandonedCheckoutRecoveryEmail(
 
             <div style="background: #faf8f5; border-top: 1px solid #f0dfc6; padding: 18px 24px; text-align: center; font-size: 12px; color: #747576;">
               <p style="margin: 0 0 6px;">Need help? Reply directly to this email or WhatsApp us at +91 8617513004</p>
-              <p style="margin: 0;">Siliguri Pataka · Diwali crackers, sweets and diyas, delivered in Siliguri</p>
+              <p style="margin: 0;">Siliguri Pataka · Diwali crackers, gifts and diyas, delivered in Siliguri</p>
             </div>
           </div>
         </body>

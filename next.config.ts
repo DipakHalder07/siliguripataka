@@ -26,6 +26,16 @@ const nextConfig: NextConfig = {
     return [
       { source: "/collections", destination: "/collections/all", permanent: false },
       { source: "/order", destination: "/track", permanent: false },
+      // Sweets are no longer sold: old links go to the closest page instead of a dead end.
+      { source: "/collections/sweets", destination: "/collections/gift-hampers", permanent: true },
+      { source: "/blog/local-mithai-siliguri-diwali", destination: "/blog/diwali-gift-hampers-siliguri", permanent: true },
+      { source: "/products/pataka-mithai-diwali-combo", destination: "/products/pataka-diya-diwali-hamper", permanent: true },
+      { source: "/products/festive-sweets-diya-gift-hamper", destination: "/products/festive-diya-gift-hamper", permanent: true },
+      ...["kaju-katli-box", "motichoor-laddu-box", "besan-laddu-box", "bengali-rosogolla-box", "bengali-sandesh-box", "gulab-jamun-box", "kesar-peda-box", "kesar-pista-barfi-box", "soan-papdi-festive-box", "assorted-diwali-mithai-box", "premium-mithai-gift-box"].map((id) => ({
+        source: `/products/${id}`,
+        destination: "/collections/gift-hampers",
+        permanent: true,
+      })),
       // One address for search engines: www and the Vercel address both go to the main domain.
       ...["www.siliguripataka.shop", "siliguripataka.vercel.app"].map((host) => ({
         source: "/:path*",

@@ -9,7 +9,7 @@ export function GET() {
   const lines = [
     `# ${LEGAL.brand}`,
     "",
-    `> Online Diwali store delivering only within Siliguri, West Bengal, India: crackers, local mithai, gift hampers, rangoli, diyas and home decor.`,
+    `> Online Diwali store delivering only within Siliguri, West Bengal, India: crackers, mega cracker packs, gift hampers, rangoli, diyas and Diwali lights.`,
     "",
     "## Key facts",
     `- Delivery area: Siliguri only`,
@@ -23,6 +23,7 @@ export function GET() {
     ...COLLECTIONS.map((c) => `- [${c.name}](${SITE_URL}/collections/${c.id}): ${c.description}`),
     `- [Crackers price list](${SITE_URL}/pages/cracker-price-list-siliguri): current prices for every pack`,
     `- [Delivery areas](${SITE_URL}/delivery-areas): where we deliver in Siliguri`,
+    `- [Full details for AI tools](${SITE_URL}/llms-full.txt): every product, price and guide in plain text`,
     "",
     "## Guides",
     ...POSTS.map((p) => `- [${p.title}](${SITE_URL}/blog/${p.slug}): ${p.excerpt}`),

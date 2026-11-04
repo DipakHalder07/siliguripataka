@@ -12,7 +12,7 @@ export interface CartContextType {
   isCartOpen: boolean;
   isSearchOpen: boolean;
   isCheckoutOpen: boolean;
-  isTeaFinderOpen: boolean;
+  isPackFinderOpen: boolean;
   openCart: () => void;
   closeCart: () => void;
   toggleCart: () => void;
@@ -20,8 +20,8 @@ export interface CartContextType {
   closeSearch: () => void;
   openCheckout: () => void;
   closeCheckout: () => void;
-  openTeaFinder: () => void;
-  closeTeaFinder: () => void;
+  openPackFinder: () => void;
+  closePackFinder: () => void;
   addToCart: (item: Omit<CartItem, "quantity">, quantity?: number) => void;
   removeFromCart: (id: string) => void;
   updateQuantity: (id: string, deltaOrExact: number, isExact?: boolean) => void;
@@ -60,7 +60,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   const isCartOpen = useCartStore((s) => s.isCartOpen);
   const isSearchOpen = useCartStore((s) => s.isSearchOpen);
   const isCheckoutOpen = useCartStore((s) => s.isCheckoutOpen);
-  const isTeaFinderOpen = useCartStore((s) => s.isTeaFinderOpen);
+  const isPackFinderOpen = useCartStore((s) => s.isPackFinderOpen);
   const openCart = useCartStore((s) => s.openCart);
   const closeCart = useCartStore((s) => s.closeCart);
   const toggleCart = useCartStore((s) => s.toggleCart);
@@ -68,8 +68,8 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   const closeSearch = useCartStore((s) => s.closeSearch);
   const openCheckout = useCartStore((s) => s.openCheckout);
   const closeCheckout = useCartStore((s) => s.closeCheckout);
-  const openTeaFinder = useCartStore((s) => s.openTeaFinder);
-  const closeTeaFinder = useCartStore((s) => s.closeTeaFinder);
+  const openPackFinder = useCartStore((s) => s.openPackFinder);
+  const closePackFinder = useCartStore((s) => s.closePackFinder);
   const addToCart = useCartStore((s) => s.addToCart);
   const removeFromCart = useCartStore((s) => s.removeFromCart);
   const updateQuantity = useCartStore((s) => s.updateQuantity);
@@ -129,7 +129,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
       isCartOpen,
       isSearchOpen,
       isCheckoutOpen,
-      isTeaFinderOpen,
+      isPackFinderOpen,
       openCart,
       closeCart,
       toggleCart,
@@ -137,8 +137,8 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
       closeSearch,
       openCheckout,
       closeCheckout,
-      openTeaFinder,
-      closeTeaFinder,
+      openPackFinder,
+      closePackFinder,
       addToCart,
       removeFromCart,
       updateQuantity,
@@ -154,7 +154,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
       isCartOpen,
       isSearchOpen,
       isCheckoutOpen,
-      isTeaFinderOpen,
+      isPackFinderOpen,
       openCart,
       closeCart,
       toggleCart,
@@ -162,8 +162,8 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
       closeSearch,
       openCheckout,
       closeCheckout,
-      openTeaFinder,
-      closeTeaFinder,
+      openPackFinder,
+      closePackFinder,
       addToCart,
       removeFromCart,
       updateQuantity,

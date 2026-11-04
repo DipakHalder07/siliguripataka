@@ -1,4 +1,4 @@
-// TeaPay WhatsApp service: stays logged in to the shop's WhatsApp as a linked device (scan a QR
+// Siliguri Pataka WhatsApp service: stays logged in to the shop's WhatsApp as a linked device (scan a QR
 // once) and sends checkout verification codes. It needs to run all the time, so it lives outside
 // Vercel (your computer, Railway, a VPS…). The shop talks to it with a secret token.
 //
@@ -122,7 +122,7 @@ async function connect() {
     auth,
     logger,
     printQRInTerminal: false,
-    browser: Browsers.macOS("Teabox"),
+    browser: Browsers.macOS("Siliguri Pataka"),
     markOnlineOnConnect: false,
     syncFullHistory: false,
   });
@@ -276,7 +276,7 @@ const server = http.createServer(async (req, res) => {
 });
 
 server.listen(PORT, () =>
-  console.log(`TeaPay WhatsApp service on port ${PORT} (session in ${pool ? "the database" : AUTH_DIR})`)
+  console.log(`Siliguri Pataka WhatsApp service on port ${PORT} (session in ${pool ? "the database" : AUTH_DIR})`)
 );
 connect().catch(onFatal);
 

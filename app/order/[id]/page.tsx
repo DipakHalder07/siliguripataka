@@ -63,7 +63,7 @@ function OrderTrackingContent() {
     return (
       <div className="min-h-screen bg-[#faf8f5] flex flex-col justify-between">
         <TopBar />
-        <Header onOpenTeaFinder={() => {}} />
+        <Header onOpenPackFinder={() => {}} />
         <div className="flex-1 flex flex-col items-center justify-center p-8 space-y-4">
           <div className="w-12 h-12 border-4 border-[#4a0e14]/20 border-t-[#f9a825] rounded-full animate-spin" />
           <p className="text-[#5c5a52] text-[14px] font-medium">
@@ -79,7 +79,7 @@ function OrderTrackingContent() {
     return (
       <div className="min-h-screen bg-[#faf8f5] flex flex-col justify-between">
         <TopBar />
-        <Header onOpenTeaFinder={() => {}} />
+        <Header onOpenPackFinder={() => {}} />
         <div className="flex-1 flex flex-col items-center justify-center p-8 text-center max-w-[500px] mx-auto space-y-5">
           <div className="w-16 h-16 rounded-full bg-red-100 text-red-600 flex items-center justify-center">
             <Package size={32} />
@@ -127,7 +127,7 @@ function OrderTrackingContent() {
     <div className="min-h-screen bg-[#faf8f5] text-[#2b1215] flex flex-col justify-between">
       <TopBar />
       <ShippingBar />
-      <Header onOpenTeaFinder={() => {}} />
+      <Header onOpenPackFinder={() => {}} />
 
       <main className="flex-1 max-w-[1100px] w-full mx-auto p-4 sm:p-6 lg:p-8 space-y-8">
         {/* Breadcrumb Navigation */}

@@ -135,7 +135,7 @@ export default function JustArrived() {
                 </Link>
 
                 {/* Product info */}
-                <div className="p-3.5 sm:p-4 flex flex-col justify-between flex-1 gap-3 tb-product-card__info">
+                <div className="p-3.5 sm:p-4 flex flex-col justify-between flex-1 gap-3 sp-product-card__info">
                   <div className="flex flex-col">
                     <div className="flex flex-col gap-[2px] w-full">
                       <span className="product-card__title block">

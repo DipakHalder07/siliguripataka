@@ -91,7 +91,7 @@ export default function CartPage() {
                 Your shopping bag is empty
               </h2>
               <p className="text-[14px] text-[#5c5a52] mt-2 mb-6">
-                Discover Diwali crackers, sweets, diyas and gift boxes, delivered within Siliguri.
+                Discover Diwali crackers, diyas and gift hampers, delivered within Siliguri.
               </p>
               <Link
                 href="/collections/all"

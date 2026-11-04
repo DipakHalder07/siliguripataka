@@ -8,17 +8,17 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CartDrawer from "@/components/CartDrawer";
 import SearchDrawer from "@/components/LazySearchDrawer";
-const TeaFinderModal = dynamic(() => import("@/components/TeaFinderModal"), { ssr: false });
+const PackFinderModal = dynamic(() => import("@/components/PackFinderModal"), { ssr: false });
 
 export default function SiteLayoutWrapper({ children }: { children: React.ReactNode }) {
-  const [teaFinderOpen, setTeaFinderOpen] = useState(false);
+  const [packFinderOpen, setPackFinderOpen] = useState(false);
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
       {/* 1. Header & Announcement Bars */}
       <TopBar />
       <ShippingBar />
-      <Header onOpenTeaFinder={() => setTeaFinderOpen(true)} />
+      <Header onOpenPackFinder={() => setPackFinderOpen(true)} />
 
       {/* 2. Main Page Content */}
       <main className="flex-1">{children}</main>
@@ -29,7 +29,7 @@ export default function SiteLayoutWrapper({ children }: { children: React.ReactN
       {/* 4. Global Drawers & Modals */}
       <CartDrawer />
       <SearchDrawer />
-      {teaFinderOpen && <TeaFinderModal isOpen onClose={() => setTeaFinderOpen(false)} />}
+      {packFinderOpen && <PackFinderModal isOpen onClose={() => setPackFinderOpen(false)} />}
     </div>
   );
 }

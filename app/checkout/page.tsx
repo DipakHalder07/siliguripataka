@@ -29,12 +29,12 @@ import {
 } from "@/lib/validations/checkout";
 import ManualUpiPanel from "@/components/ManualUpiPanel";
 import { amountToMinimum, deliveryFee, FREE_GIFT, MIN_ORDER_AMOUNT } from "@/lib/orderRules";
-import TeaPayPanel, { cancelTeaPaySession, PaymentLeaveDialog, TeaPaySessionView } from "@/components/TeaPayPanel";
+import UpiPayPanel, { cancelUpiSession, PaymentLeaveDialog, UpiSessionView } from "@/components/UpiPayPanel";
 import { newOrderNumber } from "@/lib/orderNumber";
 import { useCodAvailable } from "@/lib/useCodAvailable";
 
 // "native": the shop's own UPI gateway. "manual": shop QR, confirmed by the shop against the bank (used without a database).
-interface UpiSessionData extends Partial<Omit<TeaPaySessionView, "status">> {
+interface UpiSessionData extends Partial<Omit<UpiSessionView, "status">> {
   mode: "native" | "manual";
   status: string;
   paymentId?: string;
@@ -409,7 +409,7 @@ function CheckoutPageContent() {
   // Manual UPI: poll payment status
   useEffect(() => {
     if (step !== 2 || paymentMethod !== "upi" || !orderId) return;
-    if (upiSession?.mode === "native") return; // TeaPayPanel watches the payment itself
+    if (upiSession?.mode === "native") return; // UpiPayPanel watches the payment itself
 
     let done = false;
     const interval = setInterval(async () => {
@@ -497,7 +497,7 @@ function CheckoutPageContent() {
   });
 
   // The bank credit was matched and the server created the order: show the confirmation.
-  const handleUpiPaid = (view: TeaPaySessionView) => {
+  const handleUpiPaid = (view: UpiSessionView) => {
     setPaymentConfirmed(true);
     if (view.utr) setConfirmedUtr(view.utr);
     setOrderId(view.orderNumber);
@@ -531,7 +531,7 @@ function CheckoutPageContent() {
 
   // Start over with a fresh payment (and order number).
   const restartUpiSession = () => {
-    if (upiSession?.mode === "native" && upiSession.sessionId) cancelTeaPaySession(upiSession.sessionId);
+    if (upiSession?.mode === "native" && upiSession.sessionId) cancelUpiSession(upiSession.sessionId);
     const newOrderId = newOrderNumber();
     setOrderId(newOrderId);
     setUpiSession(null);
@@ -540,7 +540,7 @@ function CheckoutPageContent() {
 
   const handleSelectCod = () => {
     if (upiSession?.mode === "native" && !paymentConfirmed) {
-      if (upiSession.sessionId) cancelTeaPaySession(upiSession.sessionId);
+      if (upiSession.sessionId) cancelUpiSession(upiSession.sessionId);
       setUpiSession(null);
       setOrderId(newOrderNumber());
     }
@@ -1159,9 +1159,9 @@ function CheckoutPageContent() {
                             className="mt-4 pt-4 border-t border-[#f0dfc6]"
                             onClick={(e) => e.stopPropagation()}
                           >
-                            <TeaPayPanel
+                            <UpiPayPanel
                               key={upiSession.sessionId}
-                              session={upiSession as TeaPaySessionView}
+                              session={upiSession as UpiSessionView}
                               onPaid={handleUpiPaid}
                               onRestart={restartUpiSession}
                               onBackPressed={() => guardLeave(() => router.replace("/collections/all"))}
@@ -1429,7 +1429,7 @@ function CheckoutPageContent() {
                   <span>Delivered Only In Siliguri</span>
                 </div>
                 <p className="text-[#5c5a52] leading-normal">
-                  We deliver the same day or the next day, only within Siliguri, so please make sure your address is in Siliguri. Every order includes 1 lighter free. Sweets are packed separately from crackers.
+                  We deliver the same day or the next day, only within Siliguri, so please make sure your address is in Siliguri. Every order includes 1 lighter free.
                 </p>
               </div>
             </div>
@@ -1440,7 +1440,7 @@ function CheckoutPageContent() {
       {/* Footer */}
       <footer className="bg-white border-t border-[#f0dfc6] py-5 px-4 text-center text-[12px] text-[#747576]">
         <div className="max-w-[1240px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
-          <span>&copy; 2026 Siliguri Pataka. Diwali crackers, sweets and diyas, delivered in Siliguri.</span>
+          <span>&copy; 2026 Siliguri Pataka. Diwali crackers, gifts and diyas, delivered in Siliguri.</span>
           <span className="flex items-center gap-1.5 text-[#b3261e] font-semibold">
             <span className="w-2 h-2 rounded-full bg-[#f9a825]" />
             100% Encrypted &amp; Secure Checkout

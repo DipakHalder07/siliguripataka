@@ -11,7 +11,7 @@ import ProductImages from "./ProductImages";
 
 // Add / edit a product, laid out like Shopify: content on the left, status and organisation on the right.
 
-const FORMATS = ["Deluxe Gift Box", "Festive Combo", "Electric Sparklers", "Anar / Flower Pot", "Jumbo Anar", "Ground Spinner", "Whistling Rockets", "Multi-Shot Cake", "Garland Ladi", "Child-Safe Hamper", "Mithai Box", "Sweet Tin", "Gift Pack", "Clay Diyas", "LED Lights", "Rangoli", "Door Decor", "Puja Set"];
+const FORMATS = ["Deluxe Gift Box", "Festive Combo", "Electric Sparklers", "Anar / Flower Pot", "Jumbo Anar", "Ground Spinner", "Whistling Rockets", "Multi-Shot Cake", "Garland Ladi", "Child-Safe Hamper", "Gift Pack", "Clay Diyas", "LED Lights", "Rangoli", "Door Decor", "Puja Set"];
 const REGIONS = ["Sivakasi Quality", "Certified Green", "Eco Friendly", "Freshly Packed", "Festive Decor", "Siliguri Special"];
 
 interface VariantRow {

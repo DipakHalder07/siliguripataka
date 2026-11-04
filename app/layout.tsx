@@ -32,12 +32,10 @@ export const metadata: Metadata = {
     "buy crackers online Siliguri",
     "pataka Siliguri",
     "Kali Puja crackers Siliguri",
-    "Diwali sweets Siliguri",
     "phuljhari Siliguri",
     "Diwali gift hamper Siliguri",
     "same day delivery crackers Siliguri",
     "firecracker mela Siliguri",
-    "local mithai Siliguri",
     "rangoli colours Siliguri",
     "Diwali home decor Siliguri",
     "crackers price list Siliguri",
@@ -52,7 +50,13 @@ export const metadata: Metadata = {
   },
   twitter: { card: "summary_large_image", title: DEFAULT_TITLE, description: DEFAULT_DESCRIPTION, images: [DEFAULT_IMAGE] },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 } },
-  icons: { icon: "/assets/siliguri-emblem.png", apple: "/assets/siliguri-emblem.png" },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon-192.png", type: "image/png", sizes: "192x192" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
   other: { "geo.region": "IN-WB", "geo.placename": "Siliguri", "geo.position": "26.7271;88.3953", ICBM: "26.7271, 88.3953" },
 };
 

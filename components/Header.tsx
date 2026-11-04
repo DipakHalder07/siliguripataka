@@ -23,14 +23,13 @@ const MEGA_COLUMNS = [
     ],
   },
   {
-    title: "Sweets",
+    title: "Gift Hampers",
     links: [
-      { label: "All Mithai", href: "/collections/sweets" },
-      { label: "Kaju Katli", href: "/products/kaju-katli-box" },
-      { label: "Motichoor Laddu", href: "/products/motichoor-laddu-box" },
-      { label: "Bengali Rosogolla", href: "/products/bengali-rosogolla-box" },
-      { label: "Bengali Sandesh", href: "/products/bengali-sandesh-box" },
-      { label: "Assorted Mithai Box", href: "/products/assorted-diwali-mithai-box" },
+      { label: "All Gift Hampers", href: "/collections/gift-hampers" },
+      { label: "Family Diwali Hamper", href: "/products/family-diwali-gift-hamper" },
+      { label: "Lakshmi Puja Hamper", href: "/products/lakshmi-puja-gift-hamper" },
+      { label: "Festive Diya Hamper", href: "/products/festive-diya-gift-hamper" },
+      { label: "Pataka + Diya Hamper", href: "/products/pataka-diya-diwali-hamper" },
     ],
   },
   {
@@ -49,7 +48,7 @@ const MEGA_COLUMNS = [
     links: [
       { label: "Mega Packs", href: "/collections/mega-packs" },
       { label: "Gift Hampers", href: "/collections/gift-hampers" },
-      { label: "Pataka + Mithai Combo", href: "/products/pataka-mithai-diwali-combo" },
+      { label: "Pataka + Diya Hamper", href: "/products/pataka-diya-diwali-hamper" },
       { label: "Office Gift Hamper", href: "/products/office-diwali-gift-hamper" },
       { label: "Corporate Gifting", href: "/pages/corporate-gifting-2026" },
     ],
@@ -66,7 +65,7 @@ const MEGA_COLUMNS = [
   },
 ];
 
-export default function Header({ onOpenTeaFinder }: { onOpenTeaFinder?: () => void }) {
+export default function Header({ onOpenPackFinder }: { onOpenPackFinder?: () => void }) {
   const pathname = usePathname();
   const { openCart, openSearch, totalCount } = useCart();
   const [activeMega, setActiveMega] = useState<string | null>(null);
@@ -189,7 +188,7 @@ export default function Header({ onOpenTeaFinder }: { onOpenTeaFinder?: () => vo
                   href="/collections/all"
                   onClick={closeMenus}
                   className={`py-5 flex items-center gap-1.5 whitespace-nowrap text-[14px] xl:text-[16px] min-[1400px]:text-[18px] font-semibold tracking-[-0.2px] transition-colors ${
-                    activeMega === "shop" || pathname === "/collections/all" || (pathname?.startsWith("/collections") && pathname !== "/collections/mega-packs" && pathname !== "/collections/sparklers" && pathname !== "/collections/sweets" && pathname !== "/collections/aerial-shots")
+                    activeMega === "shop" || pathname === "/collections/all" || (pathname?.startsWith("/collections") && pathname !== "/collections/mega-packs" && pathname !== "/collections/sparklers" && pathname !== "/collections/flower-pots" && pathname !== "/collections/aerial-shots")
                       ? "text-[#b3261e]"
                       : "text-[#2b1215] hover:text-[#b3261e]"
                   }`}
@@ -231,16 +230,16 @@ export default function Header({ onOpenTeaFinder }: { onOpenTeaFinder?: () => vo
                 Sparklers
               </Link>
               <Link
-                href="/collections/sweets"
+                href="/collections/flower-pots"
                 onMouseEnter={closeMenus}
                 onClick={closeMenus}
                 className={`py-5 text-[14px] xl:text-[16px] min-[1400px]:text-[18px] font-semibold tracking-[-0.2px] transition-colors whitespace-nowrap ${
-                  pathname === "/collections/sweets"
+                  pathname === "/collections/flower-pots"
                     ? "text-[#b3261e]"
                     : "text-[#2b1215] hover:text-[#b3261e]"
                 }`}
               >
-                Sweets
+                Flower Pots
               </Link>
               <Link
                 href="/collections/aerial-shots"
@@ -479,8 +478,8 @@ export default function Header({ onOpenTeaFinder }: { onOpenTeaFinder?: () => vo
                   <Link href="/collections/mega-packs" onClick={() => setActiveMega(null)} className="hover:text-[#b3261e]">
                     Mega Packs
                   </Link>
-                  <Link href="/collections/sweets" onClick={() => setActiveMega(null)} className="hover:text-[#b3261e]">
-                    Diwali Sweets
+                  <Link href="/collections/gift-hampers" onClick={() => setActiveMega(null)} className="hover:text-[#b3261e]">
+                    Gift Hampers
                   </Link>
                   <Link href="/pages/why-siliguri-pataka" onClick={() => setActiveMega(null)} className="hover:text-[#b3261e]">
                     Why Siliguri Pataka
@@ -490,7 +489,7 @@ export default function Header({ onOpenTeaFinder }: { onOpenTeaFinder?: () => vo
                   type="button"
                   onClick={() => {
                     setActiveMega(null);
-                    onOpenTeaFinder?.();
+                    onOpenPackFinder?.();
                   }}
                   className="bg-[#f9a825] hover:bg-[#f29d12] text-[#4a0e14] px-5 py-2.5 rounded-md font-bold text-[14px] tracking-wider uppercase transition-colors"
                 >
@@ -582,11 +581,11 @@ export default function Header({ onOpenTeaFinder }: { onOpenTeaFinder?: () => vo
                 </Link>
 
                 <Link
-                  href="/collections/sweets"
+                  href="/collections/gift-hampers"
                   onClick={() => setMobileMenuOpen(false)}
                   className="text-[18px] font-bold text-[#2b1215] py-2 border-b border-[#f0dfc6]"
                 >
-                  Diwali Sweets
+                  Gift Hampers
                 </Link>
 
                 <Link
@@ -629,7 +628,7 @@ export default function Header({ onOpenTeaFinder }: { onOpenTeaFinder?: () => vo
                   type="button"
                   onClick={() => {
                     setMobileMenuOpen(false);
-                    onOpenTeaFinder?.();
+                    onOpenPackFinder?.();
                   }}
                   className="w-full bg-[#f9a825] text-[#4a0e14] py-3 rounded-lg font-bold text-center tracking-wider uppercase text-[14px]"
                 >

@@ -7,7 +7,7 @@ import { pageMeta } from "@/lib/seo";
 export const metadata: Metadata = {
   ...pageMeta({
     title: `Cancellation & Refund Policy | ${LEGAL.brand}, Siliguri`,
-    description: `How cancellations, replacements and refunds work for crackers, mithai, gift hampers and decor ordered from ${LEGAL.brand} in Siliguri.`,
+    description: `How cancellations, replacements and refunds work for crackers, gift hampers and decor ordered from ${LEGAL.brand} in Siliguri.`,
     path: "/refund-policy",
   }),
 };
@@ -40,10 +40,6 @@ const sections: LegalSection[] = [
             <tr className="border-b border-[#f0ede6]">
               <td className="py-2 pr-3">Crackers and combos</td>
               <td className="py-2">No change-of-mind returns, for safety. Replaced or refunded if damaged, wrong or missing.</td>
-            </tr>
-            <tr className="border-b border-[#f0ede6]">
-              <td className="py-2 pr-3">Mithai and sweets</td>
-              <td className="py-2">No returns once delivered, for hygiene. Replaced or refunded if damaged, wrong, expired or not fit to eat.</td>
             </tr>
             <tr className="border-b border-[#f0ede6]">
               <td className="py-2 pr-3">Gift hampers</td>

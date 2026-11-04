@@ -81,7 +81,7 @@ export default function ProductCard({ product }: { product: Product }) {
       </div>
 
       {/* 2. Card info body */}
-      <div className="p-3.5 sm:p-4 flex flex-col flex-1 justify-between gap-3 tb-product-card__info">
+      <div className="p-3.5 sm:p-4 flex flex-col flex-1 justify-between gap-3 sp-product-card__info">
         {/* Title & Description with exact live 2px gap (gap-0.5) */}
         <div className="flex flex-col">
           <div className="flex flex-col gap-[2px] w-full">

@@ -18,7 +18,7 @@ import { useCart } from "./context/CartContext";
 import { cleanIndianPhone } from "@/lib/validations/checkout";
 import ManualUpiPanel from "./ManualUpiPanel";
 import { deliveryFee, FREE_GIFT } from "@/lib/orderRules";
-import TeaPayPanel, { cancelTeaPaySession, PaymentLeaveDialog, TeaPaySessionView } from "./TeaPayPanel";
+import UpiPayPanel, { cancelUpiSession, PaymentLeaveDialog, UpiSessionView } from "./UpiPayPanel";
 import { newOrderNumber } from "@/lib/orderNumber";
 import { useCodAvailable } from "@/lib/useCodAvailable";
 
@@ -28,7 +28,7 @@ interface FastrrCheckoutModalProps {
 }
 
 // "native": the shop's own UPI gateway. "manual": shop QR + typed UTR (used without a database).
-interface UpiSessionData extends Partial<Omit<TeaPaySessionView, "status">> {
+interface UpiSessionData extends Partial<Omit<UpiSessionView, "status">> {
   mode: "native" | "manual";
   status: string;
   paymentId?: string;
@@ -273,7 +273,7 @@ export default function FastrrCheckoutModal({ isOpen, onClose }: FastrrCheckoutM
   // Manual UPI: poll payment status
   useEffect(() => {
     if (!isOpen || step !== 2 || paymentMethod !== "upi" || !orderId) return;
-    if (upiSession?.mode === "native") return; // TeaPayPanel watches the payment itself
+    if (upiSession?.mode === "native") return; // UpiPayPanel watches the payment itself
 
     let done = false;
     const interval = setInterval(async () => {
@@ -401,7 +401,7 @@ export default function FastrrCheckoutModal({ isOpen, onClose }: FastrrCheckoutM
   });
 
   // The bank credit was matched and the server created the order: show the confirmation.
-  const handleUpiPaid = (view: TeaPaySessionView) => {
+  const handleUpiPaid = (view: UpiSessionView) => {
     setPaymentConfirmed(true);
     if (view.utr) setConfirmedUtr(view.utr);
     setOrderId(view.orderNumber);
@@ -420,7 +420,7 @@ export default function FastrrCheckoutModal({ isOpen, onClose }: FastrrCheckoutM
 
   // Start over with a fresh payment (and order number).
   const restartUpiSession = () => {
-    if (upiSession?.mode === "native" && upiSession.sessionId) cancelTeaPaySession(upiSession.sessionId);
+    if (upiSession?.mode === "native" && upiSession.sessionId) cancelUpiSession(upiSession.sessionId);
     const newOrderId = newOrderNumber();
     setOrderId(newOrderId);
     setUpiSession(null);
@@ -429,7 +429,7 @@ export default function FastrrCheckoutModal({ isOpen, onClose }: FastrrCheckoutM
 
   const handleSelectCod = () => {
     if (upiSession?.mode === "native" && !paymentConfirmed) {
-      if (upiSession.sessionId) cancelTeaPaySession(upiSession.sessionId);
+      if (upiSession.sessionId) cancelUpiSession(upiSession.sessionId);
       setUpiSession(null);
       setOrderId(newOrderNumber());
     }
@@ -847,9 +847,9 @@ export default function FastrrCheckoutModal({ isOpen, onClose }: FastrrCheckoutM
 
                   {paymentMethod === "upi" && upiSession?.mode === "native" && (
                     <div className="mt-4 pt-4 border-t border-[#f0dfc6]" onClick={(e) => e.stopPropagation()}>
-                      <TeaPayPanel
+                      <UpiPayPanel
                         key={upiSession.sessionId}
-                        session={upiSession as TeaPaySessionView}
+                        session={upiSession as UpiSessionView}
                         onPaid={handleUpiPaid}
                         onRestart={restartUpiSession}
                         onBackPressed={() => guardLeave(leaveCheckout)}

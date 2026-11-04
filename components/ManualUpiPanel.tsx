@@ -3,11 +3,11 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { Check, Clock, Copy, RefreshCw } from "lucide-react";
-import { formatClock, PaymentStatusBar, UPI_APPS, UpiExpiredNotice } from "./TeaPayPanel";
+import { formatClock, PaymentStatusBar, UPI_APPS, UpiExpiredNotice } from "./UpiPayPanel";
 
 /**
- * UPI checkout used when the TeaPay gateway is unavailable (no database). It looks and behaves like
- * TeaPayPanel; the difference is that nothing can be matched automatically, so "Confirm my order"
+ * UPI checkout used when the UPI gateway is unavailable (no database). It looks and behaves like
+ * UpiPayPanel; the difference is that nothing can be matched automatically, so "Confirm my order"
  * places the order as pending and the shop confirms it against the bank record.
  */
 export default function ManualUpiPanel({

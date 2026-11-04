@@ -30,7 +30,7 @@ export async function POST(req: NextRequest) {
         data: { phoneVerifiedAt: new Date() },
       });
       const view = await sessionView(updated);
-      if (view.upiUri) after(() => alertNewCheckout(updated.id, publicBaseUrl(req)).catch((e) => console.warn("[TeaPay] WhatsApp order alert failed:", e?.message || e)));
+      if (view.upiUri) after(() => alertNewCheckout(updated.id, publicBaseUrl(req)).catch((e) => console.warn("[Payments] WhatsApp order alert failed:", e?.message || e)));
       const res = NextResponse.json(view);
       rememberVerifiedPhone(res, session.customerPhone);
       return res;

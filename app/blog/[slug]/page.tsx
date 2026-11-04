@@ -261,7 +261,7 @@ async function BlogArticle({ params }: { params: Params }) {
           <div>
             <div className="font-bold text-[18px]">Ready for Diwali?</div>
             <div className="text-[14px] text-[#f1dccb]">
-              Crackers, mithai and gift hampers, delivered the same day or the next day in Siliguri.
+              Crackers and gift hampers, delivered the same day or the next day in Siliguri.
             </div>
           </div>
           <Link

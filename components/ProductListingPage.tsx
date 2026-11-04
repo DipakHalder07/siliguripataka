@@ -31,7 +31,7 @@ export default function ProductListingPage({ initialCollectionId = "all", produc
         id: "all",
         name: "All Collection",
         description:
-          "Buy Diwali crackers, local mithai, gift hampers and diyas online in Siliguri. Minimum order ₹2,000.",
+          "Buy Diwali crackers, gift hampers, lights and diyas online in Siliguri. Minimum order ₹2,000.",
       }
     );
   }, [selectedCollection]);

@@ -165,7 +165,6 @@ export default function ProductDetailPage({ product, related = [] }: { product: 
   }, [galleryImages.length]);
 
   // The copy below depends on what kind of product this is
-  const isSweet = product.category === "sweets";
   const isDecor = isDecorCategory(product.category);
   const megaPack = findMegaPack(product.id);
 
@@ -244,7 +243,7 @@ export default function ProductDetailPage({ product, related = [] }: { product: 
     {
       icon: Flame,
       title: product.caffeine || "Festive",
-      subtitle: isSweet ? "taste" : isDecor ? "style" : "effect",
+      subtitle: isDecor ? "style" : "effect",
     },
     {
       icon: Sparkles,
@@ -258,8 +257,8 @@ export default function ProductDetailPage({ product, related = [] }: { product: 
     },
     {
       icon: ShieldCheck,
-      title: isSweet ? "Packed with care" : isDecor ? "Ready to use" : "Adult supervision",
-      subtitle: isSweet ? "separate from crackers" : isDecor ? "for Diwali & puja" : "read the pack first",
+      title: isDecor ? "Ready to use" : "Adult supervision",
+      subtitle: isDecor ? "for Diwali & puja" : "read the pack first",
     },
   ];
 
@@ -625,12 +624,10 @@ export default function ProductDetailPage({ product, related = [] }: { product: 
             </div>
             <div>
               <h4 className="font-bold text-[17px] text-[#2b1215]">
-                {isSweet ? "Packed With Care" : isDecor ? "Ready For Your Home" : "Read The Pack, Light With Care"}
+                {isDecor ? "Ready For Your Home" : "Read The Pack, Light With Care"}
               </h4>
               <p className="text-[13.5px] text-[#5c5a52] mt-1 leading-normal">
-                {isSweet
-                  ? "Sweets are packed separately from crackers, so they reach you clean and fresh."
-                  : isDecor
+                {isDecor
                   ? "Everything you need to get your home ready for Diwali and Kali Puja."
                   : "Follow the instructions on every pack. Use crackers only in open spaces, and keep children with an adult."}
               </p>
@@ -660,7 +657,7 @@ export default function ProductDetailPage({ product, related = [] }: { product: 
             What You Get
           </h3>
           <p className="text-[15px] text-[#5c5a52] leading-relaxed mb-4">
-            {product.subtitle}. {isSweet ? "Weights shown are approximate." : "Exact contents can vary a little from batch to batch."}
+            {product.subtitle}. {"Exact contents can vary a little from batch to batch."}
           </p>
           {megaPack && (
             <div className="mb-4 text-[14px]">
@@ -701,7 +698,7 @@ export default function ProductDetailPage({ product, related = [] }: { product: 
             <li className="flex items-center gap-2.5">
               <span className="w-2 h-2 rounded-full bg-[#f9a825]" />
               <span>
-                <b>One order:</b> Mix crackers, sweets and decor in the same cart.
+                <b>One order:</b> Mix crackers, hampers and decor in the same cart.
               </span>
             </li>
             <li className="flex items-center gap-2.5">
@@ -723,7 +720,7 @@ export default function ProductDetailPage({ product, related = [] }: { product: 
       {/* 4. How to use */}
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-12 pb-12 sm:pb-16">
         <h2 className="font-stencil text-[26px] sm:text-[34px] font-bold text-center text-[#2b1215] mb-8">
-          {isSweet ? "How To Serve?" : isDecor ? "How To Set Up?" : "How To Use Safely?"}
+          {isDecor ? "How To Set Up?" : "How To Use Safely?"}
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
@@ -732,12 +729,10 @@ export default function ProductDetailPage({ product, related = [] }: { product: 
               1
             </div>
             <h4 className="font-bold text-[16px] text-[#2b1215] mb-1">
-              {isSweet ? "Keep It Cool" : isDecor ? "Pick Your Spot" : "Find An Open Space"}
+              {isDecor ? "Pick Your Spot" : "Find An Open Space"}
             </h4>
             <p className="text-[13.5px] text-[#5c5a52]">
-              {isSweet
-                ? "Store sweets in a cool, dry place when they arrive, and refrigerate milk-based sweets."
-                : isDecor
+              {isDecor
                 ? "Choose a clean, dry spot such as your doorway, balcony or puja corner, away from curtains."
                 : "Go outdoors, away from vehicles, dry leaves and anything that can catch fire. Keep water or sand ready."}
             </p>
@@ -748,12 +743,10 @@ export default function ProductDetailPage({ product, related = [] }: { product: 
               2
             </div>
             <h4 className="font-bold text-[16px] text-[#2b1215] mb-1">
-              {isSweet ? "Plate It Up" : isDecor ? "Decorate" : "Light With Care"}
+              {isDecor ? "Decorate" : "Light With Care"}
             </h4>
             <p className="text-[13.5px] text-[#5c5a52]">
-              {isSweet
-                ? "Arrange the sweets on a clean thali for your puja, guests or gifting."
-                : isDecor
+              {isDecor
                 ? "Set up your diyas, lights, rangoli or toran the evening before Diwali."
                 : "Read the pack, light one item at a time at arm's length, and step back straight away."}
             </p>
@@ -764,12 +757,10 @@ export default function ProductDetailPage({ product, related = [] }: { product: 
               3
             </div>
             <h4 className="font-bold text-[16px] text-[#2b1215] mb-1">
-              {isSweet ? "Enjoy Fresh" : isDecor ? "Stay Safe" : "Never Relight"}
+              {isDecor ? "Stay Safe" : "Never Relight"}
             </h4>
             <p className="text-[13.5px] text-[#5c5a52]">
-              {isSweet
-                ? "Sweets taste best soon after delivery. Please check the date on the pack."
-                : isDecor
+              {isDecor
                 ? "Never leave a lit diya unattended, and keep flames away from curtains and children."
                 : "If something doesn't light, leave it alone and pour water on it. Keep children with an adult."}
             </p>

@@ -23,7 +23,7 @@ import { motion, AnimatePresence } from "motion/react";
 import TopBar from "@/components/TopBar";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import TeaFinderModal from "@/components/TeaFinderModal";
+import PackFinderModal from "@/components/PackFinderModal";
 import { StoredOrderData } from "@/lib/ordersDb";
 import { cleanIndianPhone } from "@/lib/validations/checkout";
 
@@ -43,7 +43,7 @@ function TrackOrderContent() {
   const [errorMessage, setErrorMessage] = useState("");
   const [hasSearched, setHasSearched] = useState(false);
   const [recentOrderIds, setRecentOrderIds] = useState<string[]>([]);
-  const [isTeaFinderOpen, setIsTeaFinderOpen] = useState(false);
+  const [isPackFinderOpen, setIsPackFinderOpen] = useState(false);
 
   // Load recent orders from localStorage
   useEffect(() => {
@@ -115,7 +115,7 @@ function TrackOrderContent() {
     <div className="min-h-screen bg-[#faf8f5] flex flex-col justify-between font-sans text-[#2b1215]">
       <div>
         <TopBar />
-        <Header onOpenTeaFinder={() => setIsTeaFinderOpen(true)} />
+        <Header onOpenPackFinder={() => setIsPackFinderOpen(true)} />
 
         {/* Hero Section */}
         <section className="bg-[#4a0e14] text-white py-12 sm:py-16 px-4 sm:px-6 relative overflow-hidden">
@@ -129,7 +129,7 @@ function TrackOrderContent() {
               Track Your Order
             </h1>
             <p className="text-[14px] sm:text-[15px] text-[#f1dccb] max-w-[560px] mx-auto">
-              Follow your Diwali crackers, sweets and decor from packing to your door in Siliguri.
+              Follow your Diwali crackers, gifts and decor from packing to your door in Siliguri.
             </p>
 
             {/* Tracking Search Card */}
@@ -541,7 +541,7 @@ function TrackOrderContent() {
       </div>
 
       <Footer />
-      <TeaFinderModal isOpen={isTeaFinderOpen} onClose={() => setIsTeaFinderOpen(false)} />
+      <PackFinderModal isOpen={isPackFinderOpen} onClose={() => setIsPackFinderOpen(false)} />
     </div>
   );
 }

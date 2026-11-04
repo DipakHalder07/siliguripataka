@@ -65,6 +65,7 @@ export function rowToProduct(row: ProductRow): Product {
     tags: row.tags,
     stockQuantity: row.stockQuantity,
     trackInventory: row.trackInventory,
+    updatedAt: row.updatedAt.toISOString(),
   };
 }
 

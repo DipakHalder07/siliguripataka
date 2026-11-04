@@ -89,7 +89,7 @@ export async function startPayment(input: CheckoutInput) {
 
   // Clean up after the response, so the customer's QR never waits for it. Until then a stale amount
   // just counts as taken, which is safe.
-  after(() => releaseStaleAmounts().catch((e) => console.warn("[TeaPay] Could not release old amounts:", e)));
+  after(() => releaseStaleAmounts().catch((e) => console.warn("[Payments] Could not release old amounts:", e)));
   const draft: OrderDraft = {
     customerName: input.customerName,
     customerPhone: input.customerPhone,
@@ -260,7 +260,7 @@ export async function markSessionPaid(
     const settled = await prisma.paymentSession.findUnique({ where: { id: sessionId } });
     if (settled) {
       // After the response, so a phone or customer request is not slowed down by WhatsApp.
-      const task = () => alertPaid(settled).catch((e) => console.warn("[TeaPay] WhatsApp paid alert failed:", e?.message || e));
+      const task = () => alertPaid(settled).catch((e) => console.warn("[Payments] WhatsApp paid alert failed:", e?.message || e));
       try {
         after(task);
       } catch {
@@ -287,7 +287,7 @@ export async function markSessionPaid(
         state: result.state,
         pincode: result.pincode,
         landmark: result.landmark,
-      }).catch((e) => console.warn("[TeaPay] Order email failed:", e));
+      }).catch((e) => console.warn("[Payments] Order email failed:", e));
     // Admin + customer order emails, after the response like the WhatsApp alert above
     try {
       after(emailTask);

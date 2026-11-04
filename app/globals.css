@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: 'TeaboxStencilMedium';
-  src: url('/fonts/Teabox_Stencil_Medium.ttf') format('truetype');
+  font-family: 'SiliguriStencilMedium';
+  src: url('/fonts/Siliguri_Stencil_Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'TeaboxStencilRegular';
-  src: url('/fonts/Teabox_Stencil_Regular.ttf') format('truetype');
+  font-family: 'SiliguriStencilRegular';
+  src: url('/fonts/Siliguri_Stencil_Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -19,7 +19,7 @@
 :root {
   --font-text: var(--font-poppins), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-heading: var(--font-poppins), sans-serif;
-  --font-stencil: TeaboxStencilMedium, var(--font-poppins), sans-serif;
+  --font-stencil: SiliguriStencilMedium, var(--font-poppins), sans-serif;
 
   --color-accent: #f9a825;
   --color-primary-text: #2b1215;
@@ -33,16 +33,16 @@
   --color-footer-tagline: #c9a58f;
   --color-amber: #f89028;
 
-  --tb-display: clamp(1.875rem, 4vw, 2.75rem);
-  --tb-section: clamp(1.375rem, 2.5vw, 1.875rem);
-  --tb-title: clamp(1.125rem, 2vw, 1.375rem);
-  --tb-meta: 0.9375rem;
-  --tb-badge: 0.8125rem;
+  --sp-display: clamp(1.875rem, 4vw, 2.75rem);
+  --sp-section: clamp(1.375rem, 2.5vw, 1.875rem);
+  --sp-title: clamp(1.125rem, 2vw, 1.375rem);
+  --sp-meta: 0.9375rem;
+  --sp-badge: 0.8125rem;
 
-  --tb-tracking-button: 0.5px;
-  --tb-tracking-badge: 1px;
-  --tb-tracking-footer: 1.5px;
-  --tb-tracking-display: -0.4px;
+  --sp-tracking-button: 0.5px;
+  --sp-tracking-badge: 1px;
+  --sp-tracking-footer: 1.5px;
+  --sp-tracking-display: -0.4px;
 }
 
 body {
@@ -60,10 +60,10 @@ body {
   letter-spacing: -0.3px;
 }
 .font-stencil-reg {
-  font-family: 'TeaboxStencilRegular', var(--font-poppins), sans-serif;
+  font-family: 'SiliguriStencilRegular', var(--font-poppins), sans-serif;
 }
 .font-stencil-med {
-  font-family: 'TeaboxStencilMedium', var(--font-poppins), sans-serif;
+  font-family: 'SiliguriStencilMedium', var(--font-poppins), sans-serif;
 }
 
 /* Signature buttons */
@@ -75,7 +75,7 @@ body {
   border-radius: 6px;
   font-family: var(--font-text);
   font-weight: 700;
-  letter-spacing: var(--tb-tracking-button);
+  letter-spacing: var(--sp-tracking-button);
   text-decoration: none;
   cursor: pointer;
   border: 1.5px solid transparent;

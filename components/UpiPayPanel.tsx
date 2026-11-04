@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 
 /** Payment view returned by /api/pay/start and /api/pay/status. */
-export interface TeaPaySessionView {
+export interface UpiSessionView {
   sessionId: string;
   orderNumber: string;
   status: "PENDING" | "VERIFYING" | "PAID" | "EXPIRED" | "CANCELLED";
@@ -33,7 +33,7 @@ export interface TeaPaySessionView {
 }
 
 /** Ends an unpaid checkout (e.g. the customer switched to Cash on Delivery). Fire-and-forget. */
-export function cancelTeaPaySession(sessionId: string) {
+export function cancelUpiSession(sessionId: string) {
   fetch("/api/pay/cancel", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -69,14 +69,14 @@ export function PaymentLeaveDialog({
   };
 
   return (
-    <div className="fixed inset-0 z-[70] flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="teapay-leave-title">
+    <div className="fixed inset-0 z-[70] flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="payment-leave-title">
       <div className="absolute inset-0 bg-black/55" onClick={onStay} />
       <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-[380px] p-5 space-y-4 text-center">
         <div className="w-12 h-12 rounded-full bg-[#fff8e6] text-[#9a5b00] flex items-center justify-center mx-auto">
           <TriangleAlert size={22} />
         </div>
         <div>
-          <h3 id="teapay-leave-title" className="font-bold text-[17px] text-[#4a0e14]">
+          <h3 id="payment-leave-title" className="font-bold text-[17px] text-[#4a0e14]">
             Have you paid {amount}?
           </h3>
           <p className="text-[13px] text-[#5c5a52] mt-1">
@@ -103,7 +103,7 @@ export function PaymentLeaveDialog({
           <button
             type="button"
             onClick={() => {
-              cancelTeaPaySession(sessionId);
+              cancelUpiSession(sessionId);
               onLeave();
             }}
             className="w-full text-[#c62828] py-2 font-semibold text-[13px] cursor-pointer hover:underline"
@@ -192,22 +192,22 @@ export function UpiExpiredNotice({
  * The shop's own UPI checkout: (WhatsApp code) → exact-amount QR → automatic confirmation when
  * the bank alert arrives. The parent remounts it per payment session (key = sessionId).
  */
-export default function TeaPayPanel({
+export default function UpiPayPanel({
   session,
   onPaid,
   onRestart,
   onBackPressed,
   onCancelled,
 }: {
-  session: TeaPaySessionView;
-  onPaid: (view: TeaPaySessionView) => void;
+  session: UpiSessionView;
+  onPaid: (view: UpiSessionView) => void;
   onRestart: () => void;
   /** Browser Back during an open payment: the parent shows PaymentLeaveDialog. */
   onBackPressed?: () => void;
   /** The payment was cancelled (by the customer elsewhere, or by the shop): leave this page. */
   onCancelled?: () => void;
 }) {
-  const [view, setView] = useState<TeaPaySessionView>(session);
+  const [view, setView] = useState<UpiSessionView>(session);
   const [secondsLeft, setSecondsLeft] = useState(session.secondsLeft);
   const [otpSent, setOtpSent] = useState(false);
   const [otpCode, setOtpCode] = useState("");
@@ -227,7 +227,7 @@ export default function TeaPayPanel({
     onPaidRef.current = onPaid;
   }, [onPaid]);
 
-  const applyView = useCallback((next: TeaPaySessionView) => {
+  const applyView = useCallback((next: UpiSessionView) => {
     setView(next);
     setSecondsLeft(next.secondsLeft);
     if (next.status === "PAID" && !paidFired.current) {
@@ -268,9 +268,9 @@ export default function TeaPayPanel({
     const beforeUnload = (e: BeforeUnloadEvent) => {
       e.preventDefault();
     };
-    window.history.pushState({ teapayGuard: true }, "");
+    window.history.pushState({ paymentGuard: true }, "");
     const onPop = () => {
-      window.history.pushState({ teapayGuard: true }, "");
+      window.history.pushState({ paymentGuard: true }, "");
       onBackRef.current?.();
     };
     window.addEventListener("beforeunload", beforeUnload);

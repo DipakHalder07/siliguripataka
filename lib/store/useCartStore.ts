@@ -4,7 +4,7 @@ import { broadcastCartChange } from "./cartSync";
 import { MIN_ORDER_AMOUNT } from "@/lib/orderRules";
 
 export interface CartItem {
-  id: string; // Composite unique key e.g. "kaju-katli-box-500G"
+  id: string; // Composite unique key e.g. "rangoli-colour-set-1 Set"
   productId?: string; // Base product identifier / handle
   title: string;
   weight?: string;
@@ -43,7 +43,7 @@ export interface CartStoreState {
   isCartOpen: boolean;
   isSearchOpen: boolean;
   isCheckoutOpen: boolean;
-  isTeaFinderOpen: boolean;
+  isPackFinderOpen: boolean;
   freeShippingThreshold: number;
 
   // Actions
@@ -55,8 +55,8 @@ export interface CartStoreState {
   closeSearch: () => void;
   openCheckout: () => void;
   closeCheckout: () => void;
-  openTeaFinder: () => void;
-  closeTeaFinder: () => void;
+  openPackFinder: () => void;
+  closePackFinder: () => void;
 
   addToCart: (item: Omit<CartItem, "quantity">, quantity?: number) => void;
   removeFromCart: (id: string) => void;
@@ -88,7 +88,7 @@ export const useCartStore = create<CartStoreState>()(
       isCartOpen: false,
       isSearchOpen: false,
       isCheckoutOpen: false,
-      isTeaFinderOpen: false,
+      isPackFinderOpen: false,
       freeShippingThreshold: MIN_ORDER_AMOUNT,
 
       setHasHydrated: (hydrated: boolean) => set({ hasHydrated: hydrated }),
@@ -103,8 +103,8 @@ export const useCartStore = create<CartStoreState>()(
       openCheckout: () => set({ isCartOpen: false, isCheckoutOpen: true }),
       closeCheckout: () => set({ isCheckoutOpen: false }),
 
-      openTeaFinder: () => set({ isTeaFinderOpen: true }),
-      closeTeaFinder: () => set({ isTeaFinderOpen: false }),
+      openPackFinder: () => set({ isPackFinderOpen: true }),
+      closePackFinder: () => set({ isPackFinderOpen: false }),
 
       /**
        * Add product to cart with variant-aware deduplication
@@ -113,7 +113,7 @@ export const useCartStore = create<CartStoreState>()(
         const validQuantity = Math.max(1, Math.floor(quantity || 1));
         const normalizedWeight = item.weight?.trim() || "";
         
-        // Build a canonical variant key: e.g. "kaju-katli-box-500G"
+        // Build a canonical variant key: e.g. "rangoli-colour-set-1 Set"
         const canonicalId =
           item.id.includes("-") && normalizedWeight && item.id.endsWith(normalizedWeight)
             ? item.id

@@ -1,8 +1,8 @@
 {
-  "name": "teapay-whatsapp-service",
+  "name": "siliguri-pataka-whatsapp-service",
   "version": "1.0.0",
   "private": true,
-  "description": "Keeps the shop's WhatsApp logged in (Linked devices, QR scan) and sends checkout codes for TeaPay.",
+  "description": "Keeps the shop's WhatsApp logged in (Linked devices, QR scan) and sends checkout codes for the shop.",
   "type": "module",
   "main": "server.mjs",
   "scripts": {

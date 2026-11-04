@@ -1,0 +1,4 @@
+Contact: mailto:dipakh810@gmail.com
+Expires: 2027-11-04T00:00:00.000Z
+Preferred-Languages: en, hi, bn
+Canonical: https://siliguripataka.shop/.well-known/security.txt

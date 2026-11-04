@@ -11,7 +11,7 @@ export const SITE_NAME = "Siliguri Pataka";
 export const SITE_URL = (process.env.NEXT_PUBLIC_APP_URL || "https://siliguripataka.shop").replace(/\/+$/, "");
 export const DEFAULT_TITLE = "Buy Diwali Crackers Online in Siliguri | Siliguri Pataka";
 export const DEFAULT_DESCRIPTION =
-  "Order Diwali crackers, mithai, gift hampers, lights and diyas online in Siliguri. Same-day or next-day delivery, 1 lighter free, ₹2,000 minimum order.";
+  "Order Diwali crackers, gift hampers, lights and diyas online in Siliguri. Same-day or next-day delivery, 1 lighter free, ₹2,000 minimum order.";
 export const DEFAULT_IMAGE = "/assets/og-siliguri-pataka.jpg";
 
 export const absoluteUrl = (path: string) => (path.startsWith("http") ? path : `${SITE_URL}${path}`);
@@ -36,7 +36,11 @@ export function pageMeta({
   return {
     title,
     description,
-    alternates: { canonical: path, languages: { "en-IN": path } },
+    alternates: {
+      canonical: path,
+      languages: { "en-IN": path },
+      types: { "application/rss+xml": [{ url: "/feed.xml", title: `${SITE_NAME} Diwali Guides` }] },
+    },
     openGraph: { title, description, url: path, siteName: SITE_NAME, locale: "en_IN", type, images: [{ url: image }] },
     twitter: { card: "summary_large_image", title, description, images: [image] },
   };

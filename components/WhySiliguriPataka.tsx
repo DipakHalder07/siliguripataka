@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Play, MapPin, X } from "lucide-react";
 
-export default function WhyTeabox() {
+export default function WhySiliguriPataka() {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
@@ -84,7 +84,7 @@ export default function WhyTeabox() {
                 Your Diwali shop, right here in Siliguri
               </p>
               <p className="text-[13.5px] text-[#5c5a52] leading-relaxed">
-                We deliver only within Siliguri, so your crackers and sweets reach you the same day or the next day.
+                We deliver only within Siliguri, so your crackers and gifts reach you the same day or the next day.
               </p>
             </div>
           </div>
@@ -110,7 +110,7 @@ export default function WhyTeabox() {
                 Everything in one order
               </p>
               <p className="text-[13.5px] text-[#5c5a52] leading-tight mt-0.5">
-                Crackers, mithai, hampers and rangoli.
+                Crackers, hampers, lights and rangoli.
               </p>
             </div>
           </div>
@@ -252,7 +252,7 @@ export default function WhyTeabox() {
             </blockquote>
 
             <p className="text-[15px] text-[#5c5a52] leading-[1.5] max-w-[560px]">
-              Siliguri Pataka is built only for Siliguri. Pick your crackers, sweets, diyas and gift boxes online, pay by UPI or cash on delivery, and we deliver to your door across the city the same day or the next day, with 1 lighter free.
+              Siliguri Pataka is built only for Siliguri. Pick your crackers, diyas and gift boxes online, pay by UPI or cash on delivery, and we deliver to your door across the city the same day or the next day, with 1 lighter free.
             </p>
 
             {/* Store emblem & story link */}
@@ -359,10 +359,10 @@ export default function WhyTeabox() {
 
           <div className="flex items-baseline gap-2 border-l border-[#f0dfc6] pl-6">
             <span className="text-[36px] font-bold text-[#2b1215] font-stencil leading-none">
-              40+
+              35+
             </span>
             <span className="text-[14px] text-[#5c5a52]">
-              crackers, sweets &amp; gifts
+              crackers, lights &amp; gifts
             </span>
           </div>
         </div>

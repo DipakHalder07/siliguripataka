@@ -43,7 +43,7 @@ export async function GET(req: NextRequest) {
     cronConfigured: Boolean(process.env.CRON_SECRET),
     adminNotificationEmail: ADMIN_NOTIFICATION_EMAIL,
     publicBaseUrl: publicBaseUrl(req),
-    apkUrl: "/downloads/teapay-observer.apk",
+    apkUrl: "/downloads/siliguri-pay-observer.apk",
   };
 
   if (!(await isDatabaseConnected())) {

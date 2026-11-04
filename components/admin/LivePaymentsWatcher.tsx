@@ -76,7 +76,7 @@ export default function LivePaymentsWatcher() {
       else if (tone === "warning") toast.warning(title, { description: body, action: open, duration: 15000 });
       else toast.info(title, { description: body, action: open, duration: 10000 });
       if (typeof Notification !== "undefined" && Notification.permission === "granted" && document.hidden) {
-        const n = new Notification(title, { body, tag: `teapay-${title}-${body}` });
+        const n = new Notification(title, { body, tag: `payment-${title}-${body}` });
         n.onclick = () => {
           window.focus();
           router.push("/admin/payment-gateway");

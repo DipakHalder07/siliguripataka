@@ -15,7 +15,7 @@ export function errorResponse(error: unknown, fallback = "Payment error") {
       { status: error.status }
     );
   }
-  console.error("[TeaPay]", error);
+  console.error("[Payments]", error);
   const msg = error instanceof Error ? error.message : fallback;
   return NextResponse.json({ error: msg }, { status: 500 });
 }
@@ -23,7 +23,7 @@ export function errorResponse(error: unknown, fallback = "Payment error") {
 /** The shop's public address (used in the phone pairing QR and the Google sign-in redirect). */
 export function publicBaseUrl(req: NextRequest) {
   const configured = (process.env.NEXT_PUBLIC_APP_URL || "").replace(/\/+$/, "");
-  if (/^https?:\/\//.test(configured) && !configured.includes("your-teabox")) return configured;
+  if (/^https?:\/\//.test(configured)) return configured;
   return req.nextUrl.origin;
 }
 

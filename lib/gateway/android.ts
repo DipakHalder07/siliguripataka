@@ -30,7 +30,7 @@ export async function createPairingQr(publicBaseUrl: string) {
     apiBaseUrl: publicBaseUrl,
     enrollmentToken: token,
     token,
-    merchantId: "teabox",
+    merchantId: "siliguri-pataka",
     expiresAt,
   });
   const qrDataUrl = await QRCode.toDataURL(payload, { errorCorrectionLevel: "M", margin: 2, scale: 6 });

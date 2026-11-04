@@ -464,9 +464,19 @@ export default function LoginPage() {
 
                     {/* Email code is the only sign-in: the old password and register screens only
                         pretended to log in (nothing was checked on the server), so they are not offered */}
-                    <p className="pt-3 border-t border-[#f0dfc6] mt-4 text-[12.5px] text-[#5c5a52]">
-                      No password needed. New here? Your account is created when you enter the code.
-                    </p>
+                    <div className="pt-3 border-t border-[#f0dfc6] mt-4 space-y-2">
+                      <p className="text-[12.5px] text-[#5c5a52]">
+                        No password needed. New here? Your account is created when you enter the code.
+                      </p>
+                      <div>
+                        <Link
+                          href="/admin/login"
+                          className="inline-block text-[11px] text-[#8a8984] hover:text-[#4a0e14] hover:underline transition-colors"
+                        >
+                          admin login
+                        </Link>
+                      </div>
+                    </div>
                   </form>
                 ) : (
                   /* STEP 2: Enter Verification Code */
@@ -627,6 +637,15 @@ export default function LoginPage() {
                           ? `Resend Code (${resendCooldown}s)`
                           : "Resend Code"}
                       </button>
+                    </div>
+
+                    <div className="pt-3 border-t border-[#f0dfc6] mt-4 text-center">
+                      <Link
+                        href="/admin/login"
+                        className="inline-block text-[11px] text-[#8a8984] hover:text-[#4a0e14] hover:underline transition-colors"
+                      >
+                        admin login
+                      </Link>
                     </div>
                   </form>
                 )}

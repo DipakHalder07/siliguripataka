@@ -1,3 +1,4 @@
+import { cleanDeliveryPin } from "@/lib/deliveryLocation";
 import crypto from "crypto";
 import { Prisma, PaymentSession } from "@prisma/client";
 import { prisma } from "@/lib/prisma";
@@ -28,6 +29,8 @@ export interface CheckoutInput {
   state: string;
   pincode: string;
   landmark?: string | null;
+  latitude?: number | null;
+  longitude?: number | null;
   couponCode?: string | null;
   notes?: string | null;
   items: OrderLineInput[];
@@ -99,6 +102,7 @@ export async function startPayment(input: CheckoutInput) {
     state: input.state,
     pincode: input.pincode,
     landmark: input.landmark || null,
+    ...cleanDeliveryPin(input.latitude, input.longitude),
     couponCode: input.couponCode || null,
     notes: input.notes || null,
     priced,
@@ -197,6 +201,8 @@ async function createOrderFromDraft(
       state: draft.state,
       pincode: draft.pincode,
       landmark: draft.landmark || null,
+      latitude: draft.latitude ?? null,
+      longitude: draft.longitude ?? null,
       subtotal: draft.priced.subtotal,
       discountAmount: draft.priced.discountAmount,
       couponCode: draft.couponCode || null,

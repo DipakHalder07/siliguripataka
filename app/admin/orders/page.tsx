@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { toast } from "sonner";
 import {
   Search,
@@ -21,6 +22,9 @@ import {
 } from "lucide-react";
 import { StoredOrderData } from "@/lib/ordersDb";
 import { istDateTime } from "@/lib/istTime";
+import { googleMapsUrl } from "@/lib/deliveryLocation";
+
+const DeliveryPinCard = dynamic(() => import("@/components/admin/DeliveryPinCard"), { ssr: false });
 
 export default function AdminOrdersPage() {
   const [orders, setOrders] = useState<StoredOrderData[]>([]);
@@ -245,6 +249,17 @@ export default function AdminOrdersPage() {
                     </td>
                     <td className="py-3.5 px-4 text-[#5c5a52]">
                       {order.city}, {order.state}
+                      {order.latitude != null && order.longitude != null && (
+                        <a
+                          href={googleMapsUrl(order.latitude, order.longitude)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="flex items-center gap-1 text-[12px] font-semibold text-[#b3261e] hover:underline"
+                        >
+                          <MapPin size={12} /> Map location
+                        </a>
+                      )}
                     </td>
                     <td className="py-3.5 px-4">
                       <span
@@ -390,6 +405,11 @@ export default function AdminOrdersPage() {
                   <span className="text-[12px] text-[#747576] block">
                     Landmark: {activeOrder.landmark}
                   </span>
+                )}
+                {activeOrder.latitude != null && activeOrder.longitude != null ? (
+                  <DeliveryPinCard latitude={activeOrder.latitude} longitude={activeOrder.longitude} />
+                ) : (
+                  <span className="text-[12px] text-[#747576] block mt-1">No map location shared by the customer.</span>
                 )}
               </div>
             </div>

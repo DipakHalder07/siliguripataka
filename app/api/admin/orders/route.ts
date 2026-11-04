@@ -1,3 +1,4 @@
+import { cleanDeliveryPin } from "@/lib/deliveryLocation";
 import { NextRequest, NextResponse } from "next/server";
 import { getAllOrders, saveOrder, getOrderById, StoredOrderData } from "@/lib/ordersDb";
 import { priceOrder, PricingError } from "@/lib/orderPricing";
@@ -142,6 +143,7 @@ export async function POST(req: NextRequest) {
       state: body.state,
       pincode: body.pincode,
       landmark: body.landmark || null,
+      ...cleanDeliveryPin(body.latitude, body.longitude),
       subtotal: authoritativeSubtotal,
       discountAmount: authoritativeDiscount,
       couponCode: body.couponCode || null,

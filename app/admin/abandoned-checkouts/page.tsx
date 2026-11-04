@@ -30,6 +30,9 @@ import {
 } from "lucide-react";
 import { StoredAbandonedCheckout } from "@/lib/abandonedCheckoutsDb";
 import { istDateTime } from "@/lib/istTime";
+import dynamic from "next/dynamic";
+
+const DeliveryPinCard = dynamic(() => import("@/components/admin/DeliveryPinCard"), { ssr: false });
 
 interface AbandonedStats {
   totalCheckouts: number;
@@ -742,6 +745,9 @@ export default function AdminAbandonedCheckoutsPage() {
                       {activeCheckout.landmark && ` (Near: ${activeCheckout.landmark})`}
                     </span>
                   </div>
+                  {activeCheckout.latitude != null && activeCheckout.longitude != null && (
+                    <DeliveryPinCard latitude={activeCheckout.latitude} longitude={activeCheckout.longitude} />
+                  )}
                 </div>
               </div>
 

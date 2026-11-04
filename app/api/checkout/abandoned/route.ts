@@ -1,3 +1,4 @@
+import { cleanDeliveryPin } from "@/lib/deliveryLocation";
 import { NextRequest, NextResponse } from "next/server";
 import {
   saveAbandonedCheckout,
@@ -50,6 +51,7 @@ export async function POST(req: NextRequest) {
       state: String(body.state || "").trim(),
       pincode: String(body.pincode || "").trim(),
       landmark: body.landmark ? String(body.landmark).trim() : null,
+      ...cleanDeliveryPin(body.latitude, body.longitude),
       subtotal,
       discountAmount,
       couponCode: body.couponCode || null,
@@ -116,6 +118,8 @@ export async function GET(req: NextRequest) {
         state: checkout.state,
         pincode: checkout.pincode,
         landmark: checkout.landmark,
+        latitude: checkout.latitude ?? null,
+        longitude: checkout.longitude ?? null,
         subtotal: checkout.subtotal,
         discountAmount: checkout.discountAmount,
         couponCode: checkout.couponCode,

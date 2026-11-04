@@ -67,18 +67,6 @@ export const SILIGURI_DELIVERY_AREAS: SiliguriArea[] = [
   { name: "Sukna / Hill Cart Road Army Camp", pincode: "734009" },
 ];
 
-export interface DetectedLocationResult {
-  latitude?: number;
-  longitude?: number;
-  mapsUrl?: string;
-  city: string;
-  state: string;
-  pincode: string;
-  locality?: string;
-  road?: string;
-  displaySummary: string;
-}
-
 /**
  * Generate a WhatsApp chat URL pre-filled with the customer's delivery location details
  * so the shop and delivery rider receive the exact address & map pin.
@@ -104,92 +92,4 @@ export function buildWhatsAppLocationShareUrl(params: {
   ].filter(Boolean);
 
   return `https://wa.me/${shopPhone}?text=${encodeURIComponent(lines.join("\n"))}`;
-}
-
-/**
- * Detect user's current GPS location and reverse-geocode to address fields.
- */
-export async function detectCurrentLocation(): Promise<DetectedLocationResult> {
-  if (typeof window === "undefined" || !navigator.geolocation) {
-    throw new Error("Geolocation is not supported by your browser");
-  }
-
-  return new Promise((resolve, reject) => {
-    navigator.geolocation.getCurrentPosition(
-      async (pos) => {
-        const { latitude, longitude } = pos.coords;
-        const mapsUrl = `https://www.google.com/maps?q=${latitude.toFixed(6)},${longitude.toFixed(6)}`;
-
-        try {
-          const controller = new AbortController();
-          const timeoutId = setTimeout(() => controller.abort(), 6000);
-
-          const res = await fetch(
-            `https://nominatim.openstreetmap.org/reverse?lat=${latitude}&lon=${longitude}&format=json&addressdetails=1`,
-            {
-              headers: { "Accept-Language": "en" },
-              signal: controller.signal,
-            }
-          );
-          clearTimeout(timeoutId);
-
-          if (res.ok) {
-            const data = await res.json();
-            const addr = data.address || {};
-            const city =
-              addr.city ||
-              addr.town ||
-              addr.municipality ||
-              addr.state_district ||
-              "Siliguri";
-            const state = addr.state || "West Bengal";
-            const rawPin = addr.postcode?.replace(/\D/g, "") || "";
-            const pincode = rawPin.length === 6 ? rawPin : "734001";
-            const locality =
-              addr.suburb ||
-              addr.neighbourhood ||
-              addr.residential ||
-              addr.village ||
-              "";
-            const road = addr.road || "";
-
-            resolve({
-              latitude,
-              longitude,
-              mapsUrl,
-              city,
-              state,
-              pincode,
-              locality,
-              road,
-              displaySummary: [locality || road, city, pincode].filter(Boolean).join(", "),
-            });
-            return;
-          }
-        } catch {
-          // Fallback if reverse geocode is slow or unavailable
-        }
-
-        resolve({
-          latitude,
-          longitude,
-          mapsUrl,
-          city: "Siliguri",
-          state: "West Bengal",
-          pincode: "734001",
-          displaySummary: "Siliguri, West Bengal (734001)",
-        });
-      },
-      (err) => {
-        let message = "Could not get your location.";
-        if (err.code === err.PERMISSION_DENIED) {
-          message = "Location access was denied in your browser.";
-        } else if (err.code === err.TIMEOUT) {
-          message = "Location request timed out.";
-        }
-        reject(new Error(message));
-      },
-      { enableHighAccuracy: true, timeout: 8000, maximumAge: 300000 }
-    );
-  });
 }

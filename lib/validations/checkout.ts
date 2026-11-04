@@ -89,6 +89,9 @@ export const orderCreationSchema = z.object({
   state: z.string().min(2),
   pincode: z.string().min(6),
   landmark: z.string().nullable().optional(),
+  // Optional map pin: a bad value is dropped (cleanDeliveryPin), it must never fail an order.
+  latitude: z.number().nullable().optional().catch(null),
+  longitude: z.number().nullable().optional().catch(null),
   subtotal: z.number().nonnegative(),
   discountAmount: z.number().default(0),
   couponCode: z.string().nullable().optional(),
@@ -126,6 +129,8 @@ export const paymentStartSchema = orderCreationSchema.pick({
   state: true,
   pincode: true,
   landmark: true,
+  latitude: true,
+  longitude: true,
   couponCode: true,
   notes: true,
   items: true,

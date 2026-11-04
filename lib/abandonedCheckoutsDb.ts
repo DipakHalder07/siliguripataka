@@ -22,6 +22,8 @@ export interface StoredAbandonedCheckout {
   state: string;
   pincode: string;
   landmark?: string | null;
+  latitude?: number | null;
+  longitude?: number | null;
   subtotal: number;
   discountAmount: number;
   couponCode?: string | null;
@@ -104,6 +106,8 @@ export async function saveAbandonedCheckout(
             state: data.state,
             pincode: data.pincode,
             landmark: data.landmark || null,
+            latitude: data.latitude ?? null,
+            longitude: data.longitude ?? null,
             subtotal: data.subtotal,
             discountAmount: data.discountAmount,
             couponCode: data.couponCode || null,
@@ -137,6 +141,8 @@ export async function saveAbandonedCheckout(
           state: data.state,
           pincode: data.pincode,
           landmark: data.landmark || null,
+          latitude: data.latitude ?? null,
+          longitude: data.longitude ?? null,
           subtotal: data.subtotal,
           discountAmount: data.discountAmount,
           couponCode: data.couponCode || null,

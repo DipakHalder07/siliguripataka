@@ -20,8 +20,6 @@ import {
   ShoppingBag,
   MapPin,
   AlertCircle,
-  Navigation,
-  Loader2,
 } from "lucide-react";
 import { useCart } from "@/components/context/CartContext";
 import {
@@ -34,7 +32,8 @@ import { amountToMinimum, deliveryFee, FREE_GIFT, MIN_ORDER_AMOUNT } from "@/lib
 import UpiPayPanel, { cancelUpiSession, PaymentLeaveDialog, UpiSessionView } from "@/components/UpiPayPanel";
 import { newOrderNumber } from "@/lib/orderNumber";
 import { useCodAvailable } from "@/lib/useCodAvailable";
-import { detectCurrentLocation } from "@/lib/siliguriAreas";
+import DeliveryLocationField from "@/components/DeliveryLocationField";
+import { AddressFields, DeliveryLocation, pinFieldUpdates } from "@/lib/deliveryLocation";
 
 // "native": the shop's own UPI gateway. "manual": shop QR, confirmed by the shop against the bank (used without a database).
 interface UpiSessionData extends Partial<Omit<UpiSessionView, "status">> {
@@ -87,8 +86,9 @@ function CheckoutPageContent() {
   const [leaveAction, setLeaveAction] = useState<null | (() => void)>(null);
   const [countdownSeconds, setCountdownSeconds] = useState(600); // 10 minutes
 
-  // Location auto-detection state
-  const [isLocating, setIsLocating] = useState(false);
+  // Optional map pin, and which boxes it filled (those may be refilled; typed ones never are)
+  const [deliveryLocation, setDeliveryLocation] = useState<DeliveryLocation | null>(null);
+  const pinFilled = useRef<Partial<AddressFields>>({});
 
   const pageTopRef = useRef<HTMLDivElement>(null);
 
@@ -145,6 +145,9 @@ function CheckoutPageContent() {
           if (c.state) setValue("state", c.state);
           if (c.address) setValue("address", c.address);
           if (c.landmark) setValue("landmark", c.landmark);
+          if (c.latitude != null && c.longitude != null) {
+            setDeliveryLocation({ latitude: c.latitude, longitude: c.longitude, address: null });
+          }
 
           if (c.couponCode) {
             setCouponCode(c.couponCode);
@@ -234,29 +237,20 @@ function CheckoutPageContent() {
     }
   };
 
-  // Auto-detect & fill location via GPS
-  const handleDetectLocation = async () => {
-    setIsLocating(true);
-    try {
-      const loc = await detectCurrentLocation();
-      setValue("city", loc.city, { shouldValidate: true });
-      setValue("state", loc.state, { shouldValidate: true });
-      setValue("pincode", loc.pincode, { shouldValidate: true });
-
-      const currentLandmark = formValues.landmark;
-      if (!currentLandmark && (loc.locality || loc.road)) {
-        setValue("landmark", [loc.road, loc.locality].filter(Boolean).join(", "), { shouldValidate: true });
-      }
-
-      toast.success("Location Detected", {
-        description: loc.displaySummary,
-      });
-    } catch (err: any) {
-      toast.error("Location Detection Failed", {
-        description: err?.message || "Please enter your delivery address manually.",
-      });
-    } finally {
-      setIsLocating(false);
+  // The customer chose a place on the map: remember the pin and fill in the empty address boxes
+  const handleLocationChange = (location: DeliveryLocation | null) => {
+    setDeliveryLocation(location);
+    if (!location?.address) return;
+    const current = {
+      address: formValues.address || "",
+      city: formValues.city || "",
+      state: formValues.state || "",
+      pincode: formValues.pincode || "",
+    };
+    const updates = pinFieldUpdates(current, pinFilled.current, location.address);
+    pinFilled.current = { ...pinFilled.current, ...updates };
+    for (const [field, value] of Object.entries(updates)) {
+      setValue(field as keyof AddressFields, value, { shouldValidate: true });
     }
   };
 
@@ -321,6 +315,8 @@ function CheckoutPageContent() {
           state: formValues.state,
           pincode: formValues.pincode,
           landmark: formValues.landmark || null,
+          latitude: deliveryLocation?.latitude ?? null,
+          longitude: deliveryLocation?.longitude ?? null,
           couponCode: appliedCoupon?.code || null,
           items: cartItems.map((item) => ({
             productId: item.id,
@@ -415,6 +411,8 @@ function CheckoutPageContent() {
         state: data.state,
         pincode: data.pincode,
         landmark: data.landmark || null,
+        latitude: deliveryLocation?.latitude ?? null,
+        longitude: deliveryLocation?.longitude ?? null,
         subtotal,
         discountAmount,
         couponCode: appliedCoupon?.code || null,
@@ -496,6 +494,8 @@ function CheckoutPageContent() {
           state: formValues.state,
           pincode: formValues.pincode,
           landmark: formValues.landmark || null,
+          latitude: deliveryLocation?.latitude ?? null,
+          longitude: deliveryLocation?.longitude ?? null,
           subtotal,
           discountAmount,
           couponCode: appliedCoupon?.code || null,
@@ -974,25 +974,11 @@ function CheckoutPageContent() {
 
                     {/* Delivery Address Fields */}
                     <div className="space-y-4 pt-1">
-                      <div className="flex items-center justify-between border-b border-[#f0dfc6] pb-1.5">
-                        <h4 className="text-[14px] font-bold text-[#2b1215] uppercase tracking-wider">
-                          Shipping Address
-                        </h4>
-                        <button
-                          type="button"
-                          onClick={handleDetectLocation}
-                          disabled={isLocating}
-                          title="Share current location"
-                          aria-label="Share current location"
-                          className="w-7 h-7 rounded-full border border-[#f0dfc6] bg-white hover:bg-[#fff9ef] hover:border-[#f9a825] text-[#4a0e14] flex items-center justify-center transition shadow-sm cursor-pointer disabled:opacity-50"
-                        >
-                          {isLocating ? (
-                            <Loader2 size={13} className="animate-spin text-[#f9a825]" />
-                          ) : (
-                            <Navigation size={13} className="text-[#f9a825]" />
-                          )}
-                        </button>
-                      </div>
+                      <h4 className="text-[14px] font-bold text-[#2b1215] uppercase tracking-wider border-b border-[#f0dfc6] pb-1.5">
+                        Shipping Address
+                      </h4>
+
+                      <DeliveryLocationField value={deliveryLocation} onChange={handleLocationChange} />
 
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                         <div>
@@ -1150,6 +1136,11 @@ function CheckoutPageContent() {
                         <span className="text-[#5c5a52] text-[12px] sm:text-[13px] truncate block w-full">
                           {formValues.address}, {formValues.city}, {formValues.state} - {formValues.pincode}
                         </span>
+                        {deliveryLocation && (
+                          <span className="text-[#4a0e14] font-semibold text-[12px] flex items-center gap-1 mt-0.5">
+                            <MapPin size={12} className="shrink-0" /> Map location added
+                          </span>
+                        )}
                       </div>
                       <button
                         type="button"

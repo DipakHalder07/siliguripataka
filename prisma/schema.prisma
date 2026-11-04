@@ -147,6 +147,8 @@ model Order {
   state          String
   pincode        String
   landmark       String?
+  latitude       Float? // map pin set by the customer (optional)
+  longitude      Float?
   subtotal       Int
   discountAmount Int             @default(0)
   couponCode     String?
@@ -202,6 +204,8 @@ model AbandonedCheckout {
   state            String
   pincode          String
   landmark         String?
+  latitude         Float? // map pin set by the customer (optional)
+  longitude        Float?
   subtotal         Int
   discountAmount   Int       @default(0)
   couponCode       String?

@@ -13,6 +13,8 @@ export interface StoredOrderData {
   state: string;
   pincode: string;
   landmark?: string | null;
+  latitude?: number | null;
+  longitude?: number | null;
   subtotal: number;
   discountAmount: number;
   couponCode?: string | null;
@@ -90,6 +92,8 @@ export async function saveOrder(orderData: Omit<StoredOrderData, "createdAt" | "
           state: orderData.state,
           pincode: orderData.pincode,
           landmark: orderData.landmark,
+          latitude: orderData.latitude ?? null,
+          longitude: orderData.longitude ?? null,
           subtotal: orderData.subtotal,
           discountAmount: orderData.discountAmount,
           couponCode: orderData.couponCode,

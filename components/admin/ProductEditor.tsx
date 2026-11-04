@@ -209,7 +209,7 @@ export default function ProductEditor({ id }: { id?: string }) {
   }
 
   return (
-    <div className="p-4 sm:p-6 lg:p-8 max-w-[1200px] mx-auto pb-28">
+    <div className="px-4 sm:px-6 lg:px-8 pt-4 sm:pt-6 lg:pt-8 pb-36 sm:pb-40 lg:pb-48 max-w-[1200px] mx-auto">
       {/* Top bar */}
       <div className="flex items-center justify-between gap-3 mb-5">
         <div className="flex items-center gap-2 min-w-0">
@@ -218,16 +218,27 @@ export default function ProductEditor({ id }: { id?: string }) {
           </Link>
           <h1 className="text-[20px] sm:text-[24px] font-bold text-[#4a0e14] truncate">{id ? form.title || "Edit product" : "Add product"}</h1>
         </div>
-        {id && form.status === "active" && (
-          <a
-            href={`/products/${form.handle}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="shrink-0 text-[13px] font-semibold text-[#b3261e] flex items-center gap-1 hover:underline"
+        <div className="flex items-center gap-2.5">
+          {id && form.status === "active" && (
+            <a
+              href={`/products/${form.handle}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 text-[13px] font-semibold text-[#b3261e] flex items-center gap-1 hover:underline mr-1"
+            >
+              View in shop <ExternalLink size={13} />
+            </a>
+          )}
+          <button
+            type="button"
+            onClick={save}
+            disabled={saving || (!dirty && Boolean(id))}
+            className="flex items-center gap-1.5 bg-[#4a0e14] hover:bg-[#380b11] disabled:opacity-40 text-white font-bold text-[13px] px-4 py-2 rounded-xl cursor-pointer shadow-sm transition"
           >
-            View in shop <ExternalLink size={13} />
-          </a>
-        )}
+            {saving && <Loader2 size={14} className="animate-spin" />}
+            {id ? "Save" : "Add product"}
+          </button>
+        </div>
       </div>
 
       {error && (
@@ -403,23 +414,38 @@ export default function ProductEditor({ id }: { id?: string }) {
       </div>
 
       {/* Save bar */}
-      <div className="fixed bottom-0 right-0 left-0 md:left-64 z-30 bg-white/95 backdrop-blur border-t border-[#f0dfc6] px-4 py-3">
-        <div className="max-w-[1200px] mx-auto flex items-center justify-end gap-3">
-          {dirty && <span className="text-[13px] text-[#8a5a18] mr-auto">Unsaved changes</span>}
-          {dirty && id && (
-            <button type="button" onClick={() => setForm(saved)} className="px-4 py-2 rounded-xl border border-[#d6d3cb] text-[13.5px] font-semibold cursor-pointer">
-              Discard
+      <div className="fixed bottom-0 right-0 left-0 md:left-64 z-30 bg-white/95 backdrop-blur-md border-t border-[#f0dfc6] shadow-[0_-4px_16px_rgba(0,0,0,0.05)] px-4 sm:px-6 py-3">
+        <div className="max-w-[1200px] mx-auto flex items-center justify-between gap-3">
+          <div className="flex items-center gap-2 min-w-0">
+            {dirty ? (
+              <span className="inline-flex items-center gap-1.5 text-[12px] font-semibold text-[#8a5a18] bg-[#fff9ef] border border-[#f0dfc6] px-2.5 py-1 rounded-lg">
+                <span className="w-2 h-2 rounded-full bg-[#f9a825] animate-pulse" />
+                Unsaved changes
+              </span>
+            ) : (
+              <span className="text-[12px] text-[#747576]">All changes saved</span>
+            )}
+          </div>
+          <div className="flex items-center gap-3">
+            {dirty && id && (
+              <button
+                type="button"
+                onClick={() => setForm(saved)}
+                className="px-4 py-2 rounded-xl border border-[#d6d3cb] hover:bg-[#f7f6f2] text-[13px] font-semibold text-[#5c5a52] transition cursor-pointer"
+              >
+                Discard
+              </button>
+            )}
+            <button
+              type="button"
+              onClick={save}
+              disabled={saving || (!dirty && Boolean(id))}
+              className="flex items-center gap-2 bg-[#4a0e14] hover:bg-[#380b11] disabled:opacity-40 text-white font-bold text-[14px] px-6 py-2.5 rounded-xl cursor-pointer shadow-sm transition"
+            >
+              {saving && <Loader2 size={15} className="animate-spin" />}
+              {id ? "Save" : "Add product"}
             </button>
-          )}
-          <button
-            type="button"
-            onClick={save}
-            disabled={saving || (!dirty && Boolean(id))}
-            className="flex items-center gap-2 bg-[#4a0e14] hover:bg-[#380b11] disabled:opacity-50 text-white font-bold text-[14px] px-6 py-2.5 rounded-xl cursor-pointer"
-          >
-            {saving && <Loader2 size={15} className="animate-spin" />}
-            {id ? "Save" : "Add product"}
-          </button>
+          </div>
         </div>
       </div>
     </div>

@@ -44,6 +44,10 @@ const sections: LegalSection[] = [
             products you order, coupon used and order notes.
           </li>
           <li>
+            <strong>Delivery location (optional):</strong> the point you choose on the map at checkout. We read your
+            device&apos;s location only if you allow it, and we save only the point you confirm, with your order.
+          </li>
+          <li>
             <strong>Account:</strong> your email address when you sign in with an email code, and the orders linked to it.
           </li>
           <li>
@@ -89,7 +93,7 @@ const sections: LegalSection[] = [
     title: "Your delivery data",
     body: (
       <ul>
-        <li>We use your name, phone number, address and landmark only to deliver your order within Siliguri and to contact you about it.</li>
+        <li>We use your name, phone number, address, landmark and map location only to deliver your order within Siliguri and to contact you about it.</li>
         <li>Our delivery person sees these details only for the deliveries assigned to them.</li>
         <li>We may call or message you to confirm your location, or a same-day or next-day delivery time.</li>
         <li>We don&apos;t use your delivery details for advertising, and we don&apos;t sell them.</li>
@@ -123,6 +127,10 @@ const sections: LegalSection[] = [
           </li>
           <li>
             <strong>Google (Gmail)</strong>: to send sign-in codes and order emails.
+          </li>
+          <li>
+            <strong>OpenStreetMap</strong>: when you open the map at checkout, it loads map images and looks up the
+            address of the point you choose.
           </li>
           <li>
             <strong>WhatsApp (Meta)</strong>: to send phone verification codes.

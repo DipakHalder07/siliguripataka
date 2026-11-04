@@ -12,6 +12,7 @@ import {
   ShieldCheck,
   Copy,
   Check,
+  MessageCircle,
 } from "lucide-react";
 import { istDateTime } from "@/lib/istTime";
 
@@ -36,6 +37,8 @@ export default function AdminPaymentsPage() {
   const [search, setSearch] = useState("");
   const [copiedVpa, setCopiedVpa] = useState(false);
   const [merchantVpa, setMerchantVpa] = useState("");
+  const [whatsappOtp, setWhatsappOtp] = useState(false);
+  const [togglingOtp, setTogglingOtp] = useState(false);
 
   const fetchPayments = async () => {
     setLoading(true);
@@ -46,10 +49,35 @@ export default function AdminPaymentsPage() {
         setPayments(data.payments);
       }
       if (data?.merchantVpa) setMerchantVpa(data.merchantVpa);
+      if (typeof data?.whatsappOtp === "boolean") setWhatsappOtp(data.whatsappOtp);
     } catch (err) {
       console.error("Failed to load payments:", err);
     } finally {
       setLoading(false);
+    }
+  };
+
+  const handleToggleWhatsappOtp = async () => {
+    const next = !whatsappOtp;
+    setTogglingOtp(true);
+    try {
+      const res = await fetch("/api/admin/payments", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "toggle-whatsapp-otp", enabled: next }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data?.error || "Failed to update setting");
+      setWhatsappOtp(next);
+      toast.success(next ? "WhatsApp Checkout OTP is now ON" : "WhatsApp Checkout OTP is now OFF", {
+        description: next
+          ? "Customers must verify mobile via WhatsApp code before paying"
+          : "Customers proceed straight to payment QR with no OTP",
+      });
+    } catch (err: any) {
+      toast.error(err.message || "Failed to update setting");
+    } finally {
+      setTogglingOtp(false);
     }
   };
 
@@ -97,21 +125,62 @@ export default function AdminPaymentsPage() {
         </button>
       </div>
 
-      {/* Gateway Info Card */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      {/* Gateway Info & Control Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <div className="bg-white border border-[#f0dfc6] rounded-2xl p-4 shadow-2xs">
           <span className="text-[12px] font-bold text-[#747576] uppercase tracking-wider block mb-1">
             Merchant UPI ID (VPA)
           </span>
           <div className="flex items-center justify-between">
-            <span className="font-mono font-bold text-[15px] text-[#4a0e14]">
-              {merchantVpa || "Not configured (set UPI_ID)"}
+            <span className="font-mono font-bold text-[15px] text-[#4a0e14] truncate mr-2">
+              {merchantVpa || "Not configured"}
             </span>
             <button
               onClick={handleCopyVpa}
-              className="p-1.5 rounded-lg border border-[#f0dfc6] hover:bg-[#fff9ef] text-[#2b1215] transition-colors cursor-pointer"
+              className="p-1.5 rounded-lg border border-[#f0dfc6] hover:bg-[#fff9ef] text-[#2b1215] transition-colors cursor-pointer shrink-0"
+              title="Copy UPI VPA"
             >
               {copiedVpa ? <Check size={14} className="text-[#e65100]" /> : <Copy size={14} />}
+            </button>
+          </div>
+        </div>
+
+        {/* WhatsApp Checkout OTP On/Off Switch */}
+        <div className="bg-white border border-[#f0dfc6] rounded-2xl p-4 shadow-2xs flex flex-col justify-between">
+          <div className="flex items-center justify-between mb-1">
+            <span className="text-[12px] font-bold text-[#747576] uppercase tracking-wider block">
+              Checkout WhatsApp OTP
+            </span>
+            <span
+              className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
+                whatsappOtp
+                  ? "bg-[#15803d]/15 text-[#15803d]"
+                  : "bg-[#747576]/15 text-[#5c5a52]"
+              }`}
+            >
+              {whatsappOtp ? "ON" : "OFF"}
+            </span>
+          </div>
+          <div className="flex items-center justify-between gap-2 mt-1">
+            <div className="flex items-center gap-1.5 text-[13.5px] font-semibold text-[#2b1215]">
+              <MessageCircle size={16} className={whatsappOtp ? "text-[#15803d]" : "text-[#747576]"} />
+              <span>{whatsappOtp ? "OTP Required" : "No OTP (Direct)"}</span>
+            </div>
+            <button
+              type="button"
+              disabled={togglingOtp}
+              onClick={handleToggleWhatsappOtp}
+              role="switch"
+              aria-checked={whatsappOtp}
+              className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none ${
+                whatsappOtp ? "bg-[#15803d]" : "bg-[#c4c0b6]"
+              } ${togglingOtp ? "opacity-50 cursor-not-allowed" : ""}`}
+            >
+              <span
+                className={`pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out ${
+                  whatsappOtp ? "translate-x-5" : "translate-x-0"
+                }`}
+              />
             </button>
           </div>
         </div>

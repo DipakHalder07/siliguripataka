@@ -54,11 +54,13 @@ export async function getWhatsAppServiceStatus({ fresh = false } = {}): Promise<
  */
 export async function isOtpRequired() {
   if (process.env.GATEWAY_REQUIRE_OTP === "false") return false;
+  const toggles = await getToggles();
+  if (!toggles.whatsapp) return false; // Strictly OFF when toggled off in Admin
+
   const provider = whatsAppProvider();
-  if (provider && !(await getToggles()).whatsapp) return false; // switched off in admin
   if (provider === "qr") return (await getWhatsAppServiceStatus()).connected;
   if (provider === "cloud") return true;
-  return process.env.NODE_ENV !== "production" && process.env.GATEWAY_DEV_OTP === "true";
+  return process.env.NODE_ENV !== "production" || process.env.GATEWAY_DEV_OTP === "true";
 }
 
 export async function sendWhatsAppCode(phone10: string, code: string): Promise<{ ok: boolean; error?: string }> {

@@ -277,32 +277,60 @@ function WhatsAppCard({ data, busy, act }: { data: Overview; busy: string; act: 
     <Card>
       <CardTitle
         icon={MessageCircle}
-        title="WhatsApp Gateway & Login"
+        title="WhatsApp Checkout OTP"
         right={
-          <Switch
-            on={on}
-            label="Require WhatsApp code at checkout"
-            disabled={busy !== ""}
-            onChange={(next) =>
-              act(
-                "toggle",
-                { key: "whatsapp", enabled: next },
-                next ? "WhatsApp checkout code turned on" : "WhatsApp checkout code turned off"
-              )
-            }
-          />
+          <div className="flex items-center gap-2.5">
+            <span
+              className={`text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider ${
+                on
+                  ? "bg-[#15803d]/15 text-[#15803d] border border-[#15803d]/30"
+                  : "bg-[#747576]/15 text-[#5c5a52] border border-[#747576]/30"
+              }`}
+            >
+              {on ? "OTP ON" : "OTP OFF"}
+            </span>
+            <Switch
+              on={on}
+              label="WhatsApp Checkout OTP (On / Off)"
+              disabled={busy !== ""}
+              onChange={(next) =>
+                act(
+                  "toggle",
+                  { key: "whatsapp", enabled: next },
+                  next ? "WhatsApp checkout OTP turned ON" : "WhatsApp checkout OTP turned OFF"
+                )
+              }
+            />
+          </div>
         }
       />
 
       {!on && (
-        <p className="text-[12.5px] text-[#5c5a52]">
-          <strong>Off.</strong> Customers go straight to the payment QR. Turn on to send them a WhatsApp code first:
-          you will scan a QR with your phone&apos;s WhatsApp once.
-        </p>
+        <div className="bg-[#fff9ef] border border-[#f0dfc6] rounded-xl p-3.5 space-y-1">
+          <div className="flex items-center gap-2 text-[#4a0e14] font-semibold text-[13px]">
+            <span className="w-2 h-2 rounded-full bg-[#747576]" />
+            <span>WhatsApp Checkout OTP is <strong>OFF (Disabled)</strong></span>
+          </div>
+          <p className="text-[12.5px] text-[#5c5a52]">
+            Fast Checkout: Customers go straight to the payment QR code with zero verification delay. Turn ON whenever you want to require customers to verify their 10-digit mobile number via WhatsApp OTP before paying.
+          </p>
+        </div>
       )}
 
       {on && (
         <>
+          <div className="bg-[#15803d]/10 border border-[#15803d]/20 rounded-xl p-3.5 mb-3 space-y-1">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2 text-[#15803d] font-semibold text-[13px]">
+                <span className="w-2 h-2 rounded-full bg-[#15803d] animate-pulse" />
+                <span>WhatsApp Checkout OTP is <strong>ON (Active)</strong></span>
+              </div>
+              <Pill ok={connected}>{statusLabel}</Pill>
+            </div>
+            <p className="text-[12.5px] text-[#2b1215]">
+              Verification Required: Customers must enter a 6-digit WhatsApp OTP before the UPI payment QR is revealed.
+            </p>
+          </div>
           <div className="flex items-center justify-between mb-3">
             <Pill ok={connected}>{statusLabel}</Pill>
             <span className="text-[11.5px] text-[#747576]">

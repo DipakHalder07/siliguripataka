@@ -41,10 +41,10 @@ export default function Hero() {
           {/* CTA Actions */}
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2">
             <Link
-              href="#combo-boxes"
+              href="/collections/all"
               className="av-btn av-btn-fill px-7 py-3.5 sm:py-4 text-[15px] sm:text-[16px] text-center"
             >
-              SHOP MEGA PACKS
+              SHOP ALL PRODUCTS
             </Link>
             <Link
               href="#best-sellers"

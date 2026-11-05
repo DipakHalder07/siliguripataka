@@ -2187,7 +2187,7 @@ export const PRODUCTS: Product[] = [
     "id": "anil-5-ka-dum-sound-crackers",
     "handle": "anil-5-ka-dum-sound-crackers",
     "title": "Anil 5 Ka Dum Celebratory Sound Crackers",
-    "subtitle": "5 Rhythmic Celebratory Sound Bursts · Sivakasi Green Quality",
+    "subtitle": "5 Rhythmic Celebratory Sound Bursts \u00b7 Sivakasi Green Quality",
     "price": 294,
     "originalPrice": 450,
     "discount": 35,
@@ -2240,7 +2240,7 @@ export const PRODUCTS: Product[] = [
     "id": "classic-royal-anar-box-of-5",
     "handle": "classic-royal-anar-box-of-5",
     "title": "Classic Royal Anar Flower Pots (Full Pack of 5)",
-    "subtitle": "10-12 Feet Golden & Silver Sparkle Fountain · Full Box",
+    "subtitle": "10-12 Feet Golden & Silver Sparkle Fountain \u00b7 Full Box",
     "price": 94,
     "originalPrice": 160,
     "discount": 41,
@@ -2293,7 +2293,7 @@ export const PRODUCTS: Product[] = [
     "id": "special-ground-chakkar-single",
     "handle": "special-ground-chakkar-single",
     "title": "Special Ground Chakkar (Single Piece)",
-    "subtitle": "High-Speed Spinning Ground Wheel · Golden Sparks",
+    "subtitle": "High-Speed Spinning Ground Wheel \u00b7 Golden Sparks",
     "price": 15,
     "originalPrice": 25,
     "discount": 40,
@@ -2346,7 +2346,7 @@ export const PRODUCTS: Product[] = [
     "id": "prakash-chutput-magic-pop",
     "handle": "prakash-chutput-magic-pop",
     "title": "Prakash Chutput Magic Pop Crackers",
-    "subtitle": "Fun Crackling Sound · 100% Child-Safe Novelty Snapper",
+    "subtitle": "Fun Crackling Sound \u00b7 100% Child-Safe Novelty Snapper",
     "price": 55,
     "originalPrice": 90,
     "discount": 39,
@@ -2398,7 +2398,7 @@ export const PRODUCTS: Product[] = [
     "id": "chutput-deluxe-mega-pack",
     "handle": "chutput-deluxe-mega-pack",
     "title": "Chutput Deluxe Mega Crackers (Special Pack)",
-    "subtitle": "Extended Crackling Snaps · Low Smoke & Safe Fun",
+    "subtitle": "Extended Crackling Snaps \u00b7 Low Smoke & Safe Fun",
     "price": 66,
     "originalPrice": 110,
     "discount": 40,
@@ -2450,7 +2450,7 @@ export const PRODUCTS: Product[] = [
     "id": "penta-5-shot-aerial-cake",
     "handle": "penta-5-shot-aerial-cake",
     "title": "Prakash Penta 5-Shot Multi-Color Aerial Cake",
-    "subtitle": "5 Sky Burst Aerial Shots · Multi-Color Starburst Effects",
+    "subtitle": "5 Sky Burst Aerial Shots \u00b7 Multi-Color Starburst Effects",
     "price": 280,
     "originalPrice": 450,
     "discount": 38,
@@ -2503,11 +2503,11 @@ export const PRODUCTS: Product[] = [
     "id": "royal-peacock-mayur-fountain",
     "handle": "royal-peacock-mayur-fountain",
     "title": "Royal Peacock Mayur Fountain (Grand Display)",
-    "subtitle": "Spectacular Peacock Feather Spray · Multicolor Sparkle Wings",
+    "subtitle": "Spectacular Peacock Feather Spray \u00b7 Multicolor Sparkle Wings",
     "price": 889,
     "originalPrice": 1450,
     "discount": 39,
-    "rating": 5,
+    "rating": 5.0,
     "reviewsCount": 112,
     "weight": "1 Grand Display Unit",
     "weights": [
@@ -2549,7 +2549,7 @@ export const PRODUCTS: Product[] = [
     "id": "aks-pop-pop-snappers-box",
     "handle": "aks-pop-pop-snappers-box",
     "title": "AKS Pop-Pop Snappers (Child-Safe Box)",
-    "subtitle": "No Match Needed · Throw & Pop · 100% Smoke-Free",
+    "subtitle": "No Match Needed \u00b7 Throw & Pop \u00b7 100% Smoke-Free",
     "price": 14,
     "originalPrice": 25,
     "discount": 44,
@@ -2614,11 +2614,9 @@ export const PRODUCTS: Product[] = [
       "Pack of 10 Boxes"
     ],
     "image": "/assets/product-papershot.webp",
-    "secondaryImage": "/assets/action-sound.webp",
+    "secondaryImage": "/assets/product-papershot.webp",
     "galleryImages": [
-      "/assets/product-papershot.webp",
-      "/assets/action-sound.webp",
-      "/assets/photo-sparkler-kids.webp"
+      "/assets/product-papershot.webp"
     ],
     "category": "kids-special",
     "format": "Novelty Snappers",
@@ -2666,7 +2664,7 @@ export const PRODUCTS: Product[] = [
     "id": "sky-burst-12-shot-aerial-cake",
     "handle": "sky-burst-12-shot-aerial-cake",
     "title": "Sky Burst 12-Shot Multi-Color Aerial Cake",
-    "subtitle": "12 High-Altitude Repeater Shots · Golden Palm & Crackling Willow",
+    "subtitle": "12 High-Altitude Repeater Shots \u00b7 Golden Palm & Crackling Willow",
     "price": 588,
     "originalPrice": 950,
     "discount": 38,
@@ -2719,11 +2717,11 @@ export const PRODUCTS: Product[] = [
     "id": "sky-thunder-25-shot-aerial-cake",
     "handle": "sky-thunder-25-shot-aerial-cake",
     "title": "Sky Thunder 25-Shot Multi-Color Aerial Cake",
-    "subtitle": "25 High Altitude Shots · Whistling Tail with Chrysanthemum Finale",
+    "subtitle": "25 High Altitude Shots \u00b7 Whistling Tail with Chrysanthemum Finale",
     "price": 1188,
     "originalPrice": 1950,
     "discount": 39,
-    "rating": 5,
+    "rating": 5.0,
     "reviewsCount": 97,
     "weight": "1 Cake (25 Shots)",
     "weights": [
@@ -2772,7 +2770,7 @@ export const PRODUCTS: Product[] = [
     "id": "classic-7-shot-aerial-repeater",
     "handle": "classic-7-shot-aerial-repeater",
     "title": "Classic 7-Shot Aerial Sky Repeater Cake",
-    "subtitle": "7 High-Flying Aerial Bursts · Emerald & Crimson Colors",
+    "subtitle": "7 High-Flying Aerial Bursts \u00b7 Emerald & Crimson Colors",
     "price": 420,
     "originalPrice": 700,
     "discount": 40,
@@ -2825,11 +2823,11 @@ export const PRODUCTS: Product[] = [
     "id": "grand-6-inch-mega-aerial-shell",
     "handle": "grand-6-inch-mega-aerial-shell",
     "title": "Grand 6-Inch Mega High-Altitude Aerial Shell",
-    "subtitle": "Massive 200-Foot Sky Bloom · Professional Brocade Crown Finale",
+    "subtitle": "Massive 200-Foot Sky Bloom \u00b7 Professional Brocade Crown Finale",
     "price": 2499,
     "originalPrice": 3999,
     "discount": 38,
-    "rating": 5,
+    "rating": 5.0,
     "reviewsCount": 44,
     "weight": "1 Mega Shell (6-Inch)",
     "weights": [
@@ -2871,11 +2869,11 @@ export const PRODUCTS: Product[] = [
     "id": "grand-50-shot-sky-spectacular-cake",
     "handle": "grand-50-shot-sky-spectacular-cake",
     "title": "Grand 50-Shot Fireworks Spectacular Cake",
-    "subtitle": "50 Non-Stop Aerial Bursts · Continuous 90-Second Sky Show",
+    "subtitle": "50 Non-Stop Aerial Bursts \u00b7 Continuous 90-Second Sky Show",
     "price": 1700,
     "originalPrice": 2800,
     "discount": 39,
-    "rating": 5,
+    "rating": 5.0,
     "reviewsCount": 78,
     "weight": "1 Big Cake (50 Shots)",
     "weights": [
@@ -2917,7 +2915,7 @@ export const PRODUCTS: Product[] = [
     "id": "pawan-electric-golden-sparklers-10s",
     "handle": "pawan-electric-golden-sparklers-10s",
     "title": "Pawan Electric Golden Sparklers (10 Sticks)",
-    "subtitle": "Smokeless Golden Sparks · 60-Second Long Burn · Hand-Held Safe",
+    "subtitle": "Smokeless Golden Sparks \u00b7 60-Second Long Burn \u00b7 Hand-Held Safe",
     "price": 70,
     "originalPrice": 120,
     "discount": 42,
@@ -2967,1911 +2965,1793 @@ export const PRODUCTS: Product[] = [
     "trackInventory": true
   },
   {
-    "id": "supreme-12-shots-flower-garden",
-    "handle": "supreme-12-shots-flower-garden",
-    "title": "Supreme 12 Bara Awaaz Flower Garden Aerial Cake",
-    "subtitle": "12 Consecutive Multi-Colour Aerial Starbursts with Floral Palms",
-    "price": 460,
-    "originalPrice": 750,
-    "discount": 39,
-    "rating": 4.9,
-    "reviewsCount": 64,
-    "weight": "1 Cake (12 Shots)",
-    "weights": [
-      "1 Cake (12 Shots)",
-      "Pack of 2 Cakes"
-    ],
-    "image": "/assets/shop-84/12-skyshort-460rs-part-1img.webp",
-    "secondaryImage": "/assets/action-sky.webp",
-    "galleryImages": [
-      "/assets/shop-84/12-skyshort-460rs-part-1img.webp",
-      "/assets/shop-84/12-skyshort-460rs-part-2img.webp",
-      "/assets/action-sky.webp",
-      "/assets/photo-sky-burst.webp",
-      "/assets/photo-sky-gold.webp",
-      "/assets/photo-sky-red.webp"
-    ],
-    "category": "aerial-shots",
-    "format": "Multi-Shot Cake",
-    "region": "Supreme Sivakasi",
-    "caffeine": "12 Aerial Bursts",
-    "inStock": true,
-    "description": "Supreme Brand 12 Bara Awaaz Flower Garden high altitude repeater cake. Shoots 12 consecutive colourful floral starbursts into the night sky with loud sound and sparkling brocade crowns.",
-    "variants": [
-      {
-        "sku": "S84-SKY-12A",
-        "name": "1 Cake (12 Shots)",
-        "price": 460,
-        "compareAtPrice": 750
-      },
-      {
-        "sku": "S84-SKY-12A-2",
-        "name": "Pack of 2 Cakes",
-        "price": 899,
-        "compareAtPrice": 1500
-      }
-    ],
-    "status": "active",
-    "sku": "S84-SKY-12A",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Aerial Shots",
-      "Sky Shots",
-      "Supreme",
-      "Flower Garden",
-      "12 Shots"
-    ],
-    "stockQuantity": 150,
-    "trackInventory": true
+      "id": "supreme-12-shots-flower-garden",
+      "handle": "supreme-12-shots-flower-garden",
+      "title": "Supreme 12 Bara Awaaz Flower Garden Aerial Cake",
+      "subtitle": "12 Consecutive Multi-Colour Aerial Starbursts with Floral Palms",
+      "price": 460,
+      "originalPrice": 750,
+      "discount": 39,
+      "rating": 4.9,
+      "reviewsCount": 64,
+      "weight": "1 Cake (12 Shots)",
+      "weights": [
+          "1 Cake (12 Shots)",
+          "Pack of 2 Cakes"
+      ],
+      "image": "/assets/shop-84/12-skyshort-460rs-part-1img.webp",
+      "secondaryImage": "/assets/shop-84/12-skyshort-460rs-part-2img.webp",
+      "galleryImages": [
+          "/assets/shop-84/12-skyshort-460rs-part-1img.webp",
+          "/assets/shop-84/12-skyshort-460rs-part-2img.webp"
+      ],
+      "category": "aerial-shots",
+      "format": "Multi-Shot Cake",
+      "region": "Supreme Sivakasi",
+      "caffeine": "12 Aerial Bursts",
+      "inStock": true,
+      "description": "Supreme Brand 12 Bara Awaaz Flower Garden high altitude repeater cake. Shoots 12 consecutive colourful floral starbursts into the night sky with loud sound and sparkling brocade crowns.",
+      "variants": [
+          {
+              "sku": "S84-SKY-12A",
+              "name": "1 Cake (12 Shots)",
+              "price": 460,
+              "compareAtPrice": 750
+          },
+          {
+              "sku": "S84-SKY-12A-2",
+              "name": "Pack of 2 Cakes",
+              "price": 899,
+              "compareAtPrice": 1500
+          }
+      ],
+      "status": "active",
+      "sku": "S84-SKY-12A",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Aerial Shots",
+          "Sky Shots",
+          "Supreme",
+          "Flower Garden",
+          "12 Shots"
+      ],
+      "stockQuantity": 150,
+      "trackInventory": true
   },
   {
-    "id": "elephant-12-shot-crackling-cake",
-    "handle": "elephant-12-shot-crackling-cake",
-    "title": "Elephant Brand 12-Shot Crackling Sky Cake",
-    "subtitle": "12 High-Altitude Aerial Starbursts with Crisp Golden Crackling",
-    "price": 350,
-    "originalPrice": 600,
-    "discount": 42,
-    "rating": 4.8,
-    "reviewsCount": 42,
-    "weight": "1 Cake (12 Shots)",
-    "weights": [
-      "1 Cake (12 Shots)"
-    ],
-    "image": "/assets/shop-84/12skyshort-350rs.webp",
-    "secondaryImage": "/assets/action-sky.webp",
-    "galleryImages": [
-      "/assets/shop-84/12skyshort-350rs.webp",
-      "/assets/action-sky.webp",
-      "/assets/photo-sky-burst.webp",
-      "/assets/photo-sky-gold.webp",
-      "/assets/photo-sky-red.webp"
-    ],
-    "category": "aerial-shots",
-    "format": "Multi-Shot Cake",
-    "region": "Elephant Sivakasi",
-    "caffeine": "Crackling Sky Shots",
-    "inStock": true,
-    "description": "Elephant Brand 12-shot aerial repeater cake featuring open tubes that launch 12 consecutive shells bursting into golden crackling palms and sparkling chrysanthemums.",
-    "variants": [
-      {
-        "sku": "S84-SKY-12B",
-        "name": "1 Cake (12 Shots)",
-        "price": 350,
-        "compareAtPrice": 600
-      }
-    ],
-    "status": "active",
-    "sku": "S84-SKY-12B",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Aerial Shots",
-      "Sky Shots",
-      "Elephant Brand",
-      "Crackling",
-      "12 Shots"
-    ],
-    "stockQuantity": 120,
-    "trackInventory": true
+      "id": "elephant-12-shot-crackling-cake",
+      "handle": "elephant-12-shot-crackling-cake",
+      "title": "Elephant Brand 12-Shot Crackling Sky Cake",
+      "subtitle": "12 High-Altitude Aerial Starbursts with Crisp Golden Crackling",
+      "price": 350,
+      "originalPrice": 600,
+      "discount": 42,
+      "rating": 4.8,
+      "reviewsCount": 42,
+      "weight": "1 Cake (12 Shots)",
+      "weights": [
+          "1 Cake (12 Shots)"
+      ],
+      "image": "/assets/shop-84/12skyshort-350rs.webp",
+      "secondaryImage": "/assets/shop-84/12skyshort-350rs.webp",
+      "galleryImages": [
+          "/assets/shop-84/12skyshort-350rs.webp"
+      ],
+      "category": "aerial-shots",
+      "format": "Multi-Shot Cake",
+      "region": "Elephant Sivakasi",
+      "caffeine": "Crackling Sky Shots",
+      "inStock": true,
+      "description": "Elephant Brand 12-shot aerial repeater cake featuring open tubes that launch 12 consecutive shells bursting into golden crackling palms and sparkling chrysanthemums.",
+      "variants": [
+          {
+              "sku": "S84-SKY-12B",
+              "name": "1 Cake (12 Shots)",
+              "price": 350,
+              "compareAtPrice": 600
+          }
+      ],
+      "status": "active",
+      "sku": "S84-SKY-12B",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Aerial Shots",
+          "Sky Shots",
+          "Elephant Brand",
+          "Crackling",
+          "12 Shots"
+      ],
+      "stockQuantity": 120,
+      "trackInventory": true
   },
   {
-    "id": "sonny-lemon-20-inch-aerial-shells",
-    "handle": "sonny-lemon-20-inch-aerial-shells",
-    "title": "Sonny Lemon 20-Inch Giant Aerial Shells",
-    "subtitle": "20-Inch High-Altitude Sky Shots with Massive Golden Crown Bursts",
-    "price": 1700,
-    "originalPrice": 2800,
-    "discount": 39,
-    "rating": 4.9,
-    "reviewsCount": 38,
-    "weight": "1 Pack",
-    "weights": [
-      "1 Pack"
-    ],
-    "image": "/assets/shop-84/20inch-skyshort-1700rs.webp",
-    "secondaryImage": "/assets/action-sky.webp",
-    "galleryImages": [
-      "/assets/shop-84/20inch-skyshort-1700rs.webp",
-      "/assets/action-sky.webp",
-      "/assets/photo-sky-burst.webp",
-      "/assets/photo-sky-gold.webp",
-      "/assets/photo-sky-red.webp"
-    ],
-    "category": "aerial-shots",
-    "format": "Giant Aerial Shells",
-    "region": "Sonny Fireworks Sivakasi",
-    "caffeine": "High Altitude Shells",
-    "inStock": true,
-    "description": "Sonny Fireworks 20-inch giant multi-stage aerial shells. Produces colossal, dazzling lemon and golden brocade palm umbrellas that light up the entire Siliguri skyline.",
-    "variants": [
-      {
-        "sku": "S84-SKY-20",
-        "name": "1 Pack",
-        "price": 1700,
-        "compareAtPrice": 2800
-      }
-    ],
-    "status": "active",
-    "sku": "S84-SKY-20",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Aerial Shots",
-      "Sky Shots",
-      "Sonny Fireworks",
-      "Giant Shells",
-      "20 Inch"
-    ],
-    "stockQuantity": 80,
-    "trackInventory": true
+      "id": "sonny-lemon-20-inch-aerial-shells",
+      "handle": "sonny-lemon-20-inch-aerial-shells",
+      "title": "Sonny Lemon 20-Inch Giant Aerial Shells",
+      "subtitle": "20-Inch High-Altitude Sky Shots with Massive Golden Crown Bursts",
+      "price": 1700,
+      "originalPrice": 2800,
+      "discount": 39,
+      "rating": 4.9,
+      "reviewsCount": 38,
+      "weight": "1 Pack",
+      "weights": [
+          "1 Pack"
+      ],
+      "image": "/assets/shop-84/20inch-skyshort-1700rs.webp",
+      "secondaryImage": "/assets/shop-84/20inch-skyshort-1700rs.webp",
+      "galleryImages": [
+          "/assets/shop-84/20inch-skyshort-1700rs.webp"
+      ],
+      "category": "aerial-shots",
+      "format": "Giant Aerial Shells",
+      "region": "Sonny Fireworks Sivakasi",
+      "caffeine": "High Altitude Shells",
+      "inStock": true,
+      "description": "Sonny Fireworks 20-inch giant multi-stage aerial shells. Produces colossal, dazzling lemon and golden brocade palm umbrellas that light up the entire Siliguri skyline.",
+      "variants": [
+          {
+              "sku": "S84-SKY-20",
+              "name": "1 Pack",
+              "price": 1700,
+              "compareAtPrice": 2800
+          }
+      ],
+      "status": "active",
+      "sku": "S84-SKY-20",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Aerial Shots",
+          "Sky Shots",
+          "Sonny Fireworks",
+          "Giant Shells",
+          "20 Inch"
+      ],
+      "stockQuantity": 80,
+      "trackInventory": true
   },
   {
-    "id": "sri-rr-dilwale-multicolour-aerial-cake",
-    "handle": "sri-rr-dilwale-multicolour-aerial-cake",
-    "title": "Sri R.R. Dilwale Multi-Colour Aerial Wedding Cake",
-    "subtitle": "Grand Wedding Multi-Color Sky Repeater with Dazzling Golden Palm & Brocade Finale",
-    "price": 2500,
-    "originalPrice": 4200,
-    "discount": 40,
-    "rating": 4.9,
-    "reviewsCount": 55,
-    "weight": "1 Mega Cake",
-    "weights": [
-      "1 Mega Cake"
-    ],
-    "image": "/assets/shop-84/rr-skyshort-2500rs.webp",
-    "secondaryImage": "/assets/action-sky.webp",
-    "galleryImages": [
-      "/assets/shop-84/rr-skyshort-2500rs.webp",
-      "/assets/action-sky.webp",
-      "/assets/photo-sky-burst.webp",
-      "/assets/photo-sky-gold.webp",
-      "/assets/photo-sky-red.webp"
-    ],
-    "category": "aerial-shots",
-    "format": "Multi-Shot Cake",
-    "region": "Sri R.R. Sivakasi",
-    "caffeine": "Grand Wedding Finale",
-    "inStock": true,
-    "description": "Sri R.R. Fireworks Dilwale special celebration mega cake. Engineered for weddings, anniversaries, and grand Diwali nights, producing huge multi-colour bursts with cascading golden willow falls.",
-    "variants": [
-      {
-        "sku": "S84-SKY-RR",
-        "name": "1 Mega Cake",
-        "price": 2500,
-        "compareAtPrice": 4200
-      }
-    ],
-    "status": "active",
-    "sku": "S84-SKY-RR",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Aerial Shots",
-      "Sky Shots",
-      "Wedding Series",
-      "Dilwale",
-      "Grand Finale"
-    ],
-    "stockQuantity": 60,
-    "trackInventory": true
+      "id": "sri-rr-dilwale-multicolour-aerial-cake",
+      "handle": "sri-rr-dilwale-multicolour-aerial-cake",
+      "title": "Sri R.R. Dilwale Multi-Colour Aerial Wedding Cake",
+      "subtitle": "Grand Wedding Multi-Color Sky Repeater with Dazzling Golden Palm & Brocade Finale",
+      "price": 2500,
+      "originalPrice": 4200,
+      "discount": 40,
+      "rating": 4.9,
+      "reviewsCount": 55,
+      "weight": "1 Mega Cake",
+      "weights": [
+          "1 Mega Cake"
+      ],
+      "image": "/assets/shop-84/rr-skyshort-2500rs.webp",
+      "secondaryImage": "/assets/shop-84/rr-skyshort-2500rs.webp",
+      "galleryImages": [
+          "/assets/shop-84/rr-skyshort-2500rs.webp"
+      ],
+      "category": "aerial-shots",
+      "format": "Multi-Shot Cake",
+      "region": "Sri R.R. Sivakasi",
+      "caffeine": "Grand Wedding Finale",
+      "inStock": true,
+      "description": "Sri R.R. Fireworks Dilwale special celebration mega cake. Engineered for weddings, anniversaries, and grand Diwali nights, producing huge multi-colour bursts with cascading golden willow falls.",
+      "variants": [
+          {
+              "sku": "S84-SKY-RR",
+              "name": "1 Mega Cake",
+              "price": 2500,
+              "compareAtPrice": 4200
+          }
+      ],
+      "status": "active",
+      "sku": "S84-SKY-RR",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Aerial Shots",
+          "Sky Shots",
+          "Wedding Series",
+          "Dilwale",
+          "Grand Finale"
+      ],
+      "stockQuantity": 60,
+      "trackInventory": true
   },
   {
-    "id": "elephant-angry-birds-deluxe-flower-pots",
-    "handle": "elephant-angry-birds-deluxe-flower-pots",
-    "title": "Elephant Angry Birds Deluxe Novelty Flower Pots Box",
-    "subtitle": "Fun Cartoon Character Fountain Set with Multi-Colour Showers & Sparkling Sprays",
-    "price": 1000,
-    "originalPrice": 1650,
-    "discount": 39,
-    "rating": 4.9,
-    "reviewsCount": 47,
-    "weight": "1 Deluxe Gift Box",
-    "weights": [
-      "1 Deluxe Gift Box"
-    ],
-    "image": "/assets/shop-84/angry-pots-1000rs.webp",
-    "secondaryImage": "/assets/action-anar.webp",
-    "galleryImages": [
-      "/assets/shop-84/angry-pots-1000rs.webp",
-      "/assets/action-anar.webp",
-      "/assets/photo-anar-gold.webp",
-      "/assets/photo-anar-tall.webp"
-    ],
-    "category": "flower-pots",
-    "format": "Assorted Flower Pots",
-    "region": "Elephant Sivakasi",
-    "caffeine": "Child & Family Friendly",
-    "inStock": true,
-    "description": "Elephant Brand Angry Birds novelty flower pots gift pack. Contains an exciting variety of cartoon-themed sparkling fountain cones that spray vibrant multi-coloured stars, crackling silver beads, and golden geysers.",
-    "variants": [
-      {
-        "sku": "S84-POT-ANG",
-        "name": "1 Deluxe Gift Box",
-        "price": 1000,
-        "compareAtPrice": 1650
-      }
-    ],
-    "status": "active",
-    "sku": "S84-POT-ANG",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Flower Pots",
-      "Anar",
-      "Angry Birds",
-      "Kids Special",
-      "Elephant Brand"
-    ],
-    "stockQuantity": 90,
-    "trackInventory": true
+      "id": "elephant-angry-birds-deluxe-flower-pots",
+      "handle": "elephant-angry-birds-deluxe-flower-pots",
+      "title": "Elephant Angry Birds Deluxe Novelty Flower Pots Box",
+      "subtitle": "Fun Cartoon Character Fountain Set with Multi-Colour Showers & Sparkling Sprays",
+      "price": 1000,
+      "originalPrice": 1650,
+      "discount": 39,
+      "rating": 4.9,
+      "reviewsCount": 47,
+      "weight": "1 Deluxe Gift Box",
+      "weights": [
+          "1 Deluxe Gift Box"
+      ],
+      "image": "/assets/shop-84/angry-pots-1000rs.webp",
+      "secondaryImage": "/assets/shop-84/angry-pots-1000rs.webp",
+      "galleryImages": [
+          "/assets/shop-84/angry-pots-1000rs.webp"
+      ],
+      "category": "flower-pots",
+      "format": "Assorted Flower Pots",
+      "region": "Elephant Sivakasi",
+      "caffeine": "Child & Family Friendly",
+      "inStock": true,
+      "description": "Elephant Brand Angry Birds novelty flower pots gift pack. Contains an exciting variety of cartoon-themed sparkling fountain cones that spray vibrant multi-coloured stars, crackling silver beads, and golden geysers.",
+      "variants": [
+          {
+              "sku": "S84-POT-ANG",
+              "name": "1 Deluxe Gift Box",
+              "price": 1000,
+              "compareAtPrice": 1650
+          }
+      ],
+      "status": "active",
+      "sku": "S84-POT-ANG",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Flower Pots",
+          "Anar",
+          "Angry Birds",
+          "Kids Special",
+          "Elephant Brand"
+      ],
+      "stockQuantity": 90,
+      "trackInventory": true
   },
   {
-    "id": "vadivel-chut-putu-magic-snappers",
-    "handle": "vadivel-chut-putu-magic-snappers",
-    "title": "Vadivel Chut Putu Magic Friction Snappers",
-    "subtitle": "Friction Strike Pop Crackers with Crisp Crackling Snaps · Child Safe Novelty Fun",
-    "price": 170,
-    "originalPrice": 280,
-    "discount": 39,
-    "rating": 4.9,
-    "reviewsCount": 61,
-    "weight": "1 Box (10 Rolls)",
-    "weights": [
-      "1 Box (10 Rolls)",
-      "Pack of 3 Boxes"
-    ],
-    "image": "/assets/shop-84/chut-putu-170rs-and-this-part-2-img-.webp",
-    "secondaryImage": "/assets/action-sound.webp",
-    "galleryImages": [
-      "/assets/shop-84/chut-putu-170rs-and-this-part-2-img-.webp",
-      "/assets/shop-84/chut-putu-170rs-and-this-part-1-img-.webp",
-      "/assets/action-sound.webp",
-      "/assets/photo-sparkler-kids.webp"
-    ],
-    "category": "kids-special",
-    "format": "Novelty Snappers",
-    "region": "Vadivel Pyrotechs Sivakasi",
-    "caffeine": "Safe Friction Pop",
-    "inStock": true,
-    "description": "Vadivel Pyrotechs Chut Putu friction-strike crackling pop snappers. Strike against any hard surface or friction pad to produce energetic crackles with zero danger.",
-    "variants": [
-      {
-        "sku": "S84-CP-1",
-        "name": "1 Box (10 Rolls)",
-        "price": 170,
-        "compareAtPrice": 280
-      },
-      {
-        "sku": "S84-CP-3",
-        "name": "Pack of 3 Boxes",
-        "price": 480,
-        "compareAtPrice": 840
-      }
-    ],
-    "status": "active",
-    "sku": "S84-CP-1",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Kids Special",
-      "Chutput",
-      "Pop Pop",
-      "Snappers",
-      "Vadivel"
-    ],
-    "stockQuantity": 200,
-    "trackInventory": true
+      "id": "vadivel-chut-putu-magic-snappers",
+      "handle": "vadivel-chut-putu-magic-snappers",
+      "title": "Vadivel Chut Putu Magic Friction Snappers",
+      "subtitle": "Friction Strike Pop Crackers with Crisp Crackling Snaps \u00b7 Child Safe Novelty Fun",
+      "price": 170,
+      "originalPrice": 280,
+      "discount": 39,
+      "rating": 4.9,
+      "reviewsCount": 61,
+      "weight": "1 Box (10 Rolls)",
+      "weights": [
+          "1 Box (10 Rolls)",
+          "Pack of 3 Boxes"
+      ],
+      "image": "/assets/shop-84/chut-putu-170rs-and-this-part-2-img-.webp",
+      "secondaryImage": "/assets/shop-84/chut-putu-170rs-and-this-part-1-img-.webp",
+      "galleryImages": [
+          "/assets/shop-84/chut-putu-170rs-and-this-part-2-img-.webp",
+          "/assets/shop-84/chut-putu-170rs-and-this-part-1-img-.webp"
+      ],
+      "category": "kids-special",
+      "format": "Novelty Snappers",
+      "region": "Vadivel Pyrotechs Sivakasi",
+      "caffeine": "Safe Friction Pop",
+      "inStock": true,
+      "description": "Vadivel Pyrotechs Chut Putu friction-strike crackling pop snappers. Strike against any hard surface or friction pad to produce energetic crackles with zero danger.",
+      "variants": [
+          {
+              "sku": "S84-CP-1",
+              "name": "1 Box (10 Rolls)",
+              "price": 170,
+              "compareAtPrice": 280
+          },
+          {
+              "sku": "S84-CP-3",
+              "name": "Pack of 3 Boxes",
+              "price": 480,
+              "compareAtPrice": 840
+          }
+      ],
+      "status": "active",
+      "sku": "S84-CP-1",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Kids Special",
+          "Chutput",
+          "Pop Pop",
+          "Snappers",
+          "Vadivel"
+      ],
+      "stockQuantity": 200,
+      "trackInventory": true
   },
   {
-    "id": "the-aruna-mega-colour-flower-pots",
-    "handle": "the-aruna-mega-colour-flower-pots",
-    "title": "The Aruna Mega Colour Flower Pots (10 Pcs)",
-    "subtitle": "10 Large Cones with Brilliant Multi-Colour Sparkling Fountain Showers",
-    "price": 795,
-    "originalPrice": 1300,
-    "discount": 39,
-    "rating": 4.9,
-    "reviewsCount": 52,
-    "weight": "1 Box (10 Pcs)",
-    "weights": [
-      "1 Box (10 Pcs)"
-    ],
-    "image": "/assets/shop-84/colorfull-pots-795rsrs-part-1img.webp",
-    "secondaryImage": "/assets/action-anar.webp",
-    "galleryImages": [
-      "/assets/shop-84/colorfull-pots-795rsrs-part-1img.webp",
-      "/assets/shop-84/colorfull-pots-795rs-part-1img.webp",
-      "/assets/action-anar.webp",
-      "/assets/photo-anar-gold.webp",
-      "/assets/photo-anar-tall.webp"
-    ],
-    "category": "flower-pots",
-    "format": "Colour Cones",
-    "region": "The Aruna Fireworks Sivakasi",
-    "caffeine": "Multi-Colour Sparks",
-    "inStock": true,
-    "description": "The Aruna Fireworks Industries Sri Krishna Mega Colour Pots. 10 jumbo size cones shooting brilliant tall showers of red, green, silver, and gold sparkling sparks.",
-    "variants": [
-      {
-        "sku": "S84-POT-ARU",
-        "name": "1 Box (10 Pcs)",
-        "price": 795,
-        "compareAtPrice": 1300
-      }
-    ],
-    "status": "active",
-    "sku": "S84-POT-ARU",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Flower Pots",
-      "Anar",
-      "Mega Colour",
-      "The Aruna Fireworks"
-    ],
-    "stockQuantity": 110,
-    "trackInventory": true
+      "id": "the-aruna-mega-colour-flower-pots",
+      "handle": "the-aruna-mega-colour-flower-pots",
+      "title": "The Aruna Mega Colour Flower Pots (10 Pcs)",
+      "subtitle": "10 Large Cones with Brilliant Multi-Colour Sparkling Fountain Showers",
+      "price": 795,
+      "originalPrice": 1300,
+      "discount": 39,
+      "rating": 4.9,
+      "reviewsCount": 52,
+      "weight": "1 Box (10 Pcs)",
+      "weights": [
+          "1 Box (10 Pcs)"
+      ],
+      "image": "/assets/shop-84/colorfull-pots-795rsrs-part-1img.webp",
+      "secondaryImage": "/assets/shop-84/colorfull-pots-795rs-part-1img.webp",
+      "galleryImages": [
+          "/assets/shop-84/colorfull-pots-795rsrs-part-1img.webp",
+          "/assets/shop-84/colorfull-pots-795rs-part-1img.webp"
+      ],
+      "category": "flower-pots",
+      "format": "Colour Cones",
+      "region": "The Aruna Fireworks Sivakasi",
+      "caffeine": "Multi-Colour Sparks",
+      "inStock": true,
+      "description": "The Aruna Fireworks Industries Sri Krishna Mega Colour Pots. 10 jumbo size cones shooting brilliant tall showers of red, green, silver, and gold sparkling sparks.",
+      "variants": [
+          {
+              "sku": "S84-POT-ARU",
+              "name": "1 Box (10 Pcs)",
+              "price": 795,
+              "compareAtPrice": 1300
+          }
+      ],
+      "status": "active",
+      "sku": "S84-POT-ARU",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Flower Pots",
+          "Anar",
+          "Mega Colour",
+          "The Aruna Fireworks"
+      ],
+      "stockQuantity": 110,
+      "trackInventory": true
   },
   {
-    "id": "corsair-pacquiao-ultraman-match-crackers",
-    "handle": "corsair-pacquiao-ultraman-match-crackers",
-    "title": "Corsair Pacquiao Ultraman Match Stick Crackers",
-    "subtitle": "Friction-Strike Match Crackers with Crisp Loud Bang · Strike on Box to Ignite",
-    "price": 20,
-    "originalPrice": 35,
-    "discount": 43,
-    "rating": 4.9,
-    "reviewsCount": 89,
-    "weight": "1 Box (10 Sticks)",
-    "weights": [
-      "1 Box (10 Sticks)",
-      "1 Carton Pack (10 Boxes)"
-    ],
-    "image": "/assets/shop-84/dont-no-this-name-and-price-is-210-and-this-part-1-img.webp",
-    "secondaryImage": "/assets/action-sound.webp",
-    "galleryImages": [
-      "/assets/shop-84/dont-no-this-name-and-price-is-210-and-this-part-1-img.webp",
-      "/assets/shop-84/dont-no-this-name-and-price-is-210-and-this-part-2-img.webp",
-      "/assets/shop-84/dont-no-this-name-okay-and-20rs.webp",
-      "/assets/action-sound.webp"
-    ],
-    "category": "sound-crackers",
-    "format": "Match Crackers",
-    "region": "Corsair Sivakasi",
-    "caffeine": "Crisp Friction Bang",
-    "inStock": true,
-    "description": "Corsair Leopard King original green match stick crackers (Pacquiao Ultraman edition). Easily ignite by striking against the side friction strip of the matchbox to deliver an immediate, crisp loud sound.",
-    "variants": [
-      {
-        "sku": "S84-MC-1",
-        "name": "1 Box (10 Sticks)",
-        "price": 20,
-        "compareAtPrice": 35
-      },
-      {
-        "sku": "S84-MC-10",
-        "name": "1 Carton Pack (10 Boxes)",
-        "price": 210,
-        "compareAtPrice": 350
-      }
-    ],
-    "status": "active",
-    "sku": "S84-MC-1",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Match Crackers",
-      "Sound Crackers",
-      "Corsair",
-      "Pacquiao Ultraman"
-    ],
-    "stockQuantity": 300,
-    "trackInventory": true
+      "id": "corsair-pacquiao-ultraman-match-crackers",
+      "handle": "corsair-pacquiao-ultraman-match-crackers",
+      "title": "Corsair Pacquiao Ultraman Match Stick Crackers",
+      "subtitle": "Friction-Strike Match Crackers with Crisp Loud Bang \u00b7 Strike on Box to Ignite",
+      "price": 20,
+      "originalPrice": 35,
+      "discount": 43,
+      "rating": 4.9,
+      "reviewsCount": 89,
+      "weight": "1 Box (10 Sticks)",
+      "weights": [
+          "1 Box (10 Sticks)",
+          "1 Carton Pack (10 Boxes)"
+      ],
+      "image": "/assets/shop-84/dont-no-this-name-and-price-is-210-and-this-part-1-img.webp",
+      "secondaryImage": "/assets/shop-84/dont-no-this-name-and-price-is-210-and-this-part-2-img.webp",
+      "galleryImages": [
+          "/assets/shop-84/dont-no-this-name-and-price-is-210-and-this-part-1-img.webp",
+          "/assets/shop-84/dont-no-this-name-and-price-is-210-and-this-part-2-img.webp",
+          "/assets/shop-84/dont-no-this-name-okay-and-20rs.webp"
+      ],
+      "category": "sound-crackers",
+      "format": "Match Crackers",
+      "region": "Corsair Sivakasi",
+      "caffeine": "Crisp Friction Bang",
+      "inStock": true,
+      "description": "Corsair Leopard King original green match stick crackers (Pacquiao Ultraman edition). Easily ignite by striking against the side friction strip of the matchbox to deliver an immediate, crisp loud sound.",
+      "variants": [
+          {
+              "sku": "S84-MC-1",
+              "name": "1 Box (10 Sticks)",
+              "price": 20,
+              "compareAtPrice": 35
+          },
+          {
+              "sku": "S84-MC-10",
+              "name": "1 Carton Pack (10 Boxes)",
+              "price": 210,
+              "compareAtPrice": 350
+          }
+      ],
+      "status": "active",
+      "sku": "S84-MC-1",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Match Crackers",
+          "Sound Crackers",
+          "Corsair",
+          "Pacquiao Ultraman"
+      ],
+      "stockQuantity": 300,
+      "trackInventory": true
   },
   {
-    "id": "vadivel-ashoka-flower-pots-10pcs",
-    "handle": "vadivel-ashoka-flower-pots-10pcs",
-    "title": "Vadivel Ashoka Flower Pots (10 Pcs Anar)",
-    "subtitle": "Traditional Golden Sparkling Fountains with Smooth Silver & Gold Spray",
-    "price": 335,
-    "originalPrice": 550,
-    "discount": 39,
-    "rating": 4.8,
-    "reviewsCount": 44,
-    "weight": "1 Box (10 Pcs)",
-    "weights": [
-      "1 Box (10 Pcs)",
-      "Pack of 2 Boxes"
-    ],
-    "image": "/assets/shop-84/flower-pots-or-aniner-335rs-.webp",
-    "secondaryImage": "/assets/action-anar.webp",
-    "galleryImages": [
-      "/assets/shop-84/flower-pots-or-aniner-335rs-.webp",
-      "/assets/action-anar.webp",
-      "/assets/photo-anar-gold.webp",
-      "/assets/photo-anar-tall.webp"
-    ],
-    "category": "flower-pots",
-    "format": "Traditional Cones",
-    "region": "Vadivel Pyrotechs Sivakasi",
-    "caffeine": "Golden Showers",
-    "inStock": true,
-    "description": "Vadivel Pyrotechs Ashoka flower pots. 10 traditional cone anars that erupt into smooth, continuous fountains of brilliant gold and silver sparks.",
-    "variants": [
-      {
-        "sku": "S84-POT-ASH",
-        "name": "1 Box (10 Pcs)",
-        "price": 335,
-        "compareAtPrice": 550
-      },
-      {
-        "sku": "S84-POT-ASH-2",
-        "name": "Pack of 2 Boxes",
-        "price": 649,
-        "compareAtPrice": 1100
-      }
-    ],
-    "status": "active",
-    "sku": "S84-POT-ASH",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Flower Pots",
-      "Anar",
-      "Ashoka",
-      "Vadivel"
-    ],
-    "stockQuantity": 160,
-    "trackInventory": true
+      "id": "vadivel-ashoka-flower-pots-10pcs",
+      "handle": "vadivel-ashoka-flower-pots-10pcs",
+      "title": "Vadivel Ashoka Flower Pots (10 Pcs Anar)",
+      "subtitle": "Traditional Golden Sparkling Fountains with Smooth Silver & Gold Spray",
+      "price": 335,
+      "originalPrice": 550,
+      "discount": 39,
+      "rating": 4.8,
+      "reviewsCount": 44,
+      "weight": "1 Box (10 Pcs)",
+      "weights": [
+          "1 Box (10 Pcs)",
+          "Pack of 2 Boxes"
+      ],
+      "image": "/assets/shop-84/flower-pots-or-aniner-335rs-.webp",
+      "secondaryImage": "/assets/shop-84/flower-pots-or-aniner-335rs-.webp",
+      "galleryImages": [
+          "/assets/shop-84/flower-pots-or-aniner-335rs-.webp"
+      ],
+      "category": "flower-pots",
+      "format": "Traditional Cones",
+      "region": "Vadivel Pyrotechs Sivakasi",
+      "caffeine": "Golden Showers",
+      "inStock": true,
+      "description": "Vadivel Pyrotechs Ashoka flower pots. 10 traditional cone anars that erupt into smooth, continuous fountains of brilliant gold and silver sparks.",
+      "variants": [
+          {
+              "sku": "S84-POT-ASH",
+              "name": "1 Box (10 Pcs)",
+              "price": 335,
+              "compareAtPrice": 550
+          },
+          {
+              "sku": "S84-POT-ASH-2",
+              "name": "Pack of 2 Boxes",
+              "price": 649,
+              "compareAtPrice": 1100
+          }
+      ],
+      "status": "active",
+      "sku": "S84-POT-ASH",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Flower Pots",
+          "Anar",
+          "Ashoka",
+          "Vadivel"
+      ],
+      "stockQuantity": 160,
+      "trackInventory": true
   },
   {
-    "id": "vadivel-gypsy-rocker-full-colour-sky-shots",
-    "handle": "vadivel-gypsy-rocker-full-colour-sky-shots",
-    "title": "Vadivel Gypsy Rocker Full Colour Aerial Sky Shots",
-    "subtitle": "High Altitude Aerial Shell Repeater with Mesmerizing Multicolor Starbursts",
-    "price": 1000,
-    "originalPrice": 1650,
-    "discount": 39,
-    "rating": 4.9,
-    "reviewsCount": 36,
-    "weight": "1 Cake",
-    "weights": [
-      "1 Cake"
-    ],
-    "image": "/assets/shop-84/full-color-1000rs-skyshort.webp",
-    "secondaryImage": "/assets/action-sky.webp",
-    "galleryImages": [
-      "/assets/shop-84/full-color-1000rs-skyshort.webp",
-      "/assets/action-sky.webp",
-      "/assets/photo-sky-burst.webp",
-      "/assets/photo-sky-gold.webp",
-      "/assets/photo-sky-red.webp"
-    ],
-    "category": "aerial-shots",
-    "format": "Aerial Shell Cake",
-    "region": "Vadivel Pyrotechs Sivakasi",
-    "caffeine": "Vibrant Color Stars",
-    "inStock": true,
-    "description": "Vadivel Pyrotechs Gypsy Rocker aerial repeater cake. Features dazzling high-altitude shell bursts with purple, emerald, and ruby peonies with glittering palm tails.",
-    "variants": [
-      {
-        "sku": "S84-SKY-GYP",
-        "name": "1 Cake",
-        "price": 1000,
-        "compareAtPrice": 1650
-      }
-    ],
-    "status": "active",
-    "sku": "S84-SKY-GYP",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Aerial Shots",
-      "Sky Shots",
-      "Gypsy Rocker",
-      "Vadivel"
-    ],
-    "stockQuantity": 90,
-    "trackInventory": true
+      "id": "vadivel-gypsy-rocker-full-colour-sky-shots",
+      "handle": "vadivel-gypsy-rocker-full-colour-sky-shots",
+      "title": "Vadivel Gypsy Rocker Full Colour Aerial Sky Shots",
+      "subtitle": "High Altitude Aerial Shell Repeater with Mesmerizing Multicolor Starbursts",
+      "price": 1000,
+      "originalPrice": 1650,
+      "discount": 39,
+      "rating": 4.9,
+      "reviewsCount": 36,
+      "weight": "1 Cake",
+      "weights": [
+          "1 Cake"
+      ],
+      "image": "/assets/shop-84/full-color-1000rs-skyshort.webp",
+      "secondaryImage": "/assets/shop-84/full-color-1000rs-skyshort.webp",
+      "galleryImages": [
+          "/assets/shop-84/full-color-1000rs-skyshort.webp"
+      ],
+      "category": "aerial-shots",
+      "format": "Aerial Shell Cake",
+      "region": "Vadivel Pyrotechs Sivakasi",
+      "caffeine": "Vibrant Color Stars",
+      "inStock": true,
+      "description": "Vadivel Pyrotechs Gypsy Rocker aerial repeater cake. Features dazzling high-altitude shell bursts with purple, emerald, and ruby peonies with glittering palm tails.",
+      "variants": [
+          {
+              "sku": "S84-SKY-GYP",
+              "name": "1 Cake",
+              "price": 1000,
+              "compareAtPrice": 1650
+          }
+      ],
+      "status": "active",
+      "sku": "S84-SKY-GYP",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Aerial Shots",
+          "Sky Shots",
+          "Gypsy Rocker",
+          "Vadivel"
+      ],
+      "stockQuantity": 90,
+      "trackInventory": true
   },
   {
-    "id": "gatling-gun-288-shots-handheld-torch-sparkler",
-    "handle": "gatling-gun-288-shots-handheld-torch-sparkler",
-    "title": "288-Shot Handheld Gatling Gun Sparkler Torch",
-    "subtitle": "Rapid-Fire 288 Shots Handheld Roman Candle Torch with Dazzling Continuous Sparks",
-    "price": 1700,
-    "originalPrice": 2800,
-    "discount": 39,
-    "rating": 5,
-    "reviewsCount": 49,
-    "weight": "1 Giant Torch (288 Shots)",
-    "weights": [
-      "1 Giant Torch (288 Shots)"
-    ],
-    "image": "/assets/shop-84/handrtumb-sparkale-1700rs.webp",
-    "secondaryImage": "/assets/action-sparkler.webp",
-    "galleryImages": [
-      "/assets/shop-84/handrtumb-sparkale-1700rs.webp",
-      "/assets/action-sparkler.webp",
-      "/assets/photo-sparkler-hand.webp",
-      "/assets/photo-sparkler-kids.webp"
-    ],
-    "category": "sparklers",
-    "format": "Handheld Gatling Torch",
-    "region": "Sivakasi Quality",
-    "caffeine": "288 Rapid Sparks",
-    "inStock": true,
-    "description": "288 Catling Gatling Gun handheld Roman candle sparkler torch. Features an easy-grip safety handle and discharges 288 rapid-fire glowing star shots with whistling crackles.",
-    "variants": [
-      {
-        "sku": "S84-SPK-GAT",
-        "name": "1 Giant Torch (288 Shots)",
-        "price": 1700,
-        "compareAtPrice": 2800
-      }
-    ],
-    "status": "active",
-    "sku": "S84-SPK-GAT",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Sparklers",
-      "Gatling Torch",
-      "Roman Candle",
-      "288 Shots"
-    ],
-    "stockQuantity": 70,
-    "trackInventory": true
+      "id": "gatling-gun-288-shots-handheld-torch-sparkler",
+      "handle": "gatling-gun-288-shots-handheld-torch-sparkler",
+      "title": "288-Shot Handheld Gatling Gun Sparkler Torch",
+      "subtitle": "Rapid-Fire 288 Shots Handheld Roman Candle Torch with Dazzling Continuous Sparks",
+      "price": 1700,
+      "originalPrice": 2800,
+      "discount": 39,
+      "rating": 5.0,
+      "reviewsCount": 49,
+      "weight": "1 Giant Torch (288 Shots)",
+      "weights": [
+          "1 Giant Torch (288 Shots)"
+      ],
+      "image": "/assets/shop-84/handrtumb-sparkale-1700rs.webp",
+      "secondaryImage": "/assets/shop-84/handrtumb-sparkale-1700rs.webp",
+      "galleryImages": [
+          "/assets/shop-84/handrtumb-sparkale-1700rs.webp"
+      ],
+      "category": "sparklers",
+      "format": "Handheld Gatling Torch",
+      "region": "Sivakasi Quality",
+      "caffeine": "288 Rapid Sparks",
+      "inStock": true,
+      "description": "288 Catling Gatling Gun handheld Roman candle sparkler torch. Features an easy-grip safety handle and discharges 288 rapid-fire glowing star shots with whistling crackles.",
+      "variants": [
+          {
+              "sku": "S84-SPK-GAT",
+              "name": "1 Giant Torch (288 Shots)",
+              "price": 1700,
+              "compareAtPrice": 2800
+          }
+      ],
+      "status": "active",
+      "sku": "S84-SPK-GAT",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Sparklers",
+          "Gatling Torch",
+          "Roman Candle",
+          "288 Shots"
+      ],
+      "stockQuantity": 70,
+      "trackInventory": true
   },
   {
-    "id": "vadivel-badiya-75-shots-multicolour-aerial-cake",
-    "handle": "vadivel-badiya-75-shots-multicolour-aerial-cake",
-    "title": "Vadivel Badiya 75 Shots Multi-Colour Aerial Cake",
-    "subtitle": "75 Consecutive High-Altitude Sky Bursts with Golden Willow & Vibrant Brocade Finale",
-    "price": 2300,
-    "originalPrice": 3800,
-    "discount": 39,
-    "rating": 4.9,
-    "reviewsCount": 68,
-    "weight": "1 Cake (75 Shots)",
-    "weights": [
-      "1 Cake (75 Shots)"
-    ],
-    "image": "/assets/shop-84/img-center-one-okay-badaya-skyshort-75-short-and-2300rs.webp",
-    "secondaryImage": "/assets/action-sky.webp",
-    "galleryImages": [
-      "/assets/shop-84/img-center-one-okay-badaya-skyshort-75-short-and-2300rs.webp",
-      "/assets/action-sky.webp",
-      "/assets/photo-sky-burst.webp",
-      "/assets/photo-sky-gold.webp",
-      "/assets/photo-sky-red.webp"
-    ],
-    "category": "aerial-shots",
-    "format": "Multi-Shot Cake",
-    "region": "Vadivel Pyrotechs Sivakasi",
-    "caffeine": "75 Grand Finale Shots",
-    "inStock": true,
-    "description": "Vadivel Pyrotechs Badiya 75 shots grand celebration cake. Delivers 75 continuous rapid sky bursts culminating in a dazzling multi-layer golden palm crown finale.",
-    "variants": [
-      {
-        "sku": "S84-SKY-BAD75",
-        "name": "1 Cake (75 Shots)",
-        "price": 2300,
-        "compareAtPrice": 3800
-      }
-    ],
-    "status": "active",
-    "sku": "S84-SKY-BAD75",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Aerial Shots",
-      "Sky Shots",
-      "Badiya",
-      "75 Shots",
-      "Vadivel"
-    ],
-    "stockQuantity": 50,
-    "trackInventory": true
+      "id": "vadivel-badiya-75-shots-multicolour-aerial-cake",
+      "handle": "vadivel-badiya-75-shots-multicolour-aerial-cake",
+      "title": "Vadivel Badiya 75 Shots Multi-Colour Aerial Cake",
+      "subtitle": "75 Consecutive High-Altitude Sky Bursts with Golden Willow & Vibrant Brocade Finale",
+      "price": 2300,
+      "originalPrice": 3800,
+      "discount": 39,
+      "rating": 4.9,
+      "reviewsCount": 68,
+      "weight": "1 Cake (75 Shots)",
+      "weights": [
+          "1 Cake (75 Shots)"
+      ],
+      "image": "/assets/shop-84/img-center-one-okay-badaya-skyshort-75-short-and-2300rs.webp",
+      "secondaryImage": "/assets/shop-84/img-center-one-okay-badaya-skyshort-75-short-and-2300rs.webp",
+      "galleryImages": [
+          "/assets/shop-84/img-center-one-okay-badaya-skyshort-75-short-and-2300rs.webp"
+      ],
+      "category": "aerial-shots",
+      "format": "Multi-Shot Cake",
+      "region": "Vadivel Pyrotechs Sivakasi",
+      "caffeine": "75 Grand Finale Shots",
+      "inStock": true,
+      "description": "Vadivel Pyrotechs Badiya 75 shots grand celebration cake. Delivers 75 continuous rapid sky bursts culminating in a dazzling multi-layer golden palm crown finale.",
+      "variants": [
+          {
+              "sku": "S84-SKY-BAD75",
+              "name": "1 Cake (75 Shots)",
+              "price": 2300,
+              "compareAtPrice": 3800
+          }
+      ],
+      "status": "active",
+      "sku": "S84-SKY-BAD75",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Aerial Shots",
+          "Sky Shots",
+          "Badiya",
+          "75 Shots",
+          "Vadivel"
+      ],
+      "stockQuantity": 50,
+      "trackInventory": true
   },
   {
-    "id": "vadivel-mega-jumbo-flower-pots",
-    "handle": "vadivel-mega-jumbo-flower-pots",
-    "title": "Vadivel Mega Jumbo Flower Pots (10 Pcs Tray)",
-    "subtitle": "Extra Large Heavy Flower Pots with High Rising Silver & Golden Geyser Fountains",
-    "price": 685,
-    "originalPrice": 1100,
-    "discount": 38,
-    "rating": 4.9,
-    "reviewsCount": 39,
-    "weight": "1 Tray (10 Cones)",
-    "weights": [
-      "1 Tray (10 Cones)"
-    ],
-    "image": "/assets/shop-84/mega-pots-685rs.webp",
-    "secondaryImage": "/assets/action-anar.webp",
-    "galleryImages": [
-      "/assets/shop-84/mega-pots-685rs.webp",
-      "/assets/action-anar.webp",
-      "/assets/photo-anar-gold.webp",
-      "/assets/photo-anar-tall.webp"
-    ],
-    "category": "flower-pots",
-    "format": "Jumbo Cones",
-    "region": "Vadivel Pyrotechs Sivakasi",
-    "caffeine": "High Altitude Fountain",
-    "inStock": true,
-    "description": "Vadivel Pyrotechs Mega Jumbo flower pots packaged in a 10-piece presentation tray. Packed with heavy pyro composition for high-shooting fountain sprays and extended burn time.",
-    "variants": [
-      {
-        "sku": "S84-POT-MEG",
-        "name": "1 Tray (10 Cones)",
-        "price": 685,
-        "compareAtPrice": 1100
-      }
-    ],
-    "status": "active",
-    "sku": "S84-POT-MEG",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Flower Pots",
-      "Anar",
-      "Mega Jumbo",
-      "Vadivel"
-    ],
-    "stockQuantity": 85,
-    "trackInventory": true
+      "id": "vadivel-mega-jumbo-flower-pots",
+      "handle": "vadivel-mega-jumbo-flower-pots",
+      "title": "Vadivel Mega Jumbo Flower Pots (10 Pcs Tray)",
+      "subtitle": "Extra Large Heavy Flower Pots with High Rising Silver & Golden Geyser Fountains",
+      "price": 685,
+      "originalPrice": 1100,
+      "discount": 38,
+      "rating": 4.9,
+      "reviewsCount": 39,
+      "weight": "1 Tray (10 Cones)",
+      "weights": [
+          "1 Tray (10 Cones)"
+      ],
+      "image": "/assets/shop-84/mega-pots-685rs.webp",
+      "secondaryImage": "/assets/shop-84/mega-pots-685rs.webp",
+      "galleryImages": [
+          "/assets/shop-84/mega-pots-685rs.webp"
+      ],
+      "category": "flower-pots",
+      "format": "Jumbo Cones",
+      "region": "Vadivel Pyrotechs Sivakasi",
+      "caffeine": "High Altitude Fountain",
+      "inStock": true,
+      "description": "Vadivel Pyrotechs Mega Jumbo flower pots packaged in a 10-piece presentation tray. Packed with heavy pyro composition for high-shooting fountain sprays and extended burn time.",
+      "variants": [
+          {
+              "sku": "S84-POT-MEG",
+              "name": "1 Tray (10 Cones)",
+              "price": 685,
+              "compareAtPrice": 1100
+          }
+      ],
+      "status": "active",
+      "sku": "S84-POT-MEG",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Flower Pots",
+          "Anar",
+          "Mega Jumbo",
+          "Vadivel"
+      ],
+      "stockQuantity": 85,
+      "trackInventory": true
   },
   {
-    "id": "sri-krishna-ming-dynasty-multicolour-aerial-cake",
-    "handle": "sri-krishna-ming-dynasty-multicolour-aerial-cake",
-    "title": "Sri Krishna Ming Dynasty Multi-Colour Aerial Cake",
-    "subtitle": "Vibrant Traditional Multi-Colour Brocade Sky Bursts Repeater with Crackling Pearls",
-    "price": 1195,
-    "originalPrice": 1950,
-    "discount": 39,
-    "rating": 4.8,
-    "reviewsCount": 33,
-    "weight": "1 Cake",
-    "weights": [
-      "1 Cake"
-    ],
-    "image": "/assets/shop-84/multicolor-sky-short-1195.webp",
-    "secondaryImage": "/assets/action-sky.webp",
-    "galleryImages": [
-      "/assets/shop-84/multicolor-sky-short-1195.webp",
-      "/assets/action-sky.webp",
-      "/assets/photo-sky-burst.webp",
-      "/assets/photo-sky-gold.webp",
-      "/assets/photo-sky-red.webp"
-    ],
-    "category": "aerial-shots",
-    "format": "Multi-Shot Cake",
-    "region": "Karthik Fireworks Sivakasi",
-    "caffeine": "Multicolor Brocade",
-    "inStock": true,
-    "description": "Sri Krishna / Karthik Fireworks Ming Dynasty multi-colour aerial cake. Produces brilliant colour comets that detonate into sparkling ruby, emerald, and gold floral blooms.",
-    "variants": [
-      {
-        "sku": "S84-SKY-MIN",
-        "name": "1 Cake",
-        "price": 1195,
-        "compareAtPrice": 1950
-      }
-    ],
-    "status": "active",
-    "sku": "S84-SKY-MIN",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Aerial Shots",
-      "Sky Shots",
-      "Ming Dynasty",
-      "Karthik Fireworks"
-    ],
-    "stockQuantity": 90,
-    "trackInventory": true
+      "id": "sri-krishna-ming-dynasty-multicolour-aerial-cake",
+      "handle": "sri-krishna-ming-dynasty-multicolour-aerial-cake",
+      "title": "Sri Krishna Ming Dynasty Multi-Colour Aerial Cake",
+      "subtitle": "Vibrant Traditional Multi-Colour Brocade Sky Bursts Repeater with Crackling Pearls",
+      "price": 1195,
+      "originalPrice": 1950,
+      "discount": 39,
+      "rating": 4.8,
+      "reviewsCount": 33,
+      "weight": "1 Cake",
+      "weights": [
+          "1 Cake"
+      ],
+      "image": "/assets/shop-84/multicolor-sky-short-1195.webp",
+      "secondaryImage": "/assets/shop-84/multicolor-sky-short-1195.webp",
+      "galleryImages": [
+          "/assets/shop-84/multicolor-sky-short-1195.webp"
+      ],
+      "category": "aerial-shots",
+      "format": "Multi-Shot Cake",
+      "region": "Karthik Fireworks Sivakasi",
+      "caffeine": "Multicolor Brocade",
+      "inStock": true,
+      "description": "Sri Krishna / Karthik Fireworks Ming Dynasty multi-colour aerial cake. Produces brilliant colour comets that detonate into sparkling ruby, emerald, and gold floral blooms.",
+      "variants": [
+          {
+              "sku": "S84-SKY-MIN",
+              "name": "1 Cake",
+              "price": 1195,
+              "compareAtPrice": 1950
+          }
+      ],
+      "status": "active",
+      "sku": "S84-SKY-MIN",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Aerial Shots",
+          "Sky Shots",
+          "Ming Dynasty",
+          "Karthik Fireworks"
+      ],
+      "stockQuantity": 90,
+      "trackInventory": true
   },
   {
-    "id": "cock-brand-penta-colour-fountain",
-    "handle": "cock-brand-penta-colour-fountain",
-    "title": "Cock Brand Penta Colour Fountain (5 Pcs Box)",
-    "subtitle": "Sri Kaliswari Fireworks · 5 Distinct Shifting Colour Shower Fountains",
-    "price": 1150,
-    "originalPrice": 1900,
-    "discount": 39,
-    "rating": 4.9,
-    "reviewsCount": 41,
-    "weight": "1 Box (5 Cones)",
-    "weights": [
-      "1 Box (5 Cones)"
-    ],
-    "image": "/assets/shop-84/penta-color-fountain-1150rs.webp",
-    "secondaryImage": "/assets/action-anar.webp",
-    "galleryImages": [
-      "/assets/shop-84/penta-color-fountain-1150rs.webp",
-      "/assets/action-anar.webp",
-      "/assets/photo-anar-gold.webp",
-      "/assets/photo-anar-tall.webp"
-    ],
-    "category": "flower-pots",
-    "format": "Colour Fountain",
-    "region": "Cock Brand Sivakasi",
-    "caffeine": "5 Color Changing Showers",
-    "inStock": true,
-    "description": "Sri Kaliswari Fireworks Cock Brand Penta Colour Fountain. Box of 5 heavy color changing fountains that cycle through vibrant shades of red, green, blue, yellow, and silver.",
-    "variants": [
-      {
-        "sku": "S84-POT-PEN",
-        "name": "1 Box (5 Cones)",
-        "price": 1150,
-        "compareAtPrice": 1900
-      }
-    ],
-    "status": "active",
-    "sku": "S84-POT-PEN",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Flower Pots",
-      "Fountain",
-      "Cock Brand",
-      "Penta Colour"
-    ],
-    "stockQuantity": 80,
-    "trackInventory": true
+      "id": "cock-brand-penta-colour-fountain",
+      "handle": "cock-brand-penta-colour-fountain",
+      "title": "Cock Brand Penta Colour Fountain (5 Pcs Box)",
+      "subtitle": "Sri Kaliswari Fireworks \u00b7 5 Distinct Shifting Colour Shower Fountains",
+      "price": 1150,
+      "originalPrice": 1900,
+      "discount": 39,
+      "rating": 4.9,
+      "reviewsCount": 41,
+      "weight": "1 Box (5 Cones)",
+      "weights": [
+          "1 Box (5 Cones)"
+      ],
+      "image": "/assets/shop-84/penta-color-fountain-1150rs.webp",
+      "secondaryImage": "/assets/shop-84/penta-color-fountain-1150rs.webp",
+      "galleryImages": [
+          "/assets/shop-84/penta-color-fountain-1150rs.webp"
+      ],
+      "category": "flower-pots",
+      "format": "Colour Fountain",
+      "region": "Cock Brand Sivakasi",
+      "caffeine": "5 Color Changing Showers",
+      "inStock": true,
+      "description": "Sri Kaliswari Fireworks Cock Brand Penta Colour Fountain. Box of 5 heavy color changing fountains that cycle through vibrant shades of red, green, blue, yellow, and silver.",
+      "variants": [
+          {
+              "sku": "S84-POT-PEN",
+              "name": "1 Box (5 Cones)",
+              "price": 1150,
+              "compareAtPrice": 1900
+          }
+      ],
+      "status": "active",
+      "sku": "S84-POT-PEN",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Flower Pots",
+          "Fountain",
+          "Cock Brand",
+          "Penta Colour"
+      ],
+      "stockQuantity": 80,
+      "trackInventory": true
   },
   {
-    "id": "cock-brand-rang-barat-colour-flower-pots",
-    "handle": "cock-brand-rang-barat-colour-flower-pots",
-    "title": "Cock Brand Rang Barat Colour Flower Pots (10 Pcs)",
-    "subtitle": "Sri Kaliswari Fireworks · 14cm Cones with Vivid Multi-Colour Sparks",
-    "price": 830,
-    "originalPrice": 1350,
-    "discount": 39,
-    "rating": 4.9,
-    "reviewsCount": 45,
-    "weight": "1 Box (10 Cones)",
-    "weights": [
-      "1 Box (10 Cones)"
-    ],
-    "image": "/assets/shop-84/rang-barat-pots-830rs.webp",
-    "secondaryImage": "/assets/action-anar.webp",
-    "galleryImages": [
-      "/assets/shop-84/rang-barat-pots-830rs.webp",
-      "/assets/action-anar.webp",
-      "/assets/photo-anar-gold.webp",
-      "/assets/photo-anar-tall.webp"
-    ],
-    "category": "flower-pots",
-    "format": "Colour Cones",
-    "region": "Cock Brand Sivakasi",
-    "caffeine": "Vivid Colour Sparks",
-    "inStock": true,
-    "description": "Cock Brand Rang Barat 14cm colour anar flower pots. Emits an energetic high shower of shimmering multicolour stars with smooth crackles.",
-    "variants": [
-      {
-        "sku": "S84-POT-RGB",
-        "name": "1 Box (10 Cones)",
-        "price": 830,
-        "compareAtPrice": 1350
-      }
-    ],
-    "status": "active",
-    "sku": "S84-POT-RGB",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Flower Pots",
-      "Anar",
-      "Rang Barat",
-      "Cock Brand"
-    ],
-    "stockQuantity": 100,
-    "trackInventory": true
+      "id": "cock-brand-rang-barat-colour-flower-pots",
+      "handle": "cock-brand-rang-barat-colour-flower-pots",
+      "title": "Cock Brand Rang Barat Colour Flower Pots (10 Pcs)",
+      "subtitle": "Sri Kaliswari Fireworks \u00b7 14cm Cones with Vivid Multi-Colour Sparks",
+      "price": 830,
+      "originalPrice": 1350,
+      "discount": 39,
+      "rating": 4.9,
+      "reviewsCount": 45,
+      "weight": "1 Box (10 Cones)",
+      "weights": [
+          "1 Box (10 Cones)"
+      ],
+      "image": "/assets/shop-84/rang-barat-pots-830rs.webp",
+      "secondaryImage": "/assets/shop-84/rang-barat-pots-830rs.webp",
+      "galleryImages": [
+          "/assets/shop-84/rang-barat-pots-830rs.webp"
+      ],
+      "category": "flower-pots",
+      "format": "Colour Cones",
+      "region": "Cock Brand Sivakasi",
+      "caffeine": "Vivid Colour Sparks",
+      "inStock": true,
+      "description": "Cock Brand Rang Barat 14cm colour anar flower pots. Emits an energetic high shower of shimmering multicolour stars with smooth crackles.",
+      "variants": [
+          {
+              "sku": "S84-POT-RGB",
+              "name": "1 Box (10 Cones)",
+              "price": 830,
+              "compareAtPrice": 1350
+          }
+      ],
+      "status": "active",
+      "sku": "S84-POT-RGB",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Flower Pots",
+          "Anar",
+          "Rang Barat",
+          "Cock Brand"
+      ],
+      "stockQuantity": 100,
+      "trackInventory": true
   },
   {
-    "id": "vadivel-power-play-limited-edition-aerial-shells",
-    "handle": "vadivel-power-play-limited-edition-aerial-shells",
-    "title": "Vadivel Power Play Limited Edition Aerial Shells",
-    "subtitle": "Cricket Special Edition · Massive High Altitude Multi-Colour Aerial Shells",
-    "price": 1800,
-    "originalPrice": 3000,
-    "discount": 40,
-    "rating": 4.9,
-    "reviewsCount": 37,
-    "weight": "1 Pack",
-    "weights": [
-      "1 Pack"
-    ],
-    "image": "/assets/shop-84/skyshort-1800rs.webp",
-    "secondaryImage": "/assets/action-sky.webp",
-    "galleryImages": [
-      "/assets/shop-84/skyshort-1800rs.webp",
-      "/assets/action-sky.webp",
-      "/assets/photo-sky-burst.webp",
-      "/assets/photo-sky-gold.webp",
-      "/assets/photo-sky-red.webp"
-    ],
-    "category": "aerial-shots",
-    "format": "Aerial Shells",
-    "region": "Vadivel Pyrotechs Sivakasi",
-    "caffeine": "Massive Shell Bursts",
-    "inStock": true,
-    "description": "Vadivel Pyrotechs Power Play limited edition aerial shell pack. Massive tube shells launching sky-high before detonating into dramatic brocade crowns and bright flashing comets.",
-    "variants": [
-      {
-        "sku": "S84-SKY-POW",
-        "name": "1 Pack",
-        "price": 1800,
-        "compareAtPrice": 3000
-      }
-    ],
-    "status": "active",
-    "sku": "S84-SKY-POW",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Aerial Shots",
-      "Sky Shots",
-      "Power Play",
-      "Vadivel"
-    ],
-    "stockQuantity": 75,
-    "trackInventory": true
+      "id": "vadivel-power-play-limited-edition-aerial-shells",
+      "handle": "vadivel-power-play-limited-edition-aerial-shells",
+      "title": "Vadivel Power Play Limited Edition Aerial Shells",
+      "subtitle": "Cricket Special Edition \u00b7 Massive High Altitude Multi-Colour Aerial Shells",
+      "price": 1800,
+      "originalPrice": 3000,
+      "discount": 40,
+      "rating": 4.9,
+      "reviewsCount": 37,
+      "weight": "1 Pack",
+      "weights": [
+          "1 Pack"
+      ],
+      "image": "/assets/shop-84/skyshort-1800rs.webp",
+      "secondaryImage": "/assets/shop-84/skyshort-1800rs.webp",
+      "galleryImages": [
+          "/assets/shop-84/skyshort-1800rs.webp"
+      ],
+      "category": "aerial-shots",
+      "format": "Aerial Shells",
+      "region": "Vadivel Pyrotechs Sivakasi",
+      "caffeine": "Massive Shell Bursts",
+      "inStock": true,
+      "description": "Vadivel Pyrotechs Power Play limited edition aerial shell pack. Massive tube shells launching sky-high before detonating into dramatic brocade crowns and bright flashing comets.",
+      "variants": [
+          {
+              "sku": "S84-SKY-POW",
+              "name": "1 Pack",
+              "price": 1800,
+              "compareAtPrice": 3000
+          }
+      ],
+      "status": "active",
+      "sku": "S84-SKY-POW",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Aerial Shots",
+          "Sky Shots",
+          "Power Play",
+          "Vadivel"
+      ],
+      "stockQuantity": 75,
+      "trackInventory": true
   },
   {
-    "id": "vadivel-akash-mela-limited-edition-aerial-shells",
-    "handle": "vadivel-akash-mela-limited-edition-aerial-shells",
-    "title": "Vadivel Akash Mela Limited Edition Aerial Shells",
-    "subtitle": "Special Festival Edition · Giant Sky Bursts with Radiant White & Violet Peony",
-    "price": 2200,
-    "originalPrice": 3600,
-    "discount": 39,
-    "rating": 4.9,
-    "reviewsCount": 43,
-    "weight": "1 Pack",
-    "weights": [
-      "1 Pack"
-    ],
-    "image": "/assets/shop-84/skyshort-2200rs.webp",
-    "secondaryImage": "/assets/action-sky.webp",
-    "galleryImages": [
-      "/assets/shop-84/skyshort-2200rs.webp",
-      "/assets/action-sky.webp",
-      "/assets/photo-sky-burst.webp",
-      "/assets/photo-sky-gold.webp",
-      "/assets/photo-sky-red.webp"
-    ],
-    "category": "aerial-shots",
-    "format": "Aerial Shells",
-    "region": "Vadivel Pyrotechs Sivakasi",
-    "caffeine": "Festival Sky Bursts",
-    "inStock": true,
-    "description": "Vadivel Pyrotechs Akash Mela festival edition giant shells. Lights up the night with huge spherical floral peonies in glittering silver, violet, and deep gold.",
-    "variants": [
-      {
-        "sku": "S84-SKY-AKM",
-        "name": "1 Pack",
-        "price": 2200,
-        "compareAtPrice": 3600
-      }
-    ],
-    "status": "active",
-    "sku": "S84-SKY-AKM",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Aerial Shots",
-      "Sky Shots",
-      "Akash Mela",
-      "Vadivel"
-    ],
-    "stockQuantity": 65,
-    "trackInventory": true
+      "id": "vadivel-akash-mela-limited-edition-aerial-shells",
+      "handle": "vadivel-akash-mela-limited-edition-aerial-shells",
+      "title": "Vadivel Akash Mela Limited Edition Aerial Shells",
+      "subtitle": "Special Festival Edition \u00b7 Giant Sky Bursts with Radiant White & Violet Peony",
+      "price": 2200,
+      "originalPrice": 3600,
+      "discount": 39,
+      "rating": 4.9,
+      "reviewsCount": 43,
+      "weight": "1 Pack",
+      "weights": [
+          "1 Pack"
+      ],
+      "image": "/assets/shop-84/skyshort-2200rs.webp",
+      "secondaryImage": "/assets/shop-84/skyshort-2200rs.webp",
+      "galleryImages": [
+          "/assets/shop-84/skyshort-2200rs.webp"
+      ],
+      "category": "aerial-shots",
+      "format": "Aerial Shells",
+      "region": "Vadivel Pyrotechs Sivakasi",
+      "caffeine": "Festival Sky Bursts",
+      "inStock": true,
+      "description": "Vadivel Pyrotechs Akash Mela festival edition giant shells. Lights up the night with huge spherical floral peonies in glittering silver, violet, and deep gold.",
+      "variants": [
+          {
+              "sku": "S84-SKY-AKM",
+              "name": "1 Pack",
+              "price": 2200,
+              "compareAtPrice": 3600
+          }
+      ],
+      "status": "active",
+      "sku": "S84-SKY-AKM",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Aerial Shots",
+          "Sky Shots",
+          "Akash Mela",
+          "Vadivel"
+      ],
+      "stockQuantity": 65,
+      "trackInventory": true
   },
   {
-    "id": "anil-man-pasand-25-shots-multicolour-aerial-cake",
-    "handle": "anil-man-pasand-25-shots-multicolour-aerial-cake",
-    "title": "Anil Man Pasand 25 Shots Multi-Colour Aerial Cake",
-    "subtitle": "Anil Fireworks Factory · 25 Rapid Sky Repeater Shots with Golden Palms",
-    "price": 1130,
-    "originalPrice": 1900,
-    "discount": 41,
-    "rating": 4.9,
-    "reviewsCount": 58,
-    "weight": "1 Cake (25 Shots)",
-    "weights": [
-      "1 Cake (25 Shots)"
-    ],
-    "image": "/assets/shop-84/skyshort-25-1130rs-part-1img.webp",
-    "secondaryImage": "/assets/action-sky.webp",
-    "galleryImages": [
-      "/assets/shop-84/skyshort-25-1130rs-part-1img.webp",
-      "/assets/shop-84/skyshort-25-1130rs-part-2img.webp",
-      "/assets/action-sky.webp",
-      "/assets/photo-sky-burst.webp",
-      "/assets/photo-sky-gold.webp",
-      "/assets/photo-sky-red.webp"
-    ],
-    "category": "aerial-shots",
-    "format": "Multi-Shot Cake",
-    "region": "Anil Fireworks Sivakasi",
-    "caffeine": "25 Rapid Sky Shots",
-    "inStock": true,
-    "description": "Anil Fireworks Factory authentic Man Pasand 25 shots aerial cake. Produces 25 rapid-sequence sky bursts with radiant golden brocades, crackling willows, and rich ruby stars.",
-    "variants": [
-      {
-        "sku": "S84-SKY-MAN25",
-        "name": "1 Cake (25 Shots)",
-        "price": 1130,
-        "compareAtPrice": 1900
-      }
-    ],
-    "status": "active",
-    "sku": "S84-SKY-MAN25",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Aerial Shots",
-      "Sky Shots",
-      "Anil Fireworks",
-      "Man Pasand",
-      "25 Shots"
-    ],
-    "stockQuantity": 95,
-    "trackInventory": true
+      "id": "anil-man-pasand-25-shots-multicolour-aerial-cake",
+      "handle": "anil-man-pasand-25-shots-multicolour-aerial-cake",
+      "title": "Anil Man Pasand 25 Shots Multi-Colour Aerial Cake",
+      "subtitle": "Anil Fireworks Factory \u00b7 25 Rapid Sky Repeater Shots with Golden Palms",
+      "price": 1130,
+      "originalPrice": 1900,
+      "discount": 41,
+      "rating": 4.9,
+      "reviewsCount": 58,
+      "weight": "1 Cake (25 Shots)",
+      "weights": [
+          "1 Cake (25 Shots)"
+      ],
+      "image": "/assets/shop-84/skyshort-25-1130rs-part-1img.webp",
+      "secondaryImage": "/assets/shop-84/skyshort-25-1130rs-part-2img.webp",
+      "galleryImages": [
+          "/assets/shop-84/skyshort-25-1130rs-part-1img.webp",
+          "/assets/shop-84/skyshort-25-1130rs-part-2img.webp"
+      ],
+      "category": "aerial-shots",
+      "format": "Multi-Shot Cake",
+      "region": "Anil Fireworks Sivakasi",
+      "caffeine": "25 Rapid Sky Shots",
+      "inStock": true,
+      "description": "Anil Fireworks Factory authentic Man Pasand 25 shots aerial cake. Produces 25 rapid-sequence sky bursts with radiant golden brocades, crackling willows, and rich ruby stars.",
+      "variants": [
+          {
+              "sku": "S84-SKY-MAN25",
+              "name": "1 Cake (25 Shots)",
+              "price": 1130,
+              "compareAtPrice": 1900
+          }
+      ],
+      "status": "active",
+      "sku": "S84-SKY-MAN25",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Aerial Shots",
+          "Sky Shots",
+          "Anil Fireworks",
+          "Man Pasand",
+          "25 Shots"
+      ],
+      "stockQuantity": 95,
+      "trackInventory": true
   },
   {
-    "id": "standard-fireworks-100-shots-multi-colour-grand-finale-cake",
-    "handle": "standard-fireworks-100-shots-multi-colour-grand-finale-cake",
-    "title": "Standard Fireworks 100 Shots Multi-Colour Aerial Grand Finale Cake",
-    "subtitle": "Standard Fireworks Wedding Series · 100 Consecutive Multi-Colour Aerial Bursts",
-    "price": 3500,
-    "originalPrice": 5800,
-    "discount": 40,
-    "rating": 5,
-    "reviewsCount": 72,
-    "weight": "MOM Series (100 Shots)",
-    "weights": [
-      "MOM Series (100 Shots)",
-      "MATRIX Series (100 Shots)"
-    ],
-    "image": "/assets/shop-84/skyshort-3500-plus-3500rs.webp",
-    "secondaryImage": "/assets/action-sky.webp",
-    "galleryImages": [
-      "/assets/shop-84/skyshort-3500-plus-3500rs.webp",
-      "/assets/action-sky.webp",
-      "/assets/photo-sky-burst.webp",
-      "/assets/photo-sky-gold.webp",
-      "/assets/photo-sky-red.webp"
-    ],
-    "category": "aerial-shots",
-    "format": "100-Shot Grand Cake",
-    "region": "Standard Fireworks Sivakasi",
-    "caffeine": "100 Shot Grand Finale",
-    "inStock": true,
-    "description": "Standard Fireworks premier 100 Shots Aerial Cake (available in MOM Series & MATRIX Series). The ultimate display centerpiece delivering 100 rapid multi-colour aerial detonations with huge weeping willow waterfalls.",
-    "variants": [
-      {
-        "sku": "S84-SKY-MOM100",
-        "name": "MOM Series (100 Shots)",
-        "price": 3500,
-        "compareAtPrice": 5800
-      },
-      {
-        "sku": "S84-SKY-MAT100",
-        "name": "MATRIX Series (100 Shots)",
-        "price": 3500,
-        "compareAtPrice": 5800
-      }
-    ],
-    "status": "active",
-    "sku": "S84-SKY-MOM100",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Aerial Shots",
-      "Sky Shots",
-      "Standard Fireworks",
-      "100 Shots",
-      "Grand Finale"
-    ],
-    "stockQuantity": 45,
-    "trackInventory": true
+      "id": "standard-fireworks-100-shots-multi-colour-grand-finale-cake",
+      "handle": "standard-fireworks-100-shots-multi-colour-grand-finale-cake",
+      "title": "Standard Fireworks 100 Shots Multi-Colour Aerial Grand Finale Cake",
+      "subtitle": "Standard Fireworks Wedding Series \u00b7 100 Consecutive Multi-Colour Aerial Bursts",
+      "price": 3500,
+      "originalPrice": 5800,
+      "discount": 40,
+      "rating": 5.0,
+      "reviewsCount": 72,
+      "weight": "MOM Series (100 Shots)",
+      "weights": [
+          "MOM Series (100 Shots)",
+          "MATRIX Series (100 Shots)"
+      ],
+      "image": "/assets/shop-84/skyshort-3500-plus-3500rs.webp",
+      "secondaryImage": "/assets/shop-84/skyshort-3500-plus-3500rs.webp",
+      "galleryImages": [
+          "/assets/shop-84/skyshort-3500-plus-3500rs.webp"
+      ],
+      "category": "aerial-shots",
+      "format": "100-Shot Grand Cake",
+      "region": "Standard Fireworks Sivakasi",
+      "caffeine": "100 Shot Grand Finale",
+      "inStock": true,
+      "description": "Standard Fireworks premier 100 Shots Aerial Cake (available in MOM Series & MATRIX Series). The ultimate display centerpiece delivering 100 rapid multi-colour aerial detonations with huge weeping willow waterfalls.",
+      "variants": [
+          {
+              "sku": "S84-SKY-MOM100",
+              "name": "MOM Series (100 Shots)",
+              "price": 3500,
+              "compareAtPrice": 5800
+          },
+          {
+              "sku": "S84-SKY-MAT100",
+              "name": "MATRIX Series (100 Shots)",
+              "price": 3500,
+              "compareAtPrice": 5800
+          }
+      ],
+      "status": "active",
+      "sku": "S84-SKY-MOM100",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Aerial Shots",
+          "Sky Shots",
+          "Standard Fireworks",
+          "100 Shots",
+          "Grand Finale"
+      ],
+      "stockQuantity": 45,
+      "trackInventory": true
   },
   {
-    "id": "standard-pandav-cosmic-series-single-sky-shots",
-    "handle": "standard-pandav-cosmic-series-single-sky-shots",
-    "title": "Standard Pandav Cosmic Series Single Sky Shots (5 Pcs)",
-    "subtitle": "Standard Fireworks · 5 Distinct Single Sky Shots (Red, Purple, Silver, Yellow, White)",
-    "price": 367,
-    "originalPrice": 600,
-    "discount": 39,
-    "rating": 4.8,
-    "reviewsCount": 35,
-    "weight": "1 Pack (5 Pcs)",
-    "weights": [
-      "1 Pack (5 Pcs)"
-    ],
-    "image": "/assets/shop-84/skyshort-367rs.webp",
-    "secondaryImage": "/assets/action-sky.webp",
-    "galleryImages": [
-      "/assets/shop-84/skyshort-367rs.webp",
-      "/assets/action-sky.webp",
-      "/assets/photo-sky-burst.webp",
-      "/assets/photo-sky-gold.webp",
-      "/assets/photo-sky-red.webp"
-    ],
-    "category": "aerial-shots",
-    "format": "Single Sky Shots",
-    "region": "Standard Fireworks Sivakasi",
-    "caffeine": "5 Color Shots",
-    "inStock": true,
-    "description": "Standard Fireworks Pandav Cosmic Series pack of 5 individual aerial sky shot tubes. Each launches high into the sky bursting into separate vibrant shades: Red, Purple, Silver, Yellow, and Brilliant White.",
-    "variants": [
-      {
-        "sku": "S84-SKY-PAN5",
-        "name": "1 Pack (5 Pcs)",
-        "price": 367,
-        "compareAtPrice": 600
-      }
-    ],
-    "status": "active",
-    "sku": "S84-SKY-PAN5",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Aerial Shots",
-      "Sky Shots",
-      "Standard Fireworks",
-      "Pandav Cosmic",
-      "5 Shots"
-    ],
-    "stockQuantity": 130,
-    "trackInventory": true
+      "id": "standard-pandav-cosmic-series-single-sky-shots",
+      "handle": "standard-pandav-cosmic-series-single-sky-shots",
+      "title": "Standard Pandav Cosmic Series Single Sky Shots (5 Pcs)",
+      "subtitle": "Standard Fireworks \u00b7 5 Distinct Single Sky Shots (Red, Purple, Silver, Yellow, White)",
+      "price": 367,
+      "originalPrice": 600,
+      "discount": 39,
+      "rating": 4.8,
+      "reviewsCount": 35,
+      "weight": "1 Pack (5 Pcs)",
+      "weights": [
+          "1 Pack (5 Pcs)"
+      ],
+      "image": "/assets/shop-84/skyshort-367rs.webp",
+      "secondaryImage": "/assets/shop-84/skyshort-367rs.webp",
+      "galleryImages": [
+          "/assets/shop-84/skyshort-367rs.webp"
+      ],
+      "category": "aerial-shots",
+      "format": "Single Sky Shots",
+      "region": "Standard Fireworks Sivakasi",
+      "caffeine": "5 Color Shots",
+      "inStock": true,
+      "description": "Standard Fireworks Pandav Cosmic Series pack of 5 individual aerial sky shot tubes. Each launches high into the sky bursting into separate vibrant shades: Red, Purple, Silver, Yellow, and Brilliant White.",
+      "variants": [
+          {
+              "sku": "S84-SKY-PAN5",
+              "name": "1 Pack (5 Pcs)",
+              "price": 367,
+              "compareAtPrice": 600
+          }
+      ],
+      "status": "active",
+      "sku": "S84-SKY-PAN5",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Aerial Shots",
+          "Sky Shots",
+          "Standard Fireworks",
+          "Pandav Cosmic",
+          "5 Shots"
+      ],
+      "stockQuantity": 130,
+      "trackInventory": true
   },
   {
-    "id": "cock-brand-penta-sky-flash-aerial-shots-cake",
-    "handle": "cock-brand-penta-sky-flash-aerial-shots-cake",
-    "title": "Cock Brand Penta Sky Flash Aerial Shots Cake",
-    "subtitle": "Sri Kaliswari Fireworks · 5 High-Altitude Flash Bursts with Radiant Golden Palms",
-    "price": 456,
-    "originalPrice": 750,
-    "discount": 39,
-    "rating": 4.8,
-    "reviewsCount": 40,
-    "weight": "1 Cake",
-    "weights": [
-      "1 Cake"
-    ],
-    "image": "/assets/shop-84/skyshort-456rs.webp",
-    "secondaryImage": "/assets/action-sky.webp",
-    "galleryImages": [
-      "/assets/shop-84/skyshort-456rs.webp",
-      "/assets/action-sky.webp",
-      "/assets/photo-sky-burst.webp",
-      "/assets/photo-sky-gold.webp",
-      "/assets/photo-sky-red.webp"
-    ],
-    "category": "aerial-shots",
-    "format": "Multi-Shot Cake",
-    "region": "Cock Brand Sivakasi",
-    "caffeine": "Penta Sky Flash",
-    "inStock": true,
-    "description": "Cock Brand Sri Kaliswari Fireworks Penta Sky Flash cake. Rapid fire 5 high-altitude shell repeaters with intense flash bangs and sparkling golden palms.",
-    "variants": [
-      {
-        "sku": "S84-SKY-PEN5",
-        "name": "1 Cake",
-        "price": 456,
-        "compareAtPrice": 750
-      }
-    ],
-    "status": "active",
-    "sku": "S84-SKY-PEN5",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Aerial Shots",
-      "Sky Shots",
-      "Cock Brand",
-      "Penta Flash"
-    ],
-    "stockQuantity": 110,
-    "trackInventory": true
+      "id": "cock-brand-penta-sky-flash-aerial-shots-cake",
+      "handle": "cock-brand-penta-sky-flash-aerial-shots-cake",
+      "title": "Cock Brand Penta Sky Flash Aerial Shots Cake",
+      "subtitle": "Sri Kaliswari Fireworks \u00b7 5 High-Altitude Flash Bursts with Radiant Golden Palms",
+      "price": 456,
+      "originalPrice": 750,
+      "discount": 39,
+      "rating": 4.8,
+      "reviewsCount": 40,
+      "weight": "1 Cake",
+      "weights": [
+          "1 Cake"
+      ],
+      "image": "/assets/shop-84/skyshort-456rs.webp",
+      "secondaryImage": "/assets/shop-84/skyshort-456rs.webp",
+      "galleryImages": [
+          "/assets/shop-84/skyshort-456rs.webp"
+      ],
+      "category": "aerial-shots",
+      "format": "Multi-Shot Cake",
+      "region": "Cock Brand Sivakasi",
+      "caffeine": "Penta Sky Flash",
+      "inStock": true,
+      "description": "Cock Brand Sri Kaliswari Fireworks Penta Sky Flash cake. Rapid fire 5 high-altitude shell repeaters with intense flash bangs and sparkling golden palms.",
+      "variants": [
+          {
+              "sku": "S84-SKY-PEN5",
+              "name": "1 Cake",
+              "price": 456,
+              "compareAtPrice": 750
+          }
+      ],
+      "status": "active",
+      "sku": "S84-SKY-PEN5",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Aerial Shots",
+          "Sky Shots",
+          "Cock Brand",
+          "Penta Flash"
+      ],
+      "stockQuantity": 110,
+      "trackInventory": true
   },
   {
-    "id": "supreme-kit-kat-multi-colour-aerial-sky-shots",
-    "handle": "supreme-kit-kat-multi-colour-aerial-sky-shots",
-    "title": "Supreme Kit Kat Multi-Colour Aerial Sky Shots",
-    "subtitle": "Supreme Pyrotechnics · Cascading Multi-Color Starbursts with Crackling Chrysanthemum",
-    "price": 820,
-    "originalPrice": 1350,
-    "discount": 39,
-    "rating": 4.9,
-    "reviewsCount": 38,
-    "weight": "1 Cake",
-    "weights": [
-      "1 Cake"
-    ],
-    "image": "/assets/shop-84/skyshort-820rs.webp",
-    "secondaryImage": "/assets/action-sky.webp",
-    "galleryImages": [
-      "/assets/shop-84/skyshort-820rs.webp",
-      "/assets/action-sky.webp",
-      "/assets/photo-sky-burst.webp",
-      "/assets/photo-sky-gold.webp",
-      "/assets/photo-sky-red.webp"
-    ],
-    "category": "aerial-shots",
-    "format": "Multi-Shot Cake",
-    "region": "Supreme Sivakasi",
-    "caffeine": "Cascading Colors",
-    "inStock": true,
-    "description": "Supreme Pyrotechnics Kit Kat celebration cake. Discharges lively aerial stars that cascade across the night sky in bright festive colors.",
-    "variants": [
-      {
-        "sku": "S84-SKY-KIT",
-        "name": "1 Cake",
-        "price": 820,
-        "compareAtPrice": 1350
-      }
-    ],
-    "status": "active",
-    "sku": "S84-SKY-KIT",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Aerial Shots",
-      "Sky Shots",
-      "Kit Kat",
-      "Supreme"
-    ],
-    "stockQuantity": 95,
-    "trackInventory": true
+      "id": "supreme-kit-kat-multi-colour-aerial-sky-shots",
+      "handle": "supreme-kit-kat-multi-colour-aerial-sky-shots",
+      "title": "Supreme Kit Kat Multi-Colour Aerial Sky Shots",
+      "subtitle": "Supreme Pyrotechnics \u00b7 Cascading Multi-Color Starbursts with Crackling Chrysanthemum",
+      "price": 820,
+      "originalPrice": 1350,
+      "discount": 39,
+      "rating": 4.9,
+      "reviewsCount": 38,
+      "weight": "1 Cake",
+      "weights": [
+          "1 Cake"
+      ],
+      "image": "/assets/shop-84/skyshort-820rs.webp",
+      "secondaryImage": "/assets/shop-84/skyshort-820rs.webp",
+      "galleryImages": [
+          "/assets/shop-84/skyshort-820rs.webp"
+      ],
+      "category": "aerial-shots",
+      "format": "Multi-Shot Cake",
+      "region": "Supreme Sivakasi",
+      "caffeine": "Cascading Colors",
+      "inStock": true,
+      "description": "Supreme Pyrotechnics Kit Kat celebration cake. Discharges lively aerial stars that cascade across the night sky in bright festive colors.",
+      "variants": [
+          {
+              "sku": "S84-SKY-KIT",
+              "name": "1 Cake",
+              "price": 820,
+              "compareAtPrice": 1350
+          }
+      ],
+      "status": "active",
+      "sku": "S84-SKY-KIT",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Aerial Shots",
+          "Sky Shots",
+          "Kit Kat",
+          "Supreme"
+      ],
+      "stockQuantity": 95,
+      "trackInventory": true
   },
   {
-    "id": "mugunth-akilas-3-sound-rockets-pack",
-    "handle": "mugunth-akilas-3-sound-rockets-pack",
-    "title": "Mugunth Akila's 3-Sound Rocket (Pack of 10)",
-    "subtitle": "Triple Sound Stage Aerial Rockets · High Altitude Whistle & 3 Crisp Loud Bangs",
-    "price": 389,
-    "originalPrice": 650,
-    "discount": 40,
-    "rating": 4.9,
-    "reviewsCount": 53,
-    "weight": "1 Box (10 Rockets)",
-    "weights": [
-      "1 Box (10 Rockets)"
-    ],
-    "image": "/assets/shop-84/sound-rokate-389rs-part-1-img.webp",
-    "secondaryImage": "/assets/action-rockets.webp",
-    "galleryImages": [
-      "/assets/shop-84/sound-rokate-389rs-part-1-img.webp",
-      "/assets/shop-84/sound-rokate-389rs-part-2-img.webp",
-      "/assets/action-rockets.webp",
-      "/assets/photo-sky-burst.webp",
-      "/assets/photo-sky-red.webp"
-    ],
-    "category": "rockets",
-    "format": "Sound Rockets",
-    "region": "Mugunth Sivakasi",
-    "caffeine": "Triple Sound Bangs",
-    "inStock": true,
-    "description": "Mugunth Akila's 3-sound sky rockets. Shoots swiftly skyward with a loud ascending whistle and detonates into three distinct, powerful cracking sound stages.",
-    "variants": [
-      {
-        "sku": "S84-RCK-3S",
-        "name": "1 Box (10 Rockets)",
-        "price": 389,
-        "compareAtPrice": 650
-      }
-    ],
-    "status": "active",
-    "sku": "S84-RCK-3S",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Rockets",
-      "Sound Rockets",
-      "3 Sound",
-      "Mugunth"
-    ],
-    "stockQuantity": 120,
-    "trackInventory": true
+      "id": "mugunth-akilas-3-sound-rockets-pack",
+      "handle": "mugunth-akilas-3-sound-rockets-pack",
+      "title": "Mugunth Akila's 3-Sound Rocket (Pack of 10)",
+      "subtitle": "Triple Sound Stage Aerial Rockets \u00b7 High Altitude Whistle & 3 Crisp Loud Bangs",
+      "price": 389,
+      "originalPrice": 650,
+      "discount": 40,
+      "rating": 4.9,
+      "reviewsCount": 53,
+      "weight": "1 Box (10 Rockets)",
+      "weights": [
+          "1 Box (10 Rockets)"
+      ],
+      "image": "/assets/shop-84/sound-rokate-389rs-part-1-img.webp",
+      "secondaryImage": "/assets/shop-84/sound-rokate-389rs-part-2-img.webp",
+      "galleryImages": [
+          "/assets/shop-84/sound-rokate-389rs-part-1-img.webp",
+          "/assets/shop-84/sound-rokate-389rs-part-2-img.webp"
+      ],
+      "category": "rockets",
+      "format": "Sound Rockets",
+      "region": "Mugunth Sivakasi",
+      "caffeine": "Triple Sound Bangs",
+      "inStock": true,
+      "description": "Mugunth Akila's 3-sound sky rockets. Shoots swiftly skyward with a loud ascending whistle and detonates into three distinct, powerful cracking sound stages.",
+      "variants": [
+          {
+              "sku": "S84-RCK-3S",
+              "name": "1 Box (10 Rockets)",
+              "price": 389,
+              "compareAtPrice": 650
+          }
+      ],
+      "status": "active",
+      "sku": "S84-RCK-3S",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Rockets",
+          "Sound Rockets",
+          "3 Sound",
+          "Mugunth"
+      ],
+      "stockQuantity": 120,
+      "trackInventory": true
   },
   {
-    "id": "the-aruna-rim-zim-deluxe-twinklings-sparklers-50cm",
-    "handle": "the-aruna-rim-zim-deluxe-twinklings-sparklers-50cm",
-    "title": "The Aruna Rim-Zim Deluxe Twinklings Sparklers (50cm, 10 Pcs)",
-    "subtitle": "Extra Long 50cm Giant Sparklers with Beautiful Twinkling Silver & Gold Stars",
-    "price": 130,
-    "originalPrice": 220,
-    "discount": 41,
-    "rating": 4.9,
-    "reviewsCount": 67,
-    "weight": "1 Pack (10 Pcs)",
-    "weights": [
-      "1 Pack (10 Pcs)",
-      "Pack of 3 Packs"
-    ],
-    "image": "/assets/shop-84/spakrial-130rs-part-2-img.webp",
-    "secondaryImage": "/assets/action-sparkler.webp",
-    "galleryImages": [
-      "/assets/shop-84/spakrial-130rs-part-2-img.webp",
-      "/assets/shop-84/spakrial-130rs-part-1-img.webp",
-      "/assets/action-sparkler.webp",
-      "/assets/photo-sparkler-hand.webp",
-      "/assets/photo-sparkler-kids.webp"
-    ],
-    "category": "sparklers",
-    "format": "50cm Giant Sparklers",
-    "region": "The Aruna Fireworks Sivakasi",
-    "caffeine": "Long Burning Twinkles",
-    "inStock": true,
-    "description": "The Aruna Fireworks 50cm Rim-Zim Deluxe Twinklings giant sparklers. Extra long burn time with thousands of sparkling golden twinkling stars, perfect for photography and Diwali joy.",
-    "variants": [
-      {
-        "sku": "S84-SPK-RIM",
-        "name": "1 Pack (10 Pcs)",
-        "price": 130,
-        "compareAtPrice": 220
-      },
-      {
-        "sku": "S84-SPK-RIM-3",
-        "name": "Pack of 3 Packs",
-        "price": 370,
-        "compareAtPrice": 660
-      }
-    ],
-    "status": "active",
-    "sku": "S84-SPK-RIM",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Sparklers",
-      "50cm Sparklers",
-      "Rim Zim",
-      "The Aruna Fireworks"
-    ],
-    "stockQuantity": 200,
-    "trackInventory": true
+      "id": "the-aruna-rim-zim-deluxe-twinklings-sparklers-50cm",
+      "handle": "the-aruna-rim-zim-deluxe-twinklings-sparklers-50cm",
+      "title": "The Aruna Rim-Zim Deluxe Twinklings Sparklers (50cm, 10 Pcs)",
+      "subtitle": "Extra Long 50cm Giant Sparklers with Beautiful Twinkling Silver & Gold Stars",
+      "price": 130,
+      "originalPrice": 220,
+      "discount": 41,
+      "rating": 4.9,
+      "reviewsCount": 67,
+      "weight": "1 Pack (10 Pcs)",
+      "weights": [
+          "1 Pack (10 Pcs)",
+          "Pack of 3 Packs"
+      ],
+      "image": "/assets/shop-84/spakrial-130rs-part-2-img.webp",
+      "secondaryImage": "/assets/shop-84/spakrial-130rs-part-1-img.webp",
+      "galleryImages": [
+          "/assets/shop-84/spakrial-130rs-part-2-img.webp",
+          "/assets/shop-84/spakrial-130rs-part-1-img.webp"
+      ],
+      "category": "sparklers",
+      "format": "50cm Giant Sparklers",
+      "region": "The Aruna Fireworks Sivakasi",
+      "caffeine": "Long Burning Twinkles",
+      "inStock": true,
+      "description": "The Aruna Fireworks 50cm Rim-Zim Deluxe Twinklings giant sparklers. Extra long burn time with thousands of sparkling golden twinkling stars, perfect for photography and Diwali joy.",
+      "variants": [
+          {
+              "sku": "S84-SPK-RIM",
+              "name": "1 Pack (10 Pcs)",
+              "price": 130,
+              "compareAtPrice": 220
+          },
+          {
+              "sku": "S84-SPK-RIM-3",
+              "name": "Pack of 3 Packs",
+              "price": 370,
+              "compareAtPrice": 660
+          }
+      ],
+      "status": "active",
+      "sku": "S84-SPK-RIM",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Sparklers",
+          "50cm Sparklers",
+          "Rim Zim",
+          "The Aruna Fireworks"
+      ],
+      "stockQuantity": 200,
+      "trackInventory": true
   },
   {
-    "id": "cock-brand-olympic-torches-40cm-pencil-sparklers",
-    "handle": "cock-brand-olympic-torches-40cm-pencil-sparklers",
-    "title": "Cock Brand Olympic Torches 40cm Pencil Sparklers",
-    "subtitle": "Sri Kaliswari Fireworks · 40cm Multi-Colour Flame Handheld Torches",
-    "price": 394,
-    "originalPrice": 650,
-    "discount": 39,
-    "rating": 4.9,
-    "reviewsCount": 46,
-    "weight": "1 Pack (10 Pcs)",
-    "weights": [
-      "1 Pack (10 Pcs)"
-    ],
-    "image": "/assets/shop-84/sparckale-394.webp",
-    "secondaryImage": "/assets/action-sparkler.webp",
-    "galleryImages": [
-      "/assets/shop-84/sparckale-394.webp",
-      "/assets/action-sparkler.webp",
-      "/assets/photo-sparkler-hand.webp",
-      "/assets/photo-sparkler-kids.webp"
-    ],
-    "category": "sparklers",
-    "format": "40cm Torch Sparklers",
-    "region": "Cock Brand Sivakasi",
-    "caffeine": "Olympic Multi-Colour",
-    "inStock": true,
-    "description": "Sri Kaliswari Fireworks Cock Brand Olympic Torches. 40cm pencil torches with vivid multi-colour flame changes and sparkling silver aura.",
-    "variants": [
-      {
-        "sku": "S84-SPK-OLY",
-        "name": "1 Pack (10 Pcs)",
-        "price": 394,
-        "compareAtPrice": 650
-      }
-    ],
-    "status": "active",
-    "sku": "S84-SPK-OLY",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Sparklers",
-      "Pencil Torches",
-      "Olympic Torches",
-      "Cock Brand"
-    ],
-    "stockQuantity": 110,
-    "trackInventory": true
+      "id": "cock-brand-olympic-torches-40cm-pencil-sparklers",
+      "handle": "cock-brand-olympic-torches-40cm-pencil-sparklers",
+      "title": "Cock Brand Olympic Torches 40cm Pencil Sparklers",
+      "subtitle": "Sri Kaliswari Fireworks \u00b7 40cm Multi-Colour Flame Handheld Torches",
+      "price": 394,
+      "originalPrice": 650,
+      "discount": 39,
+      "rating": 4.9,
+      "reviewsCount": 46,
+      "weight": "1 Pack (10 Pcs)",
+      "weights": [
+          "1 Pack (10 Pcs)"
+      ],
+      "image": "/assets/shop-84/sparckale-394.webp",
+      "secondaryImage": "/assets/shop-84/sparckale-394.webp",
+      "galleryImages": [
+          "/assets/shop-84/sparckale-394.webp"
+      ],
+      "category": "sparklers",
+      "format": "40cm Torch Sparklers",
+      "region": "Cock Brand Sivakasi",
+      "caffeine": "Olympic Multi-Colour",
+      "inStock": true,
+      "description": "Sri Kaliswari Fireworks Cock Brand Olympic Torches. 40cm pencil torches with vivid multi-colour flame changes and sparkling silver aura.",
+      "variants": [
+          {
+              "sku": "S84-SPK-OLY",
+              "name": "1 Pack (10 Pcs)",
+              "price": 394,
+              "compareAtPrice": 650
+          }
+      ],
+      "status": "active",
+      "sku": "S84-SPK-OLY",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Sparklers",
+          "Pencil Torches",
+          "Olympic Torches",
+          "Cock Brand"
+      ],
+      "stockQuantity": 110,
+      "trackInventory": true
   },
   {
-    "id": "akash-ganga-super-4-colour-light-sparklers",
-    "handle": "akash-ganga-super-4-colour-light-sparklers",
-    "title": "Akash Ganga Super 4-Colour Light Sparklers",
-    "subtitle": "Akash Ganga Brand · Radiant 4-Color Changing Hand Sparklers",
-    "price": 344,
-    "originalPrice": 550,
-    "discount": 37,
-    "rating": 4.8,
-    "reviewsCount": 39,
-    "weight": "1 Box (10 Pcs)",
-    "weights": [
-      "1 Box (10 Pcs)"
-    ],
-    "image": "/assets/shop-84/sparkale-344rs.webp",
-    "secondaryImage": "/assets/action-sparkler.webp",
-    "galleryImages": [
-      "/assets/shop-84/sparkale-344rs.webp",
-      "/assets/action-sparkler.webp",
-      "/assets/photo-sparkler-hand.webp",
-      "/assets/photo-sparkler-kids.webp"
-    ],
-    "category": "sparklers",
-    "format": "Colour Sparklers",
-    "region": "Akash Ganga Sivakasi",
-    "caffeine": "4 Shifting Colours",
-    "inStock": true,
-    "description": "Akash Ganga Super 4-Colour light sparklers. Displays four consecutive shifting flame colours—green, red, yellow, and silvery gold.",
-    "variants": [
-      {
-        "sku": "S84-SPK-AKG",
-        "name": "1 Box (10 Pcs)",
-        "price": 344,
-        "compareAtPrice": 550
-      }
-    ],
-    "status": "active",
-    "sku": "S84-SPK-AKG",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Sparklers",
-      "Colour Sparklers",
-      "Akash Ganga"
-    ],
-    "stockQuantity": 120,
-    "trackInventory": true
+      "id": "akash-ganga-super-4-colour-light-sparklers",
+      "handle": "akash-ganga-super-4-colour-light-sparklers",
+      "title": "Akash Ganga Super 4-Colour Light Sparklers",
+      "subtitle": "Akash Ganga Brand \u00b7 Radiant 4-Color Changing Hand Sparklers",
+      "price": 344,
+      "originalPrice": 550,
+      "discount": 37,
+      "rating": 4.8,
+      "reviewsCount": 39,
+      "weight": "1 Box (10 Pcs)",
+      "weights": [
+          "1 Box (10 Pcs)"
+      ],
+      "image": "/assets/shop-84/sparkale-344rs.webp",
+      "secondaryImage": "/assets/shop-84/sparkale-344rs.webp",
+      "galleryImages": [
+          "/assets/shop-84/sparkale-344rs.webp"
+      ],
+      "category": "sparklers",
+      "format": "Colour Sparklers",
+      "region": "Akash Ganga Sivakasi",
+      "caffeine": "4 Shifting Colours",
+      "inStock": true,
+      "description": "Akash Ganga Super 4-Colour light sparklers. Displays four consecutive shifting flame colours\u2014green, red, yellow, and silvery gold.",
+      "variants": [
+          {
+              "sku": "S84-SPK-AKG",
+              "name": "1 Box (10 Pcs)",
+              "price": 344,
+              "compareAtPrice": 550
+          }
+      ],
+      "status": "active",
+      "sku": "S84-SPK-AKG",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Sparklers",
+          "Colour Sparklers",
+          "Akash Ganga"
+      ],
+      "stockQuantity": 120,
+      "trackInventory": true
   },
   {
-    "id": "sree-kaliammal-15cm-green-sparklers",
-    "handle": "sree-kaliammal-15cm-green-sparklers",
-    "title": "Sree Kaliammal 15cm Green Sparklers",
-    "subtitle": "15cm Vibrant Emerald Green Sparkling Flames · Low Smoke Child Friendly",
-    "price": 85,
-    "originalPrice": 140,
-    "discount": 39,
-    "rating": 4.8,
-    "reviewsCount": 54,
-    "weight": "1 Box (10 Pcs)",
-    "weights": [
-      "1 Box (10 Pcs)",
-      "Pack of 5 Boxes"
-    ],
-    "image": "/assets/shop-84/sparkale-85rs.webp",
-    "secondaryImage": "/assets/action-sparkler.webp",
-    "galleryImages": [
-      "/assets/shop-84/sparkale-85rs.webp",
-      "/assets/action-sparkler.webp",
-      "/assets/photo-sparkler-hand.webp",
-      "/assets/photo-sparkler-kids.webp"
-    ],
-    "category": "sparklers",
-    "format": "15cm Sparklers",
-    "region": "Sree Kaliammal Sivakasi",
-    "caffeine": "Emerald Green Sparks",
-    "inStock": true,
-    "description": "Sree Kaliammal Sparklers 15cm green sparklers. Emits a clean, bright emerald green light shower with minimal smoke, safe for celebrations.",
-    "variants": [
-      {
-        "sku": "S84-SPK-GRN15",
-        "name": "1 Box (10 Pcs)",
-        "price": 85,
-        "compareAtPrice": 140
-      },
-      {
-        "sku": "S84-SPK-GRN15-5",
-        "name": "Pack of 5 Boxes",
-        "price": 399,
-        "compareAtPrice": 700
-      }
-    ],
-    "status": "active",
-    "sku": "S84-SPK-GRN15",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Sparklers",
-      "Green Sparklers",
-      "15cm",
-      "Sree Kaliammal"
-    ],
-    "stockQuantity": 180,
-    "trackInventory": true
+      "id": "sree-kaliammal-15cm-green-sparklers",
+      "handle": "sree-kaliammal-15cm-green-sparklers",
+      "title": "Sree Kaliammal 15cm Green Sparklers",
+      "subtitle": "15cm Vibrant Emerald Green Sparkling Flames \u00b7 Low Smoke Child Friendly",
+      "price": 85,
+      "originalPrice": 140,
+      "discount": 39,
+      "rating": 4.8,
+      "reviewsCount": 54,
+      "weight": "1 Box (10 Pcs)",
+      "weights": [
+          "1 Box (10 Pcs)",
+          "Pack of 5 Boxes"
+      ],
+      "image": "/assets/shop-84/sparkale-85rs.webp",
+      "secondaryImage": "/assets/shop-84/sparkale-85rs.webp",
+      "galleryImages": [
+          "/assets/shop-84/sparkale-85rs.webp"
+      ],
+      "category": "sparklers",
+      "format": "15cm Sparklers",
+      "region": "Sree Kaliammal Sivakasi",
+      "caffeine": "Emerald Green Sparks",
+      "inStock": true,
+      "description": "Sree Kaliammal Sparklers 15cm green sparklers. Emits a clean, bright emerald green light shower with minimal smoke, safe for celebrations.",
+      "variants": [
+          {
+              "sku": "S84-SPK-GRN15",
+              "name": "1 Box (10 Pcs)",
+              "price": 85,
+              "compareAtPrice": 140
+          },
+          {
+              "sku": "S84-SPK-GRN15-5",
+              "name": "Pack of 5 Boxes",
+              "price": 399,
+              "compareAtPrice": 700
+          }
+      ],
+      "status": "active",
+      "sku": "S84-SPK-GRN15",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Sparklers",
+          "Green Sparklers",
+          "15cm",
+          "Sree Kaliammal"
+      ],
+      "stockQuantity": 180,
+      "trackInventory": true
   },
   {
-    "id": "sree-kaliammal-30cm-crackling-sparklers",
-    "handle": "sree-kaliammal-30cm-crackling-sparklers",
-    "title": "Sree Kaliammal 30cm Crackling Sparklers",
-    "subtitle": "30cm Long Sparkling Wands · Energetic Crackling Sparks & Bright Golden Light",
-    "price": 110,
-    "originalPrice": 180,
-    "discount": 39,
-    "rating": 4.9,
-    "reviewsCount": 62,
-    "weight": "1 Box (10 Pcs)",
-    "weights": [
-      "1 Box (10 Pcs)",
-      "Pack of 3 Boxes"
-    ],
-    "image": "/assets/shop-84/sparkele-110rs.webp",
-    "secondaryImage": "/assets/action-sparkler.webp",
-    "galleryImages": [
-      "/assets/shop-84/sparkele-110rs.webp",
-      "/assets/action-sparkler.webp",
-      "/assets/photo-sparkler-hand.webp",
-      "/assets/photo-sparkler-kids.webp"
-    ],
-    "category": "sparklers",
-    "format": "30cm Sparklers",
-    "region": "Sree Kaliammal Sivakasi",
-    "caffeine": "Crackling Gold Sparks",
-    "inStock": true,
-    "description": "Sree Kaliammal 30cm crackling sparklers. Long burning sparkler rods bursting with popping crackles and radiant golden sparks.",
-    "variants": [
-      {
-        "sku": "S84-SPK-CRK30",
-        "name": "1 Box (10 Pcs)",
-        "price": 110,
-        "compareAtPrice": 180
-      },
-      {
-        "sku": "S84-SPK-CRK30-3",
-        "name": "Pack of 3 Boxes",
-        "price": 310,
-        "compareAtPrice": 540
-      }
-    ],
-    "status": "active",
-    "sku": "S84-SPK-CRK30",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Sparklers",
-      "Crackling Sparklers",
-      "30cm",
-      "Sree Kaliammal"
-    ],
-    "stockQuantity": 170,
-    "trackInventory": true
+      "id": "sree-kaliammal-30cm-crackling-sparklers",
+      "handle": "sree-kaliammal-30cm-crackling-sparklers",
+      "title": "Sree Kaliammal 30cm Crackling Sparklers",
+      "subtitle": "30cm Long Sparkling Wands \u00b7 Energetic Crackling Sparks & Bright Golden Light",
+      "price": 110,
+      "originalPrice": 180,
+      "discount": 39,
+      "rating": 4.9,
+      "reviewsCount": 62,
+      "weight": "1 Box (10 Pcs)",
+      "weights": [
+          "1 Box (10 Pcs)",
+          "Pack of 3 Boxes"
+      ],
+      "image": "/assets/shop-84/sparkele-110rs.webp",
+      "secondaryImage": "/assets/shop-84/sparkele-110rs.webp",
+      "galleryImages": [
+          "/assets/shop-84/sparkele-110rs.webp"
+      ],
+      "category": "sparklers",
+      "format": "30cm Sparklers",
+      "region": "Sree Kaliammal Sivakasi",
+      "caffeine": "Crackling Gold Sparks",
+      "inStock": true,
+      "description": "Sree Kaliammal 30cm crackling sparklers. Long burning sparkler rods bursting with popping crackles and radiant golden sparks.",
+      "variants": [
+          {
+              "sku": "S84-SPK-CRK30",
+              "name": "1 Box (10 Pcs)",
+              "price": 110,
+              "compareAtPrice": 180
+          },
+          {
+              "sku": "S84-SPK-CRK30-3",
+              "name": "Pack of 3 Boxes",
+              "price": 310,
+              "compareAtPrice": 540
+          }
+      ],
+      "status": "active",
+      "sku": "S84-SPK-CRK30",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Sparklers",
+          "Crackling Sparklers",
+          "30cm",
+          "Sree Kaliammal"
+      ],
+      "stockQuantity": 170,
+      "trackInventory": true
   },
   {
-    "id": "sree-kaliswari-7cm-electric-sparklers",
-    "handle": "sree-kaliswari-7cm-electric-sparklers",
-    "title": "Sree Kaliswari 7cm Electric Sparklers",
-    "subtitle": "7cm Safe Electric Sparklers with Quick Golden Sparkle · Ideal for Young Children",
-    "price": 35,
-    "originalPrice": 60,
-    "discount": 42,
-    "rating": 4.8,
-    "reviewsCount": 44,
-    "weight": "1 Box (10 Pcs)",
-    "weights": [
-      "1 Box (10 Pcs)",
-      "Pack of 5 Boxes"
-    ],
-    "image": "/assets/shop-84/sparkele-35rs.webp",
-    "secondaryImage": "/assets/action-sparkler.webp",
-    "galleryImages": [
-      "/assets/shop-84/sparkele-35rs.webp",
-      "/assets/action-sparkler.webp",
-      "/assets/photo-sparkler-hand.webp",
-      "/assets/photo-sparkler-kids.webp"
-    ],
-    "category": "sparklers",
-    "format": "7cm Electric Sparklers",
-    "region": "Sree Kaliswari Sivakasi",
-    "caffeine": "Little Kids Safe",
-    "inStock": true,
-    "description": "Sree Kaliswari 7cm small electric sparklers. Fast lighting, child-safe, and generates fine golden electric sparks with very low heat and smoke.",
-    "variants": [
-      {
-        "sku": "S84-SPK-ELE7",
-        "name": "1 Box (10 Pcs)",
-        "price": 35,
-        "compareAtPrice": 60
-      },
-      {
-        "sku": "S84-SPK-ELE7-5",
-        "name": "Pack of 5 Boxes",
-        "price": 160,
-        "compareAtPrice": 300
-      }
-    ],
-    "status": "active",
-    "sku": "S84-SPK-ELE7",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Sparklers",
-      "Electric Sparklers",
-      "7cm",
-      "Kids Safe"
-    ],
-    "stockQuantity": 250,
-    "trackInventory": true
+      "id": "sree-kaliswari-7cm-electric-sparklers",
+      "handle": "sree-kaliswari-7cm-electric-sparklers",
+      "title": "Sree Kaliswari 7cm Electric Sparklers",
+      "subtitle": "7cm Safe Electric Sparklers with Quick Golden Sparkle \u00b7 Ideal for Young Children",
+      "price": 35,
+      "originalPrice": 60,
+      "discount": 42,
+      "rating": 4.8,
+      "reviewsCount": 44,
+      "weight": "1 Box (10 Pcs)",
+      "weights": [
+          "1 Box (10 Pcs)",
+          "Pack of 5 Boxes"
+      ],
+      "image": "/assets/shop-84/sparkele-35rs.webp",
+      "secondaryImage": "/assets/shop-84/sparkele-35rs.webp",
+      "galleryImages": [
+          "/assets/shop-84/sparkele-35rs.webp"
+      ],
+      "category": "sparklers",
+      "format": "7cm Electric Sparklers",
+      "region": "Sree Kaliswari Sivakasi",
+      "caffeine": "Little Kids Safe",
+      "inStock": true,
+      "description": "Sree Kaliswari 7cm small electric sparklers. Fast lighting, child-safe, and generates fine golden electric sparks with very low heat and smoke.",
+      "variants": [
+          {
+              "sku": "S84-SPK-ELE7",
+              "name": "1 Box (10 Pcs)",
+              "price": 35,
+              "compareAtPrice": 60
+          },
+          {
+              "sku": "S84-SPK-ELE7-5",
+              "name": "Pack of 5 Boxes",
+              "price": 160,
+              "compareAtPrice": 300
+          }
+      ],
+      "status": "active",
+      "sku": "S84-SPK-ELE7",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Sparklers",
+          "Electric Sparklers",
+          "7cm",
+          "Kids Safe"
+      ],
+      "stockQuantity": 250,
+      "trackInventory": true
   },
   {
-    "id": "supreme-spinner-queen-deluxe-ground-chakkar",
-    "handle": "supreme-spinner-queen-deluxe-ground-chakkar",
-    "title": "Supreme Spinner Queen Deluxe Ground Chakkar",
-    "subtitle": "Supreme Fireworks · Fast High-Speed Ground Spinner with Purple & Golden Fire Ring",
-    "price": 349,
-    "originalPrice": 550,
-    "discount": 37,
-    "rating": 4.8,
-    "reviewsCount": 39,
-    "weight": "1 Box (10 Pcs)",
-    "weights": [
-      "1 Box (10 Pcs)"
-    ],
-    "image": "/assets/shop-84/spinner-349rs.webp",
-    "secondaryImage": "/assets/action-chakkar.webp",
-    "galleryImages": [
-      "/assets/shop-84/spinner-349rs.webp",
-      "/assets/action-chakkar.webp",
-      "/assets/photo-chakkar-spark.webp"
-    ],
-    "category": "ground-chakkars",
-    "format": "Ground Spinner",
-    "region": "Supreme Sivakasi",
-    "caffeine": "Queen Deluxe Spin",
-    "inStock": true,
-    "description": "Supreme Fireworks Queen Deluxe ground chakkars. Spins at high rotational speed creating a wide radiant wheel of purple, white, and golden sparks.",
-    "variants": [
-      {
-        "sku": "S84-CHK-QUN",
-        "name": "1 Box (10 Pcs)",
-        "price": 349,
-        "compareAtPrice": 550
-      }
-    ],
-    "status": "active",
-    "sku": "S84-CHK-QUN",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Chakkar",
-      "Chorki",
-      "Ground Spinner",
-      "Supreme"
-    ],
-    "stockQuantity": 130,
-    "trackInventory": true
+      "id": "supreme-spinner-queen-deluxe-ground-chakkar",
+      "handle": "supreme-spinner-queen-deluxe-ground-chakkar",
+      "title": "Supreme Spinner Queen Deluxe Ground Chakkar",
+      "subtitle": "Supreme Fireworks \u00b7 Fast High-Speed Ground Spinner with Purple & Golden Fire Ring",
+      "price": 349,
+      "originalPrice": 550,
+      "discount": 37,
+      "rating": 4.8,
+      "reviewsCount": 39,
+      "weight": "1 Box (10 Pcs)",
+      "weights": [
+          "1 Box (10 Pcs)"
+      ],
+      "image": "/assets/shop-84/spinner-349rs.webp",
+      "secondaryImage": "/assets/shop-84/spinner-349rs.webp",
+      "galleryImages": [
+          "/assets/shop-84/spinner-349rs.webp"
+      ],
+      "category": "ground-chakkars",
+      "format": "Ground Spinner",
+      "region": "Supreme Sivakasi",
+      "caffeine": "Queen Deluxe Spin",
+      "inStock": true,
+      "description": "Supreme Fireworks Queen Deluxe ground chakkars. Spins at high rotational speed creating a wide radiant wheel of purple, white, and golden sparks.",
+      "variants": [
+          {
+              "sku": "S84-CHK-QUN",
+              "name": "1 Box (10 Pcs)",
+              "price": 349,
+              "compareAtPrice": 550
+          }
+      ],
+      "status": "active",
+      "sku": "S84-CHK-QUN",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Chakkar",
+          "Chorki",
+          "Ground Spinner",
+          "Supreme"
+      ],
+      "stockQuantity": 130,
+      "trackInventory": true
   },
   {
-    "id": "elephant-hot-wheels-special-ground-spinner-chakkar",
-    "handle": "elephant-hot-wheels-special-ground-spinner-chakkar",
-    "title": "Elephant Hot Wheels Special Ground Spinner Chakkar",
-    "subtitle": "Elephant Brand · High-Torque Ground Chorki with Vibrant Dual-Tone Fire Ring",
-    "price": 389,
-    "originalPrice": 650,
-    "discount": 40,
-    "rating": 4.9,
-    "reviewsCount": 42,
-    "weight": "1 Box (10 Pcs)",
-    "weights": [
-      "1 Box (10 Pcs)"
-    ],
-    "image": "/assets/shop-84/spinner-389rs.webp",
-    "secondaryImage": "/assets/action-chakkar.webp",
-    "galleryImages": [
-      "/assets/shop-84/spinner-389rs.webp",
-      "/assets/action-chakkar.webp",
-      "/assets/photo-chakkar-spark.webp"
-    ],
-    "category": "ground-chakkars",
-    "format": "Ground Spinner",
-    "region": "Elephant Sivakasi",
-    "caffeine": "Hot Wheels Spin",
-    "inStock": true,
-    "description": "Elephant Brand Hot Wheels Special ground spinner chakkars. High-velocity spin producing a dense fiery halo with crackling edges.",
-    "variants": [
-      {
-        "sku": "S84-CHK-HWSP",
-        "name": "1 Box (10 Pcs)",
-        "price": 389,
-        "compareAtPrice": 650
-      }
-    ],
-    "status": "active",
-    "sku": "S84-CHK-HWSP",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Chakkar",
-      "Hot Wheels",
-      "Ground Spinner",
-      "Elephant Brand"
-    ],
-    "stockQuantity": 140,
-    "trackInventory": true
+      "id": "elephant-hot-wheels-special-ground-spinner-chakkar",
+      "handle": "elephant-hot-wheels-special-ground-spinner-chakkar",
+      "title": "Elephant Hot Wheels Special Ground Spinner Chakkar",
+      "subtitle": "Elephant Brand \u00b7 High-Torque Ground Chorki with Vibrant Dual-Tone Fire Ring",
+      "price": 389,
+      "originalPrice": 650,
+      "discount": 40,
+      "rating": 4.9,
+      "reviewsCount": 42,
+      "weight": "1 Box (10 Pcs)",
+      "weights": [
+          "1 Box (10 Pcs)"
+      ],
+      "image": "/assets/shop-84/spinner-389rs.webp",
+      "secondaryImage": "/assets/shop-84/spinner-389rs.webp",
+      "galleryImages": [
+          "/assets/shop-84/spinner-389rs.webp"
+      ],
+      "category": "ground-chakkars",
+      "format": "Ground Spinner",
+      "region": "Elephant Sivakasi",
+      "caffeine": "Hot Wheels Spin",
+      "inStock": true,
+      "description": "Elephant Brand Hot Wheels Special ground spinner chakkars. High-velocity spin producing a dense fiery halo with crackling edges.",
+      "variants": [
+          {
+              "sku": "S84-CHK-HWSP",
+              "name": "1 Box (10 Pcs)",
+              "price": 389,
+              "compareAtPrice": 650
+          }
+      ],
+      "status": "active",
+      "sku": "S84-CHK-HWSP",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Chakkar",
+          "Hot Wheels",
+          "Ground Spinner",
+          "Elephant Brand"
+      ],
+      "stockQuantity": 140,
+      "trackInventory": true
   },
   {
-    "id": "supreme-spinner-super-deluxe-ground-chakkar",
-    "handle": "supreme-spinner-super-deluxe-ground-chakkar",
-    "title": "Supreme Spinner Super Deluxe Ground Chakkar",
-    "subtitle": "Supreme Fireworks · Jumbo Size Chakkar with Large Diameter Sparkling Halo",
-    "price": 448,
-    "originalPrice": 720,
-    "discount": 38,
-    "rating": 4.9,
-    "reviewsCount": 47,
-    "weight": "1 Box (10 Pcs)",
-    "weights": [
-      "1 Box (10 Pcs)"
-    ],
-    "image": "/assets/shop-84/spinner-448rs.webp",
-    "secondaryImage": "/assets/action-chakkar.webp",
-    "galleryImages": [
-      "/assets/shop-84/spinner-448rs.webp",
-      "/assets/action-chakkar.webp",
-      "/assets/photo-chakkar-spark.webp"
-    ],
-    "category": "ground-chakkars",
-    "format": "Ground Spinner",
-    "region": "Supreme Sivakasi",
-    "caffeine": "Super Deluxe Ring",
-    "inStock": true,
-    "description": "Supreme Fireworks Super Deluxe large ground chakkars. Extended diameter spin with multi-colour sparkling trails.",
-    "variants": [
-      {
-        "sku": "S84-CHK-SDX",
-        "name": "1 Box (10 Pcs)",
-        "price": 448,
-        "compareAtPrice": 720
-      }
-    ],
-    "status": "active",
-    "sku": "S84-CHK-SDX",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Chakkar",
-      "Super Deluxe",
-      "Ground Spinner",
-      "Supreme"
-    ],
-    "stockQuantity": 120,
-    "trackInventory": true
+      "id": "supreme-spinner-super-deluxe-ground-chakkar",
+      "handle": "supreme-spinner-super-deluxe-ground-chakkar",
+      "title": "Supreme Spinner Super Deluxe Ground Chakkar",
+      "subtitle": "Supreme Fireworks \u00b7 Jumbo Size Chakkar with Large Diameter Sparkling Halo",
+      "price": 448,
+      "originalPrice": 720,
+      "discount": 38,
+      "rating": 4.9,
+      "reviewsCount": 47,
+      "weight": "1 Box (10 Pcs)",
+      "weights": [
+          "1 Box (10 Pcs)"
+      ],
+      "image": "/assets/shop-84/spinner-448rs.webp",
+      "secondaryImage": "/assets/shop-84/spinner-448rs.webp",
+      "galleryImages": [
+          "/assets/shop-84/spinner-448rs.webp"
+      ],
+      "category": "ground-chakkars",
+      "format": "Ground Spinner",
+      "region": "Supreme Sivakasi",
+      "caffeine": "Super Deluxe Ring",
+      "inStock": true,
+      "description": "Supreme Fireworks Super Deluxe large ground chakkars. Extended diameter spin with multi-colour sparkling trails.",
+      "variants": [
+          {
+              "sku": "S84-CHK-SDX",
+              "name": "1 Box (10 Pcs)",
+              "price": 448,
+              "compareAtPrice": 720
+          }
+      ],
+      "status": "active",
+      "sku": "S84-CHK-SDX",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Chakkar",
+          "Super Deluxe",
+          "Ground Spinner",
+          "Supreme"
+      ],
+      "stockQuantity": 120,
+      "trackInventory": true
   },
   {
-    "id": "vadivel-whistling-dixie-ground-spinner-chakkar",
-    "handle": "vadivel-whistling-dixie-ground-spinner-chakkar",
-    "title": "Vadivel Whistling Dixie Ground Spinner Chakkar",
-    "subtitle": "Vadivel Pyrotechs · High-Pitched Whistling Sound with Dizzying Fiery Spin",
-    "price": 500,
-    "originalPrice": 800,
-    "discount": 38,
-    "rating": 5,
-    "reviewsCount": 51,
-    "weight": "1 Box (10 Pcs)",
-    "weights": [
-      "1 Box (10 Pcs)"
-    ],
-    "image": "/assets/shop-84/spinner-500rs.webp",
-    "secondaryImage": "/assets/action-chakkar.webp",
-    "galleryImages": [
-      "/assets/shop-84/spinner-500rs.webp",
-      "/assets/action-chakkar.webp",
-      "/assets/photo-chakkar-spark.webp"
-    ],
-    "category": "ground-chakkars",
-    "format": "Whistling Spinner",
-    "region": "Vadivel Pyrotechs Sivakasi",
-    "caffeine": "Whistling Fire Spin",
-    "inStock": true,
-    "description": "Vadivel Pyrotechs Whistling Dixie chakkars. Emits a high-pitched siren whistle while whirling frantically on the ground with orange and gold fire plumes.",
-    "variants": [
-      {
-        "sku": "S84-CHK-WDIX",
-        "name": "1 Box (10 Pcs)",
-        "price": 500,
-        "compareAtPrice": 800
-      }
-    ],
-    "status": "active",
-    "sku": "S84-CHK-WDIX",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Chakkar",
-      "Whistling Chakkar",
-      "Vadivel"
-    ],
-    "stockQuantity": 110,
-    "trackInventory": true
+      "id": "vadivel-whistling-dixie-ground-spinner-chakkar",
+      "handle": "vadivel-whistling-dixie-ground-spinner-chakkar",
+      "title": "Vadivel Whistling Dixie Ground Spinner Chakkar",
+      "subtitle": "Vadivel Pyrotechs \u00b7 High-Pitched Whistling Sound with Dizzying Fiery Spin",
+      "price": 500,
+      "originalPrice": 800,
+      "discount": 38,
+      "rating": 5.0,
+      "reviewsCount": 51,
+      "weight": "1 Box (10 Pcs)",
+      "weights": [
+          "1 Box (10 Pcs)"
+      ],
+      "image": "/assets/shop-84/spinner-500rs.webp",
+      "secondaryImage": "/assets/shop-84/spinner-500rs.webp",
+      "galleryImages": [
+          "/assets/shop-84/spinner-500rs.webp"
+      ],
+      "category": "ground-chakkars",
+      "format": "Whistling Spinner",
+      "region": "Vadivel Pyrotechs Sivakasi",
+      "caffeine": "Whistling Fire Spin",
+      "inStock": true,
+      "description": "Vadivel Pyrotechs Whistling Dixie chakkars. Emits a high-pitched siren whistle while whirling frantically on the ground with orange and gold fire plumes.",
+      "variants": [
+          {
+              "sku": "S84-CHK-WDIX",
+              "name": "1 Box (10 Pcs)",
+              "price": 500,
+              "compareAtPrice": 800
+          }
+      ],
+      "status": "active",
+      "sku": "S84-CHK-WDIX",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Chakkar",
+          "Whistling Chakkar",
+          "Vadivel"
+      ],
+      "stockQuantity": 110,
+      "trackInventory": true
   },
   {
-    "id": "elephant-hot-wheels-deluxe-ground-spinner-chakkar",
-    "handle": "elephant-hot-wheels-deluxe-ground-spinner-chakkar",
-    "title": "Elephant Hot Wheels Deluxe Ground Spinner Chakkar (Jumbo Pack)",
-    "subtitle": "Elephant Brand · Extra Heavy Deluxe Ground Chakkars with Extended Spin Time",
-    "price": 549,
-    "originalPrice": 900,
-    "discount": 39,
-    "rating": 4.9,
-    "reviewsCount": 56,
-    "weight": "1 Box (10 Pcs)",
-    "weights": [
-      "1 Box (10 Pcs)"
-    ],
-    "image": "/assets/shop-84/spinner-549rs.webp",
-    "secondaryImage": "/assets/action-chakkar.webp",
-    "galleryImages": [
-      "/assets/shop-84/spinner-549rs.webp",
-      "/assets/action-chakkar.webp",
-      "/assets/photo-chakkar-spark.webp"
-    ],
-    "category": "ground-chakkars",
-    "format": "Jumbo Ground Spinner",
-    "region": "Elephant Sivakasi",
-    "caffeine": "Extended Duration",
-    "inStock": true,
-    "description": "Elephant Brand Hot Wheels Deluxe Jumbo chakkars. Heavy-duty construction providing long-lasting whirls and wide diameter sparkling sparks.",
-    "variants": [
-      {
-        "sku": "S84-CHK-HWDX",
-        "name": "1 Box (10 Pcs)",
-        "price": 549,
-        "compareAtPrice": 900
-      }
-    ],
-    "status": "active",
-    "sku": "S84-CHK-HWDX",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Chakkar",
-      "Hot Wheels Deluxe",
-      "Jumbo Spinner",
-      "Elephant Brand"
-    ],
-    "stockQuantity": 100,
-    "trackInventory": true
+      "id": "elephant-hot-wheels-deluxe-ground-spinner-chakkar",
+      "handle": "elephant-hot-wheels-deluxe-ground-spinner-chakkar",
+      "title": "Elephant Hot Wheels Deluxe Ground Spinner Chakkar (Jumbo Pack)",
+      "subtitle": "Elephant Brand \u00b7 Extra Heavy Deluxe Ground Chakkars with Extended Spin Time",
+      "price": 549,
+      "originalPrice": 900,
+      "discount": 39,
+      "rating": 4.9,
+      "reviewsCount": 56,
+      "weight": "1 Box (10 Pcs)",
+      "weights": [
+          "1 Box (10 Pcs)"
+      ],
+      "image": "/assets/shop-84/spinner-549rs.webp",
+      "secondaryImage": "/assets/shop-84/spinner-549rs.webp",
+      "galleryImages": [
+          "/assets/shop-84/spinner-549rs.webp"
+      ],
+      "category": "ground-chakkars",
+      "format": "Jumbo Ground Spinner",
+      "region": "Elephant Sivakasi",
+      "caffeine": "Extended Duration",
+      "inStock": true,
+      "description": "Elephant Brand Hot Wheels Deluxe Jumbo chakkars. Heavy-duty construction providing long-lasting whirls and wide diameter sparkling sparks.",
+      "variants": [
+          {
+              "sku": "S84-CHK-HWDX",
+              "name": "1 Box (10 Pcs)",
+              "price": 549,
+              "compareAtPrice": 900
+          }
+      ],
+      "status": "active",
+      "sku": "S84-CHK-HWDX",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Chakkar",
+          "Hot Wheels Deluxe",
+          "Jumbo Spinner",
+          "Elephant Brand"
+      ],
+      "stockQuantity": 100,
+      "trackInventory": true
   },
   {
-    "id": "karthik-fireworks-toofan-rocky-30-shots-aerial-cake",
-    "handle": "karthik-fireworks-toofan-rocky-30-shots-aerial-cake",
-    "title": "Karthik Fireworks Toofan Rocky 30 Shots Aerial Cake",
-    "subtitle": "30 High-Altitude Sky Bursts with Powerful Sound & Radiant Golden Palms",
-    "price": 1300,
-    "originalPrice": 2100,
-    "discount": 38,
-    "rating": 4.9,
-    "reviewsCount": 48,
-    "weight": "1 Cake (30 Shots)",
-    "weights": [
-      "1 Cake (30 Shots)"
-    ],
-    "image": "/assets/shop-84/toofan-rocky-30short-sky-short-1300rs.webp",
-    "secondaryImage": "/assets/action-sky.webp",
-    "galleryImages": [
-      "/assets/shop-84/toofan-rocky-30short-sky-short-1300rs.webp",
-      "/assets/action-sky.webp",
-      "/assets/photo-sky-burst.webp",
-      "/assets/photo-sky-gold.webp",
-      "/assets/photo-sky-red.webp"
-    ],
-    "category": "aerial-shots",
-    "format": "Multi-Shot Cake",
-    "region": "Karthik Fireworks Sivakasi",
-    "caffeine": "30 Thunderous Shots",
-    "inStock": true,
-    "description": "Karthik Fireworks Toofan Rocky 30-shot repeater cake. Rapidly fires 30 sky bursts that erupt into glittering golden palms, flashing green pearls, and resounding acoustic thumps.",
-    "variants": [
-      {
-        "sku": "S84-SKY-TOF30",
-        "name": "1 Cake (30 Shots)",
-        "price": 1300,
-        "compareAtPrice": 2100
-      }
-    ],
-    "status": "active",
-    "sku": "S84-SKY-TOF30",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Aerial Shots",
-      "Sky Shots",
-      "Toofan Rocky",
-      "30 Shots",
-      "Karthik Fireworks"
-    ],
-    "stockQuantity": 85,
-    "trackInventory": true
+      "id": "karthik-fireworks-toofan-rocky-30-shots-aerial-cake",
+      "handle": "karthik-fireworks-toofan-rocky-30-shots-aerial-cake",
+      "title": "Karthik Fireworks Toofan Rocky 30 Shots Aerial Cake",
+      "subtitle": "30 High-Altitude Sky Bursts with Powerful Sound & Radiant Golden Palms",
+      "price": 1300,
+      "originalPrice": 2100,
+      "discount": 38,
+      "rating": 4.9,
+      "reviewsCount": 48,
+      "weight": "1 Cake (30 Shots)",
+      "weights": [
+          "1 Cake (30 Shots)"
+      ],
+      "image": "/assets/shop-84/toofan-rocky-30short-sky-short-1300rs.webp",
+      "secondaryImage": "/assets/shop-84/toofan-rocky-30short-sky-short-1300rs.webp",
+      "galleryImages": [
+          "/assets/shop-84/toofan-rocky-30short-sky-short-1300rs.webp"
+      ],
+      "category": "aerial-shots",
+      "format": "Multi-Shot Cake",
+      "region": "Karthik Fireworks Sivakasi",
+      "caffeine": "30 Thunderous Shots",
+      "inStock": true,
+      "description": "Karthik Fireworks Toofan Rocky 30-shot repeater cake. Rapidly fires 30 sky bursts that erupt into glittering golden palms, flashing green pearls, and resounding acoustic thumps.",
+      "variants": [
+          {
+              "sku": "S84-SKY-TOF30",
+              "name": "1 Cake (30 Shots)",
+              "price": 1300,
+              "compareAtPrice": 2100
+          }
+      ],
+      "status": "active",
+      "sku": "S84-SKY-TOF30",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Aerial Shots",
+          "Sky Shots",
+          "Toofan Rocky",
+          "30 Shots",
+          "Karthik Fireworks"
+      ],
+      "stockQuantity": 85,
+      "trackInventory": true
   },
   {
-    "id": "om-ganapathi-special-tower-flower-pots",
-    "handle": "om-ganapathi-special-tower-flower-pots",
-    "title": "Om Ganapathi Special Tower Flower Pots (10 Pcs Box)",
-    "subtitle": "Om Ganapathi Brand · Tower Style Vertical Golden Sparkling Fountains",
-    "price": 290,
-    "originalPrice": 480,
-    "discount": 40,
-    "rating": 4.8,
-    "reviewsCount": 43,
-    "weight": "1 Box (10 Cones)",
-    "weights": [
-      "1 Box (10 Cones)",
-      "Pack of 2 Boxes"
-    ],
-    "image": "/assets/shop-84/touerpots-290rs-10pic.webp",
-    "secondaryImage": "/assets/action-anar.webp",
-    "galleryImages": [
-      "/assets/shop-84/touerpots-290rs-10pic.webp",
-      "/assets/action-anar.webp",
-      "/assets/photo-anar-gold.webp",
-      "/assets/photo-anar-tall.webp"
-    ],
-    "category": "flower-pots",
-    "format": "Tower Cones",
-    "region": "Om Ganapathi Sivakasi",
-    "caffeine": "Vertical Tower Geyser",
-    "inStock": true,
-    "description": "Om Ganapathi Special Tower Flower Pots box of 10 cones. Shoots high vertical columns of glittering gold and silver sparks with calm, stable burning.",
-    "variants": [
-      {
-        "sku": "S84-POT-TOW10",
-        "name": "1 Box (10 Cones)",
-        "price": 290,
-        "compareAtPrice": 480
-      },
-      {
-        "sku": "S84-POT-TOW10-2",
-        "name": "Pack of 2 Boxes",
-        "price": 550,
-        "compareAtPrice": 960
-      }
-    ],
-    "status": "active",
-    "sku": "S84-POT-TOW10",
-    "vendor": "Shop 84",
-    "tags": [
-      "Shop 84",
-      "Flower Pots",
-      "Anar",
-      "Tower Pots",
-      "Om Ganapathi"
-    ],
-    "stockQuantity": 140,
-    "trackInventory": true
+      "id": "om-ganapathi-special-tower-flower-pots",
+      "handle": "om-ganapathi-special-tower-flower-pots",
+      "title": "Om Ganapathi Special Tower Flower Pots (10 Pcs Box)",
+      "subtitle": "Om Ganapathi Brand \u00b7 Tower Style Vertical Golden Sparkling Fountains",
+      "price": 290,
+      "originalPrice": 480,
+      "discount": 40,
+      "rating": 4.8,
+      "reviewsCount": 43,
+      "weight": "1 Box (10 Cones)",
+      "weights": [
+          "1 Box (10 Cones)",
+          "Pack of 2 Boxes"
+      ],
+      "image": "/assets/shop-84/touerpots-290rs-10pic.webp",
+      "secondaryImage": "/assets/shop-84/touerpots-290rs-10pic.webp",
+      "galleryImages": [
+          "/assets/shop-84/touerpots-290rs-10pic.webp"
+      ],
+      "category": "flower-pots",
+      "format": "Tower Cones",
+      "region": "Om Ganapathi Sivakasi",
+      "caffeine": "Vertical Tower Geyser",
+      "inStock": true,
+      "description": "Om Ganapathi Special Tower Flower Pots box of 10 cones. Shoots high vertical columns of glittering gold and silver sparks with calm, stable burning.",
+      "variants": [
+          {
+              "sku": "S84-POT-TOW10",
+              "name": "1 Box (10 Cones)",
+              "price": 290,
+              "compareAtPrice": 480
+          },
+          {
+              "sku": "S84-POT-TOW10-2",
+              "name": "Pack of 2 Boxes",
+              "price": 550,
+              "compareAtPrice": 960
+          }
+      ],
+      "status": "active",
+      "sku": "S84-POT-TOW10",
+      "vendor": "Shop 84",
+      "tags": [
+          "Shop 84",
+          "Flower Pots",
+          "Anar",
+          "Tower Pots",
+          "Om Ganapathi"
+      ],
+      "stockQuantity": 140,
+      "trackInventory": true
   }
 ];
 

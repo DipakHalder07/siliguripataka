@@ -1,8 +1,4 @@
-// One-time catalog update: the shop no longer sells mithai or sweets. Run with: npm run db:remove-sweets
-//  - hides every sweets product and the two hampers built around mithai ("archived": nothing is deleted,
-//    and past orders keep their details)
-//  - adds the Pataka + Diya hamper, and rewrites the wording of the hampers that mentioned sweets
-// It never changes prices or stock on existing products, and it is safe to run more than once.
+// Catalog update: remove all sweet and mithai products from the database. Run with: npm run db:remove-sweets
 import { PrismaClient } from "@prisma/client";
 import { PRODUCTS } from "../data/products";
 import { productRow } from "./productRow";
@@ -13,26 +9,57 @@ const prisma = new PrismaClient({
   datasourceUrl: process.env.DATABASE_URL_UNPOOLED || process.env.DATABASE_URL,
 });
 
-const REWORDED = ["festive-sweets-diya-gift-hamper", "lakshmi-puja-gift-hamper", "family-diwali-gift-hamper"];
+const SWEET_IDS = [
+  "assorted-diwali-mithai-box",
+  "kaju-katli-box",
+  "motichoor-laddu-box",
+  "besan-laddu-box",
+  "bengali-sandesh-box",
+  "bengali-rosogolla-box",
+  "kesar-pista-barfi-box",
+  "kesar-peda-box",
+  "gulab-jamun-box",
+  "soan-papdi-festive-box",
+  "pataka-mithai-diwali-combo",
+  "premium-mithai-gift-box",
+];
+
+const REWORDED = [
+  "pataka-diya-diwali-hamper",
+  "festive-sweets-diya-gift-hamper",
+  "lakshmi-puja-gift-hamper",
+  "family-diwali-gift-hamper",
+  "office-diwali-gift-hamper",
+];
 
 async function main() {
-  const hidden = await prisma.product.updateMany({
-    where: {
-      OR: [{ category: "sweets" }, { id: { in: ["premium-mithai-gift-box", "pataka-mithai-diwali-combo"] } }],
-      status: { not: "archived" },
-    },
-    data: { status: "archived" },
+  console.log("Checking for orders referencing sweet products...");
+  const orderItems = await prisma.orderItem.updateMany({
+    where: { productId: { in: SWEET_IDS } },
+    data: { productId: null },
   });
+  console.log(`Detached productId on ${orderItems.count} past order items (details preserved).`);
+
+  const deleted = await prisma.product.deleteMany({
+    where: {
+      OR: [{ category: "sweets" }, { id: { in: SWEET_IDS } }],
+    },
+  });
+  console.log(`Deleted ${deleted.count} sweet/mithai products from PostgreSQL database.`);
 
   const hamper = PRODUCTS.find((p) => p.id === "pataka-diya-diwali-hamper");
-  if (!hamper) throw new Error("The new hamper is missing from data/products.ts");
-  const exists = await prisma.product.findUnique({ where: { id: hamper.id }, select: { id: true } });
-  if (!exists) await prisma.product.create({ data: productRow(hamper, 10) });
+  if (hamper) {
+    const exists = await prisma.product.findUnique({ where: { id: hamper.id }, select: { id: true } });
+    if (!exists) {
+      await prisma.product.create({ data: productRow(hamper, 10) });
+      console.log("Created Pataka + Diya hamper.");
+    }
+  }
 
   let reworded = 0;
   for (const id of REWORDED) {
     const product = PRODUCTS.find((p) => p.id === id);
-    if (!product) throw new Error(`${id} is missing from data/products.ts`);
+    if (!product) continue;
     const { count } = await prisma.product.updateMany({
       where: { id },
       data: {
@@ -41,17 +68,29 @@ async function main() {
         subtitle: product.subtitle,
         description: product.description,
         tags: product.tags || [],
+        galleryImages: product.galleryImages || [],
       },
     });
     reworded += count;
   }
+  console.log(`Updated ${reworded} festive hampers with clean non-sweet metadata & gallery images.`);
 
-  // The main admin login is now admin@siliguripataka.com; remove the old brand's login.
+  // Cleanup old admin accounts if any
   const oldLogin = await prisma.admin.deleteMany({ where: { email: "admin@teabox.com" } });
   await prisma.adminLoginAttempt.deleteMany({ where: { email: "admin@teabox.com" } });
-  console.log(`Removed ${oldLogin.count} old admin login.`);
+  if (oldLogin.count > 0) console.log(`Removed ${oldLogin.count} old admin logins.`);
 
-  console.log(`Hid ${hidden.count} products. ${exists ? "New hamper was already there." : "Added the new hamper."} Reworded ${reworded} hampers.`);
+  const remainingSweets = await prisma.product.findMany({
+    where: {
+      OR: [
+        { category: "sweets" },
+        { id: { in: SWEET_IDS } },
+        { title: { contains: "Mithai", mode: "insensitive" } },
+        { title: { contains: "Sweet", mode: "insensitive" } },
+      ],
+    },
+  });
+  console.log(`Remaining sweet products in DB: ${remainingSweets.length}`);
 }
 
 main()

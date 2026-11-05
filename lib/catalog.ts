@@ -108,7 +108,7 @@ function withoutSweets(products: Product[]): Product[] {
     .map((p) => {
       const current = reworded.includes(p.id) ? PRODUCTS.find((c) => c.id === p.id) : null;
       return current
-        ? { ...p, handle: current.handle, title: current.title, subtitle: current.subtitle, description: current.description, tags: current.tags }
+        ? { ...p, handle: current.handle, title: current.title, subtitle: current.subtitle, description: current.description, tags: current.tags, galleryImages: current.galleryImages }
         : p;
     });
   const hamper = PRODUCTS.find((c) => c.id === "pataka-diya-diwali-hamper");

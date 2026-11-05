@@ -738,7 +738,6 @@ export const PRODUCTS: Product[] = [
       "/assets/combo-pataka-diyas.webp",
       "/assets/decor-clay-diyas.webp",
       "/assets/hamper-puja.webp",
-      "/assets/combo-pataka-mithai.webp",
       "/assets/decor-diya-steps.webp",
       "/assets/burst/sky-burst-1.webp"
     ],
@@ -785,10 +784,9 @@ export const PRODUCTS: Product[] = [
     "image": "/assets/hamper-festive.webp",
     "secondaryImage": "/assets/burst/sky-burst-1.webp",
     "galleryImages": [
-      "/assets/combo-pataka-mithai.webp",
       "/assets/hamper-festive.webp",
-      "/assets/sweets-kaju-katli.webp",
-      "/assets/sweets-assorted-box.webp",
+      "/assets/decor-clay-diyas.webp",
+      "/assets/decor-diya-steps.webp",
       "/assets/hamper-family.webp",
       "/assets/burst/sky-burst-1.webp"
     ],
@@ -885,9 +883,8 @@ export const PRODUCTS: Product[] = [
     "galleryImages": [
       "/assets/hamper-family.webp",
       "/assets/hamper-festive.webp",
-      "/assets/combo-pataka-mithai.webp",
+      "/assets/decor-clay-diyas.webp",
       "/assets/mega-starter-contents.webp",
-      "/assets/sweets-assorted-box.webp",
       "/assets/burst/sky-burst-1.webp"
     ],
     "category": "gift-hampers",
@@ -935,9 +932,8 @@ export const PRODUCTS: Product[] = [
     "galleryImages": [
       "/assets/hamper-office.webp",
       "/assets/hamper-festive.webp",
-      "/assets/sweets-gift-box.webp",
-      "/assets/sweets-kaju-katli.webp",
       "/assets/hd-tealight-bar.webp",
+      "/assets/decor-diya-steps.webp",
       "/assets/burst/sky-burst-1.webp"
     ],
     "category": "gift-hampers",

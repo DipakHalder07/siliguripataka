@@ -298,12 +298,12 @@ export default function CorporateGiftingPage() {
       bullets: ["Assorted crackers box", "12 hand-crafted clay diyas", "Ready to gift packaging"],
     },
     {
-      id: "combo-pataka-mithai-pack",
-      title: "Pataka + Mithai Gift Combo",
-      image: "/assets/combo-pataka-mithai.webp",
-      imageAlt: "Premium corporate Diwali gift hamper combining green crackers and traditional sweets box Siliguri",
+      id: "pataka-diya-diwali-hamper",
+      title: "Pataka + Diya Gift Combo",
+      image: "/assets/combo-pataka-diyas.webp",
+      imageAlt: "Premium corporate Diwali gift hamper combining green crackers and hand-crafted clay diyas Siliguri",
       badge: "POPULAR",
-      bullets: ["Green crackers assortment", "Festive sweet treat box", "Perfect client thank-you"],
+      bullets: ["Green crackers assortment", "12 hand-crafted clay diyas", "Perfect client thank-you"],
     },
     {
       id: "kids-fun-fiesta-green-pack",

@@ -22,7 +22,7 @@ const searchableItems = [
   { id: "hanging-paper-lantern-kandil", title: "Hanging Paper Lantern (Kandil)", category: "Home Decor Lantern", price: 299, weight: "1 Lantern", image: "/assets/hd-lantern-orange.webp", description: "Traditional festive lantern" },
   { id: "brass-flower-bowl-urli", title: "Brass Floating Diya Bowl (Urli)", category: "Home Decor Diya", price: 799, weight: "1 Bowl", image: "/assets/hd-flower-bowl.webp", description: "For floating flowers and diyas" },
   { id: "festive-sweets-diya-gift-hamper", title: "Festive Diya Gift Hamper", category: "Gift Hampers", price: 1499, weight: "1 Hamper", image: "/assets/hamper-festive.webp", description: "Diyas and festive touches in a gift box" },
-  { id: "family-diwali-gift-hamper", title: "Family Diwali Gift Hamper", category: "Gift Hampers", price: 2499, weight: "1 Hamper", image: "/assets/hamper-family.webp", description: "Treats for the whole family" },
+  { id: "family-diwali-gift-hamper", title: "Family Diwali Gift Hamper", category: "Gift Hampers", price: 2499, weight: "1 Hamper", image: "/assets/hamper-family.webp", description: "Festive gifts for the whole family" },
   { id: "rangoli-colour-set", title: "Rangoli Colour Set", category: "Decor Rangoli", price: 199, weight: "1 Set", image: "/assets/decor-rangoli-set.webp", description: "Bright rangoli colours" },
   { id: "diwali-puja-thali-set", title: "Diwali Puja Thali Set", category: "Puja Decor", price: 399, weight: "1 Set", image: "/assets/decor-puja-thali.webp", description: "Thali, diya, kumkum, haldi & more" },
 ];

@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
@@ -29,6 +29,34 @@ export default function CartDrawer() {
   const [orderNote, setOrderNote] = useState("");
   const [showNoteInput, setShowNoteInput] = useState(false);
 
+  // Lock background scroll and handle Escape key when cart is open
+  useEffect(() => {
+    if (!isCartOpen) return;
+
+    const originalOverflow = document.body.style.overflow;
+    const originalPaddingRight = document.body.style.paddingRight;
+    const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+
+    if (scrollBarWidth > 0) {
+      document.body.style.paddingRight = `${scrollBarWidth}px`;
+    }
+    document.body.style.overflow = "hidden";
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        closeCart();
+      }
+    };
+
+    window.addEventListener("keydown", onKeyDown);
+
+    return () => {
+      document.body.style.overflow = originalOverflow;
+      document.body.style.paddingRight = originalPaddingRight;
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, [isCartOpen, closeCart]);
+
   const diffToFreeShipping = Math.max(0, freeShippingThreshold - subtotal);
   const progressPercent = Math.min(
     100,
@@ -46,21 +74,37 @@ export default function CartDrawer() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="absolute inset-0 bg-black/60 backdrop-blur-[2px]"
-              onClick={closeCart}
+              className="absolute inset-0 bg-black/60 backdrop-blur-[2px] cursor-pointer"
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                closeCart();
+              }}
+              aria-label="Close cart backdrop"
             />
 
-            {/* Slide-in Drawer */}
-            <div className="fixed inset-y-0 right-0 max-w-full flex pl-10">
+            {/* Slide-in Drawer Container */}
+            <div
+              className="fixed inset-y-0 right-0 max-w-full flex pl-10 pointer-events-none"
+              onClick={(e) => {
+                // If user clicks the pl-10 padding area outside the drawer
+                if (e.target === e.currentTarget) {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  closeCart();
+                }
+              }}
+            >
               <motion.div
                 initial={{ x: "100%" }}
                 animate={{ x: 0 }}
                 exit={{ x: "100%" }}
                 transition={{ type: "spring", damping: 28, stiffness: 280 }}
-                className="w-screen max-w-[420px] bg-white shadow-2xl flex flex-col justify-between overflow-hidden border-l border-[#f0dfc6]"
+                className="w-screen max-w-[420px] bg-white shadow-2xl flex flex-col justify-between overflow-hidden border-l border-[#f0dfc6] pointer-events-auto"
+                onClick={(e) => e.stopPropagation()}
               >
                 {/* Header */}
-                <div className="px-5 py-4 border-b border-[#f0dfc6] flex items-center justify-between bg-white">
+                <div className="px-5 py-3.5 sm:py-4 border-b border-[#f0dfc6] flex items-center justify-between bg-white">
                   <div className="flex items-center gap-2">
                     <ShoppingBag size={20} className="text-[#4a0e14]" />
                     <h2 className="text-[18px] font-bold text-[#2b1215]">
@@ -69,11 +113,15 @@ export default function CartDrawer() {
                   </div>
                   <button
                     type="button"
-                    onClick={closeCart}
-                    className="p-1.5 text-[#5c5a52] hover:text-[#2b1215] rounded-full hover:bg-[#f0f0f0] transition-colors cursor-pointer"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      closeCart();
+                    }}
+                    className="w-11 h-11 -mr-2.5 flex items-center justify-center text-[#5c5a52] hover:text-[#2b1215] active:text-[#b3261e] rounded-full hover:bg-[#f0f0f0] active:bg-[#e8e8e8] active:scale-95 transition-all cursor-pointer touch-manipulation select-none"
                     aria-label="Close cart"
                   >
-                    <X size={20} />
+                    <X size={22} strokeWidth={2.2} />
                   </button>
                 </div>
 

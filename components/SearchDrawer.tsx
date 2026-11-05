@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
@@ -32,6 +32,31 @@ export default function SearchDrawer() {
   const { isSearchOpen, closeSearch, addToCart } = useCart();
   const [query, setQuery] = useState("");
 
+  // Lock body scroll and listen for Escape key
+  useEffect(() => {
+    if (!isSearchOpen) return;
+
+    const originalOverflow = document.body.style.overflow;
+    const originalPaddingRight = document.body.style.paddingRight;
+    const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+
+    if (scrollBarWidth > 0) {
+      document.body.style.paddingRight = `${scrollBarWidth}px`;
+    }
+    document.body.style.overflow = "hidden";
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") closeSearch();
+    };
+    window.addEventListener("keydown", onKeyDown);
+
+    return () => {
+      document.body.style.overflow = originalOverflow;
+      document.body.style.paddingRight = originalPaddingRight;
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, [isSearchOpen, closeSearch]);
+
   const popularKeywords = [
     "Sparklers",
     "Flower Pots",
@@ -59,21 +84,36 @@ export default function SearchDrawer() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="absolute inset-0 bg-black/60 backdrop-blur-[2px]"
-            onClick={closeSearch}
+            className="absolute inset-0 bg-black/60 backdrop-blur-[2px] cursor-pointer"
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              closeSearch();
+            }}
+            aria-label="Close search backdrop"
           />
 
-          {/* Drawer */}
-          <div className="fixed inset-y-0 right-0 max-w-full flex pl-10">
+          {/* Drawer Container */}
+          <div
+            className="fixed inset-y-0 right-0 max-w-full flex pl-10 pointer-events-none"
+            onClick={(e) => {
+              if (e.target === e.currentTarget) {
+                e.preventDefault();
+                e.stopPropagation();
+                closeSearch();
+              }
+            }}
+          >
             <motion.div
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", damping: 28, stiffness: 280 }}
-              className="w-screen max-w-[460px] bg-white shadow-2xl flex flex-col justify-between overflow-hidden border-l border-[#f0dfc6]"
+              className="w-screen max-w-[460px] bg-white shadow-2xl flex flex-col justify-between overflow-hidden border-l border-[#f0dfc6] pointer-events-auto"
+              onClick={(e) => e.stopPropagation()}
             >
           {/* Search Header */}
-          <div className="p-5 border-b border-[#f0dfc6] flex items-center gap-3 bg-white">
+          <div className="p-4 sm:p-5 border-b border-[#f0dfc6] flex items-center gap-3 bg-white">
             <Search size={22} className="text-[#5c5a52] flex-shrink-0" />
             <input
               type="text"
@@ -87,18 +127,22 @@ export default function SearchDrawer() {
               <button
                 type="button"
                 onClick={() => setQuery("")}
-                className="text-[13px] text-[#747576] hover:text-[#2b1215] font-medium"
+                className="text-[13px] text-[#747576] hover:text-[#2b1215] font-medium px-1.5 py-1"
               >
                 Clear
               </button>
             )}
             <button
               type="button"
-              onClick={closeSearch}
-              className="p-1.5 text-[#5c5a52] hover:text-[#2b1215] rounded-full hover:bg-[#f0f0f0] transition-colors ml-1"
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                closeSearch();
+              }}
+              className="w-11 h-11 -mr-2.5 flex items-center justify-center text-[#5c5a52] hover:text-[#2b1215] active:text-[#b3261e] rounded-full hover:bg-[#f0f0f0] active:bg-[#e8e8e8] active:scale-95 transition-all cursor-pointer touch-manipulation select-none"
               aria-label="Close search"
             >
-              <X size={20} />
+              <X size={22} strokeWidth={2.2} />
             </button>
           </div>
 

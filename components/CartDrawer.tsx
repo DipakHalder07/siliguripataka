@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
 import { useCart } from "./context/CartContext";
-import { X, Trash2, Plus, Minus, Check, ShoppingBag, ArrowRight } from "lucide-react";
+import { X, Plus, Minus, Check, ShoppingBag, ArrowRight } from "lucide-react";
 import { FREE_GIFT } from "@/lib/orderRules";
 
 const FastrrCheckoutModal = dynamic(() => import("./FastrrCheckoutModal"), { ssr: false });

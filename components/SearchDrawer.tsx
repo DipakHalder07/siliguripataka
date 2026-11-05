@@ -2,10 +2,9 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
 import { useCart } from "./context/CartContext";
-import { Search, X, ArrowRight } from "lucide-react";
+import { Search, X } from "lucide-react";
 
 const searchableItems = [
   { id: "mega-family-pack", title: "Mega Family Pack", category: "Mega Packs Combo", price: 4999, weight: "1 Pack", image: "/assets/mega-family.webp", description: "Best value · Save ₹2,324" },

@@ -206,7 +206,7 @@ export default function Header({ onOpenPackFinder }: { onOpenPackFinder?: () => 
 
               {/* Direct links */}
               <Link
-                href="/collections/trial-packs"
+                href="/collections/mega-packs"
                 onMouseEnter={closeMenus}
                 onClick={closeMenus}
                 className={`py-5 text-[14px] xl:text-[16px] min-[1400px]:text-[18px] font-semibold tracking-[-0.2px] transition-colors whitespace-nowrap ${

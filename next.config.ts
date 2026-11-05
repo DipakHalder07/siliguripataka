@@ -47,6 +47,7 @@ const nextConfig: NextConfig = {
         permanent: true,
       })),
       { source: "/collections/gift-boxes", destination: "/collections/mega-packs", permanent: true },
+      { source: "/collections/trial-packs", destination: "/collections/mega-packs", permanent: true },
     ];
   },
   async headers() {
